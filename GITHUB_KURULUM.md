@@ -105,15 +105,15 @@ GitHub uygulaması ya da telefonda GitHub hesabına giriş **gerekmez**.
 
 ---
 
-## Sonrası: spor seçimlerini değiştirmek
+## Sonrası: ayarları değiştirmek
 
-Bilgisayardan ya da telefondan (Chrome ile):
+Uygulamada sağ üstteki **⚙** simgesine dokun. Spor seçimlerini (ekle, sil, sırala, arama ifadesi,
+gün, konu sayısı) ve gündem/genel spor konu sayılarını oradan değiştirip **Kaydet**'e basarsın.
 
-1. `github.com/ORGANIZASYON-ADI/gundem` → `tarayici` klasörü → `spor_secimleri.json`
-2. Sağ üstteki **kalem** simgesi (Edit).
-3. Değişikliği yap. Dosyanın başında her alanın ne işe yaradığı yazıyor.
-4. **Commit changes** → tekrar **Commit changes**.
-5. Değişiklik ertesi sabahki gündemde görünür. Hemen görmek istersen 7. adımdaki gibi elle çalıştır.
+- İlk kez kaydederken bir **GitHub anahtarı** gerekir. Nasıl oluşturulacağı Ayarlar ekranında
+  "Anahtar nasıl oluşturulur?" bölümünde adım adım yazıyor. Anahtar yalnızca o telefonda saklanır.
+- "Kaydedince gündemi hemen yeniden topla" işaretliyse gündem 5-10 dakikada yenilenir; değilse ertesi sabah.
+- Elle düzenlemek istersen ayarlar `tarayici/ayarlar.json` dosyasında (GitHub'da kalem simgesi → Commit changes).
 
 ---
 

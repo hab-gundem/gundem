@@ -21,16 +21,17 @@ from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
 CIKTI = KOK / "docs" / "gundem.json"  # docs/ = PWA klasörü (GitHub Pages buradan yayınlar)
-SPOR_SECIMLERI = Path(__file__).resolve().parent / "spor_secimleri.json"
+AYARLAR = Path(__file__).resolve().parent / "ayarlar.json"  # uygulamadaki Ayarlar ekranı buraya yazar
 
 UA_TARAYICI = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) GundemTarayici/0.1"
 # Wikimedia, iletişim adresi olan isteklere daha az kısıtlama uyguluyor; GitHub Actions depo adresini verir
 UA_WIKI = f"GundemTarayici/0.1 ({os.environ.get('GUNDEM_ILETISIM', 'kisisel, ticari olmayan kullanim')})"
 ZAMAN_ASIMI = 20
 
+# Konu sayılarının varsayılanları; ayarlar.json'daki değerler bunların yerine geçer
 KONU_SAYISI = 10
-HABERLER_EN_FAZLA = 7  # kalan yerler Trends'ten doldurulur
 SPOR_SAYISI = 6
+HABER_ORANI = 0.7  # gündemin bu kadarı Google Haberler'den, kalanı Trends'ten doldurulur
 GECMIS_EN_FAZLA = 8
 KISI_EN_FAZLA = 3
 
@@ -287,16 +288,39 @@ def rss_havuzu() -> list[dict]:
     return havuz
 
 
-# ---------- spor seçimleri (tarayici/spor_secimleri.json) ----------
+# ---------- ayarlar (tarayici/ayarlar.json) ----------
 
-def spor_secimlerini_oku() -> list[dict]:
+def _sayi(deger, varsayilan: int, en_az: int, en_cok: int) -> int:
     try:
-        return json.loads(SPOR_SECIMLERI.read_text(encoding="utf-8")).get("secimler", [])
+        return max(en_az, min(en_cok, int(deger)))
+    except (TypeError, ValueError):
+        return varsayilan
+
+
+def ayarlari_oku() -> tuple[list[dict], int, int]:
+    """(spor seçimleri, gündem konu sayısı, genel spor konu sayısı) döndürür.
+
+    Dosya yoksa ya da bozuksa varsayılanlarla devam edilir; adı boş seçimler atlanır.
+    """
+    try:
+        veri = json.loads(AYARLAR.read_text(encoding="utf-8"))
     except FileNotFoundError:
-        return []
+        veri = {}
     except (json.JSONDecodeError, OSError) as e:
-        uyari(f"Spor seçimleri okunamadı ({SPOR_SECIMLERI.name}): {e}")
-        return []
+        uyari(f"Ayarlar okunamadı ({AYARLAR.name}): {e}")
+        veri = {}
+    secimler = [s for s in veri.get("spor_secimleri", []) if isinstance(s, dict) and str(s.get("ad", "")).strip()]
+    for s in secimler:
+        s["ad"] = s["ad"].strip()
+        if not str(s.get("arama", "")).strip():
+            s.pop("arama", None)
+        if not [b for b in s.get("baslikta", []) if str(b).strip()]:
+            s.pop("baslikta", None)
+        s["gun"] = _sayi(s.get("gun"), 3, 1, 30)
+        s["adet"] = _sayi(s.get("adet"), 4, 1, 10)
+    return (secimler,
+            _sayi(veri.get("gundem_konu_sayisi"), KONU_SAYISI, 1, 20),
+            _sayi(veri.get("genel_spor_konu_sayisi"), SPOR_SAYISI, 0, 15))
 
 
 def secim_konulari(secim: dict) -> list[dict]:
@@ -738,7 +762,8 @@ def main() -> None:
     sys.stderr.reconfigure(encoding="utf-8")
 
     print("Kaynaklar okunuyor...")
-    secimler = spor_secimlerini_oku()
+    secimler, konu_sayisi, spor_sayisi = ayarlari_oku()
+    haber_en_fazla = max(1, round(konu_sayisi * HABER_ORANI))
     with ThreadPoolExecutor(4) as havuz_is:
         f_haber = havuz_is.submit(google_haberler_konulari)
         f_spor = havuz_is.submit(google_haberler_konulari, GOOGLE_SPOR)
@@ -772,7 +797,7 @@ def main() -> None:
         if any(ayni_konu_mu(k, s) for s in gundem_secilen + spor_secilen + secim_secilen):
             return
         if spor_mu(k):
-            if len(spor_secilen) < SPOR_SAYISI:
+            if len(spor_secilen) < spor_sayisi:
                 k["kategori"] = "spor"
                 spor_secilen.append(k)
         elif len(gundem_secilen) < gundem_siniri:
@@ -780,11 +805,11 @@ def main() -> None:
             gundem_secilen.append(k)
 
     for k in haber_konulari:
-        ekle(k, HABERLER_EN_FAZLA)
+        ekle(k, haber_en_fazla)
     for k in trend_konulari:
-        ekle(k, KONU_SAYISI)
+        ekle(k, konu_sayisi)
     for k in haber_konulari:  # Trends yetmezse haberlerle tamamla
-        ekle(k, KONU_SAYISI)
+        ekle(k, konu_sayisi)
     for k in spor_konulari:  # spor bölümünün kendi konuları
         ekle(k, 0)
     secilen = gundem_secilen + secim_secilen + spor_secilen

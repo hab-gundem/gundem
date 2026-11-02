@@ -211,3 +211,51 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 
 .sonuc-ozeti { text-align: center; padding: 24px 8px; }
 .sonuc-ozeti .sayilar { font-size: 32px; font-weight: 700; margin: 8px 0; }
+
+/* ---------- ayarlar ---------- */
+
+.ayar-dugme {
+  color: var(--soluk); text-decoration: none; font-size: 22px; line-height: 1;
+  padding: 4px 0 4px 8px;
+}
+.ayar-karti, .secim-karti {
+  background: var(--kart); border: 1px solid var(--cizgi); border-radius: 12px; padding: 14px;
+}
+.secim-ust { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+.secim-ust strong { flex: 1; min-width: 0; }
+.secim-dugmeleri { display: flex; gap: 6px; }
+.secim-dugmeleri button {
+  min-width: 40px; height: 36px; padding: 0 10px; border-radius: 8px;
+  border: 1px solid var(--cizgi); background: var(--zemin);
+}
+.secim-dugmeleri button:disabled { opacity: .35; cursor: default; }
+.secim-dugmeleri .sil { color: var(--kotu); border-color: var(--kotu); }
+
+.alan { display: block; margin-top: 12px; }
+.alan > span { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.alan input[type="text"], .alan input[type="number"], .alan input[type="password"] {
+  width: 100%; padding: 10px 12px; font: inherit; color: inherit;
+  background: var(--zemin); border: 1px solid var(--cizgi); border-radius: 8px;
+}
+.alan input:focus { outline: 2px solid var(--vurgu); outline-offset: -1px; }
+.alan small { display: block; font-size: 12px; color: var(--soluk); margin-top: 4px; }
+.alan-satiri { display: flex; gap: 12px; }
+.alan-satiri .alan { flex: 1; min-width: 0; }
+.ayar-karti.alan-satiri .alan { margin-top: 0; }
+
+.ekle-dugme { width: 100%; margin-top: 12px; border-style: dashed; }
+.kaydet-bolumu .dugmeler { margin-top: 12px; }
+.onay { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; }
+.onay input { width: 20px; height: 20px; margin: 2px 0 0; flex: none; }
+
+.ayar-mesaji { border-radius: 10px; padding: 12px 14px; margin-bottom: 14px; font-size: 14px; border: 1px solid; }
+.ayar-mesaji.iyi { border-color: var(--iyi); color: var(--iyi); }
+.ayar-mesaji.kotu { border-color: var(--kotu); color: var(--kotu); }
+
+.anahtar-durumu { margin: 0; font-size: 14px; color: var(--soluk); }
+.anahtar-durumu.iyi { color: var(--iyi); font-weight: 600; }
+.yardim { margin-top: 16px; font-size: 14px; }
+.yardim summary { cursor: pointer; font-weight: 600; color: var(--vurgu); }
+.yardim ol { padding-left: 20px; margin: 8px 0; }
+.yardim li { margin-bottom: 6px; }
+.yardim code { font-size: 13px; background: var(--zemin); padding: 1px 5px; border-radius: 4px; }

@@ -146,13 +146,14 @@ const $geri = document.getElementById('geri');
 function ciz() {
   let [, sayfa = '', id] = location.hash.split('/');
   if (sayfa === 'yildizli') sayfa = 'takip'; // eski adres
-  $geri.hidden = sayfa !== 'konu';
+  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar';
   document.querySelectorAll('.alt a').forEach(a => {
     a.classList.toggle('etkin', a.dataset.sayfa === (sayfa || 'gundem'));
   });
   if (sayfa === 'konu') detayCiz(decodeURIComponent(id || ''));
   else if (sayfa === 'tekrar') tekrarCiz();
   else if (sayfa === 'takip') takipCiz();
+  else if (sayfa === 'ayarlar') ayarlarCiz(); // ayarlar.js
   else if (sayfa === 'spor') listeCiz('spor');
   else listeCiz('gundem');
   rozetGuncelle();
@@ -210,7 +211,7 @@ function listeCiz(tur) {
     : `<div class="bos">Bugün ${tur === 'spor' ? 'spor' : 'gündem'} konusu yok.</div>`);
 }
 
-// Spor sekmesi: her seçim (tarayici/spor_secimleri.json) ayrı başlık, en altta genel spor gündemi
+// Spor sekmesi: her seçim (tarayici/ayarlar.json) ayrı başlık, en altta genel spor gündemi
 function sporGruplari(konular) {
   const grup = (baslik, liste, bosMetin) => `<section class="bolum spor-grubu"><h3>${baslik}</h3>
     ${liste.length ? `<ul class="liste">${liste.map(k => konuKarti(k)).join('')}</ul>`

@@ -1,0 +1,43 @@
+{
+  "_nasil": [
+    "Bu dosya uygulamadaki Ayarlar ekranından (⚙) düzenlenir; elle de düzenlenebilir.",
+    "gundem_konu_sayisi: Gündem sekmesindeki konu sayısı (1-20).",
+    "genel_spor_konu_sayisi: Spor sekmesinin altındaki genel spor gündemi konu sayısı (0-15).",
+    "spor_secimleri: Spor sekmesinde ayrı başlık olarak görünecek seçimler. Sıra, sekmedeki sıradır.",
+    "  ad: başlıkta görünen ad. dal: adın yanındaki açıklama.",
+    "  arama: Google Haberler'de aranacak ifade. Tırnak tam ifade arar, eksi (-kelime) o kelimeyi dışarıda bırakır. Yazılmazsa 'ad' kullanılır.",
+    "  baslikta: haber başlığında bunlardan en az biri geçmeli (alakasız haberleri eler). Yazılmazsa 'ad' kullanılır.",
+    "  gun: kaç günlük haberlere bakılsın (yazılmazsa 3). adet: en fazla kaç konu (yazılmazsa 4)."
+  ],
+  "gundem_konu_sayisi": 10,
+  "genel_spor_konu_sayisi": 6,
+  "spor_secimleri": [
+    {
+      "ad": "Fenerbahçe",
+      "dal": "Futbol",
+      "arama": "Fenerbahçe -basketbol -voleybol -Beko -kadın",
+      "gun": 2
+    },
+    {
+      "ad": "Filenin Sultanları",
+      "dal": "Kadın voleybol milli takımı",
+      "arama": "\"Filenin Sultanları\" OR \"A Milli Kadın Voleybol\"",
+      "baslikta": [
+        "Filenin Sultanları",
+        "Milli Kadın Voleybol"
+      ],
+      "gun": 7
+    },
+    {
+      "ad": "12 Dev Adam",
+      "dal": "Erkek basketbol milli takımı",
+      "arama": "\"12 Dev Adam\" OR \"A Milli Erkek Basketbol\"",
+      "baslikta": [
+        "12 Dev Adam",
+        "Milli Erkek Basketbol",
+        "A Milli Basketbol"
+      ],
+      "gun": 7
+    }
+  ]
+}

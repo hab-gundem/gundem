@@ -39,5 +39,7 @@ jobs:
             echo "Değişiklik yok"
           else
             git commit -m "Gündem: $(date -u +%Y-%m-%d)"
+            # görev sürerken Ayarlar ekranından kayıt yapılmış olabilir
+            git pull --rebase
             git push
           fi
