@@ -17,6 +17,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor
+from html.parser import HTMLParser
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parent.parent
@@ -735,10 +736,186 @@ def soru_uret(konu: dict) -> str:
     return SORULAR_GENEL[h % len(SORULAR_GENEL)].format(konu=kisa_konu(konu["baslik"]))
 
 
+# ---------- haber metni ve görsel ----------
+# Konunun haberlerinden birinin sayfası açılır; metin (paragraflar) ve paylaşım görseli
+# (og:image) alınır. Google Haberler bağlantıları önce asıl habere çözülür.
+
+UA_HABER = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
+METIN_EN_FAZLA = 8000   # karakter; daha uzunsa paragraf sınırında kesilir
+METIN_DENEME = 3        # konu başına en fazla bu kadar haber sayfası denenir
+METIN_COP = re.compile(r"©|tüm hakları|abone ol|çerez|cookie|whatsapp kanal|google news|"
+                       r"bizi takip edin|haberin devamı|ilginizi çekebilir", re.IGNORECASE)
+
+
+def sayfa_getir(url: str, veri: bytes | None = None, basliklar: dict | None = None) -> tuple[str, str]:
+    """Tek denemelik sayfa isteği; (metin, son adres) döner."""
+    istek = urllib.request.Request(url, data=veri, headers={
+        "User-Agent": UA_HABER, "Accept-Language": "tr-TR,tr;q=0.9", **(basliklar or {})})
+    with urllib.request.urlopen(istek, timeout=15) as yanit:
+        govde = yanit.read(3_000_000)
+        return govde.decode(yanit.headers.get_content_charset() or "utf-8", "replace"), yanit.geturl()
+
+
+def google_linki_coz(link: str) -> str:
+    """news.google.com/rss/articles/... bağlantısını haberin asıl adresine çevirir."""
+    m = re.search(r"news\.google\.com/(?:rss/)?articles/([^?/]+)", link)
+    if not m:
+        return link
+    gid = m.group(1)
+    sayfa, _ = sayfa_getir(f"https://news.google.com/articles/{gid}?hl=tr&gl=TR&ceid=TR:tr")
+    imza = re.search(r'data-n-a-sg="([^"]+)"', sayfa)
+    zaman = re.search(r'data-n-a-ts="([^"]+)"', sayfa)
+    if not (imza and zaman):
+        raise ValueError("Google Haberler bağlantısı çözülemedi")
+    istek = ["garturlreq", [["X", "X", ["X", "X"], None, None, 1, 1, "US:en", None, 1, None, None, None,
+                             None, None, 0, 1], "X", "X", 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0],
+             gid, int(zaman.group(1)), imza.group(1)]
+    govde = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", json.dumps(istek), None, "generic"]]]))
+    yanit, _ = sayfa_getir("https://news.google.com/_/DotsSplashUi/data/batchexecute", govde.encode(),
+                           {"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+    return json.loads(json.loads(yanit.split("\n\n")[1])[0][2])[1]
+
+
+class _SayfaAyirici(HTMLParser):
+    ATLA = {"script", "style", "noscript", "figure", "figcaption", "aside", "nav", "footer",
+            "header", "form", "button", "iframe", "svg", "template"}
+
+    def __init__(self):
+        super().__init__()
+        self.atla = 0
+        self.p: list[str] | None = None
+        self.paragraflar: list[str] = []
+        self.ld: list[str] = []
+        self.ld_icinde = False
+        self.meta: dict[str, str] = {}
+
+    def handle_starttag(self, etiket, nitelik):
+        n = dict(nitelik)
+        if etiket == "meta":
+            ad = (n.get("property") or n.get("name") or "").lower()
+            if ad and n.get("content"):
+                self.meta.setdefault(ad, n["content"])
+        elif etiket == "script" and (n.get("type") or "").lower() == "application/ld+json":
+            self.ld_icinde = True
+            self.ld.append("")
+            return
+        if etiket in self.ATLA:
+            self.atla += 1
+        elif etiket == "p" and not self.atla:
+            self.p = []
+        elif etiket == "br" and self.p is not None:
+            self.p.append(" ")
+
+    def handle_endtag(self, etiket):
+        if etiket == "script" and self.ld_icinde:
+            self.ld_icinde = False
+            return
+        if etiket in self.ATLA and self.atla:
+            self.atla -= 1
+        elif etiket == "p" and self.p is not None:
+            metin = re.sub(r"\s+", " ", "".join(self.p)).strip()
+            if metin:
+                self.paragraflar.append(metin)
+            self.p = None
+
+    def handle_data(self, veri):
+        if self.ld_icinde:
+            self.ld[-1] += veri
+        elif self.p is not None and not self.atla:
+            self.p.append(veri)
+
+
+def _govde_bul(o) -> str | None:
+    """JSON-LD içinde articleBody arar."""
+    if isinstance(o, dict):
+        if isinstance(o.get("articleBody"), str) and len(o["articleBody"]) > 200:
+            return o["articleBody"]
+        o = list(o.values())
+    if isinstance(o, list):
+        for v in o:
+            bulunan = _govde_bul(v)
+            if bulunan:
+                return bulunan
+    return None
+
+
+def _sade(s: str) -> str:
+    return re.sub(r"\W+", "", tr_kucuk(s))
+
+
+def haber_sayfasi(link: str) -> dict:
+    """Haber sayfasından {paragraflar, gorsel, link} çıkarır."""
+    adres = google_linki_coz(link)
+    sayfa, adres = sayfa_getir(adres)
+    ayirici = _SayfaAyirici()
+    ayirici.feed(sayfa)
+    govde = None
+    for parca in ayirici.ld:
+        try:
+            govde = _govde_bul(json.loads(parca))
+        except ValueError:
+            continue
+        if govde:
+            break
+    paragraflar: list[str] = []
+    for p in ayirici.paragraflar:
+        p = html.unescape(p)
+        if len(p) >= 60 and not METIN_COP.search(p) and p not in paragraflar:
+            paragraflar.append(p)
+    if govde:
+        govde = html_temizle(govde)
+        sade_govde = _sade(govde)
+        # sayfadaki paragraflardan yalnızca haberin gövdesinde geçenler kalır (reklam, öneri vb. elenir)
+        eslesen = [p for p in paragraflar if _sade(p[:60]) in sade_govde]
+        if sum(map(len, eslesen)) >= len(govde) * 0.5:
+            paragraflar = eslesen
+        else:  # paragraf yapısı yoksa gövdeyi üçer cümlelik paragraflara böl
+            cumleler = re.split(r"(?<=[.!?])\s*(?=[A-ZÇĞİÖŞÜ0-9\"'“])", govde)
+            paragraflar = [" ".join(cumleler[i:i + 3]) for i in range(0, len(cumleler), 3)]
+    sonuc, toplam = [], 0
+    for p in paragraflar:
+        if toplam + len(p) > METIN_EN_FAZLA and sonuc:
+            break
+        sonuc.append(p)
+        toplam += len(p)
+    gorsel = ayirici.meta.get("og:image") or ayirici.meta.get("twitter:image") or ""
+    gorsel = urllib.parse.urljoin(adres, html.unescape(gorsel)) if gorsel else ""
+    return {"paragraflar": sonuc, "gorsel": gorsel if gorsel.startswith(("http://", "https://")) else "",
+            "link": adres}
+
+
+def konu_metni(konu: dict) -> dict:
+    """Konunun haberlerini sırayla dener; ilk uygun metni ve görseli döner."""
+    kokler = kok_kumesi(konu["baslik"])
+    gerekli = min(2, len(kokler))
+    sonuc: dict = {}
+    for h in konu["haberler"][:METIN_DENEME]:
+        try:
+            s = haber_sayfasi(h["link"])
+        except Exception as e:
+            uyari(f"Haber sayfası okunamadı ({h.get('kaynak', '')}): {e}")
+            continue
+        if s["gorsel"] and not sonuc.get("gorsel"):
+            sonuc["gorsel"] = s["gorsel"]
+        metin = " ".join(s["paragraflar"])
+        if len(metin) >= 300 and len(kokler & kok_kumesi(metin)) >= gerekli:
+            sonuc.update({"metin": s["paragraflar"], "metin_kaynagi": h.get("kaynak", ""),
+                          "metin_link": s["link"]})
+            if s["gorsel"]:
+                sonuc["gorsel"] = s["gorsel"]
+            break
+    return sonuc
+
+
 # ---------- ana akış ----------
 
-def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], kisi_listesi: list[dict]) -> dict:
+def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], kisi_listesi: list[dict],
+                metin: dict) -> dict:
     konu["kisiler"] = kisi_listesi
+    if metin.get("metin") and ozet_kaynagi == "başlıklar":
+        # başlıklardan derlenmiş özet yerine haberin kendi ilk cümleleri
+        ozet, ozet_kaynagi = cumle_kirp(" ".join(metin["metin"][:2]), 3), metin["metin_kaynagi"]
     sonuc = {
         "id": hashlib.sha1((konu["tur"] + konu["baslik"]).encode()).hexdigest()[:12],
         "baslik": konu["baslik"],
@@ -748,12 +925,14 @@ def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], ki
         "tarih": konu["tarih"],
         "ozet": ozet,
         "ozet_kaynagi": ozet_kaynagi,
+        **metin,
         "haberler": [{k: h[k] for k in ("baslik", "kaynak", "link", "tarih")} for h in konu["haberler"]],
         "gecmis": gecmis,
         "kisiler": konu["kisiler"],
         "soru": soru_uret(konu),
     }
-    print(f"  ✓ {sonuc['baslik'][:60]}  (geçmiş {len(sonuc['gecmis'])}, kişi {len(sonuc['kisiler'])})")
+    print(f"  ✓ {sonuc['baslik'][:60]}  (geçmiş {len(sonuc['gecmis'])}, kişi {len(sonuc['kisiler'])}, "
+          f"metin {len(sonuc.get('metin', []))} paragraf{', görsel' if sonuc.get('gorsel') else ''})")
     return sonuc
 
 
@@ -819,10 +998,13 @@ def main() -> None:
     print("Geçmiş haberler aranıyor...")
     with ThreadPoolExecutor(4) as is_havuzu:
         gecmisler = list(is_havuzu.map(gecmis_haberler, secilen))
+    print("Haber metinleri ve görseller alınıyor...")
+    with ThreadPoolExecutor(6) as is_havuzu:
+        metinler = list(is_havuzu.map(konu_metni, secilen))
     print("Kişiler aranıyor (Wikipedia)...")
     kisi_listeleri = kisileri_bul(secilen, [o for o, _ in ozetler], gecmisler)
-    konular = [konu_sonucu(k, o, ok, g, kl)
-               for k, (o, ok), g, kl in zip(secilen, ozetler, gecmisler, kisi_listeleri)]
+    konular = [konu_sonucu(k, o, ok, g, kl, m)
+               for k, (o, ok), g, kl, m in zip(secilen, ozetler, gecmisler, kisi_listeleri, metinler)]
 
     CIKTI.parent.mkdir(parents=True, exist_ok=True)
     veri = {"olusturulma": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),

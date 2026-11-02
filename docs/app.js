@@ -3,10 +3,12 @@
 // gundem.json değişse bile takip edilen konular ve tekrar kartları kaybolmaz.
 //
 // Tekrar düzeni:
-//  - Bugün açılan konular akşam tekrarına girer.
-//  - Yıldızlı konular, yıldız kaldırılana kadar uzayan aralıklarla tekrar edilir.
-//  - "Hatırlayamadım" denen konular Takip'e geçer; üst üste UNUTULAN_CIKIS kez
-//    hatırlanınca çıkar.
+//  - Yalnızca yıldızlı (favori) konular tekrara girer; yıldız kaldırılana kadar
+//    uzayan aralıklarla tekrar edilir. Sadece okunan konular tekrara girmez.
+//  - "Hatırlayamadım" denen konular Tekrar sekmesindeki "Hatırlayamadıkların"
+//    listesine geçer; üst üste UNUTULAN_CIKIS kez hatırlanınca çıkar.
+//  - Gündem ve spor konuları ayrı ayrı tekrar edilir.
+//  - Tekrar kartından açılan konular Tekrar sekmesinde ayrı listelenir.
 
 const DEPO_ANAHTARI = 'gundem.v1';
 const AKSAM_SAATI = 18;                 // bu saatten sonra Gündem sayfasında tekrar hatırlatması çıkar
@@ -15,8 +17,9 @@ const UNUTULAN_CIKIS = 3;
 
 let gundem = null;        // {olusturulma, konular}
 let gundemHatasi = null;
-let depo = depoOku();     // {konular: {id: {veri, sonAcilma, yildiz, yildizTarihi, unutulan, seri, adim, sonraki, tekrarlar}}}
-let tekrarOturumu = null; // {kuyruk: [id], sira, acik, sonuclar: {id: bool}}
+let depo = depoOku();     // {konular: {id: {veri, sonAcilma, tekrardanAcilma, yildiz, yildizTarihi, unutulan, seri, adim, sonraki, tekrarlar}}}
+let tekrarOturumu = null; // {kat, kuyruk: [id], sira, acik, sonuclar: {id: bool}}
+const TEKRAR_KATLARI = { gundem: 'Gündem', spor: 'Spor' };
 
 // ---------- depo ----------
 
@@ -83,27 +86,19 @@ const kategori = konu => konu.kategori || 'gundem';
 const takipte = k => !!(k && (k.yildiz || k.unutulan));
 const vadesiGeldi = k => takipte(k) && k.sonraki && k.sonraki <= bugun();
 
-function bugunAcilanlar() {
-  return Object.entries(depo.konular)
-    .filter(([, k]) => k.sonAcilma && yerelGun(k.sonAcilma) === bugun())
-    .sort((a, b) => a[1].sonAcilma.localeCompare(b[1].sonAcilma))
-    .map(([id]) => id);
-}
-
 const bugunTekrarlandi = id => (depo.konular[id]?.tekrarlar || []).some(t => t.tarih === bugun());
 
-function bekleyenTekrar() {
-  const vadeli = Object.entries(depo.konular)
-    .filter(([, k]) => vadesiGeldi(k))
+// kat verilirse yalnızca o kategorinin (gundem/spor) konuları
+function bekleyenTekrar(kat) {
+  return Object.entries(depo.konular)
+    .filter(([id, k]) => vadesiGeldi(k) && !bugunTekrarlandi(id) && (!kat || kategori(k.veri || {}) === kat))
     .sort((a, b) => a[1].sonraki.localeCompare(b[1].sonraki))
     .map(([id]) => id);
-  return [...new Set([...bugunAcilanlar(), ...vadeli])].filter(id => !bugunTekrarlandi(id));
 }
 
 function tekrarNedeni(id) {
   const k = depo.konular[id];
   if (k?.unutulan) return `Hatırlayamadığın · ${k.seri || 0}/${UNUTULAN_CIKIS} hatırlandı`;
-  if (k?.sonAcilma && yerelGun(k.sonAcilma) === bugun()) return 'Bugün açtın';
   if (k?.yildiz) return 'Yıldızlı';
   return '';
 }
@@ -137,6 +132,13 @@ function takiptenCikar(k) {
   if (!takipte(k)) k.sonraki = null;
 }
 
+// Tekrardan tamamen çıkar: yıldız da kalkar, hatırlayamadıklardan da çıkar
+function tekrardanCikar(k) {
+  k.yildiz = false;
+  k.yildizTarihi = null;
+  takiptenCikar(k);
+}
+
 // ---------- çizim ----------
 
 const $icerik = document.getElementById('icerik');
@@ -144,14 +146,14 @@ const $baslik = document.getElementById('baslik');
 const $geri = document.getElementById('geri');
 
 function ciz() {
-  let [, sayfa = '', id] = location.hash.split('/');
+  let [, sayfa = '', id, ek] = location.hash.split('/');
   if (sayfa === 'yildizli') sayfa = 'takip'; // eski adres
-  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar';
+  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar' && !(sayfa === 'tekrar' && id);
   document.querySelectorAll('.alt a').forEach(a => {
     a.classList.toggle('etkin', a.dataset.sayfa === (sayfa || 'gundem'));
   });
-  if (sayfa === 'konu') detayCiz(decodeURIComponent(id || ''));
-  else if (sayfa === 'tekrar') tekrarCiz();
+  if (sayfa === 'konu') detayCiz(decodeURIComponent(id || ''), ek === 'tekrar');
+  else if (sayfa === 'tekrar') (TEKRAR_KATLARI[id] ? tekrarCiz(id) : tekrarAnaCiz());
   else if (sayfa === 'takip') takipCiz();
   else if (sayfa === 'ayarlar') ayarlarCiz(); // ayarlar.js
   else if (sayfa === 'spor') listeCiz('spor');
@@ -223,13 +225,16 @@ function sporGruplari(konular) {
   return gruplar.join('');
 }
 
+// ✕ düğmeli konu kartı (listeden çıkarmak için); eylem: data-cikar değeri ("unutulan" / "acilan")
+function cikarilabilirKart(konu, ek, eylem, etiket) {
+  return konuKarti(konu, ek).replace(/<\/li>$/,
+    `<button class="cikar-dugme" data-cikar="${eylem}" data-id="${esc(konu.id)}" aria-label="${etiket}">✕</button></li>`);
+}
+
 function takipCiz() {
   $baslik.textContent = 'Takip';
-  const kayitlar = Object.values(depo.konular).filter(k => k.veri);
-  const yildizli = kayitlar.filter(k => k.yildiz)
+  const yildizli = Object.values(depo.konular).filter(k => k.veri && k.yildiz)
     .sort((a, b) => (b.yildizTarihi || '').localeCompare(a.yildizTarihi || ''));
-  const unutulan = kayitlar.filter(k => k.unutulan && !k.yildiz)
-    .sort((a, b) => (a.sonraki || '').localeCompare(b.sonraki || ''));
   const sonraki = k => (k.sonraki ? `<div class="takip-bilgi">Sonraki tekrar: ${gunYaz(k.sonraki)}</div>` : '');
 
   $icerik.innerHTML = `
@@ -237,13 +242,6 @@ function takipCiz() {
       ${yildizli.length
         ? `<ul class="liste">${yildizli.map(k => konuKarti(k.veri, sonraki(k))).join('')}</ul>`
         : '<p class="bos-satir">Yıldızladığın konular burada durur ve yıldızı kaldırana kadar düzenli olarak tekrara gelir.</p>'}
-    </section>
-    <section class="bolum"><h3>Hatırlayamadıkların</h3>
-      ${unutulan.length
-        ? `<ul class="liste">${unutulan.map(k => konuKarti(k.veri,
-            `<div class="takip-bilgi">Sonraki tekrar: ${gunYaz(k.sonraki)} · ${k.seri || 0}/${UNUTULAN_CIKIS} hatırlandı</div>`)
-            .replace('</li>', `<button class="cikar-dugme" data-cikar="${esc(k.veri.id)}" aria-label="Listeden çıkar">✕</button></li>`)).join('')}</ul>`
-        : `<p class="bos-satir">Tekrarda "Hatırlayamadım" dediğin konular buraya gelir; üst üste ${UNUTULAN_CIKIS} kez hatırlayınca çıkar.</p>`}
     </section>`;
 }
 
@@ -264,7 +262,24 @@ function haberSatiri(h) {
     ${h.kaynak ? `<span class="kaynak"> · ${esc(h.kaynak)}</span>` : ''}`;
 }
 
-function detayCiz(id) {
+// Haberin metni: uzun basınca kısalır ("Devamını oku" çıkar), yeniden uzun basınca açılır
+function haberMetni(konu) {
+  if (!konu.metin?.length) {
+    const ozetKaynagi = konu.ozet_kaynagi === 'başlıklar'
+      ? 'Haber başlıklarından derlendi'
+      : `Kaynak: ${esc(konu.ozet_kaynagi)}`;
+    return `<p class="ozet">${esc(konu.ozet)}</p><div class="kaynak-notu">${ozetKaynagi}</div>`;
+  }
+  return `<div class="haber-metni" data-uzun-bas>
+      ${konu.metin.map(p => `<p>${esc(p)}</p>`).join('')}
+    </div>
+    <button type="button" class="devami-dugme" data-eylem="devami">Devamını oku ▾</button>
+    <div class="kaynak-notu">Kaynak: ${esc(konu.metin_kaynagi)}
+      ${konu.metin_link ? ` · <a href="${guvenliAdres(konu.metin_link)}" target="_blank" rel="noopener">sayfada aç</a>` : ''}
+      · <span class="ipucu-yazi">Kısaltmak için metne basılı tut</span></div>`;
+}
+
+function detayCiz(id, tekrardan = false) {
   const konu = konuBul(id);
   $baslik.textContent = 'Konu';
   if (!konu) {
@@ -275,15 +290,15 @@ function detayCiz(id) {
   }
   const k = kayit(konu);
   k.sonAcilma = new Date().toISOString();
+  if (tekrardan) k.tekrardanAcilma = k.sonAcilma;
   depoYaz();
 
-  const ozetKaynagi = konu.ozet_kaynagi === 'başlıklar'
-    ? 'Haber başlıklarından derlendi'
-    : `Kaynak: ${esc(konu.ozet_kaynagi)}`;
   const takipNotu = k.unutulan && k.sonraki
     ? `<span>Hatırlayamadıkların listesinde · sonraki tekrar ${gunYaz(k.sonraki)}</span>` : '';
 
   $icerik.innerHTML = `<article class="detay">
+    ${konu.gorsel ? `<img class="haber-gorseli" src="${guvenliAdres(konu.gorsel)}" alt="" referrerpolicy="no-referrer"
+      onerror="this.remove()">` : ''}
     <div class="detay-ust">
       <h2 class="konu-basligi">${esc(konu.baslik)}</h2>
       ${yildizDugmesi(konu.id)}
@@ -291,8 +306,7 @@ function detayCiz(id) {
     <div class="meta">${kategori(konu) === 'spor' ? `<span class="etiket">${esc(konu.secim || 'Spor')}</span>` : ''}
       ${konu.tur === 'trends' ? '<span class="etiket">Trends</span>' : ''}
       ${konu.tarih ? `<span>${tarihYaz(konu.tarih)}</span>` : ''}${takipNotu}</div>
-    <p class="ozet">${esc(konu.ozet)}</p>
-    <div class="kaynak-notu">${ozetKaynagi}</div>
+    ${haberMetni(konu)}
 
     <section class="bolum"><h3>Sohbette sor</h3><div class="soru">${esc(konu.soru)}</div></section>
 
@@ -311,19 +325,58 @@ function detayCiz(id) {
 
 // ---------- tekrar ----------
 
-function tekrarCiz() {
+// Tekrar sekmesinin ana sayfası: gündem ve spor tekrarı ayrı, altında
+// hatırlayamadıkların ve tekrar kartından açtıkların
+function tekrarAnaCiz() {
   $baslik.textContent = 'Tekrar';
-  if (!tekrarOturumu || (tekrarOturumu.sira >= tekrarOturumu.kuyruk.length && bekleyenTekrar().length)) {
-    tekrarOturumu = { kuyruk: bekleyenTekrar(), sira: 0, acik: false, sonuclar: {} };
+  const kayitlar = Object.values(depo.konular).filter(k => k.veri);
+  const yaklasan = kayitlar.filter(k => takipte(k) && k.sonraki && k.sonraki > bugun())
+    .map(k => k.sonraki).sort()[0];
+  const katBolumu = (kat, ad, ilk) => {
+    const n = bekleyenTekrar(kat).length;
+    return `<section class="bolum${ilk ? ' ilk' : ''}"><h3>${ad} tekrarı</h3>
+      <div class="ayar-karti tekrar-satiri">
+        <span>${n ? `<strong>${n}</strong> konu bekliyor` : 'Bekleyen konu yok'}</span>
+        ${n ? `<a class="dugme ana" href="#/tekrar/${kat}">Başla</a>` : ''}
+      </div></section>`;
+  };
+  const unutulan = kayitlar.filter(k => k.unutulan)
+    .sort((a, b) => (a.sonraki || '').localeCompare(b.sonraki || ''));
+  const acilan = kayitlar.filter(k => k.tekrardanAcilma)
+    .sort((a, b) => b.tekrardanAcilma.localeCompare(a.tekrardanAcilma));
+
+  $icerik.innerHTML = `
+    ${katBolumu('gundem', 'Gündem', true)}
+    ${katBolumu('spor', 'Spor')}
+    ${yaklasan ? `<p class="kaynak-notu">Sıradaki tekrar: <strong>${gunYaz(yaklasan)}</strong></p>` : ''}
+    <section class="bolum"><h3>Hatırlayamadıkların</h3>
+      ${unutulan.length
+        ? `<ul class="liste">${unutulan.map(k => cikarilabilirKart(k.veri,
+            `<div class="takip-bilgi">Sonraki tekrar: ${gunYaz(k.sonraki)} · ${k.seri || 0}/${UNUTULAN_CIKIS} hatırlandı</div>`,
+            'unutulan', 'Tekrardan çıkar')).join('')}</ul>`
+        : `<p class="bos-satir">Tekrarda "Hatırlayamadım" dediğin konular buraya gelir; üst üste ${UNUTULAN_CIKIS} kez hatırlayınca çıkar.</p>`}
+    </section>
+    <section class="bolum"><h3>Tekrardan açtıkların</h3>
+      ${acilan.length
+        ? `<ul class="liste">${acilan.map(k => cikarilabilirKart(k.veri,
+            `<div class="takip-bilgi">Açıldı: ${esc(saatYaz(k.tekrardanAcilma))}</div>`,
+            'acilan', 'Bu listeden çıkar')).join('')}</ul>`
+        : '<p class="bos-satir">Tekrar kartında "Konunun tamamını aç" ile açtığın konular burada durur.</p>'}
+    </section>
+    <p class="kaynak-notu">Yalnızca yıldızladığın konular tekrara gelir.</p>`;
+}
+
+function tekrarCiz(kat) {
+  $baslik.textContent = `${TEKRAR_KATLARI[kat]} tekrarı`;
+  if (!tekrarOturumu || tekrarOturumu.kat !== kat
+      || (tekrarOturumu.sira >= tekrarOturumu.kuyruk.length && bekleyenTekrar(kat).length)) {
+    tekrarOturumu = { kat, kuyruk: bekleyenTekrar(kat), sira: 0, acik: false, sonuclar: {} };
   }
   const o = tekrarOturumu;
 
   if (!o.kuyruk.length) {
-    const yaklasan = Object.values(depo.konular).filter(k => takipte(k) && k.sonraki)
-      .map(k => k.sonraki).sort()[0];
-    $icerik.innerHTML = `<div class="bos">Şu an tekrar edilecek konu yok.<br>
-      Gündemden okuduğun konular akşam burada tekrar kartı olur.
-      ${yaklasan ? `<br><br>Sıradaki takip tekrarı: <strong>${gunYaz(yaklasan)}</strong>` : ''}</div>`;
+    $icerik.innerHTML = `<div class="bos">Şu an tekrar edilecek ${TEKRAR_KATLARI[kat].toLocaleLowerCase('tr')} konusu yok.<br>
+      Yıldızladığın konular burada tekrar kartı olur.<br><br><a href="#/tekrar">Tekrar sayfasına dön</a></div>`;
     return;
   }
 
@@ -331,17 +384,17 @@ function tekrarCiz() {
     const sonuclar = Object.values(o.sonuclar);
     const hatirlanan = sonuclar.filter(Boolean).length;
     $icerik.innerHTML = `<div class="sonuc-ozeti">
-      <p>Bugünkü tekrar bitti.</p>
+      <p>${TEKRAR_KATLARI[kat]} tekrarı bitti.</p>
       ${sonuclar.length ? `<div class="sayilar">${hatirlanan} / ${sonuclar.length}</div><p>konuyu hatırladın.</p>` : ''}
-      ${sonuclar.length > hatirlanan ? '<p>Hatırlayamadıkların Takip bölümüne eklendi.</p>' : ''}
-      ${bugunAcilanlar().length ? '<div class="dugmeler"><button class="dugme" data-eylem="yeniden">Bugün açtıklarımı yeniden tekrarla</button></div>' : ''}
+      ${sonuclar.length > hatirlanan ? '<p>Hatırlayamadıkların Tekrar sayfasındaki listeye eklendi.</p>' : ''}
+      <div class="dugmeler"><a class="dugme" href="#/tekrar">Tekrar sayfasına dön</a></div>
     </div>`;
     return;
   }
 
   const id = o.kuyruk[o.sira];
   const konu = konuBul(id);
-  if (!konu) { o.sira++; return tekrarCiz(); }
+  if (!konu) { o.sira++; return tekrarCiz(kat); }
   const yuzde = Math.round((o.sira / o.kuyruk.length) * 100);
   const sonGecmis = (konu.gecmis || []).slice(-3);
   const neden = tekrarNedeni(id);
@@ -359,7 +412,7 @@ function tekrarCiz() {
           ${sonGecmis.length ? `<section class="bolum"><h3>Öncesinde</h3><ul>${sonGecmis.map(h =>
             `<li>${tarihYaz(h.tarih)}: ${esc(h.baslik)}</li>`).join('')}</ul></section>` : ''}
           <section class="bolum"><h3>Sohbette sor</h3><div class="soru">${esc(konu.soru)}</div></section>
-          <p class="kaynak-notu"><a href="#/konu/${encodeURIComponent(id)}">Konunun tamamını aç</a></p>
+          <p class="kaynak-notu"><a href="#/konu/${encodeURIComponent(id)}/tekrar">Konunun tamamını aç</a></p>
         </div>
         <div class="dugmeler">
           <button class="dugme kotu" data-eylem="unuttum">Hatırlayamadım</button>
@@ -368,18 +421,21 @@ function tekrarCiz() {
       : `<div class="ipucu">Önce aklından anlatmaya çalış:
           <ul><li>Ne oldu?</li><li>Kimler var?</li><li>Öncesinde ne olmuştu?</li></ul></div>
         <div class="dugmeler"><button class="dugme ana" data-eylem="goster">Cevabı göster</button></div>`}
+      <button type="button" class="metin-dugme" data-eylem="tekrardan-cikar">Bu konuyu tekrardan çıkar</button>
     </div>`;
 }
 
+// hatirladi: true / false; null = konu tekrardan çıkarıldı
 function tekrarSonucu(hatirladi) {
   const o = tekrarOturumu;
   const id = o.kuyruk[o.sira];
   const konu = konuBul(id);
   if (konu) {
-    sonucuIsle(kayit(konu), hatirladi);
+    if (hatirladi === null) tekrardanCikar(kayit(konu));
+    else sonucuIsle(kayit(konu), hatirladi);
     depoYaz();
   }
-  o.sonuclar[id] = hatirladi;
+  if (hatirladi !== null) o.sonuclar[id] = hatirladi;
   o.sira++;
   o.acik = false;
   ciz();
@@ -407,19 +463,109 @@ document.addEventListener('click', e => {
   }
   const cikar = e.target.closest('[data-cikar]');
   if (cikar) {
-    const k = depo.konular[cikar.dataset.cikar];
-    if (k) { takiptenCikar(k); depoYaz(); ciz(); }
+    const k = depo.konular[cikar.dataset.id];
+    if (!k) return;
+    if (cikar.dataset.cikar === 'unutulan') {
+      if (!confirm(`"${k.veri?.baslik || 'Bu konu'}" tekrardan çıkarılsın mı?`)) return;
+      tekrardanCikar(k);
+    } else {
+      k.tekrardanAcilma = null;
+    }
+    depoYaz();
+    ciz();
     return;
   }
   const eylem = e.target.closest('[data-eylem]')?.dataset.eylem;
   if (eylem === 'goster') { tekrarOturumu.acik = true; ciz(); }
   else if (eylem === 'hatirladim') tekrarSonucu(true);
   else if (eylem === 'unuttum') tekrarSonucu(false);
-  else if (eylem === 'yeniden') {
-    tekrarOturumu = { kuyruk: bugunAcilanlar(), sira: 0, acik: false, sonuclar: {} };
-    ciz();
+  else if (eylem === 'tekrardan-cikar') {
+    if (confirm('Bu konu tekrardan çıkarılsın mı? (Yıldızı da kalkar.)')) tekrarSonucu(null);
+  } else if (eylem === 'devami') {
+    document.querySelector('.haber-metni')?.classList.remove('kisa');
   }
 });
+
+// Haber metnine uzun basınca metin kısalır / açılır
+let uzunBasma = null;
+document.addEventListener('pointerdown', e => {
+  const metin = e.target.closest('[data-uzun-bas]');
+  if (!metin) return;
+  const { clientX: x, clientY: y } = e;
+  uzunBasma = { x, y, zaman: setTimeout(() => {
+    uzunBasma = null;
+    metin.classList.toggle('kisa');
+    navigator.vibrate?.(20);
+    if (metin.classList.contains('kisa')) metin.scrollIntoView({ block: 'nearest' });
+  }, 550) };
+});
+const uzunBasmaIptal = () => { if (uzunBasma) { clearTimeout(uzunBasma.zaman); uzunBasma = null; } };
+document.addEventListener('pointerup', uzunBasmaIptal);
+document.addEventListener('pointercancel', uzunBasmaIptal);
+document.addEventListener('pointermove', e => {
+  if (uzunBasma && Math.hypot(e.clientX - uzunBasma.x, e.clientY - uzunBasma.y) > 10) uzunBasmaIptal();
+});
+document.addEventListener('contextmenu', e => { if (e.target.closest('[data-uzun-bas]')) e.preventDefault(); });
+
+// ---------- haberleri yenile ----------
+// Anahtar kayıtlıysa GitHub'daki görevi başlatır (5-10 dk) ve yeni gundem.json gelene kadar
+// yarım dakikada bir bakar. Anahtar yoksa sadece sitedeki son hâli yeniden yükler.
+
+const YENILEME_BEKLEME = 30 * 1000;
+const YENILEME_EN_FAZLA = 20 * 60 * 1000;
+let yenileniyor = false;
+
+function durumGoster(metin, sure = 6000) {
+  const $d = document.getElementById('durum');
+  $d.textContent = metin;
+  $d.hidden = !metin;
+  clearTimeout(durumGoster.zaman);
+  if (metin && sure) durumGoster.zaman = setTimeout(() => { $d.hidden = true; }, sure);
+}
+
+async function haberleriYenile() {
+  if (yenileniyor) { durumGoster('Haberler hâlâ toplanıyor, hazır olunca kendiliğinden yenilenecek.'); return; }
+  const $d = document.getElementById('yenile');
+  const onceki = gundem?.olusturulma;
+  if (!anahtarOku()) {
+    await gundemYukle();
+    durumGoster(gundem?.olusturulma !== onceki ? 'Haberler yenilendi.'
+      : 'Sitedeki en son gündem yüklendi. Haberleri şimdi yeniden toplatmak için Ayarlar\'a GitHub anahtarı eklemelisin.', 8000);
+    return;
+  }
+  yenileniyor = true;
+  $d.classList.add('donuyor');
+  try {
+    await ghIstek(`actions/workflows/${GH_GOREV}/dispatches`, { method: 'POST', body: JSON.stringify({ ref: 'main' }) });
+    durumGoster('Haberler toplanıyor. 5-10 dakika sürer; hazır olunca kendiliğinden yenilenir.', 8000);
+    const baslangic = Date.now();
+    while (Date.now() - baslangic < YENILEME_EN_FAZLA) {
+      await new Promise(r => setTimeout(r, YENILEME_BEKLEME));
+      try {
+        const yanit = await fetch('gundem.json', { cache: 'no-store' });
+        const yeni = yanit.ok ? await yanit.json() : null;
+        if (yeni && yeni.olusturulma !== onceki) {
+          gundem = yeni;
+          gundemHatasi = null;
+          document.getElementById('guncelleme').textContent = `Güncelleme: ${saatYaz(gundem.olusturulma)}`;
+          ciz();
+          durumGoster('Haberler yenilendi.');
+          return;
+        }
+      } catch (e) { /* ağ kesintisi: sonraki denemede */ }
+    }
+    durumGoster('Haberler 20 dakikada gelmedi. Biraz sonra uygulamayı kapatıp açmayı dene.', 8000);
+  } catch (e) {
+    durumGoster(e.durum === 403 || e.durum === 404
+      ? 'Haberler toplatılamadı: anahtarda "Actions: Read and write" izni yok olabilir.'
+      : ghHataMetni(e, false), 10000);
+  } finally {
+    yenileniyor = false;
+    $d.classList.remove('donuyor');
+  }
+}
+
+document.getElementById('yenile').addEventListener('click', haberleriYenile);
 
 $geri.addEventListener('click', () => {
   if (history.length > 1) history.back();

@@ -2,7 +2,7 @@
 // yazılır, ağ yoksa son kaydedilen kullanılır (böylece güncellemeler hemen görünür).
 // Kişi fotoğrafları görüldükçe önbelleğe alınır.
 
-const SURUM = 'gundem-v4';
+const SURUM = 'gundem-v5';
 const KABUK = ['./', 'index.html', 'app.js', 'ayarlar.js', 'style.css', 'manifest.webmanifest',
   'ikon.svg', 'ikon-192.png', 'ikon-512.png'];
 const RESIM_ONBELLEGI = 'gundem-resimler';
@@ -39,7 +39,9 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  if (istek.destination === 'image') {
+  // yalnızca Wikipedia kişi fotoğrafları önbelleğe alınır; haber görselleri çok olduğundan
+  // (ve her biri önbellekte büyük yer kapladığından) doğrudan ağdan gelir
+  if (istek.destination === 'image' && adres.hostname.endsWith('wikimedia.org')) {
     e.respondWith(
       caches.open(RESIM_ONBELLEGI).then(c => c.match(istek).then(kayitli => kayitli ||
         fetch(istek).then(yanit => { c.put(istek, yanit.clone()); return yanit; })))

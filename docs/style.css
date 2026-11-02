@@ -260,3 +260,51 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 .yardim li { margin-bottom: 6px; }
 .yardim code { font-size: 13px; background: var(--zemin); padding: 1px 5px; border-radius: 4px; }
 .anahtar-durumu .tarih { font-weight: 400; color: var(--soluk); }
+
+/* ---------- haber metni, görsel, yenile ---------- */
+
+.yenile-dugme { background: none; border: 0; font-size: 22px; }
+.yenile-dugme.donuyor { animation: don 1.2s linear infinite; color: var(--vurgu); }
+@keyframes don { to { transform: rotate(360deg); } }
+.durum {
+  position: sticky; top: 53px; z-index: 2;
+  background: var(--vurgu-acik); color: var(--yazi);
+  padding: 10px 16px; font-size: 14px; border-bottom: 1px solid var(--cizgi);
+}
+
+.haber-gorseli {
+  display: block; width: 100%; max-height: 320px; object-fit: cover;
+  border-radius: 12px; margin-bottom: 14px; background: var(--cizgi);
+}
+.haber-metni { margin-top: 12px; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.haber-metni p { margin: 0 0 12px; font-size: 17px; }
+.haber-metni.kisa {
+  max-height: 9.5em; overflow: hidden;
+  -webkit-mask-image: linear-gradient(#000 60%, transparent);
+  mask-image: linear-gradient(#000 60%, transparent);
+}
+.devami-dugme { display: none; background: none; border: 0; padding: 4px 0 8px; color: var(--vurgu); font-weight: 600; }
+.haber-metni.kisa + .devami-dugme { display: block; }
+.ipucu-yazi { font-style: italic; }
+
+/* ---------- tekrar sayfası ---------- */
+
+.tekrar-satiri { display: flex; align-items: center; gap: 12px; }
+.tekrar-satiri span { flex: 1; }
+.tekrar-satiri .dugme { flex: none; text-decoration: none; text-align: center; }
+.sonuc-ozeti .dugme { text-decoration: none; text-align: center; }
+.metin-dugme {
+  display: block; margin: 16px auto 0; background: none; border: 0;
+  color: var(--soluk); font-size: 13px; text-decoration: underline;
+}
+
+/* ---------- ayarlar listesi ---------- */
+
+.ayar-liste { list-style: none; margin: 0; padding: 0; border: 1px solid var(--cizgi); border-radius: 12px; background: var(--kart); }
+.ayar-liste > li + li { border-top: 1px solid var(--cizgi); }
+.ayar-satiri { display: flex; align-items: center; gap: 8px; padding: 10px 10px 10px 14px; }
+.ayar-satiri .ad { flex: 1; min-width: 0; }
+.ayar-satiri .ad small { display: block; color: var(--soluk); font-size: 13px; }
+.duzen-alani { padding: 0 14px 14px; }
+.duzen-alani .dugmeler { margin-top: 14px; }
+.kalem-dugme[aria-expanded="true"] { background: var(--vurgu-acik); border-color: var(--vurgu); }

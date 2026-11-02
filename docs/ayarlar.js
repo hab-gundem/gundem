@@ -18,8 +18,9 @@ const SINIRLAR = {
 };
 
 // {veri, sha, yukleniyor, hata, mesaj: {tur, metin}, kaydediliyor, degisti, yenile}
+// duzenlenen: düzenleme alanı açık olan seçimin sırası (yoksa null); anahtarAcik: anahtar düzenleme alanı
 const ayar = { veri: null, sha: null, yukleniyor: false, hata: null, mesaj: null,
-  kaydediliyor: false, degisti: false, yenile: true };
+  kaydediliyor: false, degisti: false, yenile: true, duzenlenen: null, anahtarAcik: false };
 
 function anahtarOku() {
   try { return localStorage.getItem(ANAHTAR_DEPOSU) || ''; } catch (e) { return ''; }
@@ -233,17 +234,20 @@ function metinAlani(etiket, alan, deger, aciklama, i, yerTutucu = '') {
     ${aciklama ? `<small>${aciklama}</small>` : ''}</label>`;
 }
 
+// Seçimler liste olarak görünür; ✎ ile o seçimin düzenleme alanı açılır
 function secimKarti(s, i, toplam) {
   const baslikta = Array.isArray(s.baslikta) ? s.baslikta.join(', ') : (s.baslikta || '');
-  return `<li class="secim-karti">
-    <div class="secim-ust">
-      <strong>${i + 1}. ${esc(s.ad || 'Yeni seçim')}</strong>
+  const acik = ayar.duzenlenen === i;
+  return `<li>
+    <div class="ayar-satiri">
+      <span class="ad"><b>${i + 1}. ${esc(s.ad || 'Yeni seçim')}</b>${s.dal ? `<small>${esc(s.dal)}</small>` : ''}</span>
       <span class="secim-dugmeleri">
         <button type="button" data-ayar="yukari" data-i="${i}" ${i === 0 ? 'disabled' : ''} aria-label="Yukarı taşı">↑</button>
         <button type="button" data-ayar="asagi" data-i="${i}" ${i === toplam - 1 ? 'disabled' : ''} aria-label="Aşağı taşı">↓</button>
-        <button type="button" data-ayar="sil" data-i="${i}" class="sil" aria-label="Sil">Sil</button>
+        <button type="button" data-ayar="duzenle" data-i="${i}" class="kalem-dugme" aria-expanded="${acik}" aria-label="Düzenle">✎</button>
       </span>
     </div>
+    ${acik ? `<div class="duzen-alani">
     ${metinAlani('Ad', 'ad', s.ad, 'Spor sekmesinde başlık olarak görünür.', i, 'ör. Takım adı')}
     ${metinAlani('Dal', 'dal', s.dal, 'Adın yanındaki açıklama (isteğe bağlı).', i, 'ör. Futbol')}
     ${metinAlani('Arama ifadesi', 'arama', s.arama,
@@ -254,18 +258,29 @@ function secimKarti(s, i, toplam) {
       ${sayiAlani('Kaç günlük', 'gun', s.gun, '', SINIRLAR.gun, i)}
       ${sayiAlani('En fazla konu', 'adet', s.adet, '', SINIRLAR.adet, i)}
     </div>
+    <div class="dugmeler">
+      <button type="button" class="dugme kotu" data-ayar="sil" data-i="${i}">Sil</button>
+      <button type="button" class="dugme" data-ayar="duzenle" data-i="${i}">Kapat</button>
+    </div>
+    </div>` : ''}
   </li>`;
 }
 
 function anahtarBolumu() {
   const kayitli = !!anahtarOku();
   const bilgi = anahtarBilgisi();
+  const acik = ayar.anahtarAcik || !kayitli;
   const durum = kayitli
-    ? `✓ Kayıtlı anahtar: <b>${esc(bilgi.ad || 'adsız')}</b>${bilgi.tarih ? ` <span class="tarih">(kaydedildi: ${esc(tarihYaz(bilgi.tarih))})</span>` : ''}`
-    : 'Kaydetmek için bir kez anahtar oluşturup buraya yapıştırman gerekiyor.';
+    ? `<b>✓ ${esc(bilgi.ad || 'adsız')}</b>${bilgi.tarih ? `<small>Kaydedildi: ${esc(tarihYaz(bilgi.tarih))}</small>` : ''}`
+    : '<b>Anahtar yok</b><small>Kaydetmek için bir kez anahtar oluşturup buraya yapıştırman gerekiyor.</small>';
   return `<section class="bolum"><h3>GitHub anahtarı</h3>
-    <div class="ayar-karti">
-      <p class="anahtar-durumu ${kayitli ? 'iyi' : ''}">${durum}</p>
+    <ul class="ayar-liste"><li>
+    <div class="ayar-satiri">
+      <span class="ad anahtar-durumu ${kayitli ? 'iyi' : ''}">${durum}</span>
+      ${kayitli ? `<span class="secim-dugmeleri"><button type="button" data-ayar="anahtar-duzenle" class="kalem-dugme"
+        aria-expanded="${acik}" aria-label="Düzenle">✎</button></span>` : ''}
+    </div>
+    ${acik ? `<div class="duzen-alani">
       <label class="alan"><span>Anahtarın adı</span>
         <input type="text" id="anahtar-adi" value="${esc(bilgi.ad || '')}" placeholder="ör. gundem-ayarlar" autocomplete="off" spellcheck="false">
         <small>Kendin hatırlaman için; GitHub'da verdiğin adı yazabilirsin.</small></label>
@@ -293,7 +308,8 @@ function anahtarBolumu() {
         <p>Anahtar yalnızca bu telefonda saklanır ve sadece <code>gundem</code> deposuna yazabilir.
           Telefonunu kaybedersen GitHub → Settings → Developer settings → Fine-grained tokens'tan silebilirsin.</p>
       </details>
-    </div>
+    </div>` : ''}
+    </li></ul>
   </section>`;
 }
 
@@ -318,7 +334,7 @@ function ayarlarCiz() {
     </section>
     <section class="bolum"><h3>Spor seçimleri</h3>
       ${v.spor_secimleri.length
-        ? `<ul class="liste">${v.spor_secimleri.map((s, i) => secimKarti(s, i, v.spor_secimleri.length)).join('')}</ul>`
+        ? `<ul class="ayar-liste">${v.spor_secimleri.map((s, i) => secimKarti(s, i, v.spor_secimleri.length)).join('')}</ul>`
         : '<p class="bos-satir">Henüz seçim yok. Spor sekmesinde sadece genel spor gündemi görünür.</p>'}
       <button type="button" class="dugme ekle-dugme" data-ayar="ekle">+ Seçim ekle</button>
     </section>
@@ -344,7 +360,7 @@ document.addEventListener('input', e => {
   const hedef = g.dataset.i === undefined ? ayar.veri : ayar.veri.spor_secimleri[Number(g.dataset.i)];
   hedef[g.dataset.alan] = g.value;
   if (g.dataset.alan === 'ad') {
-    const baslik = g.closest('.secim-karti')?.querySelector('.secim-ust strong');
+    const baslik = g.closest('li')?.querySelector('.ayar-satiri .ad b');
     if (baslik) baslik.textContent = `${Number(g.dataset.i) + 1}. ${g.value || 'Yeni seçim'}`;
   }
   if (!ayar.degisti) {
@@ -366,33 +382,44 @@ document.addEventListener('click', e => {
     const deger = document.getElementById('anahtar-girisi').value.trim();
     const ad = document.getElementById('anahtar-adi').value.trim();
     if (!deger && !anahtarOku()) return;
-    ayar.mesaj = anahtarYaz(deger || null, ad)
+    const oldu = anahtarYaz(deger || null, ad);
+    ayar.mesaj = oldu
       ? { tur: 'iyi', metin: deger ? 'Anahtar kaydedildi.' : 'Anahtarın adı kaydedildi.' }
       : { tur: 'kotu', metin: 'Anahtar bu tarayıcıda saklanamadı (gizli pencere olabilir).' };
+    if (oldu) ayar.anahtarAcik = false;
   } else if (eylem === 'anahtar-sil') {
     if (!confirm('Anahtar bu telefondan silinsin mi?')) return;
     anahtarYaz('');
+    ayar.anahtarAcik = false;
     ayar.mesaj = { tur: 'iyi', metin: 'Anahtar silindi.' };
+  } else if (eylem === 'anahtar-duzenle') {
+    ayar.anahtarAcik = !ayar.anahtarAcik;
+  } else if (eylem === 'duzenle') {
+    ayar.duzenlenen = ayar.duzenlenen === i ? null : i;
   } else if (eylem === 'vazgec') {
     if (ayar.degisti && !confirm('Kaydedilmemiş değişiklikler geri alınsın mı?')) return;
     ayar.veri = null;
     ayar.mesaj = null;
+    ayar.duzenlenen = null;
     ayarlariYukle();
     return;
   } else if (eylem === 'ekle') {
     liste.push({ ad: '', dal: '' });
+    ayar.duzenlenen = liste.length - 1;
     ayar.degisti = true;
     ayarlarCiz();
-    const kartlar = document.querySelectorAll('.secim-karti');
-    kartlar[kartlar.length - 1]?.querySelector('input')?.focus();
+    document.querySelector('.duzen-alani input')?.focus();
     return;
   } else if (eylem === 'sil') {
     if (!confirm(`"${liste[i].ad || 'Yeni seçim'}" silinsin mi?`)) return;
     liste.splice(i, 1);
+    ayar.duzenlenen = null;
     ayar.degisti = true;
   } else if (eylem === 'yukari' || eylem === 'asagi') {
     const j = eylem === 'yukari' ? i - 1 : i + 1;
     [liste[i], liste[j]] = [liste[j], liste[i]];
+    if (ayar.duzenlenen === i) ayar.duzenlenen = j;
+    else if (ayar.duzenlenen === j) ayar.duzenlenen = i;
     ayar.degisti = true;
   }
   ayarlarCiz();
