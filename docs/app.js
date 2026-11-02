@@ -19,7 +19,7 @@ let gundem = null;        // {olusturulma, konular}
 let gundemHatasi = null;
 let depo = depoOku();     // {konular: {id: {veri, sonAcilma, tekrardanAcilma, yildiz, yildizTarihi, unutulan, seri, adim, sonraki, tekrarlar}}}
 let tekrarOturumu = null; // {kat, kuyruk: [id], sira, acik, sonuclar: {id: bool}}
-const TEKRAR_KATLARI = { gundem: 'Gündem', spor: 'Spor' };
+const TEKRAR_KATLARI = { gundem: 'Gündem', spor: 'Spor', hafiza: 'Hafıza' };
 
 // ---------- depo ----------
 
@@ -31,8 +31,9 @@ function depoOku() {
   return { konular: {} };
 }
 
+// yazılamazsa (yer doldu, özel pencere vb.) false döner
 function depoYaz() {
-  try { localStorage.setItem(DEPO_ANAHTARI, JSON.stringify(depo)); } catch (e) { /* özel pencere vb. */ }
+  try { localStorage.setItem(DEPO_ANAHTARI, JSON.stringify(depo)); return true; } catch (e) { return false; }
 }
 
 function kayit(konu) {
@@ -42,7 +43,8 @@ function kayit(konu) {
 }
 
 function konuBul(id) {
-  return (gundem && gundem.konular.find(k => k.id === id)) || depo.konular[id]?.veri || null;
+  return (gundem && gundem.konular.find(k => k.id === id)) || depo.konular[id]?.veri
+    || (gundem?.hafiza || []).find(k => k.id === id) || null;
 }
 
 // ---------- yardımcılar ----------
@@ -99,6 +101,7 @@ function bekleyenTekrar(kat) {
 function tekrarNedeni(id) {
   const k = depo.konular[id];
   if (k?.unutulan) return `Hatırlayamadığın · ${k.seri || 0}/${UNUTULAN_CIKIS} hatırlandı`;
+  if (k?.veri?.kategori === 'hafiza') return kartEtiketleri(k.veri).join(' · ');
   if (k?.yildiz) return 'Yıldızlı';
   return '';
 }
@@ -123,6 +126,7 @@ function yildizDegistir(k) {
   k.yildiz = !k.yildiz;
   k.yildizTarihi = k.yildiz ? new Date().toISOString() : null;
   if (k.yildiz && !k.sonraki) { k.sonraki = gunEkle(bugun(), ARALIKLAR[0]); k.adim = k.adim || 0; }
+  if (k.yildiz && k.veri?.kategori === 'hafiza') k.kaydedildi = true; // hafıza kartı kendi bölümüne girer
   if (!takipte(k)) k.sonraki = null;
 }
 
@@ -148,7 +152,7 @@ const $geri = document.getElementById('geri');
 function ciz() {
   let [, sayfa = '', id, ek] = location.hash.split('/');
   if (sayfa === 'yildizli') sayfa = 'takip'; // eski adres
-  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar' && !(sayfa === 'tekrar' && id);
+  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar' && !((sayfa === 'tekrar' || sayfa === 'hafiza') && id);
   document.querySelectorAll('.alt a').forEach(a => {
     a.classList.toggle('etkin', a.dataset.sayfa === (sayfa || 'gundem'));
   });
@@ -156,6 +160,7 @@ function ciz() {
   else if (sayfa === 'tekrar') (TEKRAR_KATLARI[id] ? tekrarCiz(id) : tekrarAnaCiz());
   else if (sayfa === 'takip') takipCiz();
   else if (sayfa === 'ayarlar') ayarlarCiz(); // ayarlar.js
+  else if (sayfa === 'hafiza') hafizaCiz(id, ek, location.hash.split('/')[4]); // hafiza.js
   else if (sayfa === 'spor') listeCiz('spor');
   else listeCiz('gundem');
   rozetGuncelle();
@@ -175,13 +180,15 @@ function yildizDugmesi(id) {
 }
 
 function konuKarti(konu, ek = '') {
-  const okundu = !!depo.konular[konu.id]?.sonAcilma;
-  const etiket = konu.tur === 'trends' ? '<span class="etiket">Trends</span>' : '';
+  const hafizaMi = kategori(konu) === 'hafiza';
+  const okundu = !hafizaMi && !!depo.konular[konu.id]?.sonAcilma;
+  const etiket = konu.tur === 'trends' ? '<span class="etiket">Trends</span>'
+    : hafizaMi ? `<span class="etiket">${esc(hafizaBolumu(konu).ad)}</span>` : '';
   const kisiler = konu.kisiler?.length ? `<span>${konu.kisiler.map(p => esc(p.ad)).join(', ')}</span>` : '';
   return `<li class="konu-karti${okundu ? ' okundu' : ''}">
-    <a href="#/konu/${encodeURIComponent(konu.id)}">
+    <a href="${hafizaMi ? '#/hafiza/k/' : '#/konu/'}${encodeURIComponent(konu.id)}">
       <h2>${esc(konu.baslik)}</h2>
-      <p>${esc(konu.ozet)}</p>
+      <p>${esc(hafizaMi ? (konu.metin || [])[0] : konu.ozet)}</p>
       <div class="meta">${etiket}${kisiler}${okundu ? '<span>✓ okundu</span>' : ''}</div>
       ${ek}
     </a>
@@ -233,7 +240,7 @@ function cikarilabilirKart(konu, ek, eylem, etiket) {
 
 function takipCiz() {
   $baslik.textContent = 'Takip';
-  const yildizli = Object.values(depo.konular).filter(k => k.veri && k.yildiz)
+  const yildizli = Object.values(depo.konular).filter(k => k.veri && k.yildiz && kategori(k.veri) !== 'hafiza')
     .sort((a, b) => (b.yildizTarihi || '').localeCompare(a.yildizTarihi || ''));
   const sonraki = k => (k.sonraki ? `<div class="takip-bilgi">Sonraki tekrar: ${gunYaz(k.sonraki)}</div>` : '');
 
@@ -348,6 +355,7 @@ function tekrarAnaCiz() {
   $icerik.innerHTML = `
     ${katBolumu('gundem', 'Gündem', true)}
     ${katBolumu('spor', 'Spor')}
+    ${katBolumu('hafiza', 'Hafıza')}
     ${yaklasan ? `<p class="kaynak-notu">Sıradaki tekrar: <strong>${gunYaz(yaklasan)}</strong></p>` : ''}
     <section class="bolum"><h3>Hatırlayamadıkların</h3>
       ${unutulan.length
@@ -405,7 +413,12 @@ function tekrarCiz(kat) {
     <div class="tekrar-karti">
       ${neden ? `<div class="neden">${esc(neden)}</div>` : ''}
       <h2>${esc(konu.baslik)}</h2>
-      ${o.acik ? `<div class="cevap">
+      ${kategori(konu) === 'hafiza' ? `${hafizaTekrarIcerigi(konu, o.acik)}
+        <div class="dugmeler">${o.acik
+          ? `<button class="dugme kotu" data-eylem="unuttum">Hatırlayamadım</button>
+             <button class="dugme iyi" data-eylem="hatirladim">Hatırladım</button>`
+          : '<button class="dugme ana" data-eylem="goster">Cevabı göster</button>'}</div>`
+      : o.acik ? `<div class="cevap">
           <section class="bolum"><h3>Ne oldu</h3><p>${esc(konu.ozet)}</p></section>
           ${konu.kisiler?.length ? `<section class="bolum"><h3>Kimler</h3><ul>${konu.kisiler.map(p =>
             `<li><strong>${esc(p.ad)}</strong>${p.aciklama ? ` — ${esc(p.aciklama)}` : ''}</li>`).join('')}</ul></section>` : ''}
@@ -452,7 +465,7 @@ document.addEventListener('click', e => {
     if (!konu) return;
     yildizDegistir(kayit(konu));
     depoYaz();
-    if (location.hash.startsWith('#/konu/')) {
+    if (/^#\/(konu|hafiza\/k)\//.test(location.hash)) {
       // detayı yeniden çizmeden sadece düğmeyi güncelle (sayfa başa kaymasın)
       yildiz.outerHTML = yildizDugmesi(konu.id);
       rozetGuncelle();

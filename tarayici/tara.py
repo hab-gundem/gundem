@@ -908,6 +908,164 @@ def konu_metni(konu: dict) -> dict:
     return sonuc
 
 
+# ---------- günün hafıza kartları ----------
+# Her gün mitoloji, dini hikâye, yazar sözü ve şiirden birer kart. Kaynaklar Vikipedi,
+# Vikisöz ve Vikikaynak kategorileri; seçim tarihe bağlı, aynı gün aynı kart gelir.
+
+HAFIZA_KATEGORILERI = {
+    "mitoloji": ("tr.wikipedia.org", ["Yunan mitolojisi", "Türk mitolojisi", "Roma mitolojisi",
+                                      "İskandinav mitolojisi", "Mısır mitolojisi"]),
+    "din": ("tr.wikipedia.org", ["Peygamberler", "İslam peygamberleri", "Kur'an'daki kişiler",
+                                 "Tevrat'taki kişiler", "Eski Ahit'teki kişiler"]),
+    "soz": ("tr.wikiquote.org", ["Türk yazarlar", "Yazarlar"]),
+    "siir": ("tr.wikisource.org", ["Yunus Emre", "Şiirler", "Karacaoğlan"]),
+}
+HIKAYE_EN_FAZLA = 6000  # karakter
+
+
+def _site_sorgu(site: str, **parametre) -> dict:
+    parametre.update(format="json", formatversion=2)
+    return getir_json(f"https://{site}/w/api.php?" + urllib.parse.urlencode(parametre))
+
+
+def _kategori_uyeleri(site: str, kategoriler: list[str]) -> list[str]:
+    uyeler: list[str] = []
+    for kat in kategoriler:
+        try:
+            yanit = _site_sorgu(site, action="query", list="categorymembers", cmtitle=f"Kategori:{kat}",
+                                cmnamespace=0, cmlimit=500)
+        except Exception as e:
+            uyari(f"Kategori okunamadı ({site} {kat}): {e}")
+            continue
+        for u in yanit.get("query", {}).get("categorymembers", []):
+            if u["title"] not in uyeler and not u["title"][0].isdigit() and u["title"] != kat:
+                uyeler.append(u["title"])
+    return uyeler
+
+
+def _gunun_sirasi(adaylar: list[str], tur: str, gun: str) -> list[str]:
+    """Adayları tarihe bağlı, her gün değişen bir sıraya koyar."""
+    return sorted(adaylar, key=lambda a: hashlib.sha1(f"{gun}|{tur}|{a}".encode()).hexdigest())
+
+
+def _wiki_yazisi(baslik: str, en_fazla: int = HIKAYE_EN_FAZLA, giris: bool = False) -> dict | None:
+    s = _site_sorgu("tr.wikipedia.org", action="query", titles=baslik, prop="extracts|pageimages|info",
+                    explaintext=1, exsectionformat="plain", pithumbsize=600, inprop="url", redirects=1,
+                    **({"exintro": 1} if giris else {}))
+    sayfa = (s.get("query", {}).get("pages") or [{}])[0]
+    metin = sayfa.get("extract", "")
+    # kaynakça vb. son bölümleri at
+    metin = re.split(r"\n(?:Kaynakça|Ayrıca bakınız|Dış bağlantılar|Notlar)\n", metin)[0]
+    paragraflar, toplam = [], 0
+    for p in (x.strip() for x in metin.split("\n")):
+        if len(p) < 40:
+            continue
+        if toplam + len(p) > en_fazla and paragraflar:
+            break
+        paragraflar.append(p)
+        toplam += len(p)
+    if not paragraflar:
+        return None
+    return {"baslik": sayfa.get("title", baslik), "metin": paragraflar, "link": sayfa.get("fullurl", ""),
+            "gorsel": sayfa.get("thumbnail", {}).get("source", "")}
+
+
+def _viki_temizle(s: str) -> str:
+    s = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", s)        # [[a|b]] -> b
+    s = re.sub(r"\[https?://\S+ ([^\]]*)\]", r"\1", s)              # [adres yazı] -> yazı
+    s = re.sub(r"\{\{[^{}]*\}\}", "", s)                            # basit şablonlar
+    s = re.sub(r"<ref[^>]*>.*?</ref>|<ref[^>]*/>", "", s, flags=re.S)
+    s = s.replace("'''", "").replace("''", "")
+    return html_temizle(s)
+
+
+def _gunun_sozu(adaylar: list[str]) -> dict | None:
+    for yazar in adaylar[:5]:
+        try:
+            wt = _site_sorgu("tr.wikiquote.org", action="parse", page=yazar, prop="wikitext")["parse"]["wikitext"]
+        except Exception as e:
+            uyari(f"Vikisöz ({yazar}): {e}")
+            continue
+        sozler = [_viki_temizle(m) for m in re.findall(r"^\*(?!\*)\s*(.+)$", wt, re.M)]
+        sozler = [s for s in sozler if 30 <= len(s) <= 300]
+        if not sozler:
+            continue
+        soz = _gunun_sirasi(sozler, "soz", bugun_tr())[0]
+        try:
+            bilgi = _wiki_yazisi(yazar, 800, giris=True) or {}
+        except Exception:
+            bilgi = {}
+        kisa = " ".join(soz.split()[:6]) + ("…" if len(soz.split()) > 6 else "")
+        return {"bolum": "soz", "baslik": kisa, "yazar": yazar, "metin": [soz],
+                "bilgi": " ".join(bilgi.get("metin", [])[:1]), "bilgi_baslik": "Yazar hakkında",
+                "link": "https://tr.wikiquote.org/wiki/" + urllib.parse.quote(yazar.replace(" ", "_")),
+                "gorsel": bilgi.get("gorsel", ""), "kaynak": "Vikisöz"}
+    return None
+
+
+def _gunun_siiri(adaylar: list[str]) -> dict | None:
+    for baslik in adaylar[:5]:
+        try:
+            wt = _site_sorgu("tr.wikisource.org", action="parse", page=baslik, prop="wikitext")["parse"]["wikitext"]
+        except Exception as e:
+            uyari(f"Vikikaynak ({baslik}): {e}")
+            continue
+        govde = re.search(r"\{\{söz\|(.*?)\}\}\s*(?:<br>|$|-)", wt, re.S) or re.search(r"<poem>(.*?)</poem>", wt, re.S)
+        if not govde:
+            continue
+        ham = re.sub(r"<br\s*/?>[ \t]*\r?\n?", "\n", govde.group(1))
+        satirlar = [_viki_temizle(x) for x in ham.split("\n")]
+        dortlukler, parca = [], []
+        for st in satirlar + [""]:
+            if st:
+                parca.append(st)
+            elif parca:
+                dortlukler.append("\n".join(parca))
+                parca = []
+        if not dortlukler:
+            continue
+        yazar = re.search(r"\|\s*yazar\s*=\s*([^\n|]*)", wt)
+        sozluk = [_viki_temizle(x) for x in re.findall(r"^:(.+)$", wt, re.M)]
+        return {"bolum": "siir", "baslik": baslik, "yazar": _viki_temizle(yazar.group(1)) if yazar else "",
+                "metin": dortlukler, "bilgi": "\n".join(s for s in sozluk if s), "bilgi_baslik": "Sözlük",
+                "link": "https://tr.wikisource.org/wiki/" + urllib.parse.quote(baslik.replace(" ", "_")),
+                "gorsel": "", "kaynak": "Vikikaynak"}
+    return None
+
+
+def bugun_tr() -> str:
+    return (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=3)).date().isoformat()
+
+
+def hafiza_kartlari() -> list[dict]:
+    """Günün mitoloji, dini hikâye, söz ve şiir kartları."""
+    gun = bugun_tr()
+    kartlar = []
+    for tur, (site, kategoriler) in HAFIZA_KATEGORILERI.items():
+        adaylar = _gunun_sirasi(_kategori_uyeleri(site, kategoriler), tur, gun)
+        kart = None
+        try:
+            if tur == "soz":
+                kart = _gunun_sozu(adaylar)
+            elif tur == "siir":
+                kart = _gunun_siiri(adaylar)
+            else:
+                for baslik in adaylar[:5]:
+                    yazi = _wiki_yazisi(baslik)
+                    if yazi and sum(map(len, yazi["metin"])) >= 400:
+                        kart = {"bolum": "hikaye", "alt": "Mitolojik" if tur == "mitoloji" else "Dini",
+                                **yazi, "yazar": "", "kaynak": "Vikipedi"}
+                        break
+        except Exception as e:
+            uyari(f"Hafıza kartı ({tur}): {e}")
+        if kart:
+            kart["id"] = "h" + hashlib.sha1(f"{kart['bolum']}|{kart['baslik']}|{kart.get('yazar', '')}".encode()).hexdigest()[:11]
+            kart["kategori"] = "hafiza"
+            kartlar.append(kart)
+            print(f"  ✓ {tur}: {kart['baslik'][:60]}")
+    return kartlar
+
+
 # ---------- ana akış ----------
 
 def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], kisi_listesi: list[dict],
@@ -1006,10 +1164,18 @@ def main() -> None:
     konular = [konu_sonucu(k, o, ok, g, kl, m)
                for k, (o, ok), g, kl, m in zip(secilen, ozetler, gecmisler, kisi_listeleri, metinler)]
 
+    print("Günün hafıza kartları...")
+    try:
+        hafiza = hafiza_kartlari()
+    except Exception as e:
+        uyari(f"Hafıza kartları alınamadı: {e}")
+        hafiza = []
+
     CIKTI.parent.mkdir(parents=True, exist_ok=True)
     veri = {"olusturulma": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
             "spor_secimleri": [{"ad": s["ad"], "dal": s.get("dal", "")} for s in secimler],
-            "konular": konular}
+            "konular": konular,
+            "hafiza": hafiza}
     CIKTI.write_text(json.dumps(veri, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Yazıldı: {CIKTI}")
 
