@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gündem</title>
+  <meta name="description" content="Günün gündemi: özet, geçmiş, kişiler ve akşam tekrarı">
+  <meta name="theme-color" content="#1f4e79">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="ikon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="ikon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="ust">
+    <button id="geri" class="geri" hidden aria-label="Geri">‹</button>
+    <h1 id="baslik">Gündem</h1>
+    <span id="guncelleme" class="guncelleme"></span>
+  </header>
+
+  <main id="icerik" aria-live="polite"></main>
+
+  <nav class="alt">
+    <a href="#/" data-sayfa="gundem">Gündem</a>
+    <a href="#/spor" data-sayfa="spor">Spor</a>
+    <a href="#/tekrar" data-sayfa="tekrar">Tekrar <span id="rozet" class="rozet" hidden></span></a>
+    <a href="#/takip" data-sayfa="takip">Takip</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

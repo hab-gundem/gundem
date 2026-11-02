@@ -1,0 +1,43 @@
+# Her sabah gündemi toplar, docs/gundem.json'u günceller ve depoya yazar.
+# GitHub Pages docs/ klasörünü yayınladığı için uygulama kendiliğinden güncellenir.
+name: Gündem
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # her gün 03:00 UTC = 06:00 Türkiye
+  workflow_dispatch:       # Actions sekmesinden elle çalıştırmak için
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gundem
+  cancel-in-progress: false
+
+jobs:
+  tara:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Gündemi topla
+        env:
+          GUNDEM_ILETISIM: https://github.com/${{ github.repository }}
+        run: python tarayici/tara.py
+
+      - name: Değiştiyse kaydet
+        run: |
+          git config user.name "gundem-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/gundem.json
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok"
+          else
+            git commit -m "Gündem: $(date -u +%Y-%m-%d)"
+            git push
+          fi

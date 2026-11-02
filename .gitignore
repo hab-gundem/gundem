@@ -1,0 +1,5 @@
+# Yerel yedekler ve kişisel notlar depoya gitmez
+yedek/
+KARARLAR.md
+__pycache__/
+*.pyc

@@ -1,0 +1,32 @@
+{
+  "_nasil": [
+    "Spor sekmesinde ayrı başlık olarak görünecek seçimler. Sıra, sekmedeki sıradır.",
+    "ad: başlıkta görünen ad.",
+    "arama: Google Haberler'de aranacak ifade. Tırnak tam ifade arar, eksi (-kelime) o kelimeyi dışarıda bırakır.",
+    "baslikta: haber başlığında bunlardan en az biri geçmeli (alakasız haberleri eler). Yazılmazsa 'ad' kullanılır.",
+    "gun: kaç günlük haberlere bakılsın (yazılmazsa 3). Sezon dışı sessiz takımlar için büyütülebilir.",
+    "adet: en fazla kaç konu (yazılmazsa 4)."
+  ],
+  "secimler": [
+    {
+      "ad": "Fenerbahçe",
+      "dal": "Futbol",
+      "arama": "Fenerbahçe -basketbol -voleybol -Beko -kadın",
+      "gun": 2
+    },
+    {
+      "ad": "Filenin Sultanları",
+      "dal": "Kadın voleybol milli takımı",
+      "arama": "\"Filenin Sultanları\" OR \"A Milli Kadın Voleybol\"",
+      "baslikta": ["Filenin Sultanları", "Milli Kadın Voleybol"],
+      "gun": 7
+    },
+    {
+      "ad": "12 Dev Adam",
+      "dal": "Erkek basketbol milli takımı",
+      "arama": "\"12 Dev Adam\" OR \"A Milli Erkek Basketbol\"",
+      "baslikta": ["12 Dev Adam", "Milli Erkek Basketbol", "A Milli Basketbol"],
+      "gun": 7
+    }
+  ]
+}

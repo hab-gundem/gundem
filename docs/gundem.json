@@ -1,0 +1,2129 @@
+{
+  "olusturulma": "2026-10-29T17:45:08+00:00",
+  "spor_secimleri": [
+    {
+      "ad": "Fenerbahçe",
+      "dal": "Futbol"
+    },
+    {
+      "ad": "Filenin Sultanları",
+      "dal": "Kadın voleybol milli takımı"
+    },
+    {
+      "ad": "12 Dev Adam",
+      "dal": "Erkek basketbol milli takımı"
+    }
+  ],
+  "konular": [
+    {
+      "id": "ffe4fbd99c92",
+      "baslik": "Kapadokya'da peribacası çöktü: 2 ölü, 5 yaralı",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T13:56:34+00:00",
+      "ozet": "Kapadokya Göreme Açık Hava Müzesi girişinde peribacası çöktü. Üç kişinin hayatını kaybettiği bildirildi. Yaralı sayısı 5 olarak açıklandı.",
+      "ozet_kaynagi": "NTV",
+      "haberler": [
+        {
+          "baslik": "Kapadokya'da peribacası çöktü: 2 ölü, 5 yaralı",
+          "kaynak": "TRT Haber",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObUVkN2t0eGtBcmZfNlhMb3g4cUZwRzRZVF9xNlZMZDJhYmxybWJ5WnpGcm53V0o0S0FMa0xPc3g3ckwxQUpleDJoMlMtTFF5SFZJcmsxZW1mQ01hU215SGlidTh5ckloekc4YVo5X1hZV01GTjhfeXZiX01BUnVZR1EzVUhVN3dBeXJ2dWh4QkU2Vzg3eUtJRQ?oc=5",
+          "tarih": "2026-10-29T13:56:34+00:00"
+        },
+        {
+          "baslik": "Kapadokya'da peribacası çöktü. Üç kişi hayatını kaybetti",
+          "kaynak": "NTV Haber",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeVR0Y2xrX0FVb09la3BJVmpNeThGMlNCRVljLXBvczVWY1JkRHduZWZhaUlDUTBiVXhra0RRYnB3Sk5CNWNiQ2YxaE9aaHFmVGNFRjUtcFNsT0ZGb1kxSnU0ZlJaamhqQlRKMWZBODAzbmRTY2tmWGtGeVZKQ2tKd1BqWmZrN0NadzU2Q2JUdEdBa0FMbFlnUXhiVjlKRE5xOXfSAacBQVVfeXFMUFNpQVlRbC1sdnFEWGV2WVFLbHNOZ0VLQndtSERQVUhMNGZSenlHbGxMeU16OGMwSWl6ZHRqYzRlRUtEaEUwVTlveDZ6ampTRDJYRnF6bE5YN3RxTGFRMENHVHhZUzRJT0piWW5od3Z0Z0JnT0ZXQ1poVEh4RnYycU5tWHpXU09KZXRuNjFPVFh5RXZwVVBpQmtqSUU0LW1ZbjJpWkctNE0?oc=5",
+          "tarih": "2026-10-29T13:56:34+00:00"
+        },
+        {
+          "baslik": "GÜNCELLEME - Nevşehir'de peribacasından kopan kaya parçalarının altında kalan bir kişinin daha cesedine ulaşıldı",
+          "kaynak": "Habertürk",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOb1dDRXpGUVdXVkhPZk9NSjhEQ01tZjlnTGpwNjZQa3FsTGNvd1UzemZCRmVWamY4SGlEc3Y0OGlDRkRuT0M1UHJFZTJfeHU0dnlxR19Pcko3Z0dodUhpUnR5d0JwcS1fSlZFYU1sLTJOUUhoZGtBQTVXRi12MUpSUHExdjBlclpSbDc0WlhTUnpkLWVSWVhyNWxJZjIwZy0xT0hHVmR5SWpHeTA4MVBYZGJ4dS0tbG5hbHpCZ3FaYkZpR2otckdsc2RKMWx2UG9KOEEtaDRWejBCdlpKYi00OWJyZVFqTDg?oc=5",
+          "tarih": "2026-10-29T13:56:34+00:00"
+        },
+        {
+          "baslik": "Uzman İçelli, Göreme'de yıkılan peribacası sonrası riskli yapılar olduğunu söyledi",
+          "kaynak": "Son Dakika",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeXBPdmdpQWluRjhsV3I2RUNfZmJEeDQ5NzF5UGJrYnV2UC1hRzhLMXNfWGlKR0kyb2JKTUQzUzVxN2NkYWlkbmtydllYZThaX18tQjlReUh5SkRENjN0UUl2a2RwYjk4d2hPRHJuR0JqS19pZFNRWXJEc0F0NEtEZTM4MF9ydFluNTJoa0lLako2N2s4RENzRUZmUjg1SFJGOWfSAZwBQVVfeXFMTkxCZkhmWUNwRFdrVF9ncjZua19qSWJQVGNvX29GVjRWZjRyWVg0YXpKWDJoVWRJb3Fhby1TNVRPZzh0WUtTbFB4aER6YUxPV1JKenh1NE5BWEtXTUdreVA5WW9JYThBLXYzQk5WelZBNUlKcDhFRUNUaWdmMDVkMl9pU29zaE1UbXpYdmtKSk1aY0Qtb2xmdWYwRmJG?oc=5",
+          "tarih": "2026-10-29T13:56:34+00:00"
+        },
+        {
+          "baslik": "Bilimsel planlama yok: Peribacaları yeterince korunmuyor mu?",
+          "kaynak": "birgun.net",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSjBLa0FBZlVOanIyR0NjMFY2MzB0dTFSLUlkMmY5NDhpZWZSd1ZUQ3hQTFBLTHloVTlESVNmZjFEaWloTi1jMXVLclFfbkZJOXlYOFlRUXZJeW03RzhTUzZxNFhCay0yd201eF9WUzlCRkM5dndHaVBsSmV6UGFieTFnNmRnU2xXQVJ4M1Q1RWdaT252SGY5WWxn?oc=5",
+          "tarih": "2026-10-29T13:56:34+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Figürlü sıcak hava balonları Kapadokya’da peribacaları üzerinde süzüldü",
+          "kaynak": "Anadolu Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQLU9FTEFxTFVmR1FUc3lYSDc1dDNQVkFxSm5KaTZ0Z045anUxTUR1QldJVC1JMjM0c3lGNy1zVTBpUG5jYmlfN3l0a3JlVzY0cENxZTgzUGplbUE1T29ZejAwNzdFYV9fMkJILTJ6N0NUVmlRVHFFMDF6bjJhWXROOWRnS2JGUllVWE9Pd0pDNGZzdHNQUlpxMU9Ja3pMeGk0cnJTdmFUUWdBb1Y0aFBr?oc=5",
+          "tarih": "2023-08-13T07:00:00+00:00"
+        },
+        {
+          "baslik": "Kapadokya'da peribacası yıkıldı",
+          "kaynak": "NTV Haber",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNzBDVm5uQzd1SkVWUWZCRDlkaWtlYWs0NHRFQW05QXRMWGttamJTbUpRRHdtbTA5b3dzdkMtMW9iTEVEREdKOHNjMjhUNkpraWZQa1k3eDQtbWd0U3Q5WE1pTUl5YU5ROTNCUVVycmhYNEttWFR4Q0RRbE05cU9LbjVERU9CYzVBUkNDYU9PdU54bm5YdkHSAZsBQVVfeXFMT29GRFNybTVqVEtRbE14U0t2WHl6TVBKdlRVeHIwWmtvZjJJYmJKTmFnSnpiTWdERENoYm9hV2pkb09yWkRsdkw0dE44cEhsS1lWeU4ycGtxcnRPUExTQ0RmQkRhTmVZNUFvTkRNRTZuZEpxUmxfREhzd3Fydk1LYVk4OUJhMllIMmFWd2tnMDFTT2JsTEx0ZnNkczg?oc=5",
+          "tarih": "2025-09-20T07:00:00+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Kapadokya'da peribacası çöktü” haberini duydun mu? Sence bunun arkasında ne var?"
+    },
+    {
+      "id": "e2bc058a58a7",
+      "baslik": "Anıtkabir'de 29 Ekim töreni: Dervişoğlu, merdivenlerde sendeleyen Bahçeli'nin koluna girdi",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T10:04:00+00:00",
+      "ozet": "Anıtkabir'de 29 Ekim töreni: Dervişoğlu, merdivenlerde sendeleyen Bahçeli'nin koluna girdi. Anıtkabir'de dikkat çeken anlar! Kılıçdaroğlu tokalaştı, Özel arkasını dönmedi. Kutlamaların ilk adresi Anıtkabir’di.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Anıtkabir'de 29 Ekim töreni: Dervişoğlu, merdivenlerde sendeleyen Bahçeli'nin koluna girdi",
+          "kaynak": "Cumhuriyet",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUTZPLTFJZnBiOEF3RWR4Y1RZckN3NmN1WlJuTDFYRUdNNmcwaWJncnhmb2sxNVFCSnhRMnQ2SVY2dVJ5NTdrZXZJYjdQeHBFOU41WDJyZGl6LUowSTR0c0ZScDBoUEg2dnRJSFQ3Vm13dHlxNVptRnZ1WEcxaXVmYXliSWR4dWtxYXNFRmhLa3d4aUhkWno3SjZab2lBSXVLelFOcFBlWWNSb3E3QjdlTmhPbnpLbDFWbmdZbmFONE9SSHJMdFA5TS00Ym5aZDA?oc=5",
+          "tarih": "2026-10-29T10:04:00+00:00"
+        },
+        {
+          "baslik": "Anıtkabir'de dikkat çeken anlar! Kılıçdaroğlu tokalaştı, Özel arkasını dönmedi",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObW1mVmhKSDJnczQyVnI0MWtTazlpblNoaS04Z0ljSVpxbnowYUt1SUpESzNkdlJQQ2R3V0ViYWhnaVVrU0NULTZzcXNWRnJNbUhOUGRSOGtTSmR4MHFlYXpFSjRTTXg5bzlUMnBiZHRVSG1vMWZDc2QzcW1XMG4xZWlVSy1UUkN1cklFZENGX3pRSmFadFHSAZsBQVVfeXFMTUo3Z014R3AzZk00VXBjUDMxdUlaU1V3U2NseGxSZHZFQU1fR3NRelZHc1RTNWZtcmNaSF9ncUp3dGptYUkzLUNPZV9pVXFObzViRlQ0NllWYldxeDNoZlJ4emlzR0tjQm5XTkRNVGJmckZ3aWpQM2tIQnJqX2EydEY1bGo0VV9hdjVuR2tDYzUtWTFycE9XcjEwZnc?oc=5",
+          "tarih": "2026-10-29T10:04:00+00:00"
+        },
+        {
+          "baslik": "Kutlamaların ilk adresi Anıtkabir’di",
+          "kaynak": "ATV",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNXzVyRWJnWWRGdXhKbWRsNlZaRTZTc1VDakZqZTltMG14dXFqdUI1azFaTjNqUE5hYVV5Ni1SNXVBazF0cFZJLVFMSV9FM1Ixb3VHVF9tMU9yemhIY21Jb2pGaGpNUXN0S205NFRWa2JJZ1V4SFZkWjlZZXppRWt6bmZWaE5NMGtWbFJOVDZsZWY?oc=5",
+          "tarih": "2026-10-29T10:04:00+00:00"
+        },
+        {
+          "baslik": "Cumhuriyet'in 103. yılı coşkuyla kutlanıyor",
+          "kaynak": "TRT Haber",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdlZ3bURPU1I3UkQxQmNZaDAxcThyRnJRN1Jvek1jZzRVWW1xZmJKUUFVa1NVaG9QVnhBanFNWnl5VTdHWXYtQVI0LWF6NVBkWFpFU0ZEeFpHTVVWSkI3MWdGVURqc21hS3VQVTJ5YmM0UElBdzRGZzN5b21NVldDYU1kaGl5SjRIVWdQQkRIeHp1TjVFM3c?oc=5",
+          "tarih": "2026-10-29T10:04:00+00:00"
+        },
+        {
+          "baslik": "Devlet erkanından Anıtkabir ziyareti! Erdoğan'dan Özel Defteri dikkat çeken mesaj...",
+          "kaynak": "Haber 7",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdTI4M0tRd3ptd0dkSEhoZGp4QV9sMWtyMGM0Z09SVnpGbDZhaGdkdHFWVTZLMWN4a3ZkenRQWk9oMG1xTTRYOVZ5SFNST1BFOVJPbDBFZWZGSnp3SWxFLUtDaFdqODUwSVlXaDl5bEdHd19wUXFyYjNTdGRzSHZjZWtyVF9zc0hfcjlHUXNaNDZPZzZjNHVsWjFVSEd2LUxpNW8ySG1fVkFtbmkxR1hGUTJ2QS1WMU1HTlZoMU5sWdIBygFBVV95cUxQekhKYTJsYlo4bU9UYTNFV2t5aXBJQmVHcElDbVJVWElKck12ckVFTXhyRTVDREl3V3VNUVBzV0JWc3YwamlzV2lGVi1xMjNsNll0TlJRZFA0OEFIX21pXzhXUXIwZHRWOFFnRDVtZFdxb0pfZlFzcnRnUlJ0Zk5VcE9qTzgtOEkzR29oNzZiSUM2UkF6YkNhTFlwUG9oMFJyTjN3dFZib3lCb1dNWDhLaWVpV1dkU3VFRVIxbW90V1kwYmlzOWFqbGVB?oc=5",
+          "tarih": "2026-10-29T10:04:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Anıtkabir, 28 ve 29 Ekim'de ziyarete kapalı",
+          "kaynak": "Yeni Şafak",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRzY5SDFXZXhTbWZjbkhZOG5VYV9iNG1abTJpd0FYOUo4Vmk0eGxQazJyQkFLZmNZQjFjT29UMEFzVkMxbTRiVXlUQ1B0ZGtDNGVqSmJ0aDVQYW9ITC1mNGQ1QnF5VTgzV3FyMFlBREhzMEp3MkVBQzdzYTBZTUVwWWtaWmNBTjk0?oc=5",
+          "tarih": "2009-10-26T07:00:00+00:00"
+        },
+        {
+          "baslik": "Akşener ve Bahçeli'den Anıtkabir'de ortak poz",
+          "kaynak": "birgun.net",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNX0t0QkVqU3ZwUHRlT2dUWFVuVWIyclJCMDdGUzZUX08wTXpmbWkzcWpDR0tDeDNwSlQ3T1hZd3hBbG0xMS0yNGtoV3ZGejYwa2FRdVFfUHpuY25fdjZZS0dFd21LeWk4Ym9wd0dPTEdiRjl1YTNmbVo5N3R6eUF6N3lrc0taVVhq?oc=5",
+          "tarih": "2023-11-10T08:00:00+00:00"
+        },
+        {
+          "baslik": "Müsavat Dervişoğlu, geçtiğimiz hafta urgan fırlattığı Devlet Bahçeli ile Anıtkabir'de tokalaştı",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOTU8yVnFoYmZyUGhBa2RRWGoyaFp3WjNmYXZaWHhpOVRNcWdZRW5LSXVzREJzSjZ2M3ppRUVDb1N1aWFUNDY1VExlU04xbTczVEh1NnJ0S2l6YjBjMDRlblE2VXBmUVZDUVNRVkE5bmFrY3B3TTJmVHU4U2ZPUjRQdFdTNXIzQUpVU1JjSG4zTUJ6NTFKQnRIcGdpS1hSVE0yY0FOQlVaUnJBanFkaUMzTGRock1yaS1kTXZsOEhaVm5od245WlpqMVVB?oc=5",
+          "tarih": "2024-10-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Devlet Bahçeli ve Müsavat Dervişoğlu Anıtkabir'de tokalaştı",
+          "kaynak": "Haber Vakti",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRDZzNkdwd0Vud3YzblhkY1lNdU5WQkhrSjM3aVRZU0tlM1ZCeVVNb2lsMTRrWEVGa3czSzlOczVLWU1BWUNRazc4cjlsZzBybURPRktFY2phNGhJRTlTNU96OTk5bVRPbEwwTlBsaVlPVVp4WkxxSTN0VkpLeWYwb0J6UHZkOGp1NjJJNU13?oc=5",
+          "tarih": "2024-11-10T08:00:00+00:00"
+        },
+        {
+          "baslik": "Ne Saray'a ne Anıtkabir'e gitti: Bahçeli’nin tavrının arkasında hangi sebepler var?",
+          "kaynak": "birgun.net",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTzVNZXduZHY3Y3p6a3NGdThfVGUtY0lxUFNuZ0FSMXRjMll5dzNOZkxhMFpoV0tpM2pUNmxraklleVN6UHJzanNTYlJMX2RPeTFGNTRwTnFPUnFXbkpmZFpLSE5US2FFSWlHeXVCMktnMm41V3R0VjBHallIb3pQVzNBay00NE9uZi11RElRTFlkTy02Qy1vYmFFXzN6TEpUTEwtVGs5S2kyWEpwaldKZnNNdFRCcDA?oc=5",
+          "tarih": "2025-10-30T07:00:00+00:00"
+        },
+        {
+          "baslik": "29 Ekim'de Anıtkabir'e neden gitmedi? Gerekçesini açıklayan Bahçeli iddialara ateş püskürdü",
+          "kaynak": "Haberler",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQOEFrcW1rVTd3WTdmVVRVLWRTaVg2SGw1VG56eW8tMTdSdG5lM2x1YWRLTF9XZzlHTU16OUdhWFkyZmVsdEQzdkdYTldhLUFZTm5kUkVtTWZlVU5mUGdOeE9CUHBCemJpS1JtZzhrdlBBaXZFRTJXRXM3a2g2NEFOQnR5UmVVd2xYYWl2clhvdmhSRXJqZGJqTmNNTmFNWW9a0gGaAUFVX3lxTE9Ddkoxc1hLdUJiYTk5MmRsOGJCekRLTFdLQy1pT096OGVSMzI5N3BmVjE2c0QxSDNEY3A4akZZMldhbWpUQWsxZ1dLQWZKM19GU1pXelBGTVphTVZRMzR3M3VQcXV3SzZMUENzeEVaZjJpYmhsSS1YSEQ3YnZ2LXZybjItR2tidVBoWDlBZWUxSTRXRWgzRVU5MGc?oc=5",
+          "tarih": "2025-11-04T08:00:00+00:00"
+        },
+        {
+          "baslik": "29 Ekim'deki törene \"İnsani bir halden kaynaklı\" diyerek katılmamıştı: MHP lideri Bahçeli, Atatürk'ü anmak için Anıtkabir'de",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNeXpwTW9PcC10eFRwZnN2dGxUUndERnhSUDFIWjdaTlJLTktqTER5TnlWMmctSWtoRHI4UEFxc3BYbVlTUTFSWWlpUVJzdFJKT2xodVplLU9ZRGN0cko3UFRyYjhPX0NYaEFOS0tael9Vb1VONDdMeG13WUVuSlRwb1Y3bU12M1dhdzFrZkNtMHlKN0hza2xYRk9nSk9aRWF1d1I1eks5bGREUWt4WThHVURNMFU0ZGRQblZfTHpfYkl6RHpCSk9rX3dFR0VpNENYbDVJQUJ3?oc=5",
+          "tarih": "2025-11-10T08:00:00+00:00"
+        },
+        {
+          "baslik": "Bahçeli’den Anıtkabir fotoğrafı",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Qa2NlX3ZtLVBUb3oydlFhYmh3UzluRERfVVFHU0tlaHZnSEhDTm1XblY5T09VamxSOS1yQXN0bVRxNm9zQkRJNXNkcGNlSWs2Z2pBMm92SzhiMWU3MFdTSmRmNFdZSk5mY1NlcEhPdzF5UQ?oc=5",
+          "tarih": "2025-11-10T08:00:00+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Müsavat Dervişoğlu",
+          "aciklama": "Türk siyasetçi",
+          "ozet": "Dursun Müsavat Dervişoğlu (d. 1 Şubat 1960, Ankara), 2024'ten beri İYİ Parti'nin Genel Başkanı olarak görev yapan Türk iş adamı ve siyasetçidir. Ayrıca Türkiye Büyük Millet Meclisi'nde İYİ Parti Grup Başkanı ve 2018'den beri İzmir milletvekilidir.",
+          "link": "https://tr.wikipedia.org/wiki/M%C3%BCsavat_Dervi%C5%9Fo%C4%9Flu",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/M%C3%BCsavat_Dervisoglu_konusma_%28cropped%29.jpg/250px-M%C3%BCsavat_Dervisoglu_konusma_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Devlet Bahçeli",
+          "aciklama": "Türk siyasetçi",
+          "ozet": "Devlet Bahçeli (d. 1 Ocak 1948, Osmaniye), 1997'den beri Milliyetçi Hareket Partisi'nin Genel Başkanı olan Türk akademisyen, ekonomist ve siyasetçidir. 1999 ile 2002 yılları arasında Bülent Ecevit tarafından kurulan koalisyon hükûmetinde Başbakan Yardımcısı olarak yer aldı.",
+          "link": "https://tr.wikipedia.org/wiki/Devlet_Bah%C3%A7eli",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Devlet_Bah%C3%A7eli_VOA_2015_%28cropped%29.jpg/250px-Devlet_Bah%C3%A7eli_VOA_2015_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Müsavat Dervişoğlu yerinde olsan ne yapardın?"
+    },
+    {
+      "id": "465508b5794f",
+      "baslik": "Ankara’da TDT Zirvesi! Türkiye başkanlığı devralıyor",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-28T11:15:55+00:00",
+      "ozet": "Azerbaycan'da hükümete yakın medyada yer alan haberlere göre, Cumhurbaşkanı İlham Aliyev Ankara'daki Türk Devletleri Teşkilatı zirvesine katılmayacak. Cumhurbaşkanı Erdoğan, 21 Ekim'de Aliyev'i telefonla arayarak Ankara'daki zirveye davet etmişti.",
+      "ozet_kaynagi": "BBC Türkçe",
+      "haberler": [
+        {
+          "baslik": "Ankara’da TDT Zirvesi! Türkiye başkanlığı devralıyor",
+          "kaynak": "Takvim",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbFBOczNudFdvVkctbFl4ZzBFRlpCMnp4S2xRaWtmLVNwakNmNzJOclh5QUFJYV9KSXNma1JNaGVOaTF2R2xVZkhyNmYzb2VuWm9RN1BCemdkYlFPUmNDMWlPd1VwcFBBVldCRks0TnNQUzB0bkJXRVZCakRIQlhKZTNTNlJvSVlNR3VMalM3RDl0eFY5TzY2dUphNWtiZmRwanFZ?oc=5",
+          "tarih": "2026-10-28T11:15:55+00:00"
+        },
+        {
+          "baslik": "Türk dünyasının kalbi Ankara'da atıyor... Cumhurbaşkanı Erdoğan'dan önemli mesajlar",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTGZwek9vS3lhdzhGX3JZdGZwMFdRd01XSUQ4a0FRWTJPaFNxRTlyRzEzRnpmUHBoY1l3bUNqX1pYNkhSdjZSM0FIc2FZajZFX09FOE8zaXJSYnVkbVB3VG5oNXFRRzc1ZVNZVGRPN3ZydW1JYV9hTkFRR2Z3a1JzZTBNZXBSTzlBNng1T1VzTmJwMzZXREhJeDN6ak9nT2JZaENOYmRHYWZ2cHNNUy0tR0tjYldUdnQxZ1BWZF9Mbw?oc=5",
+          "tarih": "2026-10-28T11:15:55+00:00"
+        },
+        {
+          "baslik": "Cumhurbaşkanı Erdoğan, 29 Ekim Cumhuriyet Bayramı ve Türk Devletleri Teşkilatı (TDT) Zirvesi dolayısıyla konuk devlet başkanlarının katılımıyla düzenlenen resmî akşam yemeğinde konuştu İhlas Haber Ajansı",
+          "kaynak": "İhlas Haber Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPMmhDSU1BaDY2Mm1tTERFem13YlVtTHAwT2Rjcm1LMXBTWXo5Q3JZTDNMT0FMd3UwWWZYWW1oZzhZMERRZkxMMEhTQjZsRkdnSlNnM1lJc1pIVDQ4cVpBN3Y1cXV0M0hvUEtBVEpRVlBZNnRSM295Q2xZSUhlTl83NzdndWF1RUNoX3haZGlUVnRJWVRQUC15WUpNcG5xMFhKWmxaQ2JzdTlWZnFDWm9sT2RoZ2lIUG1VVnZQUUloc0JzbGZJYXJaQ1IyMFRPTmp2QlV1YTlwMzlNU0VuX2FuV0RWbEgtVER2TU5POFFqVElSd3hNa0U3T09TcncxQ0Y3RUV1Q3pIaVJZZENlYVlQcnFLX3BWVlh0VE1ZZW1nbUNXQ0pYT1BOOE04LWpZaGZwZjNoSGJHeEplVTJheFZDbWwteUVEUXVHbjBwYks0SVU?oc=5",
+          "tarih": "2026-10-28T11:15:55+00:00"
+        },
+        {
+          "baslik": "Erdoğan, Türk devletleri liderlerine seslendi: \"Aile meclisi\" olarak tanımladı!",
+          "kaynak": "Haber 7",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTXQ1NF9XNkVsUG4xdUFxQW90eEdRekxZU0xaSzVvX19QTi1TU3dPeUFPQ1RYUmlQcTVDQWJma2NoSktpLS1yZEdDZmxTZ2t2Y2F2ZHJueUN2ZUl5R09MSnNibVpHa284MUhwWlNFN2x2cTJRSzRKQkhUb00wUE0tYjFualNUWVk4RHdRRWtlTUo3RldnbC1keG1UZG1kYWxIeUVXanh6bkdBRDY3U3J2M3BLYTNScm_SAcIBQVVfeXFMTVR1UnFzQ2JUR3hnbXNiUzBzSlROM3A4MzRyYWllYWQzUFFncWxRcHJiMzkycXAwUGs3RGJXTlV4OVYzYzZYYklEa2YxOWduQUE3bnhiQW9TZGtiY3ROY283ZGp5UTVjMWJtcUY4OHF1SWhjMlh3X2Q0TWQzWW1UODJDX29PZ1ctWVdrZk9rNTZfdFZXRHV1b1EzV1V3cHFzX19pdTRZRklEMEc1VVdMZFphYlFhdk1SMF9ael9uWkp2Q3c?oc=5",
+          "tarih": "2026-10-28T11:15:55+00:00"
+        },
+        {
+          "baslik": "Cumhurbaşkanı Erdoğan'dan Beştepe'de önemli açıklamalar",
+          "kaynak": "Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOY2pHZXg3RjdfSzUxTzlkejRLTDBMZEpuMEJDZ3VyaEhGam4zZFBlOU91Y0tBMTVzZW9VSlFfTDZVME5XNklnOFItY3h0MHNxZGRVTjFfNlF5eEVBUXMzbnpUVTVMLVdDX1ZMWFB1VXM2dVBoZS0yb1pFX3lfVnBvcGQ1Z0tEOFEyY1FURFYxdVQ3aS0wQUNjTGtzaS0?oc=5",
+          "tarih": "2026-10-28T11:15:55+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Türkiye-İspanya 5. Hükümetler Zirvesi Ankara’da gerçekleştirildi / T.C. Dışişleri Bakanlığı",
+          "kaynak": "Republic of Türkiye Ministry of Foreign Affairs",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZC1wcWp4eU1OY0M2NENmTXB3OXdMTmQ5MlQtTld4dHM4MWNlMkNaVnA2aDN0ZW9GWmZudWFTbFNxc1VqbWlGczVWWmxGQnI5aVRGa21RT1M2ZkJGQlJFVG1zaGNqaV9VMHlYYWxCdWF6TmdRTS05R0NOM2ViMDFaWGp3VWg1S2VfcURpWGJDcVl1ZDBjT3U3T0VR?oc=5",
+          "tarih": "2021-04-15T09:10:50+00:00"
+        },
+        {
+          "baslik": "NATO Ankara Zirvesi'nin gündeminde neler var?",
+          "kaynak": "DW.com",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRGpYcl9mYkZsWVRjMThOc3M3UlRSS3JMdGZqYllGeWpfT25zN1FoVTV6UFF3Q2ZCdFExSnRoNXFnU3RBZGFXbmt2ZDJxcDZ1Z2w2VE16VTZfdDg2OHdIUVRhbUNyaTZBamxaSlJTRDR4ZVh1UW9jcG0xVkF2MndBd0w5SGJiUkNY0gGIAUFVX3lxTE02S1hfS3JONGdOZFR3VzlUTW1XeVZweVFQNE9lQnRIaUQ4d3dUVmJ3eUJBem9FZlpuT2hjd21heTBYWUtGOGcxaV9ENUpNUVJCV09ZRWJXMUdUU0RNTjIxVE5za1NkWm0tc0tWQnVqQ3NXRFRFaTN6RUdXd2FNUGZJaUVMYlFaR0w?oc=5",
+          "tarih": "2026-06-25T07:00:00+00:00"
+        },
+        {
+          "baslik": "İletişim Başkanı Duran: (NATO Ankara Zirvesi) NATO 3.0 söylemiyle gündeme gelen bu zirve çok önemli",
+          "kaynak": "Anadolu Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORUpKZVQxSG5nY3hwRW1FUzk2bWFyRExzTUhsR2FfMXdCUlVKcHhaNElPMnotYmVjX05pZ282ZHlCS2J5bHBvZzIzcHJ6VEN5T0c0cmVmcnZTVGtFUEl0S1RSWHBNSlF4dEVhNmM1N2pnbHluT1JNWGN5NWNlNjM5T3ViVFU0anpFSmk5ZVdjZHg2cVBtQnY3V1FTeENSQklUUWIxNWQ5ZVNvb3p1MjZjMG8wejhIZE5JNHFzSWxibFJUZ25FbkxEVGR6NDlCYjRt?oc=5",
+          "tarih": "2026-07-06T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ankara'daki tarihi NATO Zirvesi'nin programı belli oldu: Kimler katılacak, hangi konular ele alınacak?",
+          "kaynak": "Habertürk",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQcFFlQlB0X0ZXTXJKQ3BpMFFjV3pjaUtxWXlITjljbzZsUjZGcWxQYkFnR054RU9nMWFQeVhaRjRqSHdmemNzUUY3NGlnV3BVQWRjcVdNZjVOR3QyTGpORmc1b2dLSDdrQ21jRVFOLUlUVjA5OGhjQ3hBYmVSSndneFpzM3RQZk1zZk9uTnNEc3pJb2tzQmZkYkxVamR3bU0tX3VnT281UG5zWGppWV9zT0tFY0lIdHRvOU9KaWhTR3N5TWIwYmwwTTBBZjJ4YXd6OVVhODJ3?oc=5",
+          "tarih": "2026-07-06T07:00:00+00:00"
+        },
+        {
+          "baslik": "NATO ZİRVESİ 2026 PROGRAMI! ABD Başkanı Trump Türkiye'ye ne zaman geldi? Donald Trump Ankara'ya geldi mi?",
+          "kaynak": "Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOTzlscWxjaTR4MXMwakczR1FmeEtlYm5BWFhNUmczSHVSU3JWRjlNWGVZb1NEbmp2MUhqdEltQUk3SklVOURPRVRERUpkNkNFb2dORnRXVVBqZVZlLVo3SUN4TkZnbUpaVlNQSUVqREswa1EzUVB5WjJuMmpESWd2SHctZWJkb0w3R2V2ck1lMFJHeEtrdEFfZ2FuUFlWRFFWTFBvVEUwbnNGcVpLYnI0aW1GN19MbWpqS1dxWW5wa2RBMzZERW1QY0x5OXlLaVE?oc=5",
+          "tarih": "2026-07-07T07:00:00+00:00"
+        },
+        {
+          "baslik": "NATO Zirvesi için Ankara'ya gelen Zelenski'yi kaymakamın karşıladığı iddiası",
+          "kaynak": "Teyit",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNc0I2MG5zLVhFbmRfcG9qY043dTFQVXNlNkViWDBJMW9JbTBCNU53QkRwZ0hxb1czeUo1ZGNuQnlCcjlKZmdKT29oZ0wxVjAyci1fQlVDVzM4UENVcU1aTmh3eDFtdWpERG5nNk15dFBoVXpFWG5jTDQxcWhWc0FOWHI2TEJEVzFwMy04MGVtYXBZTEN3OFpreHlOVEFWRUYy?oc=5",
+          "tarih": "2026-07-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "AK Parti İl Başkanı Kavak’tan Ankara’da Sağlık Zirvesi! Afyonkarahisar’ın Sağlık Yatırımları Masaya Yatırıldı",
+          "kaynak": "Afyon Türkeli Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQbVNXQUpsczNVSzRTLXN6U3IwLWNwczhsVW5YUEhmY1VCUHEyQUN0NVR6T3ZVSExhN0RtRkJRbGRxOWctUkZGT2ExNTlhWmdqWHlmVFBGOFAxU0drSF9iTGFDWl96NDBUdDNhcmhLZ0hKRTdaZnpqNHhiYV9vY1FQMlROVEcwaThqbGRDT1JuMHFhTGdmUEowYVNJQmJyQXcyRE45U2FUZGZEcTBmcHUxZ0xUQWhlUHNwREhOV3pRMDAxSnBOSXpab0IydXdRRlVNSklEcy02djNWQzhSMkRoS2d5TQ?oc=5",
+          "tarih": "2026-10-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Türk dünyası Ankara'da buluşuyor! Ev sahibi Başkan Erdoğan",
+          "kaynak": "A Haber",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWC1RS192Zlc3dFhDSGNHUjRob25HdmhoU1hGOThMZlAtZnlWX2Z4TVFwaTZ5aVhaUFBGanJxbDlkZkJVa3B5ZS1fSUFJSDVLcjU1RVI1OTlIMHFGa3VLNDQ5NS1jUVE0aFpHU05lNGlkTVVXdjAtVEQ5NE9rQXpYYUduRGpHczV4Mm1CUjRhOTlDaUhRbWhNY3R2Q09kOE9mcmlnSHFBcENaSlB0Rl9TOU1jUVVkRGFZZ2dWNEpvZDAwWmxOOVE?oc=5",
+          "tarih": "2026-10-28T14:56:39+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "İlham Aliyev",
+          "aciklama": "Azerbaycan Cumhuriyeti Cumhurbaşkanı",
+          "ozet": "İlham Haydar oğlu Aliyev (d. 24 Aralık 1961, Bakü), 2003 yılından bu yana Azerbaycan'ın dördüncü cumhurbaşkanı olarak görev yapan Azeri siyasetçidir. 2005 yılından itibaren Yeni Azerbaycan Partisi'nin genel başkanlığını yürütmektedir.",
+          "link": "https://tr.wikipedia.org/wiki/%C4%B0lham_Aliyev",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Ilham_Aliyev%2C_December_2025_%28cropped%29.jpg/250px-Ilham_Aliyev%2C_December_2025_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Recep Tayyip Erdoğan",
+          "aciklama": "Türkiye Cumhuriyeti 12. Cumhurbaşkanı (2014-görevde)",
+          "ozet": "Recep Tayyip Erdoğan (d. 26 Şubat 1954, Beyoğlu, İstanbul), Türk siyasetçi, Türkiye Cumhuriyeti'nin 12. ve şu anki cumhurbaşkanı ve Adalet ve Kalkınma Partisi'nin genel başkanıdır.",
+          "link": "https://tr.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Recep_Tayyip_Erdo%C4%9Fan_2025_%28cropped%29.jpg/250px-Recep_Tayyip_Erdo%C4%9Fan_2025_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "İlham Aliyev bu konuda doğru mu davranıyor sence?"
+    },
+    {
+      "id": "51f5687a0386",
+      "baslik": "'Arap partileri seçimleri çaldı' diyen Netenyahu'y İsrail polisinden beklemediği yanıt",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T08:46:00+00:00",
+      "ozet": "İsrail'de son yılların en yüksek katılımlı seçimi yapıldı. Başbakan Benyamin Netanyahu yarışı önde götürse de hükümet kurmak için gerekli çoğunluğu sağlayamadı. Netanyahu Arap partilerini \"seçimi çalmakla\" suçladı.",
+      "ozet_kaynagi": "DW Türkçe",
+      "haberler": [
+        {
+          "baslik": "'Arap partileri seçimleri çaldı' diyen Netenyahu'y İsrail polisinden beklemediği yanıt",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSXNSMDJFb1A4eFk0TDdkS0dvRW40QVRSTGNkWFpLX0Y1LTQwNDhTa1FkUm5ncTczNXpyZUVVblQzZmlueUhnRTJraDN0UDAxeF9ZX2pYOFRBTHU3eURmQjZzckRLVlhMVk9SaUp4bFAxNzNzaUF4YVRRMDZqZ1Fvdk03X3VVb3NIQ0Y2elBfcGlIclM0OVNTZQ?oc=5",
+          "tarih": "2026-10-29T08:46:00+00:00"
+        },
+        {
+          "baslik": "İsrailli bakandan skandal istek: Arap partilerinin zaferini hazmedemedi",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV0t6Y0dvQi1WMmsyQlRhQzVCYkVmNW5hU2h1c2ZoYjVabTBldVkxb0UySE5hZ21ubk5ER05PWXBfcllkQ3BjNXpOWkFDeXRHZzFUcWhZZXRuWmgtUUJsaHFHWlFjSmFxR3VhTkpOb1VPRG9tS0paUWdCUldVdGNLS1ZfQzZGcVVKbkJidTFLaEp3OUxfRDN5UG9aR0FvUFB0UlZUWU5n?oc=5",
+          "tarih": "2026-10-29T08:46:00+00:00"
+        },
+        {
+          "baslik": "İsrail'deki seçime soruşturma talebi! Netanyahu'yu sarsan ittifak 'Gözaltına alın'",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSkIyTks0YWFuVUZ2NVF4Qk80c3ZIb0ZtcXdKM1laVldSeUNzZGtxbWd1bmtPam44Z3J2S0g0NHBiNUZCVkpwMTZtWjIyMUd2LWlwSFdEQWNyMmlWeXpIS3ViZDJ3djBqR2ZWaDdQN1hKT21CX3J4aUl5dWd0ZkR4SlROQXBWam9LV21VMVhyazRnQWh3eXlOSll4Zmg5X0ZpRXFES2pGM0pVQkltZU5XUmlWR3FXNFVzWkZrZQ?oc=5",
+          "tarih": "2026-10-29T08:46:00+00:00"
+        },
+        {
+          "baslik": "İsrail'de muhalif lider Golan, Netanyahu ile koalisyon hükümeti kurmayacaklarını açıkladı",
+          "kaynak": "TRT Haber",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOVldOMWVnMlBtU1FXOW1KbDhkbE9jSTJCdVpmb2ZMY3dwbHUzOXNvRnU2X0Fxd0t6MW5fRUxqWnpHdEJxaVNoWDR4dzZRRGVJdlJJX3NoUFEtdThQVjktOEJsb2c1MFR2UHJEQXJqWFdnbDNIVmJEYnYzTXdWc29FbkpQZ3Yxc3BLeFhsUUxPb1BGTjlCbUFhMnBxbUhsRU1QTkp5d183QTdsWUtxRUd6RUxhbTFhMVNONVd6TXRBVkllbC16RXp5Q0ZkSHgxcmtFeXc?oc=5",
+          "tarih": "2026-10-29T08:46:00+00:00"
+        },
+        {
+          "baslik": "İsrail'de kritik seçim sonrası siyaset kördüğüm. İşte son gelişmeler",
+          "kaynak": "NTV Haber",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMVVlWkdDdkdvRHktNjNxdExPZzhQZll1emluQ1hpVUtUdkJOOFpBRW91dGJTcjM3MS1GNW5JOVhHUVR3OFhDeU1fLVN6dDhBNU1pazh1T1pYdlpyTEhSbDhHQkFzLVZaMnBKRmR3ZkZIYVNsdzU0QUVfdnlFUlYwTzFVTVdJT3AyS1lJb1ptN1ZRS3JicFZHVHBxODdiOGJDRDduSlFsa3FxN241MEJr0gG0AUFVX3lxTE1RZHJqcURDQU9zRkIzcEYxeThIYkxnZl9pcFFHSnZZQlMtdGxtQ1g1LVJPX1drZXdsQi1nRWxQaExmak5BMzBucW53NWhmd3Z6bzJKc1drSW5IYk1qU3ZLN0NBN1ltSmxvdmppLWQwcVdKeG11MzRoUXZnQ0Q1OEhfRGJTRFI1T1BzZTEycDVlLTFONUxmNG42M3RhQVhvOUo3WUVGajhpd2xrQkxFNTVkX2JQQw?oc=5",
+          "tarih": "2026-10-29T08:46:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Netanyahu: “İsrail, Arap ülkeleriyle resmi olmayan bir barış içinde”",
+          "kaynak": "Şalom Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOc1pncHJSMEp6Y2FRbTJmcVlFd0dTa1hhVzhqR1VVRnI4OUhBSUdYQjEzR2c5NWhkRlY0RU45eXhiajJST2J4Tk1iNGxETEZvR1U5aXRvOGROMkxWYk9XOWNiNWtxMVBRQi1lQ0Y2N3NLWTBXb0szeFRZU1paMkQ1TXVadURuRWFjQ2dmVElHa1JQNUFuekdrbVRDSTRSdjBVTTk1ZHdCaENLaG13?oc=5",
+          "tarih": "2019-07-17T07:00:00+00:00"
+        },
+        {
+          "baslik": "İsrail'den kamuoyu yoklaması: Netanyahu kaybediyor, Arap partiler olmadan hükümet kurulamayacak",
+          "kaynak": "Gazete Oksijen",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOYVZvbmtDaFc3WldIUllEWF8xLVV2QnI2QkxWMmU4MEhTaVd1ZC1sN2wwYnFZaEdUUjgybG5zektpZUFPS1BDTUE4cHpNNkdPRUFDVXZOU3otRmZ1OFBFTkxGcjlvNGhPczJmbURuZzhLNlhuUjlVenNwVHVfNE5QYWdTNTJxWkpRMnc5NkRlVk02RzhXSWE0NWE3WkRsekVVYXEwTGN1bmVaZUxiVmxEUVQ2bmJUYUVUeHkyTXhFcWVUTlIyYjdfUmd4SQ?oc=5",
+          "tarih": "2026-07-13T07:00:00+00:00"
+        },
+        {
+          "baslik": "İsrail basını: Netanyahu BAE ziyaretinde Arap ülkelerinin temsilcileriyle görüştü",
+          "kaynak": "Mepa News",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOT3ZDYklTQWZnV3FoM3JVMmt4TEN4cjloVTF6Qzc1M1JpZWtDdjZ3UHQ5Q0FvdlpZUHM3OW43Zm1kSGJpUTVmTENVTF9kUjI3clU1ejVveTZGOVM5WFVFRnBzU2lWQXR1aFNIczRtM3VMVmhUcUdoNHQxZmpqNkRjRjRRYXk3dEdjdGQzU0V5RjdJRG84V1RxU1lzRW5SNEhwZHYtdUg3UmhCbGlPV0hPQklvMWlnWUnSAccBQVVfeXFMT0l3WFR6cENyakJoM2dDYUtxWUdHYVdleWo3eThiT21HSXRLSHNEWGliU3BHSmFqVDl4Y0RKczI1QUlFTGd2dmlxckxuOEhCVXhFdnMyeDZjaXZzcHJ4Sm8yaEhuOHc0M21hUlRYQXBPNXVBTHZsS29fYzJCNjhSdmFUcXNfZ2RMdHk2SzJCSWZxUmRkbmhRN2dPT0E0S3B4ZXIxTG9IMzlNM3UxbnNqcGZrUU10U2U3ZGlKN1B4Y1F1THQxYjAyaw?oc=5",
+          "tarih": "2026-09-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "» İsrail seçimleri: Arap oyları ve Netanyahu’nun dışlama siyaseti",
+          "kaynak": "10Haber",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb0o5bWhtc2Z5Uk1CeTM0XzhZMEF2ZW81aUg5VU85Z3daX1JOUFh1NGItMF9mRDdUeWRhdTRIMHFfOWthdURZUTRaRU94UVhxUnEzWEk4R0NmTjFpTE83R2JPZno4SFVpVlN1UDUyQWlfZEV1dlF0SDFWOHYtMExnVGtTWE5RQ1MxLTJOcGZRVjMtWVRGcmdRMjhSOA?oc=5",
+          "tarih": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "baslik": "İsrail sandık başında: Netanyahu’nun kaderini Arap seçmen belirleyebilir",
+          "kaynak": "Bianet",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOOFlEd2pXdm5xaGNpMTFuNk9VeWkzNUtkVE43WksxTUNoZmtCdXFDSEpVSlVVZFY5TmM2V3ExSlVGbi1FZ1ZlYWIwQUhCTnl1eUZrR21GWm11WnZOd2pGcWZiNUwwazhLeVhvTVlYdkNkVlAyRlRIZFJNOVI4aVFMdnF6MXhjSzB6ai1GUnhiZktqcFhtTC1CNjE4d3dqQm80Q3FnWg?oc=5",
+          "tarih": "2026-10-27T11:50:00+00:00"
+        },
+        {
+          "baslik": "İsrail'de Netanyahu'yu devirmek için Arap partileriyle koalisyon çağrısı",
+          "kaynak": "Son Dakika",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQeGphWXEzR3dWbmt5TXJma3dFbVJ1ekJibUxQZHptQmhSTkZiSXZqeGotSjUwYzRzRGV5b1NQN3ZvT0MzV0tINGoxdlN0V3pvX3daaVpON0NJQndhdWsxRDBUUkZLcTZWV3FJMldnT2w4amE1aFB1VnEzTHo5UHJKWG5ReDJPeTY0bGg3ZG5PTVrSAY4BQVVfeXFMT3N3ZkRMeXFBVDJuVnRDRGVPSWplUXE1cThTSWZiTl9zMGg1Zk55dWpBandnanhnNk9zSXN2a2M3elFFUEVzOXJUMUVfWldlazRTWXNxcU1ONEdoV08zYlZYS2U5MUxDSUx2R25TYV9RTTBmRlVkSXFkRkFnTEFPclRkdjJBZUItY2NnY1g3dw?oc=5",
+          "tarih": "2026-10-28T01:12:48+00:00"
+        },
+        {
+          "baslik": "İsrail’de Çoğunluk Düğümü: Arap Partileri Kilit Konumda",
+          "kaynak": "https://perspektif.eu/",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWHNEODI0TlB1UFRYcU0zb2NvX3JXN2x4MjhPampNS2pOdDQ5d1lhSVNzQ1dHUlRRa3JDVFEwUmd4TGEtUU5LNW1kX0hjTnBBV2NRRkFQLU1vRktWbVZwQnIxNDdlS2taYkoxcm53ODZvcmNBME96X1A2WmRtSDNiZXZPRkROWFc2QTU2SmFSOA?oc=5",
+          "tarih": "2026-10-28T08:10:29+00:00"
+        },
+        {
+          "baslik": "İsrail seçimleri: Netanyahu'nun bloğu önde, Arap partileri belirleyici olacak",
+          "kaynak": "Diken",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQWUMyYWZMRkw1QW1mMkQ2ejFwcHlyel9BcUM0YlozYXk0UExlRWdYR1FoX0NrSkhrUXh4ODQtUkdzM2J0enJpbGhfSDRGQ0RSRFcxS0Z4VTRqU2FZcTRxc2owOWZUN0hlZlhnT2hIREtlWTkxRWdUbVNFZ2xJWVhDT2syVGE1ck5oYnJLNjJpVzVHcjJlcHhkcWpYLTIzX3o5RHc?oc=5",
+          "tarih": "2026-10-28T14:11:31+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Binyamin Netanyahu",
+          "aciklama": "İsrail başbakanı (1996–1999; 2009–2021; 2022-günümüz)",
+          "ozet": "Binyamin \"Bibi\" Netanyahu (d. 21 Ekim 1949, Tel Aviv), 2022'den beri İsrail Başbakanı olarak görev yapan İsrailli bir politikacı ve diplomattır. Daha önce 1996-1999 ve 2009-2021 yılları arasında başbakanlık yapmış olan Netanyahu, İsrail'in en uzun süre görev yapan başbakanıdır.",
+          "link": "https://tr.wikipedia.org/wiki/Binyamin_Netanyahu",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Benjamin_Netanyahu%2C_February_2023.jpg/250px-Benjamin_Netanyahu%2C_February_2023.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Binyamin Netanyahu yerinde olsan ne yapardın?"
+    },
+    {
+      "id": "46123694040c",
+      "baslik": "İş insanının 8 sayfalık notu sonrası 5 gözaltı",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T04:04:21+00:00",
+      "ozet": "İş insanının 8 sayfalık notu sonrası 5 gözaltı. Eski bakanın kardeşi hayatını kaybetmişti: Geride bıraktığı 8 sayfa nottan dolandırıcılık iddiaları çıktı; 11 kişi hakkında gözaltı kararı. Mevlüt Çavuşoğlu'nun kardeşiydi... Aydın Çavuşoğlu'nun 8 sayfalık sır ölümü.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "İş insanının 8 sayfalık notu sonrası 5 gözaltı",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQZHhEN0N1U1Y5UW5XR3dpTlJLTG5nNU15S2g5NkdOVllUSzM0RXhJYXVZbHVJWTBSN25GQXRXTDhVWE1SV01vLVI2VVE2Sl9ramxOb3BvODgyREl4aGlabzZXQUgyRkhWVE5najRGSEdIdXZyRnVxSEtVU2EyVmQyb21fWl8xUQ?oc=5",
+          "tarih": "2026-10-29T04:04:21+00:00"
+        },
+        {
+          "baslik": "Eski bakanın kardeşi hayatını kaybetmişti: Geride bıraktığı 8 sayfa nottan dolandırıcılık iddiaları çıktı; 11 kişi hakkında gözaltı kararı",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOT2IyZFJMWjdNSHJuT2lsNmZjVmUxc05rc21SVnl3THdURHQ0aXpMbFBzQlF0T0hPWlNYM3pQbkwtdV9zUmQyQWZ0clVlM1JNMWc2a0RLMmFtZG56RnptWEprTWJOYlBGY3dXWklOTm9Jb01oa3plN2ljUDl3SENZa2pBN0ltWHJ0TGxPRnAzek45X2hSdzlXVno4UzBpbEhLNU9WbkV3RGJvZEtydUxLQXVvTm9MZzF2c1RpTHdFb0ZVWThUM2JZdVZHckxuaTdjcmhkMWx2a244NkVna243RUotRVBZWUwtOWpFX3ZB?oc=5",
+          "tarih": "2026-10-29T04:04:21+00:00"
+        },
+        {
+          "baslik": "Mevlüt Çavuşoğlu'nun kardeşiydi... Aydın Çavuşoğlu'nun 8 sayfalık sır ölümü",
+          "kaynak": "Odatv",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdVFmX0JsS2FkZ1EyYUc4Szh4MFhSdlpleFVrRGRMWnpRTTZNc3VELUZIWUlobE9FNHd1SWlnMU1XR2NDd09kUHhlbUZJNXQ0Nm5rZzRodHRGLUpHdloxbmVNaHdycmpfd2h5UFNCa1pjWEFtQ0hjUkR1UVdFUGVvMGhBbVliTG1MbnRuTU5ZX19uZ016TVU3WFZEUHIxSS1IMmtCdU1ObTk5eThxUHRZ?oc=5",
+          "tarih": "2026-10-29T04:04:21+00:00"
+        },
+        {
+          "baslik": "İş insanı Aydın Çavuşoğlu’nun ölümünden önce bıraktığı notlar soruşturma dayanağı oldu: 5 kişi gözaltına alındı ortağı ve iki oğlu dahil 6 kişi firari",
+          "kaynak": "Patronlar Dünyası",
+          "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxONktFWWFBbXRTYzdMWDM4RF9OTHlvM0s0M3pBeGl2WVotbk9lWlpHQkFhSGU5eFhfMWZGeXdLOTVrNjZXM3g4OFFWZkVnX0ppU05hRVJoWEF2OW1TRks5dF8tZUNJR29mVUFzUnlBWGtmQnRHQmJaRUhwbzhxeEZXeEp0R0gxRFVHMnQ3MHpraWlNdm5vWG43SU5jMks0Q2Z2SElqcnVocDRScjI4LTktT2lRbUJFdWh6VmNRblNOSVZKdTBEeHlkOVk4MEd3MjdGQWpLbXcza3E2Q0EwaEJHdlVlUnBPN2FidWwwRHFOZEVxMUpBcnpVVjJZRGFBTEZCWmx6cnRJOGVLOTN3REE?oc=5",
+          "tarih": "2026-10-29T04:04:21+00:00"
+        },
+        {
+          "baslik": "VEDA NOTLARI SORUŞTURMA BAŞLATTI! Aydın Çavuşoğlu’nun geride bıraktığı 8 sayfalık yazıdan sonra 5 kişi gözaltına alındı!",
+          "kaynak": "SON TV",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWjhHakZEOUlScE1tZ2Eyd01aSi1DM0VnTkpWdGVQZEhzSEZkYlNxSmFULTJZOXpKelU0QXNpTEZPM3B4RGFFdlo1Mndpek4wNDhxejZXVEEtUGhzT0x4SkhKVGgzcThxNzcydkpSekY1X2hKLWE0ZTViVURCQXNNYllyZlE1Y0ZpX0hULU55cXNfdXJZTWxsZks1ajZ1Nmo4T2wtWGVLMEYxZndIVURQVm5DNHlJa1VCMmg3aE5GY19kSlZ3NkE0NWQ2aVJ5YmdmdTR6c2xkYmFORWRJ?oc=5",
+          "tarih": "2026-10-29T04:04:21+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "İnsan Hakları İzleme Örgütü: Hindistan’da 600'e yakın kişi gözaltında öldü",
+          "kaynak": "BBC",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFAwQk1KVm5peEliM2tFdW5GSGFtWXdMUVRteXcxclBISmRQU3R3T3pHMTZvbzRidWptMUN5ck5JQUhkdWJWcVBGV05IT052VGcwRHBPLWsyd0JGb2EwNWhJ0gFkQVVfeXFMT1Z2MGZfemJ2dlkzT0NMbGtpXzVkeGVKVVV4cjlLSUVucW5wTTQzcXF0M2NyWERQUmcxVEFPTFRSdmFZV3FzZkgzV3BudnRBa1ZpWFU2VUJlNTMxQWMwVi11enhZYQ?oc=5",
+          "tarih": "2016-12-19T08:00:00+00:00"
+        },
+        {
+          "baslik": "İnsan Hakları İzleme Örgütü: Irak'ta IŞİD bağlantısı iddiasıyla gözaltında tutulan çocuklara işkence yapılıyor",
+          "kaynak": "BBC",
+          "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1qcHp5dXRWU1FTYWZ1V1hCalk2RFhzdm9fN1g4b1FRTFFHLTg2MzE0elhfcURQcWpaMUF3ZnJSOThUaHFwQ05tbWVDN2cwcGFGWkxSVl8tZGM4Qm42UHlN0gFkQVVfeXFMUGVtQ2VRNjczT01ERm42TzNMY3NDWllzc2VSNHJndEJvNGFLYjlrbUV3aTVnX1Fyc29WVlRpYWhTRkVKTThMQnlUUnJsSzZpT0ZqalhJNFQ1U1hFZEItenloMUgwcQ?oc=5",
+          "tarih": "2019-03-06T08:00:00+00:00"
+        },
+        {
+          "baslik": "ABD'den 86 sayfalık Türkiye insan hakları raporu",
+          "kaynak": "Bianet",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQkd2U0o3bTFsZE1FajY4U3FHQ2N1SzV3MUxLczlaVGcwaGJCOWt4bXVmZVkzVGM2SmEyUFFYZVFXVm5nUU5vald5NC1DZUJTWXRjcHRSc3ZpNk1LWmRoNFBhUUxyeHMxeGEweUl6Q3pfdHFvc0tKc3pWQ0p3QW4taFFOWU5fMFU?oc=5",
+          "tarih": "2024-04-23T07:00:00+00:00"
+        },
+        {
+          "baslik": "Murat Kapki kimdir? İş insanı Murat Kapki neden gözaltına alındı?",
+          "kaynak": "Cumhuriyet",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNXhSNUcweDVvLWpldzlhSlQ1VkRWZWFEUVhKOGdOckdMTG1SNzBKUFpiSFFOUmZyQkxyR0ExOUE0czdQVjVFX1hGMzBUVk1LbUFqYS1QR1hSMk5wZGwyanp4V1dlRVNKYnZjLV9pc1NkcFhLX3lVWkl6T2RfTFY4MFUxNlE2Ulhtd0RWMURDVVd0Y3RuRVRFSWc5cDVFdVNIUkd3T1JvanNkWUFacEE?oc=5",
+          "tarih": "2025-03-19T07:00:00+00:00"
+        },
+        {
+          "baslik": "İstanbul soruşturmasında Antalya’dan iş insanı Ali Yılmaz gözaltına alındı",
+          "kaynak": "Haberimiz Var",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQcFJRUnkxR1BpMUtIY3FpNHI3VXFKRkxiQlU4dkxPc1RJbjBDLXE3aFlTMVp2Vkx1ZWU0TWlKVmhXOEtQME92T1JXMFcwNUN6T1hpSENzOV9lTUJ0UGlHeXJhYm5QM1h4VE4xQ3BQSzFMOGRTMzA2OW54Z0pZYXZNazBEVVVDdFdOWW96Z0gtSzg5NFdKNGtSZWpEeGNmV2tJSElELTNtMk1wd2pQN1Vj?oc=5",
+          "tarih": "2026-04-30T07:00:00+00:00"
+        },
+        {
+          "baslik": "Trabzonlu İş İnsanı Türkay Gümüş Yaşadığı Gözaltı Sürecini Kitaplaştırdı!",
+          "kaynak": "Günebakış Gazetesi Trabzon",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU095ZmNNYmlkMnV6RE5UeTlCNFQ2bHZMRE1MWGlIaG9pcjRjcjBSSUlDNzhXWnVJLXZZNnpvemdOZUI0U2dybXlrd0pnLU1GVFNDSUVtNGcwYnZBRmd3M3JTcERJa0d1UnZaekVLcnA4RHNxNXJaSnd3SUs1MXpsVVNVdGVLVmpfVTM1U3YxOVhFbGU4UXI4NldubmxaUWZrTG15aE1Sby1ZUXM0dzRr0gG0AUFVX3lxTE15MWQ3ZlAtOFRZUVphTTlZMTJHWHhSUGRNSUJib1JJWXdEWVNUMnZNTWxPd1YyOURmQ2UzTWo2YUMtVFJ3NU10bHhiejhheEJkS3N0SXhFZFRlMVF4VWozMXlfMzRBZlo5N0hkM1pMUVVHakt5czJrbEMyTDJsWl9vTHhGT2h0VHR3c2VkdGFkRDM1M3dnLUVvdkstdlRxN0w5OFNoRmJ4dDQ3ZnN3N2hja1B3aw?oc=5",
+          "tarih": "2026-05-09T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ahbap soruşturmasında gözaltına alınan Sakaryalı iş insanı Faruk Koç adliyede",
+          "kaynak": "Medyabar",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWE9lb1hkdE9vZHVKeC03Tjc1dzJJWm1qU05NZnIwaGlKVW03NVNxVmVScV9TSkIyRFAwOXUtMk1YSEJzbHVacFpLLVpiZU5NWHN5cUNIaE9GQl9rOE0xTmZpTjdvNzdCeVFaNE5HUm5leFdlU3hnRHBobHdpOXBjamNTSHJtem43WTk3V3FtQ2piZUJaR2pjcnQ4Wi1NSkNpT1hJY2VoTmJCdUlJb3VCaDViSdIBuAFBVV95cUxPQkF0SzlBa2ZNazVOclZLYnVLdHlxMlZDUXpIUnY3dTJaMTVrU08wRmkzWUJlSXczcW1wWjVXeUJZeHFIS0xsWmY3WHF2cXNJaFphc2FmcXZOdmNhUmpPWncxQ3h4bGFBVFJRSUptNzduZ0ZOamFjYTd0dGZfSEdMeExuQ3pndUhIUlpsVWozdnU0TnVqMnhBNXhqWWJ3V053QUhkNVZUZm9oWXRpN0FWYlBhWmtsc3oy?oc=5",
+          "tarih": "2026-07-30T07:00:00+00:00"
+        },
+        {
+          "baslik": "Giresunlu iş insanı 'Sarıgül' soruşturmasında gözaltına alındı",
+          "kaynak": "Giresun Öncü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNT29JcE12SndGbjlYX0JTdVNUeVVaMVBTXzFuVWVtSG9MS0lRQXkwRDNZWjBfZkVEVmUzZEZuU2tEcUc1Z3VCSGNUcHpEcUtieTRDY1R1Q29XaEdVRVhCOElFOElPOURNTDViV09nY3NmM05RaG1CcXlJaGplZFlmX01LbkliQnl3N05oZTZmejlRN1JiTFF2YjN5eFBXTWc50gGmAUFVX3lxTE50QXQxeE5WbEkyQ09jS0ptZ3NSWTVxX3pVRlBIYjRIdU1WUC1vUW9wX1ZjTmRJWG1DTlpQb0pxalZnX2ZOOGd3Zms3REF0Qjdmc2toUm45MjROOExNSFBYMnBXdUhHNDhMbzBKeFhjQ0ZQal9uSFhqaUNNbmZCUWNhYkM0Z3o4MHl3allVb19iSkNJWVNSMTJqbkNfb2xzZjA3NUpqdGc?oc=5",
+          "tarih": "2026-10-24T12:58:00+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Mevlüt Çavuşoğlu",
+          "aciklama": "Türk siyasetçi",
+          "ozet": "Mevlüt Çavuşoğlu (d. 5 Şubat 1968, Alanya), Türk siyasetçi, diplomat, ekonomist, iş adamı ve eski Türkiye Dışişleri Bakanıdır. Bu görevinden önce 2013-2014 yılları arasında Türkiye Cumhuriyeti Avrupa Birliği Bakanlığı ve 2010-2012 tarihleri arasında ise Avrupa Konseyi Parlamenter Meclisi Başkanlığı görevlerini yürüttü.",
+          "link": "https://tr.wikipedia.org/wiki/Mevl%C3%BCt_%C3%87avu%C5%9Fo%C4%9Flu",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Mevl%C3%BCt_%C3%87avu%C5%9Fo%C4%9Flu_2023_%28cropped%29.jpg/250px-Mevl%C3%BCt_%C3%87avu%C5%9Fo%C4%9Flu_2023_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Mevlüt Çavuşoğlu bu konuda doğru mu davranıyor sence?"
+    },
+    {
+      "id": "15f16cb04f31",
+      "baslik": "Yüzbinler Cumhuriyetimizin 103'üncü yılı için 'Cumhuriyet Yürüyüşüne' başladı",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T16:13:16+00:00",
+      "ozet": "Bu yıl Türkiye Cumhuriyeti'nin kuruluşunun 103. yıl dönümünü simgeleyen 29 Ekim Cumhuriyet Bayramı vesilesiyle yurdun dört bir yanında törenler, yürüyüşler ve çeşitli etkinlikler gerçekleşti.",
+      "ozet_kaynagi": "Euronews",
+      "haberler": [
+        {
+          "baslik": "Yüzbinler Cumhuriyetimizin 103'üncü yılı için 'Cumhuriyet Yürüyüşüne' başladı",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPZDJiTnZDT3UtTHRRZi1ZYk9IdDNyd1BUV3BINWhWSWtLSDJKTl9EMWd5NHoyMy1icHBVd3pPSGR5U0xJbTBCcklUelZINVlJeS1KemMzNGRQdXNKQk5MRkJlVWlZSG1rNmFMUkk4NGZBZHhOUTNiVl94andXd1NGdlZ5ZTNwZWpBenphNzdUTnBtUFhiMjNESGFOQ2M5UEd3RWNqbW1EcEVFSVMw?oc=5",
+          "tarih": "2026-10-29T16:13:16+00:00"
+        },
+        {
+          "baslik": "Bütün ilçeler coşkuyla kutlarken, kayyum Cumhuriyet'i unuttu",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFQxS01yWVJteFJrYkp2NFBzejl5blB3QUVxOFZqZ0NHOE01MC1JZFBFYTZDOGl6ck1WUE5yNzVNTFNfaHZzMmZ3NWNfS3ltUTNJLVZnVkU0TlVFV3NYaVlCcU05SFM3cVYxY1FuQlFNMm9zb1hnMy1qMG1XcFppSW1GTE1wdUFqejM5LXZIQTZfb3A1X3BJ?oc=5",
+          "tarih": "2026-10-29T16:13:16+00:00"
+        },
+        {
+          "baslik": "İzmir'de Atatürk ve silah arkadaşları için keşkek hayrı",
+          "kaynak": "Habertürk",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOdDdPUXFpSjlpdHQzRnpEREY1MU1leUFHa1RhaXRNVXlvMk11a2JaTWhtRXV3Rm12enJnTXdFWVZvb0VGOXdTRVQ2clZUQVVZTlh2ZHFFUDBMOVFGQmVxNnEwT05iNXk5YWZ2c2R5RE53WFZVbkJieGVzSFNiUEhVNWlWeWlZbW0tb2NoQXdQcUN0Nm1iRldLSDFpNWJQbHNWMXJVOWs1eTJreGpwMGZBWnVKV0pOVnFO?oc=5",
+          "tarih": "2026-10-29T16:13:16+00:00"
+        },
+        {
+          "baslik": "Kadıköy'de klasik otomobillerle 29 Ekim Cumhuriyet Bayramı korteji",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTVdjaXYzMzJjM0M4SGVYbG9nODE0QlZrcnJoWlA0bE11dUp5Rmptbm1xS2FlcmtTZV9udGxrdGFveWMyRGRXR1BkYzNOZ2tJMzY1UTh6S2ZPOUV1S1gyXzVGMzNNRnNhWDNJX2NIRmlyVExOSGVTMUpWZnNpZWZCa0hJeXBwb3lBc1BsV21mOTdpNXc5bDlQNGxZUlNkS19HU05LZ3d1WkMzZGJXbWc?oc=5",
+          "tarih": "2026-10-29T16:13:16+00:00"
+        },
+        {
+          "baslik": "Cumhuriyet’in 103. yılı Tuzla’da kültür, sanat ve sporla kutlanıyor İhlas Haber Ajansı",
+          "kaynak": "İhlas Haber Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZm1Ucm5IVGJtTzdhSjdudVBROFN3TlllbF9NVGlFZDd2QUpiZWhqcl9QdkdmV1lONjZfUHhham5IcmNDSFBXUFVZYnhrZ3FXVzBnU0RhUDNPNlZvZGMyWGl1b3ZXUWd1algtZDFNbEswRDhEaGZUMmxnME1yM1lYYV9MVVByeHQzSU9hekN2ekFIbXozWktabGNXc0NzRzlKRDljaDZGaC1zUFdFVDRGMXgyRmV0UQ?oc=5",
+          "tarih": "2026-10-29T16:13:16+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Ümit Özdağ, partisinin düzenlediği 100'üncü Yıl Cumhuriyet Doğa Yürüyüşü’ne katıldı",
+          "kaynak": "DHA | Demirören Haber Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMTZ6ZjRFNzF6VHh2TjlXWkgzNXo3RUJ6SzlLbW14V0NQNjFMajFyd3d6NV90dUNJSUxYM2ZLTGQ3SU54a25wVjZyLUtILTJEODVqaURiTlRMMUZnQlJfT3dVbXJGbUNsV3JDeTZMYVRSY0czTndsM0tTczJKRzRxYTVPSWlaQVJnaWJuZWZ1U3AtZFE3UDk5ZXBLcWJwTDVwQXkyS0dOcEdzdWR3SHk3cTVCOFcwc29qclo3NA?oc=5",
+          "tarih": "2023-07-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Cumhuriyetin 100’üncü yılı ‘Cumhuriyet Yürüyüşü’ ve konserlerle kutlanacak",
+          "kaynak": "DHA | Demirören Haber Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSHdoVklFS2xQS3EyenJKeURFZTBUWF9OemlRZ0t2Q1NERzNuTWhsejN3dlhnTnBfbWFkR1ZxYld5a2c2d3JMQlB4YmxwQXczZ1pjbFpCY1ViczNvYnMxakpHQWh1cW8wSDVKVGY4ZXVfdWFxdXA5cUZpM0ZQOHlYdVdCbWpkcnZZaFBBVEtlR3prX3dxNGM4SThmQnJtTThqR2hUSDd0VQ?oc=5",
+          "tarih": "2023-10-25T07:00:00+00:00"
+        },
+        {
+          "baslik": "Cumhuriyet yürüyüşüne çağrı",
+          "kaynak": "Esgazete",
+          "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA0YVRPaG5rV3BlUWs1SzB2UTA1TllLUXlsMFZlTzYwNXZ0VmhfRXJxZElBRkxHMU9BalVJVnE0bWs4ZnpPUllvWDRaOTRBR2pYVE10ZlhIRFFieFVZcEJ0RURR?oc=5",
+          "tarih": "2025-10-27T07:00:00+00:00"
+        },
+        {
+          "baslik": "Aydın Gençlik ve Spor İl Müdürlüğü öncülüğünde, gönüllü gençler 29 Ekim Cumhuriyet Bayramı’nın 102. yılını Koçarlı’da düzenlenen yürüyüş ile kutladı. Cumhuriyetin 102. yılı kapsamında Aydın Gençlik ve Spor İl Müdürlüğü tarafından Koçarlı ilçesinde kortej",
+          "kaynak": "Instagram",
+          "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE12ZDNuQ2tYaVYzaVBDeVE1T2JpelFWRlJpTjh1MHZOSEcyMm8tUFktcVJ4Q0staG5RZlBYd1lTaUlreW9oUHVNQUZpR0JzVjRZVkE?oc=5",
+          "tarih": "2025-10-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Eskişehir’de Cumhuriyet Bayramı için büyük yürüyüş düzenlenecek",
+          "kaynak": "İstikbal Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQllncExvZ2hvTVBGenI5MDRuMUNqY3lVTy0wU1dUakx3S0FiQXlWSllYUVptUUxSQ3VzQTFFeW4zWExuY1p4Um5YR2Y3dzVlRGdvTHIyOHYtejU0OXhfdmpjVUxWYzBTbGZPM242bVZubmVSV3BZbkk3T0NhZEpYaVg4c1V1TkhiNkhDNkVsMU5NYWVJSUN0MnpTaw?oc=5",
+          "tarih": "2026-10-23T12:10:00+00:00"
+        },
+        {
+          "baslik": "Sevgi Akmen Eskişehirlileri 29 Ekim Cumhuriyet Yürüyüşü'ne davet etti",
+          "kaynak": "Gzt26",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWTVCT0RxbVBHOHZoUjVENjRaZlBJanJ5dGtaNUZhWmpJWDdwRkZYaDQ1a1ZDQjNkMlpYSEYxSEk4Y2pkMV9ka1J5MzVjVnc3RmJhTkVWZlFXZXpob3hya1JhV2JnQUFXZ00xamdPVnVIVU5rQkFVSGVJXzNVRkhDdVIwSGVxWXdnRUZYR0ZTRWtrRHRT?oc=5",
+          "tarih": "2026-10-24T06:53:00+00:00"
+        },
+        {
+          "baslik": "Uludağ'da Cumhuriyet Yürüyüşü",
+          "kaynak": "SporBursa",
+          "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA2WDRyMW5xQ3RPNGNrMFIxdzkyVkh6ZkF3M1JuZUcwczgwQmJfc0RieGNWMHVBX2NMempxQjZYMk0zZFYtMmhETjBLRG1jeVZ3QUhESEhwOTNGLVFST3NHX3hHRVdJNVlSTHZVR1hQWnBYckdkRGY4WmNR0gF6QVVfeXFMUDZYNHIxbnFDdE80Y2swUjF3OTJWSHpmQXczUm5lRzBzODBCYl9zRGJ4Y1YwdUFfY0x6anFCNlgyTTNkVi0yaEROMEtEbWN5VndBSERISHA5M0YtUVJPc0dfeEdFV0k1WVJMdlVHWFBacFhyR2REZjhaY1E?oc=5",
+          "tarih": "2026-10-28T07:04:56+00:00"
+        },
+        {
+          "baslik": "Efeler'den birlik ve gelecek vurgusu: Anıl Yetişkin cumhuriyet yürüyüşüne çağırdı",
+          "kaynak": "Aksiyon.com.TR",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWUZ0NmhWOEp3ckZMZHUycjg0a0JJR2ZjNE9sY2I0amFEeURHU1ZNejBOUHlyUjBUck9HSzlvMjNJdlpIVkR3VFF5aGNhdWdHSDJrTWNaZkxkMGY1YWhSUVJNdEhiTDg4eDhoeDRXTkN5VkI1RnBGRzQ5Z3NJZWpfRFVVSG1IWjEyZGpBUThaYndJbmxkRlgzNXBQOFVGVjlmOXhHYkUzMHd1S3FDSF8yOWlGamnSAboBQVVfeXFMTmNrZVVZRlZvYVVJcjNPWG1rb2tGNlVTakljOWhQRGlIdnJxSzVuZWJMdWNUT2J3U3FjY25ZMVV2R0FWX2IzTTVwRTdnMmVvY3lYRWlLa01xLVBGRHkyY1lyVFZqeEV0U3BCd3RJcUxnVEhfbUIzVTZaNUNPSWRER0d5NVJERUpXUVRkM3h1OVBjX2xoOW1BTkx4am5RblJORHB4QzQ1OHdPazdDUjROLUlZOGJia083Y1JB?oc=5",
+          "tarih": "2026-10-28T09:49:22+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Yüzbinler Cumhuriyetimizin 103'üncü yılı için 'Cumhuriyet Yürüyüşüne' başladı” haberini duydun mu? Sence bunun arkasında ne var?"
+    },
+    {
+      "id": "734d55c72f3a",
+      "baslik": "Fatih Altaylı: Konuşulması gereken Sarıgül ve şoförünün mabadı değil; 'intihar' riski kimilerinin hoşuna gidecek bir olay olabilir",
+      "tur": "haberler",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T09:24:00+00:00",
+      "ozet": "Fatih Altaylı: Konuşulması gereken Sarıgül ve şoförünün mabadı değil; 'intihar' riski kimilerinin hoşuna gidecek bir olay olabilir. Sarıgül’le ilgili en korkunç iddia | Ahmet HAKAN Köşe Yazısı. Sarıgül soruşturması: Sekiz gözaltı daha.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Fatih Altaylı: Konuşulması gereken Sarıgül ve şoförünün mabadı değil; 'intihar' riski kimilerinin hoşuna gidecek bir olay olabilir",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMEFaa2hTWHZSM1BjMTAwaTdkX1dBbUVsRE1zRXRnVmR4R3VURW9sTV9BakpiT0E2aFJqWUdzTGRhM3NjTVk2X2JkdHNOTEFhM2pYRE1fOFlYMUdqNndvbktiZ0dFRlZKLXM0c2pEZ0s1dnc3RmZQNU1BeHZjOWhkaC1GTWxBamI2b19HcmZLa2NCV2tkVGtrMGZjOS0ta2prdDVQMXZpcXB0d0p1MzI5TTIwcnRybnhsQjZ6WWUxVGpPRE9EZXlaLXJkTGM4bmRMSVJOVW1odlEtMVpTLW1odFFTcmpPdEZnUFNUczZaUWR1ZlV4?oc=5",
+          "tarih": "2026-10-29T09:24:00+00:00"
+        },
+        {
+          "baslik": "Sarıgül’le ilgili en korkunç iddia | Ahmet HAKAN Köşe Yazısı",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbnB1M09vYXloZWJJbFB5NW81QW1EQklrMzl0LXYyV19qZThxYUlxNVF6bVN6MGRFNXNWSEY5SmpLTVdPWlVESEcxRjZnclBmbmFPdkdWV3RTTEJRcWFpanl5c3M1a21SWFBzQ09ncHVfRmZ0dTBZQVVPbVFlYkg0dXVzQzdQTjBTY1FXaUI5ck1QbjRoMGc?oc=5",
+          "tarih": "2026-10-29T09:24:00+00:00"
+        },
+        {
+          "baslik": "Sarıgül soruşturması: Sekiz gözaltı daha",
+          "kaynak": "Diken",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5hMTBwR29qcUN1eXdkZzV5WGZ0T0FNMUE0Z1pYSHo1bGZWQkphSmpFY0NDRThEX0diV29ueU51ZEMzS1BFdVB2ZGlNX2c4TWZlWlFzNkZ3dTI3QlBjTGE2Q3BkYUVzVDVIUWM4azR4LTQwY1k?oc=5",
+          "tarih": "2026-10-29T09:24:00+00:00"
+        },
+        {
+          "baslik": "Mustafa Sarıgül Hakkında Yeni İddialar: \"Odaya Girdiğimizde 'Dokunun Çocuklar' Derdi\"",
+          "kaynak": "Onedio",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNUmZxUHdqTHBDdkxvRGJ0dzZINm1OLVB0UFlGdjJmSUhvRjkzM3JhWndoSG9MMTdtOTFES2hMY3BrZUhPVVlMUHVqc0daSDZ1VWpXSE9iNzNtbnVCcDY4a2VTMHdJcUh2dEZjLVprSzJyeFBDRkxqbVFRM3BWZkFuMF9XdElSQ25FNnpXa2VISjlRbXZSN1B4ZWtJX2M2V05rbG5VUnRQTlRVQ2JsbHQ2TEJCZw?oc=5",
+          "tarih": "2026-10-29T09:24:00+00:00"
+        },
+        {
+          "baslik": "Sarıgül soruşturmasında 10 kişi hakkında daha gözaltı kararı verildi",
+          "kaynak": "NTV Haber",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ05CUlhPRDZxdjhHbkRwcXIxanNYS2x6VVplTmZ1cVBhWTNaLW4zSWVKdGlsbVpOcEtnUUd0XzV3S29vYlN5bVB1OHI1bFMyd1VfdXNzcjNDWHNHTmZyaEFpMklYaEJDblFhTkFJd1RKaVBhSnNJanVla0pSQm1zN2hOYjdLQjlhbjJyVFhFVkFLbzBXb0RQMlpyRlQxMVRK0gGmAUFVX3lxTE92eV9xbkdQWHR6ZjluSjU0RVV4WFFUdHNuSEg1WHNGak5nZDJacFloWUZYcXA0VHNnalhfQVlnbkl1ZURJdEF4UmRfWi02Ti1tdnBzblMza3B1ZFRmaXg0Zm1iejhlSzFuTFdoZ3JpUlIxeVdGUGJndEduZ1JDQ3REQXFwRFljR2ZLS1VwRm1jM0c0SXkwNjl5Si1LU2R5Q3pkbE1UTkE?oc=5",
+          "tarih": "2026-10-29T09:24:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Fatih Altaylı'dan şoke eden 3. havaalanı yazısı",
+          "kaynak": "İnternet Haber",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTkVVckRDZVIwaEZxS1o2eUVZQkFtUk5LTE9NSFlnTWprWWx0cHNBSDl5Y3BsbFdJdGduNTZndlNFTFlRS2NlSWFFZDQzbWpxbXhaelotR1JudXM3Tl85VUpNN1lXSVVWLW9vcEpRMV9udC1GU3hxTVN2MlJxRTZnLUpKbTZuWUNnWENSb25EN3E?oc=5",
+          "tarih": "2014-11-06T08:00:00+00:00"
+        },
+        {
+          "baslik": "Altaylı'dan Sarıgül'e sert sözler: Kepengi indirsin artık komik oluyor",
+          "kaynak": "Milli Gazete",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYnphNVg0eXhtNWRhcUliMjdsRUlwbWxYd0VSbnZ2Y0ppZWdaSnRNWERlalRrMUFLVmVpbTVySHFCLVlLeFNnaTktNDJrWTRTUVRqM2tFVzNXVkJkS01TcnkxUnY4b2phekwtVmxNRWs2NGlvbUtRSXNJVG1PZmFaM18yUlBKVVVzVEh1ZVJhVkR4bHU2b3VUQnVBVXpEUkE?oc=5",
+          "tarih": "2021-03-05T08:00:00+00:00"
+        },
+        {
+          "baslik": "Fatih Altaylı: Ekrem İmamoğlu’nun adaylarının, Mustafa Sarıgül’ün adaylarından daha iyi olacağından zerre kuşkum yok",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPRjdod2JBTWF5MDBvYjlvN0ZsbVZRVFc2cy11bHN4ZU9DMklSTFdKV05pX1lZUXRLek52Vnc3YlpaaDNHM0hpb2x2QXZCcVRmakFhZks3aUtnb3pScmlJWllneUlpOXVmXzNoRFpfcEgyeWpmY2xHUnR6dkZUTVRtblNQd1hEQUJnNmtnREdXZnZVSnhpNTcyaTdlWnJuYzJubHM0Tm0wVE9IMkRUTEhYa09ERGx3dFdSMWczYXFkYkdhUE1yOC1BZDY3eWhZemFuRVY3b0stS0hCZTRyd2VZRmF3?oc=5",
+          "tarih": "2023-12-15T08:00:00+00:00"
+        },
+        {
+          "baslik": "Fatih Altaylı'nın 2 yıla kadar hapsi istendi",
+          "kaynak": "Gazete Duvar",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWlhjc0NVMFlSdUlwSzY5bXY2NHd0S2IzRlVTTHFVVDcxUHJkN1RsU1o0WndZNUU4X0U2UWxleUsxZkpnOERLTGdfMk5rS1R2bk5GOVNMUXUxbUYyYmJvWDFNZnp0TDRKYnhWVWJIUXBOWkh5dTd5M3prd2JyWTJTOXFJczJ0QkFyVkNkdkpCYXpXdw?oc=5",
+          "tarih": "2024-02-07T08:00:00+00:00"
+        },
+        {
+          "baslik": "Deniz Zeyrek: Gazetecileri tutuklama kararı veren hâkim, daha önce Fatih Altaylı'nın yurt dışı yasağını kaldırmış ve hakkında soruşturma açılmış",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxOMHYyOFpUVGhQSjh4QVRKb1o5Z1dPTEJZR2ZTSVRWZUJqY2JNcjNfTmYwZDdZUFFyWDdTNmV6U19WNjhLRFZxeTFKTkEyOTBxY05IWHBZUi1vT3FpNi0yMjFjM1VNRGpNYnN4ODl3b2NaOE5oQlFZRmFBRzVZLTg3V0tBZWlGbDRHTGZhTGF5ZDE3azhHajJjcnB2MEhxajhWamgteG94VjFPeExDOVg5NWRpUXoyM2dHLUtJWWlIRlZlc1VCZmRfb1dXT2ttd3RseXZ6Nlo0MzUxQktuSmY2VE1jOTVJN2R3bWI1dFhSRC1iOVhLSWJscVMxMkdQZzlHRkZGeTBNQQ?oc=5",
+          "tarih": "2025-03-27T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fatih Altaylı: Murat Ağırel Sarıgül'ün oğullarıyla ilgili kendisine ulaşan belgelerle yanlış yönlendirilme ihtimaline karşı önlem alırken gözaltına alındı",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQQmUzbkVGM2RhdWxTdERjallFQl91WjZLNkxkWjVaTVlJUEN4TWFNWm51THI1RktvNGJpN0xjbVBjQmJxTzVwVUp2NEY2YXB3cEdxTnE4OWhiMVpCZnZuYVlNbHlDNFJVa2dZeENFSXNuRzhVbHp5WjNxWDhMUzVQakdtTTNBeFlfb2daUEVoamxSQy1MQ0djNjBpZ3ZCSTNpc0NEb1paOVJyUTBpNkF3ZjZVYzM0MDRCLTVkcFNIVThaSkJCRzY3dExIMk1OaXlyWmMyZnlmRzNpNVpPN3RMYjdydDdTVTZWczFqcnhxdmpibU1YWHNTb3FwakdnQnAwNVZaSUMwVGZPT0pfMGtWRnJlaw?oc=5",
+          "tarih": "2026-10-16T07:00:00+00:00"
+        },
+        {
+          "baslik": "Emir Sarıgül İtirafçı mı Oldu? Fatih Altaylı'nın İddiası",
+          "kaynak": "politikam.com",
+          "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNaHFHb1pSUEpGemJmR1U2V3VDa3BYRnZ0cTV3dDZjRWZJbTVDZjR0MHJCOHN6ZXFlQWdWVWtlSHp5T3doT044aHI1eUFGM1VIMDFhQ1VqQ0VPMXo1Q1dhbk1nMEtrWjV1ZDZDY1FrUzlLcndULXFENHN2VF9mVEQ0VEk2Yw?oc=5",
+          "tarih": "2026-10-27T11:46:00+00:00"
+        },
+        {
+          "baslik": "Fatih Altaylı’dan ortalığı yıkacak “Sarıgül” iddiası: “O isim itirafçı oldu”",
+          "kaynak": "Yeni Akit Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQLTBpQ25uLW9IamZ3Qjk0RU9CT205M0RvWXVDOHR4TWNtc0tBLVA5bGEtVzlSd2RyMnlRRW85d2xWOFlWMVM5RkJsYllCRVYtVmowdS1iRnNCWDZjWTNibnFNN3hCeTA5cTJMNlRmNTYtVFl5c0RodjFDLUFEVEY4bXpYQWcydEFOTW1LZVZGWmFYRjdlMk1qMXVPUWxKSFNybzNFdGgzSnlhX2k2YXZtdUl3ZlUzRDls0gG7AUFVX3lxTFBnYi15c25XY3R4VUUtSV9PWFhsUjNvanUtY015bzZHeUpjMHo2WHd2NDJydzlIN1Jjb2o3Zk5mdFFJSUQteEdiZ3NYYWdzcjBTWEVnckd6OU41eVhKS05rVmxFTTg1WVZaTVQ2bDFpQUJwY0hScmFGY1RzLWs4RFMtMllsbmVxLW5jclJUbHgyU1NBaHlHVFoxX3k4eUQxTm95eGJGa2d2Skhib0U0QU82YmtCeDZYU3ZOeGs?oc=5",
+          "tarih": "2026-10-28T05:32:00+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Fatih Altaylı",
+          "aciklama": "Türk gazeteci ve programcı (d. 1962)",
+          "ozet": "Fatih Altaylı (d. 20 Eylül 1962, Van), Türk gazeteci, köşe yazarı, televizyon sunucusu ve medya yöneticisidir. Habertürk TV'de yayımlanan Teke Tek, Teke Tek Özel ve Teke Tek Bilim, Bloomberg HT'de yayımlanan Bire Bir programlarını sundu.",
+          "link": "https://tr.wikipedia.org/wiki/Fatih_Altayl%C4%B1",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Fatih_Altayl%C4%B1.jpg/250px-Fatih_Altayl%C4%B1.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Mustafa Sarıgül",
+          "aciklama": "Türk politikacı",
+          "ozet": "Mustafa Sarıgül (d. 15 Kasım 1956, İliç, Erzincan), Türk iş adamı ve siyasetçidir. 1999-2014 yılları arasında İstanbul'un Şişli ilçesinin belediye başkanlığını yaptı.",
+          "link": "https://tr.wikipedia.org/wiki/Mustafa_Sar%C4%B1g%C3%BCl",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Mustafa_Sar%C4%B1g%C3%BCl_2023_%28cropped%29.jpg/250px-Mustafa_Sar%C4%B1g%C3%BCl_2023_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Sence Fatih Altaylı bundan sonra ne yapacak?"
+    },
+    {
+      "id": "744f91895da4",
+      "baslik": "Al Nassr - Al Kholood",
+      "tur": "trends",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T17:20:00+00:00",
+      "ozet": "Is Cristiano Ronaldo Playing Tonight? Al Nassr vs Al Kholood Live Streaming Info. Al-Turais appointed referee for Al-Nassr vs Al-Kholoo. Will Cristiano Ronaldo play tonight in Al Nassr vs Al Kholood Saudi Pro League 2026-27 clash?.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Is Cristiano Ronaldo Playing Tonight? Al Nassr vs Al Kholood Live Streaming Info",
+          "kaynak": "Sportsdunia",
+          "link": "https://www.sportsdunia.com/football-news/al-nassr-vs-al-kholood-live-stream-saudi-pro-league-2026-27",
+          "tarih": "2026-10-29T17:20:00+00:00"
+        },
+        {
+          "baslik": "Al-Turais appointed referee for Al-Nassr vs Al-Kholoo…",
+          "kaynak": "YSscores",
+          "link": "https://www.ysscores.com/en/news/14082834/al-turais-appointed-referee-for-al-nassr-vs-al-kholood-in-saudi-pro-league",
+          "tarih": "2026-10-29T17:20:00+00:00"
+        },
+        {
+          "baslik": "Will Cristiano Ronaldo play tonight in Al Nassr vs Al Kholood Saudi Pro League 2026-27 clash?",
+          "kaynak": "Khel Now",
+          "link": "https://khelnow.com/football/will-cristiano-ronaldo-play-al-nassr-vs-al-kholood-saudi-pro-league-202610",
+          "tarih": "2026-10-29T17:20:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Al Kholood - Al Nassr maçı ne zaman, saat kaçta ve hangi kanalda? Cristiano Ronaldo oynayacak mı?",
+          "kaynak": "Haber Ekspres",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZEtFSEFCUjZEeFA2UzZjUkpuLXdZdHpIaVNsUEN5dlFERGY5TmZIT0U3WmJoU0ZTZmZsRzlMWUMwbklQNWoxcGRBMVlPTnZ3WmFlaXJIVS1GZVNlYlJBaGRFMS0xRXdoSlJVaDhIWnhBOVlRSDBLd0poVFIyNkF5SXRkSG9aQmtnZm9DSUt1RWlNMVg4M1dZVGNoeENGQVp6NlBpbmx4c0NLYlFuYkxYZDZYOFZBcFNDelNfR2liVk9SUQ?oc=5",
+          "tarih": "2024-10-24T07:00:00+00:00"
+        },
+        {
+          "baslik": "CANLI| Al Nassr- Al Kholood",
+          "kaynak": "Ajansspor",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5leXJxNUd2Sm04YWZSa3BraVgtS3YyMXJYV09UVXlXNWRGUWRzUFNpNkk3VDFQZmdDLURYNnRGNG1CVzdoa3FwNUtoRDdfZmZrbGtVems5X3JXUnQxYllqRVhQb1F6TkZTN3Rqa01RVQ?oc=5",
+          "tarih": "2025-03-14T07:00:00+00:00"
+        },
+        {
+          "baslik": "Al Nassr vs Al Kholood maçı Hangi Kanalda Saat Kaçta Yayınlandı? | 14 Eylül 2025",
+          "kaynak": "Spor Ekranı",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcXJyQUNVajVvUklrZGJBNkxVT2N1U1VJMGJzVnRHRFRhaDlLRDJiWUdLYjVWSFVWaC1HZjlTeHNUSU9hS1VUU0lyTGtTRm1oalR2YUVhN2JsNGZOMDRGSHBlUjkyZmVNUFc3SVB5YmFvRl9KcndtbmoxSGpGUE10dDY4VDBkd2RWZFVYX25mQ0VsTUowaXA0MVQ3ZVRtLWFJVEdqZEpJTXlYYjdmaVdNcmFyZw?oc=5",
+          "tarih": "2025-09-14T07:00:00+00:00"
+        },
+        {
+          "baslik": "Al-Kholood Club - Al-Nassr FC, 30 Oca 2026 - Saudi Pro League - Maç raporu",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMmx1d1ZYbnpYRk0weTdiTTB4ZEFFU2hpWEUzWHNNRHdmc2l5V2M5bkgxRUVoVnZiYzZfUzg0YTYtLVBGakR2aFhodHlJTDlwNmVXNHhZaTRwc1NkSzdYUzNHYjhpdUFRM09aRVc5cG5jYVpqUy10WTViVHdJdEwtNk9KOUxBV25VYmJHZGtWRjc?oc=5",
+          "tarih": "2026-01-30T08:00:00+00:00"
+        },
+        {
+          "baslik": "Al Nassr vs Al Kholood maçı Hangi Kanalda Saat Kaçta Yayınlanacak? | 29 Ekim 2026",
+          "kaynak": "Spor Ekranı",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbzduTTFsU1BJaWhWQVdnOFJRallQYmFQT1VFdE0wYzBrZ0JWYm1UWFV0OWdsbWlydDhNVXQyOFQ3azZOMnFPQ1dpQmpEc0R1WVpGaFY1RmUzTVVCWnZNelo5cldnMFpKalJzUy0tSURteTBkRW9NMmNPTnFBcWFhQ0p3bEcwczM0cG5kX3lyTE9Cb3BzdXpMNDBCSUNfY2phbFluV1g1RmlVYXdFYURaTjlBMA?oc=5",
+          "tarih": "2026-10-27T19:36:09+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Cristiano Ronaldo",
+          "aciklama": "Portekizli futbolcu",
+          "ozet": "Cristiano Ronaldo dos Santos Aveiro (d. 5 Şubat 1985), Suudi Profesyonel Ligi takımlarından En-Nasr'da forma giyen ve Portekiz millî futbol takımının kaptanlığını yapan Portekizli futbolcudur. Tüm zamanların en iyi futbolcularından biri olarak kabul edilir.",
+          "link": "https://tr.wikipedia.org/wiki/Cristiano_Ronaldo",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg/250px-Cristiano_Ronaldo_Croatia_v_Portugal_2_July_2026-075_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Cristiano Ronaldo yerinde olsan ne yapardın?"
+    },
+    {
+      "id": "977dc5c84820",
+      "baslik": "النصر ضد الخلود",
+      "tur": "trends",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T17:20:00+00:00",
+      "ozet": "النصر.. «الأربطة» تجبر البوعينين على الكشف الطبي. كريستيانو رونالدو يقود تشكيل النصر المتوقع أمام الخلود في الدوري السعودي. تمريرتان تفصلان ماني عن رقم تاريخي في النصر بالدوري.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "النصر.. «الأربطة» تجبر البوعينين على الكشف الطبي",
+          "kaynak": "صحيفة الرياضية",
+          "link": "https://arriyadiyah.com/903411/%D8%A7%D9%84%D9%86%D8%B5%D8%B1..-%C2%AB%D8%A7%D9%84%D8%A3%D8%B1%D8%A8%D8%B7%D8%A9%C2%BB-%D8%AA%D8%AC%D8%A8%D8%B1-%D8%A7%D9%84%D8%A8%D9%88%D8%B9%D9%8A%D9%86%D9%8A%D9%86-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A",
+          "tarih": "2026-10-29T17:20:00+00:00"
+        },
+        {
+          "baslik": "كريستيانو رونالدو يقود تشكيل النصر المتوقع أمام الخلود في الدوري السعودي",
+          "kaynak": "Masrawy",
+          "link": "https://www.masrawy.com/sports/sports-arab-international/details/2026/10/29/3070476/%D9%83%D8%B1%D9%8A%D8%B3%D8%AA%D9%8A%D8%A7%D9%86%D9%88-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88-%D9%8A%D9%82%D9%88%D8%AF-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%A7%D9%84%D9%85%D8%AA%D9%88%D9%82%D8%B9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%AE%D9%84%D9%88%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A",
+          "tarih": "2026-10-29T17:20:00+00:00"
+        },
+        {
+          "baslik": "تمريرتان تفصلان ماني عن رقم تاريخي في النصر بالدوري",
+          "kaynak": "شبكة تواصل الإخبارية",
+          "link": "https://twaslnews1.twaslnews.com/6788325/",
+          "tarih": "2026-10-29T17:20:00+00:00"
+        }
+      ],
+      "gecmis": [],
+      "kisiler": [],
+      "soru": "“النصر ضد الخلود” — sence bundan sonra ne olur?"
+    },
+    {
+      "id": "277de64e3c13",
+      "baslik": "Bir Cumhuriyet Şarkısı Oyuncuları",
+      "tur": "trends",
+      "kategori": "gundem",
+      "tarih": "2026-10-29T17:10:00+00:00",
+      "ozet": "Bir Cumhuriyet Şarkısı konusu nedir, oyuncuları kimler? Bir Cumhuriyet Şarkısı filmi ne zaman çekildi?. Bir Cumhuriyet Şarkısı filminin konusu nedir, oyuncuları kimler, ne zaman çekildi?. Bir Cumhuriyet Şarkısı filminin konusu nedir? Bir Cumhuriyet Şarkısı filminin oyuncuları kimler?.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı konusu nedir, oyuncuları kimler? Bir Cumhuriyet Şarkısı filmi ne zaman çekildi?",
+          "kaynak": "Hürriyet",
+          "link": "https://www.hurriyet.com.tr/galeri-bir-cumhuriyet-sarkisi-konusu-nedir-oyunculari-kimler-bir-cumhuriyet-sarkisi-filmi-ne-zaman-cekildi-43359671",
+          "tarih": "2026-10-29T17:10:00+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı filminin konusu nedir, oyuncuları kimler, ne zaman çekildi?",
+          "kaynak": "Habertürk",
+          "link": "https://www.haberturk.com/bilgi/foto/bir-cumhuriyet-sarkisi-filminin-konusu-nedir-oyunculari-kimler-bir-cumhuriyet-sarkisi-ne-zaman-cekildi-3923550",
+          "tarih": "2026-10-29T17:10:00+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı filminin konusu nedir? Bir Cumhuriyet Şarkısı filminin oyuncuları kimler?",
+          "kaynak": "CNN Türk",
+          "link": "https://www.cnnturk.com/turkiye/bir-cumhuriyet-sarkisi-filminin-konusu-nedir-bir-cumhuriyet-sarkisi-filminin-oyunculari-kimler-3486394",
+          "tarih": "2026-10-29T17:10:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "BKM'nin Yeni Filmi Bir Cumhuriyet Şarkısı'nın Kadrosu Netleşiyor: Boran Kuzum'a Hangi Oyuncular Eşlik Edecek?",
+          "kaynak": "Onedio",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQ2I4dXVpbXJQN3pITndtMnFEUXBGNjYxR2NSbmhHalozY0lNdlBzQVBraXBIWFBBSEF1TGZrMjVJZG1qbFRNanFmM3dLYkJBaUx0bUo2ejVvRk4ydnY3LTRkUlhXOFpDRFo3aVNWOGNaMlVXOVA2SGpHT2RnaFJtcWJpM2JtM2p2Tk9PQXpWUDQ5OHo5cEVfdFFXWmtRN3I0akZSMEQ0anc5LW5KYmhpQWYySTRmbzBuUEh0Z19lcjlFMl9PdlBRLXRmU3dTNXVqWEc0aGhsbw?oc=5",
+          "tarih": "2024-01-23T08:00:00+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı filminin kadrosu ve yönetmeni",
+          "kaynak": "Beyazperde",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1jUURUR29XYllHa1piT3c0RFV5REpNS0FBNFVwSVlPUW1ob2F0SzJsZFpqd3dvN3BLN2ttVWs5RGdyeEV5ajFOV1FtaE1xVjAzS1JzQ2dWRHdXTE1hZGwzUldpYkEwamw1?oc=5",
+          "tarih": "2024-03-15T09:31:49+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı filminin galası gerçekleşti! Oyuncular şıklıkları ile dikkat çekti",
+          "kaynak": "elele.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSEJ1U1Bac3RCbEZtOENmU0VjZEY0Um1ieGNfdjZwVUFpeU5ib05yc0NmODVDMjhyYlJLZEwtTlZrdy1Sb0Q2UjdYY0l5Uk5EMEgyLVJzelpDVWc3bUF3LTJBRVU0LWhmUHZoRlNBN0lHbEtSZm1Oa0paZXBTOVJMcnplWnBzdGk2QUVyZ1E0OC1Xckx3dXFOeGlLY3FldHZPYXI3UW5vWHpmYkRJR2FoT0Y1Z2tSTjlhX01VZUln?oc=5",
+          "tarih": "2024-10-19T07:00:00+00:00"
+        },
+        {
+          "baslik": "‘Bir Cumhuriyet Şarkısı’ Oyuncuları Rollerini Anlattı",
+          "kaynak": "Episode Dergi",
+          "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4ybXNiVWpoeTR5cm92a1NoazI1bXFCelM5MThXRW1DYUNjcnRwSVR2S2xadkNvcnVoVUUzVEplcG04cU1jNVdfU1oxV182dm1SUWNzZVpOZm1pSFBqeU5XZWhOem8?oc=5",
+          "tarih": "2024-10-23T07:00:00+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı Filmi Oyuncuları Kim? Bir Cumhuriyet Şarkısı Filmi Konusu Ne?",
+          "kaynak": "Nokta Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZERkdm9pT1VFTndHOFRxSnRDNVRQOUFUdkJDNUszSGRqLTB3U1M0QmZUaW1ZMFVkMUUycFdRMFZxWUx1RlNCM1lsNWZRaXN0R1pyWE9tczZhZlZ3U3NVazJoMFNFejJRMURBYUJuNk1lckV0VVJVc1o4OVlLZE5XR0FXNXpNTDRXWW9XSFNYcVhlRlNPTUQ3eWZvaDBRMHRMRGZldHVxSE9lMHlHTG1qRDlRZ2tieVdYaWZlYW9vdFhHTnptQklrUzg4OFh6TUxNdGQ5OVRB0gHbAUFVX3lxTFAyYlhmWWhvbXVxUERhbVdjQlZ6cXJybE9KMW0zaU1XalM0OHVEZnZjMUczb01Wc0c1d05UYTRzb3h0Ukh4dVdJcnpDdWROcUlCUUlvQ2FWTXEzZ0JxT1plenJ4M2VuLTVXMU0wYXQ5MHR5WlZDRm1mTm1yREoxU21wR1FwaFMyZXV4NmJkN0tkSlNmdFNoN2ZEaW15NUJSdzU3NGJkMGh5dk9sb3JlazBGY0dGR1FOMEZUd3RtUGktN3pBWklUUTB2VE4xSGJmc0xnMDdjRVdZN2N2bw?oc=5",
+          "tarih": "2024-10-25T07:00:00+00:00"
+        },
+        {
+          "baslik": "Sırrı Süreyya Önder 'Bir Cumhuriyet Şarkısı' filminin senaryosunu yazmış!",
+          "kaynak": "Cumhuriyet",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTE1BUlpQdVFUR2l4Z184X2ZTTkdGT0oyZ2h0QnRQdllMZVNMeWpkdWRJZ2Z3Wm1DN1BSYjJvVG1XbThUTU1QbE1TT3pGQ3hEcHBnUUhIem5MM3h3M2JQejA2dVZHRHZfNTMxeFoyUzJ5eS1GcEVIVnhnQl8tXzktSlJ6eG5seS1XNlA3U1ByT3JncGZHYlM0YW5FYndLVWFWQzNtOWJHbVRidDNUQUE?oc=5",
+          "tarih": "2025-05-04T07:00:00+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı filmi oyuncuları kim, konusu ne, sonu nasıl bitiyor? Bir Cumhuriyet Şarkısı filmi ne zaman, nerede çekildi?",
+          "kaynak": "Haberler",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTUgzN09melRoYXpBbjFtb0QtNW1UNlRqRHB4c01XVERBbWlGTGFxcU9zUjNOQUhkZmZlMWtEMVROZjkyTHdNR0trVi15SGZsS0JsVE9DX0RaZUczN2c4eWhTS1VfVXgyT1NmYnhpczF3NjltYmpYRzNDVVhZMUlGNUlCOVlJZkpvQVNDek91THhfY1RoOWhoZ0RB?oc=5",
+          "tarih": "2025-10-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Bir Cumhuriyet Şarkısı oyuncuları kim? Nerede çekildi? Bir Cumhuriyet Şarkısı gerçek hikaye mi?",
+          "kaynak": "YeniSöke Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOclpwZy1BUkVtX2Jnb3ZmUVRsWUVvZnM1LWJFNU9wc3V0LVJwQjRsRzc5dUFlcXZaYk10WmhKSXd0bFdWTzVsMlhyOENDU0hLdUVHa01RQmxyZmNFWGtMdVBJLWFUM25VSGVHVktwSjJhOGFOR0R5R0lzb3pLV0NsbUVRSXB5U0U5NTV5SlFJd25tX0RYN0RqYmZ3eU81RlhPZV9xcWZUN2lrSGFZcUYzZWpaMmgwTmZTWnpnQi1Xdno2RTdYSXAwd0oteTlBb2t2TGc?oc=5",
+          "tarih": "2026-10-27T12:55:00+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Bir Cumhuriyet Şarkısı Oyuncuları” sence bizi nasıl etkiler?"
+    },
+    {
+      "id": "9be3bc9f13b2",
+      "baslik": "Aykut Kocaman Fenerbahçe için tek şart sundu: O giderse gelirim",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "Fenerbahçe",
+      "tarih": "2026-10-29T15:39:00+00:00",
+      "ozet": "Fenerbahçe'de teknik direktör arayışlarında Aykut Kocaman ismi öne çıktı. Vincenzo Montella ve Abdullah Avcı ile temas kuran sarı-lacivertli yönetimin, İsmail Kartal'ın boşluğunu tecrübeli teknik... Devamı için tıklayınız",
+      "ozet_kaynagi": "A Spor",
+      "haberler": [
+        {
+          "baslik": "Fenerbahçe'de Kocaman imzalıyor!",
+          "kaynak": "Boyoz Haber",
+          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5PMzhFODNxVi0wN2dIUVZHNmxMcHhiMHhUeTlWUUE3N1hRYTRJUmk3d1hHUVlxRWg5dEtpdVZHVjNMNFh6dDhia3pveUhEUjF6SWdqSjl1cG85MXN5QW1sZW5wTQ?oc=5",
+          "tarih": "2026-10-29T15:39:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’de Aykut Kocaman sesleri! Tek şartı ortaya çıktı!",
+          "kaynak": "Ekovitrin Haber",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOHBmaUJWUGxrNnF0YmFSa21KN21zMGNJRUlNVzk5QndKVU5BWHpHZ2tDSTBEd0ZXcVAyTHZiRjJGeEZwSDYzY1diM2ROOHdRa1NLUHBwYmlPZGVFZWR4bVJKX2hoY0VSWW5idFJiWktiVnBBUUJQT2dJQmFTQ1JlNHNRS0VBX2IxN0E4?oc=5",
+          "tarih": "2026-10-29T10:28:00+00:00"
+        },
+        {
+          "baslik": "Aykut Kocaman Fenerbahçe'ye mi geliyor?",
+          "kaynak": "Afyon Ana Haber",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZ1ZnRHBqb0xtWEZscWlYeXh5Q0lFMnBsV2g1M1drWEE0bE9lVHNsNmhHbHNwVHhTVEViQXN3Y2ttcUZjcWVaWVpXdjViZnFvUjhpWjZBOTBWNVV0THJEektZdVlEQkpqT0JVbi1yY0JHWEt6ckJHMTYzWTBxbVNoVUFwR09HVkV2TGc?oc=5",
+          "tarih": "2026-10-29T10:28:00+00:00"
+        },
+        {
+          "baslik": "Aykut Kocaman için Fenerbahçe iddiası: Oğuz Çetin şartı öne sürüldü",
+          "kaynak": "Ege Telgraf",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNdlhOQm93cWEtUEcwWm1kaUVQTXh4OU9nZWVtVm5lZkxPYWVZY1ByczNsTWJXenZoSDBDaXVtYllZaHI3ZWdMa2dtT2NmZGNzeGxKU2NOcG5Yc1dZRUtBaV91dUlZbnJlLXNsNVV3T2xVSVpRRWUtTHJiOUUwN2d1NGhaWHdHXy1yb185ZS1meG5EXzQ?oc=5",
+          "tarih": "2026-10-29T10:04:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Sakaryalı krizi! Aykut Kocaman'dan 'Oğuz Çetin yoksa gelirim' şartı iddiası...",
+          "kaynak": "halk54.com",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM1JqM0lNc2dDREQ4clV4VXF2TDFVODJvSlpyNWhWZFR3eVJsNF9GcWtFMzM0YjhuNDFfaFc0V0RpMkVFZHZtLUwzNzFHRFRZbThLbUZ1QTlMSmk0WWtZTjZOSzNlSGhMUy1pNnZQUi1zNHZTeUZnd1lZb3RUdDQzVUZUSG5QODFMY3JLMVdXRWpzMmFEU0FCMERIRVZwMFdCQTJEbmFsaXJpOHM?oc=5",
+          "tarih": "2026-10-29T09:03:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Fenerbahçe: Aykut Kocaman devri bitti",
+          "kaynak": "BBC",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5vbVlmNDlVd0dzLTFGM3pJX2hBVjc2cWNzUHN0QWJhaFE2SFROeDU2LS1ZYldVRUZEZ2xxaUpEZzJkRXZLQUNGdWs3NEdyTENYUTZIOUFWdkpQMWVjNmhwX1BTOEFYNnJNM2kyeW9xZmtJeVhqZ0g0X3NXdw?oc=5",
+          "tarih": "2013-05-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Aykut Kocaman Fenerbahçe’nin başkanlık seçiminde konuştu! 'Teknik direktör seçeneği bile olmamam tuhaf bir durum'",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVFRsUzB1emd6ZlZiWl9qWjhQcEJicFhnb0RTVXh0X21aaDJia3hWcVppX1Q2eG5zclRIRjNobjJYaUZ6NXpZTnJyTjMtUkxGTnRJV1p0dmRpaUgtYkQ5ZmljZl9wcS1KVFFMMVlFWGMwd3ZrV0VWUnBtV1ZnWlFIcUFVWmZ4SDN6X1gtR3h5Q25aNnpaV3hVTWRCZUV5S1JPTjJlOFpuMW1EUW9WbkdPcF9BcXVXaE14eUpJVkg2c2dFenFoLTJEUEhxWTM?oc=5",
+          "tarih": "2025-09-21T07:00:00+00:00"
+        },
+        {
+          "baslik": "Aziz Yıldırım'ın zaferi sonrası Fenerbahçe'yi neler bekliyor? Aykut Kocaman, Vedat Muriqi ve eleme maçları",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU1dLUUxpV2g1bkpxTkhIa05qTmdzZ00zd3BJN3JFS1QtWHJlci1CZUlZVS1QS1hVY3RRMkFQRm5MY2pjeFF2QUFPbFNabFVmMTlyVzhJTHdId1Z5Wkg2b3dBQmRpUktPcFFzV3pfcjZFSURzeEZXR3VMVFlEdWJqLWl1MDF5akFxY19zc25XZTRqS3dLYlZfZE1EalBtZ2ZUOXNhYTR3Z2hEMnh0U1lmLVVSLUpLZkYzN21rSzRNa19GNWZxNUM4Z2ZPWUZCMTBEXzRlRDJNN2pYeUVXLWFla0tla3FjUEU?oc=5",
+          "tarih": "2026-06-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe Aykut Kocaman'ı resmen açıklıyor! İşte o tarih - Fenerbahçe",
+          "kaynak": "Mynet",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNdFV3dVJDN3p5aGdhS2YtVGEzQU51LVhtUEdCdXEwY1pPVllMSVVqeHRha1RFd3RzOEVWeDMwY0xjYUxKVVhJcy1Sa0pEdExfUmlNeGxPemNBc3JxeTRVYl8yVmFVd012QWpfZm1udl9GaDVXSUtBbXFyamVnU1BDTmdIcmFpV3ZJdm0tbnlSdUo5LXdBTU1Z0gGaAUFVX3lxTE1hNEV0UThfLXdUSmt4S0lYZGtwc3BGMG5QMVBsU3I3TmFvTnh2bG9rWko4a1dDbnlEOFcwak5MR3RhbXBkcmVmU0tIVDh5TTBCTG1zTWZqdGNNbDl3SU1RWGJIY2ZYUTZONlh2MmxKYTVzaThOUEM5WE9XWVVadGgxczJpRkNHM2hUQnIwMUhidGJFTFNYa3dULWc?oc=5",
+          "tarih": "2026-06-10T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Aykur Kocaman gelişmesi! Resmi açıklama...",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOM0lYSkVGblpVeUVQV0hHZHZfSElBQW0tb1Joa2R5am9TZzEyT3RNdENLUTc3MEp2SHVsS1RYVHJlV1JNUmEzU3YwVG03a1Rqbzl6WFQ4b2RmeVpzeE16TTRWNEpBb1VVd3lCeXJ1Mms5b2hCR3lVY2hHLXVlQV9FMjM1LWJfQUktLUtWd0drZHlaNXc?oc=5",
+          "tarih": "2026-06-17T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ve Aykut Kocaman'dan Fenerbahçe açıklaması geldi: Her şeyi açık açık, saatine kadar anlattı",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQLXlodld4SXpXdjVrME5oMkZUeE1taFVRRmR1YUl1S3VoR0lHa01lMXp4MFd0SzZOMHZKVXIwWWViQ0gxT0NIX0lwSVFsRXFzQ0hjMHMzQ3E3TjMyXzBFa3c5UEJqSmttcVFTQjdzR3ppcWdRZEdlNHBZZ2xHR08wVXJydktvbkQwSUk0Q1AzRTR4YzdjRWZSNWlvc2s5VndKc3JuTFJB0gGrAUFVX3lxTE1JQk55YlVYd3R4RENaV3pqUTFOdjkwcFdXYmhKVVlTT2c2Wk42ZTIxaFkwaVhHa2dzM1ZsMEM4am5GQnhpTU1LYjdXMmtXT1A1cmV6WXVuejdHcGNjdVdQTHB1aU90OEt4RzRnYXhjaDlYaVYtRm1ZNWlXZ0dUek1USFo5SGpoTFgwLTZmTHhNYUpldlFablVWaElhQXZ3cG90RzVLQXhLYjB2MA?oc=5",
+          "tarih": "2026-06-24T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’de Aykut Kocaman Sesleri! Teknik Direktörlük İçin İsmi Masada - Aspor",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdkoxVXNUVmxJLVQycEhPQTU0OVJBc09JcmFFSVFGRDNDNV9iUEJtcHZlNnl4eUx5bVBJRFhyVVVTMmtSZFNtSnZXZTZKSUhTTnJLclJQaUEyQmpWOG05R0JkZlhnQkN2TFpBMUR0cVgxSXA4M3hkdDYxdkkteU9YT05DNEVKM3JHUExhaGQ3UzVTLUQzaEg5SENMVmxRVTd5WTc5cjNKdl90T1pTV1AyeWdLdm92eGhnSThZ0gG7AUFVX3lxTE92SjFVc1RWbEktVDJwSE9BNTQ5UkFzT0lyYUVJUUZEM0M1X2JQQm1wdmU2eXh5THltUElEWHJVVVMya1JkU21KdldlNkpJSFNOcktyUlBpQTJCalY4bTlHQmRmWGdCQ3ZMWkExRHRxWDFJcDgzeGR0NjF2SS15T1hPTkM0RUozckdQTGFoZDdTNVMtRDNoSDlIQ0xWbFFVN3lZNzlyM0p2X3RPWlNXUDJ5Z0t2b3Z4aGdJOFk?oc=5",
+          "tarih": "2026-10-27T22:58:15+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe ile anılan Aykut Kocaman İstanbul'a geldi",
+          "kaynak": "Nefes Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQMVh3Q1gyNDRqRm9rNmVZWVczaWQ5X1RRQmdlREZJLXROT0FCSUh6QmE4dVNsMVVRUEpYY0ltZ0U0aW9FZVhVbnYxd183WnhvUXp1RkVmUG5CVm1IcVR2R19yOG5UNXlDcUpfTWZHMzRLSjZjU3FwTklpNWJ2N1ZNMU9RSEhyU3JwaEVj?oc=5",
+          "tarih": "2026-10-28T16:14:00+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Aykut Kocaman",
+          "aciklama": "Türk milli futbolcu ve teknik direktör",
+          "ozet": "Aykut Kocaman (d. 5 Nisan 1965, Sakarya), Türk teknik direktör ve eski profesyonel futbolcu. Son olarak Süper Lig ekiplerinden İstanbul Başakşehir'i çalıştırdı.",
+          "link": "https://tr.wikipedia.org/wiki/Aykut_Kocaman",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Aykut_Kocaman_2016_Konyaspor.jpg/250px-Aykut_Kocaman_2016_Konyaspor.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Oğuz Çetin",
+          "aciklama": "Türk futbolcu ve teknik direktör",
+          "ozet": "Ahmet Oğuz Çetin (d. 15 Şubat 1963, Sakarya), orta saha (oyun kurucu) mevkiinde forma giymiş Türk eski millî futbolcu ve teknik direktör, futbol yorumcusu. Türkiye liginde 503 karşılaşmada forma giymiştir.",
+          "link": "https://tr.wikipedia.org/wiki/O%C4%9Fuz_%C3%87etin",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/O%C4%9Fuz_%C3%87etin_Fenerbah%C3%A7e_20260717_%283%29.jpg/250px-O%C4%9Fuz_%C3%87etin_Fenerbah%C3%A7e_20260717_%283%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Vincenzo Montella",
+          "aciklama": "İtalyan futbolcu ve teknik direktör",
+          "ozet": "Vincenzo Montella (İtalyanca telaffuz: [vinˈtʃɛntso monˈtɛlla]; d. 18 Haziran 1974), İtalyan teknik direktör ve eski millî futbolcudur.\nMontella'nın futbol kariyeri boyunca takma adı, boyu ve kollarını kanat gibi açtığı alamet-i farikası olan gol sevincine atfen \"Aeroplanino\" idi.",
+          "link": "https://tr.wikipedia.org/wiki/Vincenzo_Montella",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Vincenzo_Montella.jpg/250px-Vincenzo_Montella.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Sence Aykut Kocaman bundan sonra ne yapacak?"
+    },
+    {
+      "id": "15b1bfb8796d",
+      "baslik": "Aziz Yıldırım'ın istediği teknik adam belli oldu - Fenerbahçe'de yeni hoca için arayış sürüyor",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "Fenerbahçe",
+      "tarih": "2026-10-29T12:20:00+00:00",
+      "ozet": "Galatasaray derbisinde alınan yenilginin ardından Fenerbahçe'de yaprak dökümü devam ediyor. Teknik direktör İsmail Kartal ile yolları ayıran yönetim, o yıldızın da biletini kesti. İşte detaylar...",
+      "ozet_kaynagi": "A Spor",
+      "haberler": [
+        {
+          "baslik": "Aziz Yıldırım Fenerbahçe'ye bu ismi istiyor",
+          "kaynak": "Alanya Postası",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWUk4QzlRUENjRFd1UmhFVkNmaUJJVzc0Sy13WUVlbVhMRWhpODhCS2dTVDVlT2hpRFVsUDFpWHhwTmdHN1FjLXc1a0dKNWpOMmhxMHBZS3puZzA3eWVFdXc2ZGtlUXhiZFliTHZqV0Q3QU5JWGFmSjdpZGh6MWZDaQ?oc=5",
+          "tarih": "2026-10-29T12:20:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'nin Teknik Direktör Arayışı Heyecanı",
+          "kaynak": "Haber S Balıkesir",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNeWc3amlyMnA2aDktVVRCbDdNbmdJTk0zTlVLLUFPVmZBVzd1dmltemR4N1NxVDlEUUFDZEp4aHRsZk1hV2FNMEZtQmkyTmRsNWx1QkRTQllvTnZhOXh6SWVBRVVOUUUtUXRQb0Jud3c5aGhxdHFZbDJpYTQ0TlBURXJYaXFqbnJMR2xMSWNn?oc=5",
+          "tarih": "2026-10-29T11:37:06+00:00"
+        },
+        {
+          "baslik": "Aziz Yıldırım’dan İsmail Kartal sonrası sürpriz aday! Bayern Münih’i çalıştırmıştı Fenerbahçe’ye geliyor",
+          "kaynak": "kayserihaber.com",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPazhjLTRrOWdqc1JHMDZHbnhiWU9nOUFOaktaa2VwQjVzS25LbGR6SVJnWng4QV8zVjVybG95SEM0SFdpTExpOENlR0xDM2Y4ak5UM2N4UDFfVW1mR0FYd3BjT1d3dDhXaXMzQUhocDU2WlZoWjc2Z2J0dE4wWHhURWNsLUZHWE0?oc=5",
+          "tarih": "2026-10-29T08:16:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de yabancı hoca harekatı! Aziz Yıldırım'ın listesindeki isimler ortaya çıktı",
+          "kaynak": "CNN Türk",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRmRFejBRN1FYYUk0VTBQR2k0RUlKMW5pN05LTlBlci1GdVVXUnNSSU1jUXN1enk3RE9IYnh5WExJdXktdzhTRkt5N2xreTNvOWVRYU12cFVwcERuTTBUWXUtZlNNRTBHY29rendZT1ktZFNMeFhhN2pNYTFic2p0RGlzS1B1aWlBSXhmV2liTWo0S3FSTDdOR3VPb2NhUk1TLWNRNjdJQURxVFkwYXhad1JnMGVwNlBlLWEtVkhrbVR4aWJZdDFV?oc=5",
+          "tarih": "2026-10-29T07:28:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’de İsmail Kartal’ı gönderen etki: Yabancılar Aziz Yıldırım’ı ikna etti...",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORUVJZDlkbXExbzlyMUtiT2VMdmpGdnlRSy1LRmZVbkREYTRYc1hHWjUwN1M5R29CcXB1QXFXdWlObERMZTZ6TTJLeFZSeXJncmZqV2NKOUppWXhkejNvcXBQSXYwWnhxMm0zWjNPNC1NaHVIOFpnR21mYVd2UWpfdDRjcWVlTTVTVEM3b3FiT24wdHNqdXRQNDdxamFBaWc5VTB6aFMyTjhxOTBKc2VNQ3dhUWtOWjZXckI1dNIBvwFBVV95cUxNMzdhU3h4Vy0xMHVPaXV0ejVwYlR0bFpSODdySF95SjFPbjVvUWVvZm5OWVY1LXRKMlY3T3F6QmZoQTdIV0JiU3BSYTdWUjhZaU5CdGVlaHkwSjdpYTBmLWJFdFNnaUNiSFNCZmVJeEZTNjRfWlozUjdhSDZEejJSc3huTFJac0M1dlNWVDZkZ3ZUYWo2dmF3N0l1S19wX0RkNFZiN2s5c3RNbm9ocmVITGtFU1BhaFpUbVVIeV81dw?oc=5",
+          "tarih": "2026-10-29T06:44:22+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Aziz Yıldırım:\"Gerçek borç 429 milyon Euro\"",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZjVQODNJVWIzbHZRMm5fOTZraUNIRTF3TDM2UVdodHMzR0k3SFp0Rl9sNU5IN0FHX0J2Zk5CT09yLVNoN3hlNG9yM3JHODN6Q1RoQ3RGWU5yT1ZMU3NiM0lHTWVCNjhMOGJzc2QxUlBNOENiZjk0SzFRWFRYbHBab2VTNW9zTTM3N19DaEpKWVBCcGlrSDRFd3g5a2JSS1NtOWxqSQ?oc=5",
+          "tarih": "2018-07-30T07:00:00+00:00"
+        },
+        {
+          "baslik": "Aziz Yıldırım'ın yönetim kurulu listesi belli oldu!",
+          "kaynak": "beinsports.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUDBrUXQwYTh5UDdNZDhiN3AyUTI3b1pGZEozSldnS3VLQWk3cVR2MlFubm5NcFNiaDNhMUwwZlE1akNJMWJpWWRaeEdnT240Rld6Q3hxZnh6ZEpka2FYcjZjZDdXV2tvS2NlS1pYTWRtWjBEWDctSFJmVmdfc3NQNVM3M0dsTDl4?oc=5",
+          "tarih": "2026-05-22T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe-Alanyaspor maçı sonrası ortaya çıktı! Aziz Yıldırım'dan mesaj",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNmJSOHMxRDlDZHBpTmVEQXY4S01Dc0lZRGVXRzM1d0U4N2IzeU16b04ycGlhYi1XYUpCek5iT0E3Yk9hT1JiWmg3eDgzeTVTRTNpUjlEd2g5OTcwamhFSkxoMGpiRjB0cDM5SVk2YTRSdmFGNFRaUGd5Y3ZXN0xwcUhnNE4tdUo0S2pGdTRORnUwTDNiNXhhUzJRZzVVYTBjdkFXS0pLemJfVWtfYXhibzh4RTFsYkpa?oc=5",
+          "tarih": "2026-10-18T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de İsmail Kartal resmi olarak 1 dakika bile oynatmadı! Aziz Yıldırım satışa koydu",
+          "kaynak": "tv100 Haber",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcWRoVUNhQ2tMZ1lkVGhPdzZWM0wxMlc2aUFoMlc4SEFGWkotbjFYbThTOFdwNGFZYklYRUpQSGFIeUlkVTZaOXMyWE9SSWdBV2VYcW96aWN5ZC11bmFjZWtkdzVjeGcySFU4eVRmODlQWGdWdUZxeHpIMk9wYWoyVm4xVC11Vy1FRVoxTEhabGhTWnhXOHp2d0lpM1JiX2wtRzE2T2FoNUY1MXVJRTRpdEJUTHZRejdvdnp4Ni1rc0d5dG_SAcgBQVVfeXFMTlp0WmdfUWdFenJmQ3AyNzJkclNfMnZLS0tkREd2M25ORUR5ZEx0SGJ0OXczZ2MtTGU5X3VVbnVzb0JuVWROWXpDTmhsS0NpXzduRDdVV2k4TWxNNGRMdmQ2ZmN3cEJVcm9mNGE5M2QxWnRvR2RJRXd3YWpyOFA0SnpLOFdVazI1ZVdLYzlHLTRhYVB2Qmx3YjcxVmMyQXgxOF8tTVoyMTIyQjladDlsQmZXTUJWUWNhUGZRdko5QTc3R2QxMXBMUm8?oc=5",
+          "tarih": "2026-10-23T07:49:00+00:00"
+        },
+        {
+          "baslik": "Aziz Yıldırım'dan derbi kararı: Bu sezon 2. kez aynı şeyi yapacak",
+          "kaynak": "Nefes Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdEFqWW9UcHdIUjdzM3JVdURuYzdNcWgxZGttbEpGUVoyeXJJMmk4QkVsOU5Yc0hzTnd3OEdSTWJNeUQwaHpQQnhGR29rOFItMEwzeFlfVm9CR3ZQdE9aY19zb3o4QjU3ZVJQcS0wRDJaLVlVRHdsQ0lFXy11bVFQaGxuWG5wTmxCLS1xZDdwVmVicmpYYkwya1ZR?oc=5",
+          "tarih": "2026-10-26T10:56:00+00:00"
+        },
+        {
+          "baslik": "Aziz Yıldırım Samandıra çıkışı kaza yaptı: Yaşanan talihsiz olay kameralara yansıdı",
+          "kaynak": "Yeni Şafak",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZGlYUDFSUEQ5VlI3X1h5MUFtWF8zWHp2Q2c4aEQ2X2JGZGo0dFlCOGdyYklCWkIwZVloYUx2cW9fWXJQcWw1aWl2blNzbW90eFVZS3IzV3VteWY5LWJDSkpPeHpnQWF4eVZxbEF6cG83cHNiUmJYWHZlVXg5Ukp5RVJMcGVCMFpDUHFpV21LM3NDUTRTRXlZMTl5aXZEWU9TY0dPWXh2cUZ0X0RtSTBBVE05cDhEdGMtRjBteV95SUQtenE2U2c?oc=5",
+          "tarih": "2026-10-27T19:57:00+00:00"
+        },
+        {
+          "baslik": "Aziz Yıldırım talimatı verdi: Fenerbahçe'nin rotası dünyanın bir numarasına döndü",
+          "kaynak": "GZT",
+          "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNSWVfbG5PTkRNc0dfZ2oxYktZMWxUckNabWtQdmlnU3Mtb2NBMXpKekRSUkotQXZDN3c1MFBWbzNodm56ZEhmNTFtZllIVUdVNng0OVh2NWxPanU1aVExTGZGbTZuYmYwSXJZSmVsVXhQRG9ZckJ0YTFhaDlza1R0Y2I2ZHRqUlJRYm01Zm1qZE55SGY1SHFjREV3SGlQUENjX2MtQTRSaDVUZzlDU0pyZWtIaVVNVVhGek93YXdqYkpiMW4xQXlqZndpTGlXUThTSnN5a0t3WU00ZWFYUGxLYlhiNExkMVR0V2pQUV9Zb0h3dw?oc=5",
+          "tarih": "2026-10-28T07:25:25+00:00"
+        },
+        {
+          "baslik": "Samandıra çıkışında kaza: Aziz Yıldırım'ın çarptığı araçtaki tramer kaydı belli oldu",
+          "kaynak": "GZT",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaVBVNzRldzkzLVdGNzQ5WkFoQTFiTWF0Z04yQXJfc2JCV2M4aW1jNm1xYjR4cl95cVBNdXZNTS1zNGlGempOaVpZUkRubklzOHNEYmh4bC00Z3Vsd0JMLWFKY05FRUh1ZFhCd1c4NEtFZjAydDIxVVlrY2laVGY5Z3RDZ09nNU1BcU51Yl9RX2swSjRwcERWQVFqN1NpcFdCRVZ4VDlfOUs5TjlINVpmTnhYbHRIQQ?oc=5",
+          "tarih": "2026-10-28T15:51:16+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Aziz Yıldırım",
+          "aciklama": "Türk iş insanı ve spor yöneticisi",
+          "ozet": "Aziz Yıldırım (d. 2 Kasım 1952, Ergani), Türk iş insanı, inşaat mühendisi, armatör ve spor yöneticisi. 4.",
+          "link": "https://tr.wikipedia.org/wiki/Aziz_Y%C4%B1ld%C4%B1r%C4%B1m",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Aziz_Yildirim2_%28cropped%29.jpg/250px-Aziz_Yildirim2_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "İsmail Kartal",
+          "aciklama": "Türk teknik direktör ve futbolcu",
+          "ozet": "İsmail Kartal (d. 15 Haziran 1961, İstanbul), Türk eski millî futbolcu ve teknik direktördür.",
+          "link": "https://tr.wikipedia.org/wiki/%C4%B0smail_Kartal",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/%C4%B0smail_Kartal_Fenerbah%C3%A7e_20260805_%283%29_%28cropped%29.JPG/250px-%C4%B0smail_Kartal_Fenerbah%C3%A7e_20260805_%283%29_%28cropped%29.JPG?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Aziz Yıldırım yerinde olsan ne yapardın?"
+    },
+    {
+      "id": "3da5a2012de7",
+      "baslik": "Emre Belözoğlu'ndan Fenerbahçe açıklaması: 'Bir şey söylemem çok doğru olmaz'",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "Fenerbahçe",
+      "tarih": "2026-10-29T11:27:00+00:00",
+      "ozet": "Fenerbahçe'de Emre Belözoğlu sürprizi! Resmen açıkladı. Emre Belözoğlu’ndan Fenerbahçe iddialarına ilk açıklama geldi!. Fenerbahçe'de adaylardan biri olan Emre Belözoğlu'ndan açıklama.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Fenerbahçe'de Emre Belözoğlu sürprizi! Resmen açıkladı",
+          "kaynak": "Haberlisin",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaW5FdmpSV2dMRERDNXNPRVJDcmlhOHQtT3puWDBvLWM5Y3BQSEpINWNFLXQ0Q2V5SlFqY0ZfQi1OZG5fakNtUmR5N3NmS3J3WXhZU1loSWZUcHU4YlptZVhwb3VDWlR1cGIyeDh0OTRfOTkxeGR5Znk0UUppMUl1VjdyMWdmUQ?oc=5",
+          "tarih": "2026-10-29T11:27:00+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu’ndan Fenerbahçe iddialarına ilk açıklama geldi!",
+          "kaynak": "Kanal 3 Tv",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYVg2dXh2S2xmd1g0QkVDWWpka0dMTk1XeEh4YTM3Tnc3MmgyYUktVFN5V29NUWY0NWpxMld3LVlDcjhYNXFPVkNDbElDTDFqakhrRmVJWFRCVGRDejdBcDdQbnM3TzZ6M29OSGdNa3l4SnVyNlRBaHlQREVlRl9WOTc1dWdsZnVMRW5PV1hhdkk?oc=5",
+          "tarih": "2026-10-29T10:41:27+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de adaylardan biri olan Emre Belözoğlu'ndan açıklama",
+          "kaynak": "Nefes Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSTJSZkpwclIxSGZ4bzJXb0xCWUhTd3JDZHUwdWtkcWotV194eDdrRGhlRThvdG9oR2M3anl0Z1J4TzE0N01RVVpPVTlJcklpeWlUWFp2RzVWRjBhVC1WRHRnVllxelpxVGd3d2R4Y19DY25ySzI1NW15dk5yRFlzNFAwbjlHdi1hclltQjZ4MTJjYVYtSVlFYw?oc=5",
+          "tarih": "2026-10-29T09:06:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe İddiaları Gündemdeydi! Emre Belözoğlu’ndan İlk Açıklama Geldi",
+          "kaynak": "Yeşil Afşin Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUDk2UktUQ2YzMnFBNTdMUGt4SWJZQnVlVlNFS3IyWVRQdzBXdHNhajlUZUlBWkZ0QXpnbWc0bkdCNk1COWhobC1WZEpYYWR3QzFOQnhGVlAyTk1uS3ByXzgwYUw3RGcyR0hJX2ZXcXd5b3Z3MW5GdERDdlhoWVRkeXBXY3p1WlA0d3RHN2d3cV9ES3JieUFQMllxQ2xnQQ?oc=5",
+          "tarih": "2026-10-29T08:49:00+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu'ndan Fenerbahçe açıklaması!",
+          "kaynak": "https://www.babaocagi.com/",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBHUTBkU3F6UG9vWFJIM2ZrMWxXZTh1Z0w4Q2kwb2pSSHZ4bWpQODR0czhhQ0dpeFYyU1p4YWM3NzAyRTJyN2tLWEpWQlNRYnJoYVZBVzZKZVRkMnltU2xSU1FtTWdXdUtpQ1dXSlM4Q3FZOWdLM1VKR3dIWQ?oc=5",
+          "tarih": "2026-10-29T08:06:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "EMRE BELÖZOĞLU",
+          "kaynak": "TFF",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1XMzhXZDQ1ejJGN050T1BGZXZXMG5LNmh2S1dGeEVqb1BBQVpZMU9aNERneXg3aFVGaF9qeXYwenRiMGNaZ0x6MnUtV3NDbER3VWUwazNIRnNscDlpeVpyODI3dmZoQQ?oc=5",
+          "tarih": "2013-02-04T11:22:47+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu: \"Hedefimiz Türkiye Kupası'nı kazanmak ve ligi en üst noktada bitirmek\"",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPT0UwRmJ5YVVKcC1OWG1oaDdsT3lGOVdHQy1sN2J0amZhTHJMVEI3cEJnT3JzZERXTXd0amtiaXhta3Y5dDJhdTJWdHVmV3dFX2ZqNGhaNEhNRmNFTlo3SmpsdWIzRkZMcnBOVFViWk03bk84UUhybDMxVTFqd1NBT3VVR2VvLVV0TnpWYWRKaDBNS0x4bGhOTVZmR2IxeXRHdnFuOVN2Y183Yzg0MVBQSm1BSE1jajBpWXBRU0lXTG1FeVI4VkZVTHc2TzJnb1g0cVFUbjJFbjRENjg?oc=5",
+          "tarih": "2020-05-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Emre böyle Fenerli oldu",
+          "kaynak": "beinsports.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE13cjMxeEp0UXZRQ2N6dUxCSDlMZkZSNEZSR3lITlRRVzNoMktNN1dvekN5azNBNmNLSURjeVZzTnlYZ1JqWlNKZ3Bsb0o4cmM3azhXdnZoc2RGQ29vUlhxZVdhOVlzUQ?oc=5",
+          "tarih": "2021-08-17T14:15:48+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu - Transfer ettiği oyuncular",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOU2FSZmFoSFh6VTBJdldJblBGeWhua25hQUZ6UXdoUmRCOWJrcDhvRmcwOUFwSzJ4cWNTVXQ3Z2NfcGNzYW02aGpDaXVvZ2JQaFBuYXd5UWJaVmllU0x4bllWMFk3eERtZi1COFVudUp3YTZ5TkR5cEowTnRQcW5mLWlSdFY?oc=5",
+          "tarih": "2024-02-22T18:45:18+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu'ndan flaş Fenerbahçe itirafı! 'Her şeyi yaptım'",
+          "kaynak": "Goal.com",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYWt1OUxCUHJ6OVZLdHpfNHZTblRKNVlydF85bVVWcncxX3RFTjQzclVWeGZ1RWZPUGo3a3FZZDlhWG1IdENZT0tlN0hvZGZjQXpiNzFpSWtaMkRZUkJQMkJHS3pNaFhTZGZaWk1CUGZrNUxxWDdSZlJrdnMwazFJbC1IT2hwcFhUVjV4TUs0LTVIOTYwNGpyQmJwMlIwNmlxOWtoUU5PYnRrVFNtT0E?oc=5",
+          "tarih": "2025-01-05T08:00:00+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu’ndan Fenerbahçe iddialarına cevap",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUkxLbHF1bU9DVlV5LWU2c2lfcjYydnJhZG1kTFoyRzhueHMzdXZqMVBYOTNLWXBUaU8tN25qcTdEbFdGb0VCeWFmTHExV0ZXSktZOEdzUHdfN2NVd1RGaVZvb0kyTHE0TWstRG1LWTh6XzJiLWs2b1AxZ2tIbnlDcHhHRTU2NWxjZE0zWm1yNnBwU2xUSUJvU2huONIBngFBVV95cUxNUTJhUWNNWFNzbXBEaVVOLTF6dlFUc0xYTk1ucVE2cEJhemxRNWJGT000U3JyN1pEZmZ6QjNxcVZybGNRaGIwWjZDNmdDR0JRYVRrV0ZTU3ZwbEFNOTlvMTJPQTlwTHFkY1lUNE5MQm9RMlpuX3VwRk1CSXBNMlZRWHdDQ2pSZnVFMnpuZUxqc1kxYzZMQXNpY1hqdF9iQQ?oc=5",
+          "tarih": "2025-09-28T07:00:00+00:00"
+        },
+        {
+          "baslik": "Emre Belözoğlu'ndan İrfan Can'a övgü: Fenerbahçe'ye de ben aldırdım",
+          "kaynak": "Haber Global",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcHNfdlcxd053TzZjNjQweGw4R1I1bWxuTDYyWm5XT1A0X3lzWG9OMmRKc1kzQktfbktYUm9DSTNLRkFQMHNyNVRxa2JLclJtNG93OS0zWHpFUjFxZnZWbFF1TEtGWWxHNVJjWldKY1VpVU9MNXBDeEc2X2pqdGhVV3lybmszcmctTTFNMDdTT00tV3JwdktUYWtCTUhkUzB20gGmAUFVX3lxTE1pREtIYjhZOXloMTVvV283dGxJcWdEb1BNRHN0UnFyTDljWTJ5emtZN0hQMzVrYkVzX3hsOHFKcHV2bFBKLVpSNXpKeElZc0lLdDdKVVhvMjA5OEpUSHdTaXNtMW05Zm53a2llMnVnT1BUZW1ldXEtdGJpNlE2YVltQzY4eGtYUDhraEttc1ZxVndDZlUzbDU2Z1hTclNmTkN2UFFtdkE?oc=5",
+          "tarih": "2026-04-19T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’nin Teknik Direktör Adayları Arasında Emre Belözoğlu da Var",
+          "kaynak": "Gazeteniz Olsun",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTGN0WTcwZ2pKT0JqMV9jN3ZWdDJRRjJPcmpHUGY0b2NCS19nUjg0TWwzR0JZWTR2NWtfYlFvYlZEY0JFUjZTTy1PUF9lNUZQUGRUZjlsZ3JjY0ZzQk96a21mcmlEQm1VV21SQzJwcFZJeTVIYXZGdWlrTVFsOVNPaVdSRFlQSS00YjZCeVJvQ1FhczJ4RE1hNXpnSG1WR3VlUDA3V1RIdEJqQUtx?oc=5",
+          "tarih": "2026-10-28T17:21:35+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Emre Belözoğlu",
+          "aciklama": "Türk futbolcu ve teknik direktör",
+          "ozet": "Emre Belözoğlu (d. 7 Eylül 1980, İstanbul), Türk teknik direktör ve eski millî futbolcudur. Sol ayakla oynayan, tempo belirleyen bir orta saha oyuncusu olan Belözoğlu, çoğunlukla merkez orta saha veya ileri oyun kurucu olarak görev yaptı.",
+          "link": "https://tr.wikipedia.org/wiki/Emre_Bel%C3%B6zo%C4%9Flu",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Emre_Bel%C3%B6zo%C4%9Flu_Kas%C4%B1mpa%C5%9Fa_SK_20260130_%284%29.jpg/250px-Emre_Bel%C3%B6zo%C4%9Flu_Kas%C4%B1mpa%C5%9Fa_SK_20260130_%284%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Sence Emre Belözoğlu bundan sonra ne yapacak?"
+    },
+    {
+      "id": "5bfbb92d80f9",
+      "baslik": "Fenerbahçe’de ayrılık kararı! Yıldız futbolcuya teklif bekleniyor",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "Fenerbahçe",
+      "tarih": "2026-10-29T15:22:00+00:00",
+      "ozet": "Fenerbahçe'de İsmail Kartal ile karşılıklı anlaşarak yolların ayrılmasının ardından yeni teknik direktör arayışı başladı. Sarı-lacivertli ekipte takımın başına geçmesi beklenen isimler merak konusu... Devamı için tıklayınız",
+      "ozet_kaynagi": "A Spor",
+      "haberler": [
+        {
+          "baslik": "Fenerbahçe'de Beklenmedik Ayrılık İddiası",
+          "kaynak": "Afyon Haber",
+          "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5PY2FPUWtZeG1Yc3MwczFqTVZiNi1GZTFPLW5DNF9Id2lLSkl6dDRIVnR5Xy1jQUsxZU5MYzVyTmRydE1UYlBpWWhINERfZF9HUFBLZi1zU0NFZGFqVUtlX2dCbEl1X1BmbjB6ZjAxNmc2eVRQQlE?oc=5",
+          "tarih": "2026-10-29T15:22:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’de ayrılık kararı! Yıldız futbolcuya teklif bekleniyor",
+          "kaynak": "Takvim",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRmtRY0lqMGpta3F3djdvRTFlNjd1VlVtcThwTWt2THRMb1haTTA1b3JFcXVLS09EdDhodzBkVVpTNnM4SWVqTkh0MmtCZ0NKRHN0aHU4ODRwMk9NUXBkNkRwcXNpRWlzel9TQ3ZLblJsVElUN1I3ai1sT3kxNXdWbDRINzUzdVI1TmZEajZvbWJkLTdjUW15MmNDSFoyYnMtYlg2eno4TXFzOE9k?oc=5",
+          "tarih": "2026-10-29T15:13:58+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’de beklenmedik ayrılık ihtimali! Yeni teknik direktör karar verecek",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORGljQzdWWl9kTEpSX29TTk9CUDlTTko4ME5HeDEyQlUxSWdJdmNlTF9NV2daWTRHNmlxQlc0TFZaYmlRbVo3R0NmenRFN2VlWUJYbHZNcTlUTEd6akczUndrVDF3SEdOZUM5ZkdPdUNNcmY0bWpSVEM1VE1JWkkzYWpscWJXVWQwaF8wal82MG8yWTlybU94RFRwdlVQZGlfNktNaHdhY2ZlTHAzSlpNc3NkcHkwc19nQng40gG-AUFVX3lxTE4tdFRuMGNEZjN3Q3J2bzZGRjNJZ2tPTHMyTEJ0MHB4YUwwLW9ZRkhMM1Bmb0xKN1hCbE9CRnFzQ0Q5ZjhoTEJRbGJ2cUNDSS1PTTNvbGg3ekhmTmFOT1NhckktUzhEX1pERjZkMEd3ZmZZYnJJd3JaS08wQmp1UGhSUll6b2hGZGhhY0hWNnlKYm1JZnBqUEpMM25NekhQYzFUSGRjQkVYM1plY2g4LUU4QnZwOFF1MjZuTnJ2dnc?oc=5",
+          "tarih": "2026-10-29T14:28:53+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de şok! Matteo Guendouzi takımdan ayrılıyor mu?",
+          "kaynak": "Alanya Postası",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYk9nblhlb2oxVTVwMG1DQW1VdlA4RjF5c0Vab3VaZFJ6LVVuSlVzVTBnSXRPRklnLUFJTGlUbmcwTGVmbXJjeG4wYkVCdS1Ub0R6TDhqMVNnQlBFdTFlMlR4eW9pUEF6U3FQdWhlN08yQlBXcFRiTjRJUXQ2ZTBUejNOYnZ5WmZWdVJiOXVmZzlkQQ?oc=5",
+          "tarih": "2026-10-29T08:55:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Matteo Guendouzi için ayrılık kararı! Teklifler değerlendirilecek",
+          "kaynak": "A Haber",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZl9sM29XZFpfVDJmVFU4TzJfWUdvLWEzTWVYeVNYLXgyWXdJM3BLMDk4SXdSd2M0eDg0Zi10MFBLS3JPTEk4UEl1VVo2RVZTc2VFbmJtTmdpNFRoVzEtbkU0d1ZlMmt6WWJjMm9MR3ppVzlBanpuT3MxZUJsY25FS3BBU3VpMDF5Y3lWVXJxT2MzWlE4M0E3ck5CNXZKb0Jrb2duR2N3dkphaC1KV1EtLXVxRHVVamx4WDVfWA?oc=5",
+          "tarih": "2026-10-29T07:27:28+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Brezilyalı yıldız Lucas Lima'dan son dakika Fenerbahçe transferi açıklaması geldi!",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUHRLY3ZSalpNN2pQc2hsVEQ1V1VPOFljMG5Sb19fQm5NaWhSbEdjY0oyVFZxOFFGZGEtbFRlRk9iV2hqV3J2NExuY1dYNG1pV0Zpc1B5eWN0UngxSnkwcjRPaGxaSmV6aDI5N3hCTkp3X2ZpeU9QcUJoWl85bUlvWDVxdG9KOU9HZnJEYm9seTVrOWZyZ2VBSmFpa2RXQnM4Ui1CTExrTXdkLVU3Z2Q3a0lOS1FkSGtJaV9hcEln0gHAAUFVX3lxTE9IdXoxaTctZXVCYllGTzNRVkZmRnk1cWthaXFCNjY4THpmN0lVRXlsTjZnOW1yMHZaN1FNT1FmakU0N2k1MWEyMFg3N1pyS3lkeFkzeTdyN3ZRSHF6d3NCa0pONk45dTV3LVNDR3BtemtQMHg3RlNLTE1RWUx1ckNRZjRXc0hxWXY2SnU4Yi1yNGVMVlRXUDNIMkVsaVFxdU91SDcwQnNnOFJRR20yYjN4MHotUGJyUkFJdVRlWHFtYg?oc=5",
+          "tarih": "2019-06-29T07:00:00+00:00"
+        },
+        {
+          "baslik": "Dünyaca ünlü yıldız oyuncu Fenerbahçe'ye teklif edildi: Mourinho'nun kararı bekleniyor",
+          "kaynak": "Yeni Şafak",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWkwxVGpwRWtYZ3BaQmd0bzJPeTFwbkZfX0VGX19zeFRRSDVLWmdybDVUbFZVNWQ2LVNOdG1XVDdMTnFCOWsydHlTNW8zemVvU2VEOUdrQ190YUprdGlhcEJxYVFCRXA0SVFtVUhGOGZ4TWVMbHJfeXVMcXJuVEJRaFpudWtXQXdnUG1IbGpHRFFSeUJuVkRWc05kY0VfRFlIYzNrUjRya3VqVEE5LUtpa1NqRmoxUmpJVHdWa3g0dWw3Y0FWdkV6Vg?oc=5",
+          "tarih": "2025-06-05T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'ye Suudi Arabistan'dan dev teklif! Tedesco'nun kararı bekleniyor",
+          "kaynak": "Fanatik",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNakYtUVZVTFV6SEl4WWRDdXFaVnhXZzE4NVNQOW1WRUJaTGtreDg1bVRHcFF4Q3V2cUZNTEpreGU2Mnh3YTNMYUx4VXU0b3VlN0Q2XzR4VUw0ajRoRklJT0ZIYVFQV05SSVpUWFdwRGNSVWJmUWZweXhTcHlZV081Ql82ZFpzVlBJTkprUUVjbVlXNlNMNmhFQjFhd3U4d2kyaFNrb0o4dWFKQi11MG5RQ0t6Y2ZGdTNNc0J4WklpT0d4UQ?oc=5",
+          "tarih": "2025-12-30T08:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe Başkanı Aziz Yıldırım ilk transferini yapıyor! Yıldız oyuncunun eşinden de paylaşım geldi",
+          "kaynak": "İnternet Haber",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQLUNDZXVXZ3c1VEF5SnZreHN5U3ZhNFdQYkFpbjIxM2NSVVU0c2Y1VFFoQTFxMEJBc2ZTWG5TUUh3SEc5NGxGdW9jWUhEd0w0aTRfM2VtVWF2WW1BV1JuWEMtWHA1di1LZE5xUHd2ZVpERi1sY2tLbFFvcEZ4dDNFS3FvaDljQlhweEVHVW9TXzQ4ZUVoNzlwZm5Fb2EwRFhHem9GRC1NOXI3bzFNVzRvQzd0eHJpMzR3TnBnT0hQYXRocnpBYU51TlV6T2RjQjQydV96QUNaT1A4UQ?oc=5",
+          "tarih": "2026-06-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ve Greenwood Fenerbahçe'de! Bugün İstanbul'a gelip sözleşme imzalaması bekleniyor",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSEZ0U0M5Z3Rnamlva2NRU3VrNkJIbThwZThYblBMdlVscVoxSDY4am9tRk9aYmYxcG1aaklTWEUwVHE5VElKTG9RVnFONXlneE9RUGNkQXM3N0ZpTXJ6NDIyRms5c3BQODhHNFVOQlJyeHdMUjZSLU8yTjNHS1F3M1kxUVlQbEZmWUp0YllFVnJuWVlfRTNWMXFFSkZpSW55TjJPdWxjc3EtZkQ0dWlqXy1RVmVXNENPMjhtTDNmZ2F0ZFk?oc=5",
+          "tarih": "2026-07-11T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Lukaku'nun 1 imzası taşları yerinden zıplattı! Yıldız isim apar topar ayrılacak",
+          "kaynak": "tv100 Haber",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYlZ3ZzJOUFhRd3F5aGt4T1hhQjg3SHluRmh5NGJKR1FmeU13UG16VmVCN3c1VFpiNTRJSkZQVlFiTnhQZC16dmtRYTV2SlZQRVg1ci1LZnJCWkZoRU9ZOXBMbGRqVDJPVUxTV0NiU3ZzcFZuMTRBSXVwdldyREtvNXJXdWRkRS0tbFhCLTdCNXhDVzlhOTFEbk4wZmp5Y1dNbVBOYXpLMW9oLWN2dDUyUFlaM1BzdkFFZy13UjIzcExmQUHSAcgBQVVfeXFMTVh4YUUzcHJKV3F5TmxPU3lnNDlpcTZhSXZwQ3drdkllWHpCam1jejNTVHZkWkNNOXdvQU15cFdrM3pzanlxREE5N0U5UGlNcFZqb2h5ajBIc1I3WWcyYWdNVUltSHJ0bEtCVUlzamxzdGgzalRDMVQwcmNyZTl6aFB4enJWc2lOYzh1bGx4dG1WYVh3cG1TZnM5OG9FWGxPSUtTMGlWOU1OUkZGajNEdXZTajItWkhVM21abTNza0pMUjBGLW4ydEg?oc=5",
+          "tarih": "2026-08-15T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de İsmail Kartal yıldız futbolcuya formayı 1 kere verecek! Şansı iyi kullanırsa kalıcı olur",
+          "kaynak": "tv100 Haber",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNR0drOWRaay1uWXhOaVRMMHkwaHdLY3Jsc2t5ZERVbk4tQ0xWdGxFOC1vZHZXX0NGbWlDYzBic0xiTWw4cHNWWWJLV0dWcndUa1plNkJRWjVyUXU1RzBQNnptbHk1QkxGSVlLSWdNZHU5cWZfNG5leXFQNW9aTU1aNjg5ZF9Ob0c5LWVLcEp3RVlWZTFlSWhsNDM3RmVyZHNjbnhfR3N1c1l6Rm01U3RkRzZfV1ZBRUV2N0lMM2NuUGFGdEh6SU4tWGlfSVRqUXlF0gHWAUFVX3lxTE9VM2pCb19GX2dweHhNSm0wZHRUQzlQbFBrb3pTOGNEVjJwZDdkX3I5WFF6MzloN0NsZDNaTFpKcF9LbFNQbjRmS09lN1c3ZVQ0eXB6QzRsWHMwczd5WURFSFQtZzFsWkQ1RkQ1ZTBnY045UDdTenhQRktQeERiR0NvY05CTEU5NlFxaE0yV044RDN2WDZIN1FTMlJCZy1HUjBjdThtMWxUMEZZTUxtVUp2elZpX0drNW83SVBxd1BJUl9xOW1Fc3ZaMkNOZ3VJWmlBaDhTRnc?oc=5",
+          "tarih": "2026-09-14T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Aziz Yıldırım 1 yıldızın biletini her şeye rağmen kesti! 20 milyon euroya hayrını görsünler",
+          "kaynak": "tv100 Haber",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVGw5YzNoQ21GMGhPZG45OGVWR0V5STY2LWx6MFJTTGtTU3RHcXFlOFFHWmFLZ2ZpLVlzaHZQMDZlNXhnVzU0bEJCOTQtQzhNSlhlTmo5aTFBRjI0REhjSDNGMkcyTzlpOEZYSkgyU2lHak5RYlFMYUl4SDUtQ3R5d3hfZC1PQmczNEVfUy14WkhvTjhFQ1g2WXk5N2I3NFpualZxOFlHa2ZJcGxVZU4yTlZTWE9URHBYMnVscnpWWC1PWFkxOGROX2tBZ0N0X2sxQUpfN9IB2gFBVV95cUxPTXd2RzdiVHkwd2gtTXZ0bWZWWU5KNkVESEJYYTRXZ0RrYS12WmV6dHk2bk9yMVJYXzJ6bUIyOWJ5S1VXalQ1VFpZUUdkSkRKWVdDUnpnckhvYVpJRGpiTnVoMmFZSjkwQTFwXzlrcG5QYUIweXhfc1kzV2VMR2k5ak1SaHVzU0dIZnFNNzVBQ0hvaEx1TkhlaE5aaExNWlY3Vk85dVBRc2NnTzhoeS1Qd2p1VlZDMWc4Q3FHeV9KVUt2MFhWakZILXNtdFFrajhjTUhsUU4zeXIwQQ?oc=5",
+          "tarih": "2026-10-23T14:09:00+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Mattéo Guendouzi",
+          "aciklama": "Fransız futbolcu",
+          "ozet": "Matteo Elias Kenzo Guendouzi Olié (Fransızca telaffuz: [mateo ɡɛnduzi]; d. 14 Nisan 1999), Süper Lig ekiplerinden Fenerbahçe'de orta saha pozisyonunda görev yapan Fransız millî futbolcudur.",
+          "link": "https://tr.wikipedia.org/wiki/Matt%C3%A9o_Guendouzi",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Matt%C3%A9o_Guendouzi_6_Fenerbah%C3%A7e_20260805_%288%29_%28cropped%29.JPG/250px-Matt%C3%A9o_Guendouzi_6_Fenerbah%C3%A7e_20260805_%288%29_%28cropped%29.JPG?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "İsmail Kartal",
+          "aciklama": "Türk teknik direktör ve futbolcu",
+          "ozet": "İsmail Kartal (d. 15 Haziran 1961, İstanbul), Türk eski millî futbolcu ve teknik direktördür.",
+          "link": "https://tr.wikipedia.org/wiki/%C4%B0smail_Kartal",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/%C4%B0smail_Kartal_Fenerbah%C3%A7e_20260805_%283%29_%28cropped%29.JPG/250px-%C4%B0smail_Kartal_Fenerbah%C3%A7e_20260805_%283%29_%28cropped%29.JPG?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Mattéo Guendouzi bu konuda doğru mu davranıyor sence?"
+    },
+    {
+      "id": "24d05edf6a13",
+      "baslik": "A Milli Kadın Voleybol Takımı rakipleri kimler, belli oldu mu? Filenin Sultanları 2027 FIVB Dünya Kupası ne zaman?",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "Filenin Sultanları",
+      "tarih": "2026-10-28T12:49:19+00:00",
+      "ozet": "Filenin Sultanları´nın Dünya Kupası rakipleri belli oldu!. 2027 FIVB Dünya Kupası ne zaman, nerede yapılacak? Filenin Sultanları. Filenin Sultanları'nın Dünya Kupası'ndaki rakipleri belli oldu.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Filenin Sultanları´nın Dünya Kupası rakipleri belli oldu!",
+          "kaynak": "Şalom Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUmx1N2dCWHl2OE9udVB5V19mY2s2X0FqS1JvR1Q3QmpDZjJYcm51TUdGUUZGU05Wc0VFRjhpdVFUT3lOR1Y4ZUVxWDdsSUhERTJPa0poVTRJQUsxcklwaEt4NVZ5S3JfZXNkZGw3WXM3aUtWakdlOWp2NkJNTklsSTlycGZmRnh6TlVQX0pjRE1hREpnaWZlSg?oc=5",
+          "tarih": "2026-10-28T12:49:19+00:00"
+        },
+        {
+          "baslik": "2027 FIVB Dünya Kupası ne zaman, nerede yapılacak? Filenin Sultanları…",
+          "kaynak": "AKŞAM",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPbGd0TFNESFRjTnRrUGlyWDhwcWh6TzV3MndISVY3bmlqWUV6RE5YQTVkdkROY0FDVEZGTjdKQkstRUp3OEVRanJjRGk5bG5PYWlKajhVTnM0a3YtVnFXWWNWSTRUMk1yZkx0aWpPZmxiLVJfbDROSUM5dk5BVnJsOU02X0R6YndxVjB6MWdWVWd5Ylo4eVJVNnZzOVYza2FQUEN6QjZWb2V5NlZqNkhGMTNB0gG0AUFVX3lxTE82WnpPRUtpbUV3NFUxMUlmTjZHMDZmdkdmaEY2ZXR6ZzNNQU5GdVZya1hpaTlMQjdqUTlrZ2xaTDJ1NzRTWlNQRmE5NnNPRTh1cl9LVDRKaVV4YjZtdW9LbTFzQ2VGNkp4U1JBVmdlZ3ZPQmpsN3VKYzN2RnJLZTR1bEVkU2MzRWdTWXQtWXByX09YMUFnNm1QaC1ReU1GblpIb2MwV2l6Z3JNRFlCZ1NneDNyQw?oc=5",
+          "tarih": "2026-10-28T10:04:00+00:00"
+        },
+        {
+          "baslik": "Filenin Sultanları'nın Dünya Kupası'ndaki rakipleri belli oldu",
+          "kaynak": "Gaziantep Doğuş",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObS1RdEFzOHh4STBKekJpSjRmdzZOVzhsMXZqdDFpUi0yWXBoMGltcl9OSFROOGxqUnZCRVo2eFhrNHhDQ3dkQl9Ya0lmejNlajFESWtEN1U1NUN2dVJQZklkT25yN0ZfWWliSFRFeGstcWRQLXVQZHFzRW1KTndBcU90aFRlckYwWnRQTUswLVJFRTc2WkE?oc=5",
+          "tarih": "2026-10-27T14:20:00+00:00"
+        },
+        {
+          "baslik": "Filenin Sultanları'nın Dünya Kupası'ndaki Rakipleri Belli Oldu!",
+          "kaynak": "Gazete Kritik",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaFZTN0hnRTJuenN3c2JSU1FXbUR2dEZmTk9SYWdxZnozOFJId1dURmhjQWRHRlgwaEVaLUQxSGYteDc2cUREWF9fUmh4YTN0SnZCMmlKS2puWlBGcVJOVXRINUY3UFJabHVoMUl3VXROa3J3bjVVZjdKRWtLQWx3YjBDNDN0b2JtN19wN21PNzU5bmJ2V3FUaEJ4endOcmJFV2FR?oc=5",
+          "tarih": "2026-10-27T13:29:16+00:00"
+        },
+        {
+          "baslik": "FİLENİN SULTANLARI MAÇ TAKVİMİ | Filenin Sultanları’nın Dünya Kupası rakipleri kimler?",
+          "kaynak": "Yeni Asır",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcThrQnQyU2dfbEhzVXREQUdvUHFROHA4R3doV3NnSUZwc3l0STU0SEJGbm9ic1BRQk45U3ZETmFfNVpaUWd4ZFg0UFRoNi1SZFVVVmtMVlVqMW5qeEZXNy1ldnluaXQ4bDFOWWNzTVBub1lNc2pPZ29USW02STI4WlZIN0dxeW5mLVdKVFozb3I1TnNtaVo4SnhadVNCbEZnRk1hbXRkcmE3ejl3d1ZOcWZIWF9vYl9uWHdQZE05YXdNRUxH?oc=5",
+          "tarih": "2026-10-27T12:07:56+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "VOLEYBOL KADIN",
+          "kaynak": "Fenerbahce.org",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5US2l2UFdkRHd5T3pqRHNtc1FXV0Y2SmFRbjFQV0xlQjhDVVNmU0oydkk3YmhsMFd2X3FjUzdzNVhWY1lCWFoxMk43R3BIZ0lUWGtYaTJmcDJfd1ZySTl6dXd5T1ZZOGQ3?oc=5",
+          "tarih": "2019-07-11T16:41:26+00:00"
+        },
+        {
+          "baslik": "FİLENİN SULTANLARI VNL 3. HAFTA MAÇ PROGRAMI SAATLERİ || A Milli Kadın Voleybol Takımı üçüncü hafta maçları ne zaman, saat kaçta, nerede olacak? 3. hafta kadrosu...",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPXzU5aGcwZmYxWG9ZYUtRQ19fNXlGdENlUzNSdmRCczlfdFNBVm9jUmNvOGJSYjZ5QnpVMW5LbE1lQkYzMTQxQjlhSExENGtOVjZDS19OalI4VnV1bTYzaDlSbTZ0b0ZxYWlWS3IyYXVvbHBjajRZd3lDT0xMTjVYTmV6SW5kRGwzUXh2UXZKTXdDLUtVUVpmaVZkZi11ZGtEMUwxOC1nSUE0ZlkxUjNxRXRfR3RSMm1HRnBKR1c4MUMybGVnT2VqVG9ROFRQWVhpWmNxN0xDZE1zZEJvaFpRSEhkWEJER1R3cVVPOUFqQlUzcTBIdVluaUt4X3lBR2RPc3BLbVNDZGdWRzZleVNJd0lSQVBPLU0?oc=5",
+          "tarih": "2026-07-04T07:00:00+00:00"
+        },
+        {
+          "baslik": "Türk Voleybolu, Milli Takımlar Gala Gecesi’nde Bir Araya Geldi",
+          "kaynak": "Türkiye Voleybol Federasyonu",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMlRlanVnYUFCeHNBOFA0MTNlc2xfZlRHNjhlYVBSUE5jZVE1SXpoejFkb2ozRmJqLVlNNnpaQ3NKb0lYNXktd2xnQTE3ZWhid2JwMWhRSm4xS2x4dHVxN3BsUkR2OXVJZ2dBai1HOWUzWG1yckJfOTlSTHBxYjczZGJGNmJHamNTaUdXeW1yMA?oc=5",
+          "tarih": "2026-08-14T22:44:05+00:00"
+        },
+        {
+          "baslik": "2026 Akdeniz Oyunları Şampiyonu Kadın Milli Takımımız Yurda Döndü",
+          "kaynak": "Türkiye Voleybol Federasyonu",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbUVpSV9uYkpkRFExSEtqOF9VVFZHN1FmdDFQREFsSllfbklsekstelUxTGZGMm92dVd2UWp6eFdCRnUtaGtlOVl3bVdydk02M0owNEg5RFFZQWZlWXN1a3hweWtoY3VaQTU3Wkx2VTVDc0VaOVpLam44VmlndVkwYWczbkgxZGwxVnlyTlB0NVlpdFBhMVE?oc=5",
+          "tarih": "2026-08-31T13:06:01+00:00"
+        },
+        {
+          "baslik": "A Milli Kadın Voleybol Takımı, üst üste ikinci kez Avrupa şampiyonu",
+          "kaynak": "Anadolu Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPc2ZQY2V3ZE5oYl9TMVFLbllMTk1jeFZETWtTc3p1cHNrbnRZN3pQLXBiMFBsdUNhSlVESUpmRUtWYlhjMUVoWjFQaE1KRktEVnEyNmg5TlZZa2RYbWROc3BRanZGWGhUNTBjRkJoMkN6SzZZVktfU1dnb0lDVDdWRFlLZWtMLWtzZXNMRVpiMG5samswQVZpM2FiWjg1RWV0UGM2RHQzUQ?oc=5",
+          "tarih": "2026-09-06T07:00:00+00:00"
+        },
+        {
+          "baslik": "SANMAR’ın Fenerbahçe Medicana Kadın Voleybol Takımımıza desteği devam ediyor",
+          "kaynak": "Fenerbahce.org",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWnU4X0lNUWtXYk1MYXF3MHNKV3BmTXZGU1dVa19vNHpmYjdnMzI1RGppcWRrMDVtV3M4cXAyS0VxQUR6UjJvY05iRVBLbGdYcUt3RHBxNmlubXpwdUZHTzczTkU0aUMySWN3dUhPYm92Rk10WW03R0FVb3BWd2kxNlZXVXZDX0luczNXTEtMN2h5TktmdVBGa1hobHdDa0hIcHVCYjAzeHM1alozSTAyeFhXZlNKRW5acEtaUlZXMXFCb2RGV1M5YUpvRzlvZVlz?oc=5",
+          "tarih": "2026-10-06T07:00:00+00:00"
+        },
+        {
+          "baslik": "2027 FIVB Kadınlar Voleybol Dünya Kupası Filenin Sultanları maçı ne zaman?",
+          "kaynak": "Dünya Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVFRSOENOb2Y2MVMzbFl2MXloemNIeC1wdld2M05PZUx3a1B3NzF3cFpJRmJlR082MTJnQWRyNWlPVjRxNlRlZEhBWkRCSllMa0V4ZFAwN0tQMzNVS3VaVlZOSlB1SzlGcmltQ0tHTEtuYWswQVNydEh6cVdiTXFfdDFjMUdQS1hrcTRZS2dFeXpwRWNTYzlvYTctTkJGbUFvZXVKLXEteERfbjliYkZYOWlROEk?oc=5",
+          "tarih": "2026-10-25T14:11:00+00:00"
+        },
+        {
+          "baslik": "Vodafone 3 yıl daha Türk kadın voleybolunun destekçisi olacak",
+          "kaynak": "Cumhuriyet",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQTVZVWZqRWpzV0hCUG1MSEJCT25abVRobjVseEROV21lTnR6cjlUNkFSN3ZBcmE4MWRTVWIwMUlLZ2pHVmlCTU9GNnNiTUYtbklpTjc0Q0RTSjNrUVZiekdfd3ppMlQ3R0RTRVFxZTJWQ25mWDVkSVRNZUxoRmRBNUFQRkRuOC10dUhzU01reW5vRDVGWWNlWlU1eDJGRC1PNHg4UnVrQQ?oc=5",
+          "tarih": "2026-10-28T14:24:00+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“A Milli Kadın Voleybol Takımı rakipleri…” sence bizi nasıl etkiler?"
+    },
+    {
+      "id": "a1161581f6ba",
+      "baslik": "Filenin Sultanları’na “Cumhuriyete Değer Katanlar” Ödülü",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "Filenin Sultanları",
+      "tarih": "2026-10-25T09:46:42+00:00",
+      "ozet": "Filenin Sultanları’na “Cumhuriyete Değer Katanlar” Ödülü. MARSİFED’den Filenin Sultanları’na Cumhuriyet ödülü. Bursa'da Filenin Sultanları'na büyük onur! Cumhuriyet'e Değer Katanlar Ödülü verildi.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Filenin Sultanları’na “Cumhuriyete Değer Katanlar” Ödülü",
+          "kaynak": "Türkiye Voleybol Federasyonu",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNXN2SlJQSExna3ktOG83RnVZRXNDU0M0OWZHdFV6Rll6c3M1MzVQQXVoNVdveTdJYXMxWG1mZTNfYjRETjg2azJDQ2hrWHkzY3U3cUlZaC0xSjFFancwNFY5cllZZ2pEZXBjX0VBdHo2UXFHejY4dEdnd29yRkhTbHJUSTBBQQ?oc=5",
+          "tarih": "2026-10-25T09:46:42+00:00"
+        },
+        {
+          "baslik": "MARSİFED’den Filenin Sultanları’na Cumhuriyet ödülü",
+          "kaynak": "Ekonomi Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNd0pJMmxyU3EwZzBzOXdRNlh2cXZTNlpaRjJsdTJhNHNtMHJSSXpzQmEwd2d5Qm9RdVNwZ3VQU293b3hRWFpRaV81UTFfMmJKQ1AtS0JiSTlHbHJ1SzRPMklLYUJUZW44Y0lxb3I0Zk1tTWRMeWlvb1Ewbng5YXQ0UWxGSGVjRndqaWpXSmNnNWxUeVRUUVJ0NTlMTmE?oc=5",
+          "tarih": "2026-10-25T08:06:23+00:00"
+        },
+        {
+          "baslik": "Bursa'da Filenin Sultanları'na büyük onur! Cumhuriyet'e Değer Katanlar Ödülü verildi",
+          "kaynak": "Bursa Hakimiyet",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNLUNSUG85Z3lINXY0Wm1vNlpTeHRHYTU3UkVOVm1sODdmZTFqMlJ2WUJSZ2VneURSNVhOb0ZDTDJUQzRkSHVMRUNwMGQwSTJNZFNTdmFIZW9hcV8zS1NfUWVtMlh2ODhVT2pXSGI2bUZMVmJPVk1CYzMyNmhXamtNQkY0TnZId0JzR0lOSkFiRTJ3VTdzdDRfTEdkanZPcS13ckRVaUVzb3BaX1hzWnlKa0hITzRfT0ZHUXgwRmpkMkNqS0RQZFNuekswUQ?oc=5",
+          "tarih": "2026-10-24T11:33:41+00:00"
+        },
+        {
+          "baslik": "MARSİFED'den Filenin Sultanları'na Ödül",
+          "kaynak": "Koza24",
+          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9VcHI2aHZhLXExbHBsQk13OVo4RlEtN3lETUtKVUlMY3ZMRm5NRTA2Tk9ha1J3UG5oNGMwR0IwZHdHUkxWNGQtR3RuRVd5UmEzUVktVmVJRGQyOEotUXB4eTJ5RG5mLTdVQlNGcw?oc=5",
+          "tarih": "2026-10-24T11:25:00+00:00"
+        },
+        {
+          "baslik": "Filenin Sultanları'na Cumhuriyet’e Değer Katanlar Ödülü",
+          "kaynak": "Voleybol Aktuel",
+          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVzhWSC1KbkRoaTdUYVRDOFpleEpRajF4MDNPLXRUbDBFMWsySlJzNVN1WXBrTTNaeHBJampZOS1SU3pTVGxsZEg3SWRWX3NreW55dGxSR2Y4ZzY3SHJCY25SeUhQZmdRNnM0VTA3Q2pvdWV4SWJENVVoTmVRaHUzVWNodjhqWHJI?oc=5",
+          "tarih": "2026-10-24T09:38:00+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Filenin Sultanları Cumhuriyettir!",
+          "kaynak": "Demokrat Kocaeli",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORFQzRFZfVFhNYXlRUjIxQ2xxaExaSmd3djZnWDd3dFF4RWVjcC1fLVVwQk5zZHJyb0ZiQnNtbEJ2M1N5SlZFaUcyczNtcThZU1VOblhzTjJUNENOQmxfRU1OcjBGQlZDd19iX2dLdHd2dEJTSE9wYlJOWHc1cnFvWVB1SUVnVmJqSnF5R1BCUkJwV1HSAZgBQVVfeXFMTzZOeW9GN0o5RzdyWGhCZi0xMkdrbS1uQk0tSnRvZTlGVXU2VWZmSHBsa0hZQVJYWnVaU2FYVDlvS20yWUR1MmtUa2xENi13cEwwUU9DMmxyYUMxaXBUY1FENllMRWlCb1Jqa2hOZTRxMTJPczh4ZjRkbDI1a2JEQnh4MzgzaHd6b1poVjI0Y1RTcDNaX3FJMGY?oc=5",
+          "tarih": "2026-07-27T07:00:00+00:00"
+        },
+        {
+          "baslik": "Filenin Sultanları’nın para ödülü belli oldu! 150’şer Cumhuriyet altını",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbUxFaGd4TzU3UW1nSkk3WWp5NmNCSUdrSVRQQzNRQmtScnR0aEZ5U0VsaHVXX0NNazJMU0xCSnFOMGxaTFhoaFZEbjJUVlVCeEUtVzh4ck5yb1FJT1gwMTFtQmxEaU4zNGszNUxERmZaNDR6Uzk1WDdyamFsc0tTNXlabjB3VE9RT0luQ2pJV0xWZm9hTGV4Y0o4aGZvWFVuRmpHeE9zOFk3OTdCbUw0SNIBswFBVV95cUxQVEVpQWdwMzdralgzMUREbEN0MF9JVEkzRXZId0dtLXM5aWIyQS1LMEVLYl9jT2ZZa0w2b3ZUUTQ1TUkwS2xCODBEdGFpOTNwR2VwZ3FNS1M0VDRkZ0pRNVQ1VU9TVXVJbXlzS2J0MWpEcVlCUjBrRTdVVy1jMHRsMFY0dkVnUTA5NDJFeVVfa1pKTkR1Sl9YRVA5a3otM0VFYTVGV2xFT0hiaUhOT2lHZzltMA?oc=5",
+          "tarih": "2026-09-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Hürriyet yazarı Soybaş: Filenin Sultanları'na kişi başı 150 Cumhuriyet altını verileceği konuşuluyor; az değil ama hakkaniyetli mi?",
+          "kaynak": "T24",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPUVFqeFVNcS1aU2k5WnRRRnRPTDhMb0VIUWlIZDMyd1hzSU5tUG1ieVNlTkU2QlpqYzh4ck00U3NUU21SUTF3X0VDVkZUZmtla0tsRFptODFkbTNhNWVhTUJrUHBqRW9SeGR2WUlWZ0RfSjFFZGRSclR1MEVQZ19RWC1weUVHc0htNXQ4U0M0aXFGTjJsWmlKV2swT2FuLXhZX1BYM3B4LXdVN3FKbmQ4LUJXb3FmNjZMLUN4Q3E3bUVEME1fZE5Ea0ZEcEhSMFlxeDZwVWlWRUpnWkozUmR4cWZKX2ZENW1E?oc=5",
+          "tarih": "2026-09-10T07:00:00+00:00"
+        },
+        {
+          "baslik": "MARSİFED'den filenin sultanlarına 'Cumhuriyete Değer Katanlar' ödülü",
+          "kaynak": "Ereğli Önder Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTDVvbFlkLVdWV3RJMk1CSHh0NE1YclFrejllWlRSbXRHWmdYVFFvSHRpZGZvTjF1azdaaS16YlkxM0tNZVQ4S1pNRjNUVUYxdml6T0g0VFJpUDJYUmoySXU0WW9PdUUxN0pmWFpVVWNrVEhYOElKNmhWeXltbWVlX2c5QVhWTHMydHROSFlxTG9VR3N5UWUxb3BJSTU?oc=5",
+          "tarih": "2026-10-24T12:55:00+00:00"
+        },
+        {
+          "baslik": "MARSİFED'DEN FİLENİN SULTANLARI'NA CUMHURİYET'E DEĞER KATANLAR ÖDÜL?",
+          "kaynak": "Yorumla",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSWdjcjBmMlQ5UThGVUVTSUx5QUdmdE85RG95bC1YYVN3SXhRM18xSGF0WVNiZjB6NGR3TkVCUnRuMS12WnBYR1BPNHZCY01sbmR5M0hGVGhoRHJGWVdLSjhqYTE1Mmx1MTZwSEVzTFdQUWZISWJuRm5jWlU0VHpoeDNucWhCR2M3V1otUzN1Ui1YVDk4N01Yd2dsaFhZd0k5OVNFdDI3M3o0V2xqX2c?oc=5",
+          "tarih": "2026-10-24T13:02:40+00:00"
+        },
+        {
+          "baslik": "MARSİFED'den Filenin Sultanları'na Cumhuriyet'e Değer Katanlar Ödülü",
+          "kaynak": "gazetegundem.tr",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbG5hVml5NnJ6VjdtdkV5T3hoOEw3Y1lkaDNmcWFhZVE0NFBjR0hyaTRONXhoaDRsM0lvT2pVZHJrOXNTYWlJSTNrMmlaVzF5S1pGSkpnRzlfMUd4NVk3TkJZVXUwMUFwai1UeW9UN3d5QlNWdWlWZXlXTW0zNFFYMU1lWXBUc2owNzQxYXZrQmZtTW80NW1kbXcwNGVSdzhCSWNn0gGoAUFVX3lxTE1zRzVIUkRmREQtNW1ESkRibmlXRl91elFnWjk1ajVGZnJTOGlEOFhOc0ltTjhpS3RPQTBLNEVHZm9rNUdUTEhwTFQ0V01rbURRZzFyeHgwUVRzd0hkeDliMkNKRlh5T0stbURHaF83cC1nbU0taXBRN1BPdmc2TEZCWnM4M2hETzh4Wmg0VlFhOVg0cDB3ZDFWQk95UURxcUlyQ2FzX013TQ?oc=5",
+          "tarih": "2026-10-24T13:13:47+00:00"
+        },
+        {
+          "baslik": "MARSİFED'den Filenin Sultanlarına Cumhuriyet'e Değer Katanlar Ödülü",
+          "kaynak": "siyasalbirikim.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbVYtY3NYaU9DZlBHNllpM2p3WWtpanprbXMzUlhBeVRMakNQdUNXWl92T01raTBNWUJtLWV5NGlRWk1aR3Y2c21YWXIxcFlfNUhKcXJvV3cyaGlGN1ZLaUdaUGpMeDAyMkcwTkMxTUY1M3l4S3UteHdZRGhvR2xRc1ZmamZyeHlLNmFuLWZNSWhwZ2YtRU5xUTJsLUlUYU5pZ05kZlIwSGVSVkXSAbABQVVfeXFMT0pGaDRYd09VejI5bml6b2ZBX1NQWnJLSnpMWFZEUzlwUzZpazR6ZTZ4SVdjdnhrNnV1N054QzRrU0hDNEV0YUFGU1V5ZktyQWpXT3NVcWRudnYya3pZNnB6VjQtYzdDZkoxSWI3VjhJYXNWdkstRG02ZTUtUnVnbDFfNXhOTEZRcjA4VTFFLUhOemd1NlR1N3F2THlqRWpQMF96Z1NNQkMzNjVKNWtkMEY?oc=5",
+          "tarih": "2026-10-24T13:55:02+00:00"
+        },
+        {
+          "baslik": "Aras Kargo Spor Kulübü, Sultanlar Ligi’nde Cumhuriyet Bayramı Coşkusunu Parkeye Taşıdı",
+          "kaynak": "Fuar Dergisi",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQndqT1VIZC1FWEZ2U1BhZjhXLTB3RnZoNEphMzdxbmN2aXdMc0hJUm5EMHNJb1RjajVtdWtZTGFmRm4wTVhzS2ZkbFVDc2JuX1JEd0xKYVFHVmk4TFotMkhRWFp3bG5ieWM5Z3RZMnR0RmxqYTZRVDdRZzV6THZrM2NHOGQ5bFhxWEtSQTk2OGR4cWdiMmxOOHBVQWNhdmNZeHpORlBYNUpfWE43QTJKZDVPSjM4dw?oc=5",
+          "tarih": "2026-10-28T09:49:24+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Filenin Sultanları’na “Cumhuriyete Değer Katanlar” Ödülü” sence bizi nasıl etkiler?"
+    },
+    {
+      "id": "dc8945e8d228",
+      "baslik": "Başkan Erdoğan’dan A Milli Erkek Basketbol Takımı’na tebrik telefonu",
+      "tur": "secim",
+      "kategori": "spor",
+      "secim": "12 Dev Adam",
+      "tarih": "2026-10-27T08:09:50+00:00",
+      "ozet": "Başkan Erdoğan’dan A Milli Erkek Basketbol Takımı’na tebrik telefonu.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Başkan Erdoğan’dan A Milli Erkek Basketbol Takımı’na tebrik telefonu",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMl82eDBRd1lzcVU3b0w0NmlyMUhCT2ZQRWFYMVBEd1c4aWZiQl9uOWZBQjlxZzd0bFFRZXJtQnlYYUdIUVlVNjJQSmYweDZ2M2VfQjBtYWNybk4tbDdBaC1LejhSLUtXTDdkLTN3N3RKT2hFTnVyQ1JhUTRDZUQ1M1pES0Y0T2RRUHAxMk03cmNrWjUzY0ZGcE04ejBvMENRaGRqMGNLdFlqaFJxQW5GZXd5ZG8?oc=5",
+          "tarih": "2026-10-27T08:09:50+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Cumhurbaşkanı Erdoğan'dan millilere sürpriz",
+          "kaynak": "TRT Haber",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVU9PczVHMGNWMHJVZVRmQWloUU1XTVRJYnVDQk1NcUFsd3BZXzJGeUczZ3hnaml0YlpwT0dkc0poVTZEWnNmdF9peHdWV1lNbUlUMEgzcnNmaTh5Si1HRlg2UlVnWkhWNkRsTmxsdlB0MDBrVFZnbmJCX2tqN0FRNm0yUDNsLXBGbVA0MVRJajRaQlNvZlBn?oc=5",
+          "tarih": "2017-08-31T07:00:00+00:00"
+        },
+        {
+          "baslik": "Erdoğan: A Milli Erkek Basketbol Takımı'nı tebrik ediyorum",
+          "kaynak": "Habererk.com",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYjlwWjc5R1ExUkpLZjlVTkp2aG8tT2s1RnpJcEhoaU1MdTJyMVNSU1VrQ3lBOVFFd1BoUTJxQzZ2YXliOXA5Z2J1dncwSDktU0phaXhJMjBSXzA2V2p3MkU3ZHgzWXBZakRjSHdNZW9nTm1GSEp5S0ZlNGlMLXJoUFczWG9VQ1RpeVNNbW1rTFJPSG9fVUZLUFlyanM?oc=5",
+          "tarih": "2025-09-14T07:00:00+00:00"
+        },
+        {
+          "baslik": "Cumhurbaşkanı Erdoğan, A Milli Basketbol Takımı'nı kabul etti",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQOGhSNGQxcXZmV05Qd2poTm00M2E5eE9GZ0l3NmVmTGk0MW1rRm11R1lpSkE0bjhYRWRrcE1mRFZyQVVlRGJ6SXRGSXlYd2lYVXk3c0FidkotMVJ2WGxGcUhqLXBxWVZsME5UUDdfV2VpSENrWXdJS1pCSnFoaXhGa0hWMC1EM2pCMy0xZlpESXAtNHhJX21uR3F0OURIYkpFVUtZYkkwVGNYQQ?oc=5",
+          "tarih": "2025-09-16T07:00:00+00:00"
+        },
+        {
+          "baslik": "Başkan Erdoğan, A Milli Erkek Basketbol Takımı'nı tebrik etti! Karşılaşmayı tribünden takip etti",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQekphVURQX2hnRU9mNVMzb1Y2Y29LR0w2UEp6dUZjWDdyelJQNjNKeGdBQ01tczdJV3hwTFFhZXJBUjZLVTZkVFhXaHJjWnllN19UUFZEWHJrQnN6YXhJbHREdUtvZ2YtUHpiSTdfZTB2ZkJMaVB2YXN4RG8wVEIzNVhlTkttcXAwMm02QUxxZnVNSzBzdkV2a2xtWjUzTUZiSWZMbG8tTkxtR0x1SVVyRV9iU1ZnN3FNZDhIU1dpMWJ5dnhicmpYQjdnZGZoYjNm0gHTAUFVX3lxTE9VNGR1UTZYZ2ZFRzZodFUzcmZjMEI0eEp2N0ttWktDd0ZyTHh4U01fckdObWdEUGtmZzB4LXBkdTB3NnRaZVM4WHd3SVdoUE1ab2Z4Z20wTzBadWpSeUZKVlpYa3dCQlUtLUp2WXYzZzlyRDVMRV9JYUJXbmlrTmdJa2NBYkV3bGZTUHBGUE5kSzNyOGVWQTduUmlDWl9uOV9aNExYcDhUWWNNeEpVR1UzeFdPT3dMeUxUTjNCTFRiVmpJRmMzVDJ5T3FsU2JrQ0J4bXc?oc=5",
+          "tarih": "2025-11-27T08:00:00+00:00"
+        },
+        {
+          "baslik": "Başkan Erdoğan'dan Sırbistan'ı mağlup eden A Milli Erkek Basketbol Takımı'na tebrik telefonu",
+          "kaynak": "Takvim",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUUpzWVpld0xIU1NJRTFGXzZTLWZ0OGRvTGxOYVY2MHNySFIybjcxSzVwQVZXa09rUURBcXdJR3RjQkdiaktGSWc1czJuZ25VZ3hRTGt5OTNJZi1nQVV4b1Z2NTlwanplQ0duaGZxN3JWVjlPODdhTHNvZjdRaldCaFdYckgzUkc5NFU3VHY5VWxMNlFFNmxfR2ZjYVIwLXUtc01MdjNpWmZQX3dqWFZwemt2bUlsSUczYVI0aEtEaEZlbE9PRmItSUZCc2dlZw?oc=5",
+          "tarih": "2026-02-28T08:00:00+00:00"
+        },
+        {
+          "baslik": "Başkan Erdoğan’dan A Milli Erkek Basketbol Takımı’na tebrik telefonu - Aspor",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUmZURWYyREx4X05ObkF3bWwtLTdmc0tOX2dBTmtqN1BBVmFxNVk0eDVCRWN3SG9WUjB0TkptSHd3NzdXTVN2RG5LbDhmSnZ5bF9GMHFVOHg4UWpxU1BwT3M4UWpTYVdHbklmVVJyMFVkZXltejU2SVFKRFllTUlmSGIzd3dGRWo4WTZDTVBQWkF5aXVkc1gwOHlMWTZuUmphdVUxVENlSXZuNGPSAbABQVVfeXFMTnlha3pqY0JaNWdUZTdCZVJaQVpyLXZhMGcxRXpteVBtc0RGUTZBSDZjSXFOVS1pRUdjOVU3STZHb2IzX0hLenNhTXJFcmFwVmxqZ3R2SzJUT2dqSWdKeWoyMTFqd3UtX1VPRHJWaG1yQ01ULWptX3A1djE4MmJuS005SlU1UmNka1EwQ0NSQTc3d1pSajRIYm1oYno5UUM4aWl1R3k2dDZ3U2QzVG01RE0?oc=5",
+          "tarih": "2026-07-03T07:00:00+00:00"
+        },
+        {
+          "baslik": "Cumhurbaşkanı Erdoğan, A Milli Kadın Voleybol Takımı ile A Milli Erkek Voleybol Takımını kabul etti",
+          "kaynak": "Medya Gazete",
+          "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOVDU3M2lWdDh0OHZIdmhQeWN6QThrUGk2OUhwMnBPOXFqNmpUVXFfR04yVjNfVU4xY1NBeHVTcG1FUURacGVQRUEzZ012c0VueHp1dmVCS0hIVVVwWHNZU1lHYjhTSzBUSExSelVQM25fZllUbWFhM0NieXVkcXZNMWhEZEYxRXZaZXlubF9Uck1rSkMySVVhSk95S2Vfb0dOVjlUTm95ekduTGFNX2ptcFdIdXYyVURYNEN3d2M5VXNJTFB5QXN5dHVzNzRhVzN5d0V4TGdXYw?oc=5",
+          "tarih": "2026-09-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Başkan Erdoğan, A Milli Kadın Voleybol Takımı'nı kabul etti | Video videosunu izle | Son Dakika Haberleri",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONERNc2ttSHFJTlExQWtjSkE2dExpQVJ4Z0owX2dTc1lfUzlNLW5fQ0x0Qm9pUVNqYWpUaW1zSklPYXEwZE8tSFg4Zjc5ZlBVc1VaTTc4azZ5UTJsSE1rOFo3QVdZQU9wQmxnMHRwVjZxNWNjeVlaQ3NzQVhlQWpWTWVJMTNJblpwOVVmdU9heTIwQXhndk5HN3BzUG1ranZRSnfSAaQBQVVfeXFMTnlhcFRzbnh3QnZWRUdTSndtcGQzR2ZEUjFZRXlIM2FjaV80ZFVtaFhYV3RPeHNtX05RRlM1c2wxTmNCVkVLZFlNOWp0ZXltN3NmRkNTVC1NSHYzOV93bEc3YWtFQUt2ZHVXd0plNDZiR3REWE1mb2NEMkJrdlhuNDRwNTFmRUhnVk1vYTQ5eGpiUlBkYUU0VmJtWEFwNFdFQkhHZHY?oc=5",
+          "tarih": "2026-09-08T07:00:00+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Recep Tayyip Erdoğan",
+          "aciklama": "Türkiye Cumhuriyeti 12. Cumhurbaşkanı (2014-görevde)",
+          "ozet": "Recep Tayyip Erdoğan (d. 26 Şubat 1954, Beyoğlu, İstanbul), Türk siyasetçi, Türkiye Cumhuriyeti'nin 12. ve şu anki cumhurbaşkanı ve Adalet ve Kalkınma Partisi'nin genel başkanıdır.",
+          "link": "https://tr.wikipedia.org/wiki/Recep_Tayyip_Erdo%C4%9Fan",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Recep_Tayyip_Erdo%C4%9Fan_2025_%28cropped%29.jpg/250px-Recep_Tayyip_Erdo%C4%9Fan_2025_%28cropped%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Recep Tayyip Erdoğan yerinde olsan ne yapardın?"
+    },
+    {
+      "id": "dbb674665b86",
+      "baslik": "İlk 11'i netleştirdi! Dirk Kuyt'tan Göztepe maçı kararı",
+      "tur": "haberler",
+      "kategori": "spor",
+      "tarih": "2026-10-29T15:22:42+00:00",
+      "ozet": "Fenerbahçe, Trendyol Süper Lig'in 10. haftasında Göztepe ile sahasında oynayacağı maçının hazırlıklarını öğle saatlerinde yaptığı antrenmanla sürdürdü. İşte ayrıntılar...",
+      "ozet_kaynagi": "A Spor",
+      "haberler": [
+        {
+          "baslik": "İlk 11'i netleştirdi! Dirk Kuyt'tan Göztepe maçı kararı",
+          "kaynak": "Fanatik",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYm9kcERMQTJQNVkyejZDWXpJMjlvam5PMnN5VGx0YUhjMkZyZGJReVlaN25zWkhqYnN3RWljSW9ydmVtX19iLThuQ3pGMl9UOFhmRnlGMmxHTjR4bXhsQXh4YTVwTVg0YTloaTZXRkVmaDJiaUV5WDJWc0d0MmdoWTE3T3g3Q3VsQkVqbllQYUVCeUNiVzd5dmlJSDM2ZS1Ba0RVS2RwRmE?oc=5",
+          "tarih": "2026-10-29T15:22:42+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Dirk Kuyt kararını verdi! İlk 11'i geri dönüyor",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMk1qVHNySUZybFgtSm81WjBRdzhEbjBuTWRyS0dnZnJyaXVHejF0OGZNUDAwXzE2MGtCcGVUQkVfem5MQ1dVNUlHT1QyMTZkdEMzRGlCUjA2bHlXWDU0WHp5cHJfcElRTzdpeGtHUE9LamdxVmh1eW9FX3d2MFE3ZjRRaUNEWXBhMDFZN3JseGh1SUY0SkNDbXd6d19FX3ZHeGhYS3BlZnM?oc=5",
+          "tarih": "2026-10-29T15:22:42+00:00"
+        },
+        {
+          "baslik": "Antrenmandan notlar",
+          "kaynak": "Fenerbahce.org",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5QYmFwUnd0UDhDRUpIZGFPVXlCX0hFQVAyTVBjTmZRZ191dHk0SFBoNFJuZ2x0WG5KSUpIVkRMb3owZmZ5X0JDR3J1T3dKblVjNUlQMXEyckxNUXNvY0JwSXdYaDd6TVBral9mTUZ0UDVyQlFZYXQ5ZE1GVkk?oc=5",
+          "tarih": "2026-10-29T15:22:42+00:00"
+        },
+        {
+          "baslik": "Göztepe'nin yeni hedefi Fenerbahçe",
+          "kaynak": "Habertürk",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZ2FqdzNnRVh2MnlrTFpBNlROTS05ZzRhSldHbFkxTUxhZEJJVlRlbWJ3YlM2Nm9wQ1R6VkxLaDBySG5ITDU3c0llVFlweUNCcDFyWGJkdGtlVXpsMFF5YV9GX1BJdFBjdHp5VG5oRW0xVFVldzcyTmpLd2c3UFExMk5SQzRSZHhlSHF1Rjd3NTVzRG0wNjR5bHZKV2Y?oc=5",
+          "tarih": "2026-10-29T15:22:42+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe, Göztepe maçının hazırlıklarını sürdürdü",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdm5QbXl2R05ld3NjUDJzdy1IOFVaZUVqTjE0UGNOUjV5MkIxcUZGaUhVSEU2aUdzbHNIVTNUcUwyUTk3VkJERWJfRXFGNXE4M2dFVnptZnNTaWwyb0RISlMxeEozNUNGT283Ym9JSlBXN3Fpa2R1bFNqeWJPT2Z4YV92M2JDc3ZYZ3BYQWlUOEFNVW1FSkI5djNzSldmQdIBowFBVV95cUxOZ1hUUEk2UzdIMXRHbVVyRTFTWUltVUJIUElONlItWmRZVkxiYkR0bmxyMExQQUJNMmpaYnZXYl8tQ3g5SWp6d0pSUWI1RXFiREtsMmFxYld0MHB4RVlKbkxzT2V4ZVRzSmNzTkxWZXN6MzFISzJ2UVRpMDNJNmRFekZnSnNLekNuNXZjQmlMOTdUT0d3UFRzdmJVMFlVVTgzREI4?oc=5",
+          "tarih": "2026-10-29T15:22:42+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Fenerbahçe'de İsmail Kartal dönemi sona erdi: Göztepe maçında takımın başında Dirk Kuyt bekleniyor",
+          "kaynak": "12punto",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQejI4Wkl6S2V0dEM3bUwzbV9GMHJFdFBRRWpkQzBJM0hpRzhuamRPZFBWSEx6UUdhRWQ5MERxVXlNcjUyUHZYcGl0dE9Oc1Y0RHlNRkNJbDRtaHlJb1cybjBvdlp3Vk9UdF93elJrS2oteXY3NFhORDFIYzlsMXQyQUJXYjVHcWVJQko2YTgxZFFDZ2NNcU1hbU5qclRQU1ZjcTBhQ0hlMmc1S09Nd0NKOGJZOThsLTFxcTlxVmtld1JndURkcF9OVUU3VQ?oc=5",
+          "tarih": "2026-10-27T18:05:38+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Dirk Kuyt Dönemi Başladı",
+          "kaynak": "İşçi Haber",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPWl9IUHhueFhVX0MtMzRON0UtMVpEUEp4SDMxclpFdFlWeWNXdXE3Sjh2Y2wtVlRsemxlVVFfaHhOeFp5Q01WdnRnODJUSFU5Rm82YmVJVGZXRmNURzNkZHBBRG5WSW5FWlFCWmZDZDBFZGxZdG9EcldORE5JVVFRbA?oc=5",
+          "tarih": "2026-10-28T08:34:00+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe’de takımı Dirk Kuyt yönetecek!",
+          "kaynak": "TR724",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9pbnk5bGJJWGF4T21VR1VLVTByUHR3WG91cUVEY0ZoaXhRZjM4ZHVkUk1PaXNLeUx0VEt3Z2lfdFlyck01N21KNUxPbnk5Z3pWTUtCamhjVjJmNURXenlURXdQWmRuOW1PazFZYlc2Zw?oc=5",
+          "tarih": "2026-10-28T13:06:15+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de teknik direktör bilmecesi! Dirk Kuyt takımın başına geçti, gözler şimdi o kararda",
+          "kaynak": "Hunat TV",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZFB5cXFMcXFLNTZQbDN3Y0N1UmM4VUw0S2I5VkRhRXBFRHctNVFhME1HZ3ZYNS1ZYlhQa2xjNURIdzItMzJQV3M5cTh6bmZ0Rl9PaklwOEVTMWJjUmdNS1RxOThhX0JNRkh6VG9wb1h3VEJVRkdPcTJmeUlWRkJpZHd2V3hHdnhJU1NQTV9HcHlEMXZ2LVdHck5ESk53UmcyNEhmeTktX2ZOQmQ1V3BBU0NMY1VwSUhOQW1saVpqa2xFdw?oc=5",
+          "tarih": "2026-10-28T13:23:58+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe, Göztepe maçı hazırlıklarına Dirk Kuyt yönetimindeki antrenmanla devam etti",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdk1VWF84NF9qekVBWkFwV2xCNC0zV1I0cFRHWjNHcVpBTEphby14VDNnbkcxQkFrNTdQS2ZPZWljQUJMdk83RFdXSFlfWDBoeDFNUHktR0RydHFET2tfWE1sNEhGXzNydjhFSm8tMFdLYmlmX2YtT0lNVC1YZGk4cE91aDlzQmJoZGdLOVJweDdiX3ZVN25ZejVpbTY1WWpjT1VHNGNBZlFCaVNsRm9vN1h2WUtJUUpFa2xKNUdMcEzSAcYBQVVfeXFMUDlYVGQyb0J0WHBSX3J3WUxJWFdITFV2WERvWUoxTXROdFpiRkVuWUQ3QkFXLWlvY2ZKd200MFEtQWh6dVZsbTNLOGlGdFhEbnlMNFRfekI0NkNmdDV1U0FnWWpQaDVvS2ZZSU1HdEw4QnRvMUJZMXZWRFhDMkdLUjNMQWJTU0kwNzRWSmhmR0hHeHdDaDVtSXNKNElmekM3UVljWmRMRzhhV3lRNXdGTDlLeUxvMDRfX2JGdDFWYVNUeXFNQ2Jn?oc=5",
+          "tarih": "2026-10-28T13:53:01+00:00"
+        },
+        {
+          "baslik": "Dirk Kuyt için menajerinden iddia geldi: \"Sezonu tamamlayabilir\"",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcFIyWXZZNFdnZ25tVW9WTC1tR25CNlp0S0VrUXpvTmNoelpZdkhMSnJwbzJZSlBYS0x6T09aUkhPNk9MSzhVT19XRWhjaVA0eHd5ZjR6SWp0ZERHWko4MGZOcTZUbll2ZFdDbjcxcC00bDlfOHNIOVhKQ0drSE9DLUU4RHNvR1ZIUVpDNzFsRkt0amcyX1ZWVWVvb3hlelZZNmFSdUx6MEtTZ9IBrwFBVV95cUxPV0MwdGFOSmlwNFVPQ1dVNW5ncFdoRk1JQlFYbmRPVTlBdmtwVzdSbkQ2NHR1WTAyYlAwQ3A2UUlCSlV6OEczQXg1anE4OG1ELXU2R1N0LUp0QThnLXppeDRpYjRHZV9UY3l0aktRd0VxYnpZdVFjb2FLTHRkbGxMMUhZV3NIX2JkeW95QnF1ajctODNTVFYwYlhSMS1ZRnFVT0lIZHd6MjRhRm9tQmg4?oc=5",
+          "tarih": "2026-10-28T14:17:18+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe'de Dirk Kuyt sezon sonuna kadar kalabilir! Menajerinden açıklama",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOemdGbXlnSjhrWW5say1INlBoSDNDcDNYUHhjRnU3WkR0TURrZ1REM2lvQVdtLVZtOTlfZ1o3UDJ5YjlaNEVNRFB1WDZldW5xOW9HcnE3THhFaDhKZjYwdVB0dzBBM3RTdl9LTUpmSVdTNk1sZE5lSG5aWHF6d1M3YmdCX2ZCYzVDZXYzQ2tNQnFjUTd3TG1zWVN5SHk0bXp0bkNGajRPd0UyNUk4SHZ4ZDNRVTVoaks5ZEpJetIBwgFBVV95cUxObERXZFMzYUc1bTZsNkRrVzN4LUZUUXF1VDRjbHZSOG5JQ3h1S1lsa2VpR3g2ZVFESEFlUE5XSy1FMEp1NnpldU45dEx2dHlQRzdxanYyUXFkVlI5X0Fkb3AzMWMzemhscWIyaUJNajVGY3VvcG5aejBTMVlKX2tfTDlmYzRZWm5TeGhzeVdldjBjQTlKcHN5N3VJcjdldGx6X3R1bGxVQ3BBQ2RxbEx1QVBUdVc3ako5Qm9SV3VOUkotdw?oc=5",
+          "tarih": "2026-10-28T14:50:44+00:00"
+        },
+        {
+          "baslik": "Fenerbahçe, Göztepe Maçı Hazırlıklarını Dirk Kuyt Yönetiminde Sürdürdü",
+          "kaynak": "Ufuk Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQTXpGb0tiWGMxelNhVXI1ZGREQklvMlhqT29KMC00RnJROXFxb3V0WDdteDZuZ3BLeWNaYkR6Sm9vTThuRmxuN1FDVGFWUmtkSGNpak9mVUNNYkRDbVRlQmFpNWJkSTdoUHpiY0VmeFdPVzlNRWNXSHVhY2FRX3ZnSTJycUpYYkpWREl2bWkta05KQ0VubkFheHF6MzVEQmpLTk5VeFNxdmtKdmdXVTI4?oc=5",
+          "tarih": "2026-10-28T16:53:51+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Dirk Kuyt",
+          "aciklama": "Eski Hollanda Milli Takım Oyuncusu",
+          "ozet": "Dirk Kuyt (Felemenkçe telaffuz: [ˈdɪrk ˈkœy̆t]; d. 22 Temmuz 1980, Katwijk aan Zee), Hollandalı eski millî futbolcu ve teknik direktördür.\nKuyt, kariyerine 1998 yılında Utrecht takımında başladı.",
+          "link": "https://tr.wikipedia.org/wiki/Dirk_Kuyt",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Dirk_Kuyt_Fenerbah%C3%A7e_20260805_%281%29_%28cropped%29.JPG/250px-Dirk_Kuyt_Fenerbah%C3%A7e_20260805_%281%29_%28cropped%29.JPG?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Fuat Göztepe",
+          "aciklama": "Türk futbolcu",
+          "ozet": "Ahmet Fuat Göztepe (15 Haziran 1912, İzmir - 13 Nisan 1992, İzmir), Türk eski futbolcudur. Cumhuriyetin ilk yıllarında İzmir futbolunun en önemli oyuncularından olan Fuat Göztepe, Göztepe tarihinin efsane isimlerinden biridir. Futbolu bıraktıktan sonra külüpte antrenörlük ve yöneticilik de yapmıştır.",
+          "link": "https://tr.wikipedia.org/wiki/Fuat_G%C3%B6ztepe",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Fuat_goztepe.jpg/250px-Fuat_goztepe.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Dirk Kuyt bu konuda doğru mu davranıyor sence?"
+    },
+    {
+      "id": "623eceb1fd1d",
+      "baslik": "Galatasaray'ın Konyaspor kamp kadrosu belli oldu! Barış Alper Yılmaz kararı - Galatasaray - Spor Haberleri",
+      "tur": "haberler",
+      "kategori": "spor",
+      "tarih": "2026-10-29T15:30:21+00:00",
+      "ozet": "Galatasaray'ın Konyaspor kamp kadrosu belli oldu! Barış Alper Yılmaz kararı - Galatasaray - Spor Haberleri.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Galatasaray'ın Konyaspor kamp kadrosu belli oldu! Barış Alper Yılmaz kararı - Galatasaray - Spor Haberleri",
+          "kaynak": "Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYUkxdGxoMV9ONHdLLWFfX3NBbnZ1bzhCZXR4dXRETjFtZ3ZCSUFfWEVXQzd0eXZwQ2RxZVVaR2ZvTnRYV2JMaHlsM0ZxblVDQUNxMzF3UnRmVmdWVnJPUjJwX0xGTFhMM1VKQnNWWjFJRUwwdVA0SDR5Z2NTYWZZWElScXhWeW5WY1E5dFJEQXNCb2tPay1YVGxjckRIcGRpT2pMZFFCUDNZb1NvbGROUFlZNWY5WmM?oc=5",
+          "tarih": "2026-10-29T15:30:21+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Serdar Gürler'in Barış Alper Yılmaz paylaşımı olay oldu! Hemen sildi...",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNZ1NuM2R6dUpxajUwMEZWbkw0bUZBSjRrbURwRlktelRuR1pGRlAyRWlhcHNLLWlQTzI0aFRMRFkzdlNyd3JBbGpJSkxwakx0dk5TSnJhd3dWUU5FaWRlQTh0TmxrZzNGV24zR21nS2lldXNEcjdLN0hQVXZHYTJlMEhVNUJIeW9aT3o2cW02TFlRbkhBaXVmQm9PZEw5dW51SWZkcU9hZFFrSFpMZXkwTGd3?oc=5",
+          "tarih": "2021-11-09T08:00:00+00:00"
+        },
+        {
+          "baslik": "Galatasaray'dan Barış Alper Yılmaz tepkisi: \"Bileği bu hale geldi\"",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdkpTdHlFU1RpeU5EVzRVVERvSnc4MU41SGlPajVIWUs1bVRUQkgtQ19iWjNzNmlWR3REamQwXzBMMDg2YlBuWXVfbUUzQk5WMm02dkpzbGhtUjMtR0hfb2EwUjRETTdaMmd1VDBuWlN5VzFoUnNqZVlSel9EUmNoQ0FuYW94UQ?oc=5",
+          "tarih": "2024-05-26T07:00:00+00:00"
+        },
+        {
+          "baslik": "Fotoğrafın Barış Alper Yılmaz’ın Sivasspor Maçından Sonraki Halini Gösterdiği İddiası Doğru mu?",
+          "kaynak": "Doğruluk Payı",
+          "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZFNHQS1Fb3U0RlE0Uy1sbWRKdnNHRmtrZURFY1RFNUVDT3lydFQ3dTlYRldQZE9yci1lOTZaN1FCUE5HVTZPbm1BZGtJemtWNmlIT3J6UWtESW1pSVpqM3BIZnB2RmhZU3pZTTI3eFd6eXFIZlExOXI5a0QyemN4N0h6elBzSlVMOFFyRVc3TjJfemc0VGU1QXV0T0NZVGpQQzRXQ2EtMGpmcG9zc0JXdGNWbFg0UllhWVpVdXd6cDZ4NktNVG5hYkUxcS0xS1NrTExpNkVqdFM?oc=5",
+          "tarih": "2024-12-09T08:00:00+00:00"
+        },
+        {
+          "baslik": "SON DAKİKA | Galatasaray'ın Şampiyonlar Ligi kadrosu belli oldu: Barış Alper Yılmaz kararı",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYVFUbDMwSC1MTGw5MlRiOU5CWGVlVWp1ZlBtVi1MaFQ0amRycHhDVmFUdGZuLXNaTmZ1cU5PRE5LS3J2LUQyMUttMERUTTU2YVVZS2FuMUxwUjBYRVVEUVZDVkQ5N285S3d1NG56WmhEVmlCd3BXUGpYRzg3WTdDZkdWSW1uTzBwMXJXWF81QllCb096ekY2Q3Bma1BkdGNURVRwYmw0QXpiNXlDX21yTnRiUF9WUW1aVk9PRUdvUTRybkFPVkpoVjhoZ9IB0AFBVV95cUxQRXBONXZRdndzYUcyVFB1R1Zra3ZmdENrS1BGZEFVOU9TZVpzdUpxRHpfazhDTkhPNDB6WUJnd0ItbGNmLUo4d1RGc2VVbllIeWZ1RW4wendheFo4bzA3RjZrMFNXVTFHWTB4REw2eXVXQU9PQ3BuOEVpbHZ5TzhKNDVWN1llaDVPZ3JraFdnREc4UlJFNjIyX21vc0N6WGZDZFM2UHZGYm9pZERMQUpLXzhhYTdyUldabnlLOVFCbGdIOFcxVmdQeC1paVAtNEwz?oc=5",
+          "tarih": "2025-09-03T07:00:00+00:00"
+        },
+        {
+          "baslik": "They are coming for Baris Alper Yilmaz and Yunus Akgun! Close marking in Konyaspor match",
+          "kaynak": "Fanatik",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOSm5YUWM5dDRFeHRHWWV3Y2FwcVFidnNCX1ZFMFB1cDJOLVJqbzNTb0lza0dpNERxQkhzSFJiWVE2emdLbWtZUnhUUHFlNkZCME15RGdJWjJabkM4Y3hXWWY4dVZvcDg1bk14M1dwX215RWNtcTRfd2YzVFlldm1ZRTl5d1hyUjlrRkJKQl9GWUg0LWFFLVhJTVNVZGdmeWNzcjlGNUxzX01SMzJIOGdlUHNtaWtQcFFLNGQ3NGRjdGM2U3c?oc=5",
+          "tarih": "2025-09-21T07:00:00+00:00"
+        },
+        {
+          "baslik": "Okan Buruk’tan Konyaspor maçı için Barış Alper kararı",
+          "kaynak": "Haber Dairesi",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYVF0LThfVk85M1MwTjUwazB2VW5nczduOEtQQy0tOVJxcU4xT1F6N1JfNDZpWVNZVzBCOVJhckp0bGstcmJOQUVmLVRxaENJcWpYUENZZGRhZU5Kb0xUY3QtU1pyLVRONHhFWUpmQ045OEFYVWd2ckJ4SW1uNTNfMmpyalM5WGpfVGkydHh0RDJaYVJM?oc=5",
+          "tarih": "2026-10-28T09:23:32+00:00"
+        },
+        {
+          "baslik": "Okan Buruk’tan Barış Alper Yılmaz kararı!",
+          "kaynak": "Ajansspor",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PNmNkOHluR29kWElxUkU1RDN1Nmw5OFVONzBLbDVHYUd1SXpvTGdDdVBwT3ZJV2pWTEdPbmxPWlh1NU1YTUdiYjFWOEhPbDc5Y21PTXAyOUlvZFVNZVJRUDJhS1N3TzZEb3RXLVpzYkVqTjFZVjZHd250alROYWM?oc=5",
+          "tarih": "2026-10-28T12:03:41+00:00"
+        },
+        {
+          "baslik": "Galatasaray Konyaspor maç hazırlıkları: Konyaspor Galatasaray maçında Barış Alper Yılmaz kararı | Futbol Haberleri",
+          "kaynak": "GZT",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcjRpdU9ZcWcwaEJtSGstTzBRcFBHS0pUMHNPYmNoR2M1MkgwZmF2clp2MWpvaENSNGxoRHpUWDk2ZklDcWlOX0E3Z0xMZ0FuYWpGeDZQeno1OUNYZm1JdHB5eEo5QWZnb2xUYk1rbnVxOU45TjRpOWhmOVdKOWNMT3kyUDVJSEEzTGgxSU5SOUhqa3ZQMXp1UHc4b1JxRlRnQmVtT0p1aU1qbzYxckJOVnlxVDJQNUxzb1c4UGZISDNaekVnTVE?oc=5",
+          "tarih": "2026-10-28T13:10:01+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Barış Alper Yılmaz",
+          "aciklama": "Türk millî futbolcu",
+          "ozet": "Barış Alper Yılmaz, (d. 23 Mayıs 2000, Rize), sol kanat mevkiinde oynayan Türk millî futbolcudur. Süper Lig takımlarından Galatasaray'da forma giymektedir.",
+          "link": "https://tr.wikipedia.org/wiki/Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz_20251019.jpg/250px-Bar%C4%B1%C5%9F_Alper_Y%C4%B1lmaz_20251019.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        },
+        {
+          "ad": "Alper Yılmaz",
+          "aciklama": "Türk basketbolcu",
+          "ozet": "Alper Tunca Yılmaz (d. 28 Mart 1975), Türk spor yöneticisi ve eski millî basketbolcu.\nBasketbola 9 yaşında Ankara'da başladı.",
+          "link": "https://tr.wikipedia.org/wiki/Alper_Y%C4%B1lmaz",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Alper_Y%C4%B1lmaz_T%C3%BCrkiye_20260820_%282%29.JPG/250px-Alper_Y%C4%B1lmaz_T%C3%BCrkiye_20260820_%282%29.JPG?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Barış Alper Yılmaz bu konuda doğru mu davranıyor sence?"
+    },
+    {
+      "id": "35fe867506c6",
+      "baslik": "Kasımpaşa-Çorluspor 1947 | CANLI (Ziraat Türkiye Kupası 3. Tur)",
+      "tur": "haberler",
+      "kategori": "spor",
+      "tarih": "2026-10-29T14:54:45+00:00",
+      "ozet": "Ziraat Türkiye Kupası 3. turunda Kasımpaşa ile Çorluspor 1947 kozlarını paylaştı. Mavi beyazlı ekip mücadeleden 3-1'lik skorla galip ayrıldı ve kupada üst tura adını yazdıran taraf oldu.",
+      "ozet_kaynagi": "A Spor",
+      "haberler": [
+        {
+          "baslik": "Kasımpaşa-Çorluspor 1947 | CANLI (Ziraat Türkiye Kupası 3. Tur)",
+          "kaynak": "Fotomaç",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOaUdMMFZWeDR4Mll1dkFNX3pGU2hUWDZBZDdMc1BMc0JBZTlIX3c2SXl3WDJmdlU1a25tSGpRS3Fxb2VGQjdUeEhGS2hiNTFYWjVsYlZOVWY5eTRDS1ZGbmF1aHBsQjlQTTY3dUJTR2xtVWZlXzdwaGczTW9PMEdITWZVMHNkRWpuM2MyMzVqSVgzYlVKVGpobkk1WXZhRnNvc19XYWNQVzI4Q2VPU1NGUQ?oc=5",
+          "tarih": "2026-10-29T14:54:45+00:00"
+        },
+        {
+          "baslik": "Kasımpaşa, Türkiye Kupası'nda üst turda! Kasımpaşa 3-1 Çorluspor 1947 (MAÇ ÖZETİ)",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxONGxac3NKeUtkNWtjVmsyVjgxX2lubjZQcFY0cklwZzRkb3NLdnBkaVZyU2h2eWhlVUJxSWtDQ1pVUFJlYjRCVmxkZkJaM3I2NlpPNzNRbFNhRERvdko4ZFpYVkliWGlJclN2MFA4MlhnT3AtaFRHVW05YW9sQmtnRm9nbmNudllEWGhwSmhwckxkd21YN09oMkZRS2NXMXlMMDhka3NTbW54VWluYWVCdl9wT1IzMUljSUNZS2VFZ3hFbHVYUmc?oc=5",
+          "tarih": "2026-10-29T14:54:45+00:00"
+        },
+        {
+          "baslik": "Kasımpaşa, kupada 4. turda: Çorlu'yu 3 golle geçti",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObTZNQ1ZtQzhqaDFyanR0S19KRjhvWHVSb0ZzRVNnY1AwQVFtRFNqVHQya01KYjc3blZLNm5WVUVBZDVhNjRWQ0R1VUVITnBDRnQ0RVVKM19XNHJUY3Q4REtvMERkd2JaUHZpXy1fc2VSQVg5Z1RLZEtRLWk0cDNSTk1ON0NmMEZLT2VKUdIBkgFBVV95cUxNYmR5NkRrQXNmcWIxczQxOEhPQXZhY01yVjladEVmRk5xWXZiRGp6LVRXTF9QYTNJUEl1MDl6OVRKUXhOSmxrQUhFMWUtVVJDRWVyVXJwdjMyVTZvRDdyYTRpeTZJTE5kVWtIX1djSGxBOWQycW1Xc1htOEtTbTk1T2VIX0dsMm9RZC1mTHZ4RXRqZw?oc=5",
+          "tarih": "2026-10-29T14:54:45+00:00"
+        },
+        {
+          "baslik": "Türkiye Kupası'nda Kasımpaşa, Çorluspor'u 3 golle mağlup etti ve turu geçti",
+          "kaynak": "Milliyet",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOV09UQm4wZHlURGdaQjdyblc3YmNlUmFnbkFScHZNMUJ4YVhfMzRzM1lFSlYtUjA5eDdIcENQMW5oUEtHazZ6V2RRZlQ2aEYxWU8tTmZxWFRyX0Y4VmNDUEtlU3FSajVVOE9sZS1aZDdoemU5MUhOUHkxZHVhb25zaXkwYUZGRDJnYXI1WlFCOG1uRlZfU0UxT1VfSHgzckRyZjJCVHNkajVBeExuRWFmSUFYeFFKZw?oc=5",
+          "tarih": "2026-10-29T14:54:45+00:00"
+        },
+        {
+          "baslik": "Kasımpaşa-Çorluspor 1947 maçı saat kaçta ve hangi kanalda?",
+          "kaynak": "birgun.net",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZ3hRU1UxX01yOERyM0xmVFRkdXRJYkEzU1lyX2JOT0RiajVEeUt5WTdkMDZDNGs1VU0walFHUTRWcDhZZXppTXYxaVAtS09IbEVSZkp5QkRtcjBhTTdrbDVjZ0JtSzQtSlA1OS1yY2JRQ3BDOTNmWGhPS0V6ZTJvbzdCQTFLWGstaXRrbGwyamRKaVB2OW9yYg?oc=5",
+          "tarih": "2026-10-29T14:54:45+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Ziraat Türkiye Kupası'nda dünkü maçlar",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcUZ4UzJOQWtPODFGM1lLUzdaZ1plMGkzbUN6bDhJT2g1QmlGTHRXem9PUmpVVF9kc0l3MmZ2RXg3eWpzYWdBbF8yNDdWWE8zUFliQ1BsaTY0dllPQUhrM2IxbHh0UWRjbTlWSUZhdVMyYTI1TnB2Umk5dy0xSEs4NlE5QXNGSWZPV3JoOGxjZTB1QQ?oc=5",
+          "tarih": "2023-09-27T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ziraat Türkiye Kupası'nda 2. eleme turu programı açıklandı",
+          "kaynak": "beinsports.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPOW9IVlBDajdMcl9VYks0UFNfVkxCVVJ1eUVTaHVsNHlaUlhobjhCclZtSWFBazkteTNUaTFweXRqQ1c1ay1PSTRaTXFSaFlKSE43VmZCcVRpaDBBb1V4TlF1WUw3dG0xZDJleE5YX3dJTk1DVm1VaGhIUFlPeDlOYVFGTzZzZDIzY3hod0dtZHZadw?oc=5",
+          "tarih": "2025-09-09T07:00:00+00:00"
+        },
+        {
+          "baslik": "Nesine 2. Lig'e Yükselen Çorluspor 1947 Kupasını Aldı",
+          "kaynak": "TFF",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAyLWp4dkJYQ0g0UkpoTVROTXBpSjNBd0FpMlVqelhvdTNQR3JGeUZMb3N0Rks2Um1UMGpZSVBqWmJBLVJJS2NDamRleG1pSmVpS2xTOEhXX2pCOV92T0liTmh4ZkI4bG8?oc=5",
+          "tarih": "2026-05-16T07:00:00+00:00"
+        },
+        {
+          "baslik": "ÇORLUSPOR 1947’NİN ZİRAAT TÜRKİYE KUPASI’NDAKİ RAKİBİ BELLİ OLUYOR",
+          "kaynak": "Devrim Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdDVlZjFnSEcxMFV4VXFwRC05OWdKdUdCSTVXN3JkbExkSDVnVHdlSjRtQ0J6a1ZzX01BdEhuV2F6ekNabHBXUjB2czRLUzBUbGJUdURaa0JJMDVnaXNrX3VNOVRWQUk5UDhPcU1Kal9CYTlXUlZ6Zi1UQXF4LTdsMFFDMWNhb0pnTUd6X0JTeVRPUGNXT05RTWl3SHdPOFZOOUFHUWx3?oc=5",
+          "tarih": "2026-10-06T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ziraat Türkiye Kupası 3. tur eşleşmeleri belli oldu! ZTK 3.tur maçları ne zaman oynanacak?",
+          "kaynak": "Sabah",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNTUd5WGYteDBNU2V3OUN0MTdPdDJNTEdGQUpQd3FicHlYU0F6ODI1RVBnb1Z2bU1icEF2MEtoeExRLW5ZYjBLaHBha0JvT2N2RTNpOXloam9LVHN3QjNQaVg3Z1BrbkprUkQ4ZWhZa0tsQkxVOFo3T09KemQ3eDhfMXV1VjFoZ0o1U1dIMDVCZHhwODFzNDVzZXhwYTVrY2xVVk9EYjhkdXU2ejE3cXV6Y2pUSEljc0tlN081NXZ3TmV6d3dSanJlSVptWQ?oc=5",
+          "tarih": "2026-10-09T07:00:00+00:00"
+        },
+        {
+          "baslik": "Ziraat Türkiye Kupası'nda 3. eleme turu programı belli oldu!",
+          "kaynak": "A Spor",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRndERlN6TEppN1BBNUNyaHhmWVZTN2Z1d21oZHFqbjExTGowOUhLVklnV0NvOGdCR2ViVnZTOUNtVEFzQTZJdVFobnFWU29NcDRHS1M4U2c2VEFYZUJWdjA2R3JaWnpQdzlqdkpfaHdjU20yUm9NckNqVldWTHlqVXJpZXp2Yy1GM25kcktHMl9ZZWFFcVA4QTRXZUxuWU5jSlhFbFROdUtiVXNn?oc=5",
+          "tarih": "2026-10-14T07:00:00+00:00"
+        },
+        {
+          "baslik": "Kasımpaşa - Corluspor 1947 - Atv Ziraat Türkiye Kupası",
+          "kaynak": "ATV",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMmVEZ3c4M0MxVFNucnZoYVdFbHJBczlQM0M5VTNtSFV4cW5ua2xvTk1KTGNwQ0VLblQxZHdmTjM2SE11dnRiRjlrOWJReXh1YjMyZE9YeGVyc25CR1lJbnpFMGJXNEN4TWhuTkNjUTg0cW5KbF9GeF9iaWpWTFo1dEpB?oc=5",
+          "tarih": "2026-10-21T15:55:16+00:00"
+        },
+        {
+          "baslik": "Ziraat Türkiye Kupası Kasımpaşa - Çorluspor 1947 maçı ne zaman, saat kaçta ve hangi kanalda?",
+          "kaynak": "Genç Gazete",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT1hXYkRNNlVjQVg4SW5RT19vYkFNbjBIQWczUFh4N25HQ3MteENLbUxGcU1lLVZDT0h1WTZLakVIMk82LWdkRi1oQzdVUVVDS0hKc0dnN1BBdkRUWm9YOGVoWVFoT2VxQUZpUG5RVElsMTVBamQ5WVpfZkt2aVVZdUtyMWRHRnY4MTZsMjZmQkVTeV94eXRlaVdEUXFGbHZPVzBaYU5ZZEo4dG90Tjl4M1JVNTU1QQ?oc=5",
+          "tarih": "2026-10-27T20:09:00+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Kasımpaşa-Çorluspor 1947” hakkında ne düşünüyorsun?"
+    },
+    {
+      "id": "dac54df07a0f",
+      "baslik": "Trabzonspor, iki günlük iznin ardından Gaziantep FK maçı hazırlıklarına başladı",
+      "tur": "haberler",
+      "kategori": "spor",
+      "tarih": "2026-10-29T15:52:46+00:00",
+      "ozet": "Trabzonspor, iki günlük iznin ardından Gaziantep FK maçı hazırlıklarına başladı. Gaziantep FK maçı hazırlıklarımız başladı. Trabzonspor'da Gaziantep FK mesaisi başladı.",
+      "ozet_kaynagi": "başlıklar",
+      "haberler": [
+        {
+          "baslik": "Trabzonspor, iki günlük iznin ardından Gaziantep FK maçı hazırlıklarına başladı",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMFJzZThOeGZaNGRDdkx6R1pBaHpQVW9LTlJIMkx5andHOGhTWlNiUjRLaVRfTDUwR0U3aUZKRjNxVjZkNFZ1LU9zQWRmUXFSbXByNXMtNWpCd2JzMGwxcmQyOXNDUUktYV9feXoyV0Z1T2dTQ1RHdndLLTJVLXJvWFNUNGE1UFdsLVJZTmE2VERZX011M3ZBTTVvQmhidFFLRzM2NGFtV3cyX09SWV9YRGUxQnpVWjjSAbwBQVVfeXFMTmNEN3lZRVczZHB5RFFqSkpGQWxvZ3d5cGZ4WkxQQktvS3dNdmk0Tm9qSkQtMlNhRHpkeFVyVlFXQXVua3lOdzhhWEQyd2xSVnZBZFAtbEVLZEZYWjJ6cGxNazg5MW9rZTl3TjFwRkQydno5eHNlQ1U5NDRkd0VybEhrd0JPeDQwWFZqNkFzQ29xZlcteGJWZzR5bXZhbDZLdnRHSU5xazJEUXczaUl6djZwMkNkS0d6UUVyNnk?oc=5",
+          "tarih": "2026-10-29T15:52:46+00:00"
+        },
+        {
+          "baslik": "Gaziantep FK maçı hazırlıklarımız başladı",
+          "kaynak": "Trabzonspor Kulübü Resmi Web Sitesi",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPQUNqRFFqeTRnVGgzTTFQM1kyWFBIWVQyNjdoblUtX1RRc2JIajY0ZEtUVl9iQVZRNEdlQzNqM3FhS1NMcmpKTFhXclV0cWMwV0RZbk44T2Q2b2tETDJsa2s1TTN1MW03NHlkNmVmUXEydG81c1Z0SXpia1VfeUVtSzFwblJwdkh1a3BPNnRBUUFkMGtU?oc=5",
+          "tarih": "2026-10-29T15:52:46+00:00"
+        },
+        {
+          "baslik": "Trabzonspor'da Gaziantep FK mesaisi başladı",
+          "kaynak": "Habertürk",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNODQ4M1VPRU8wVzhVQW9ac3RiQkVPQnhwX0p4NXRzaExXYU90ZzZXNDVueFVuRzA2WDJtNERXNktuNHNVbFhzYUJMaXFOdWxQVWR5Zm5CdnhMaGQyTjFMRDdwc2ROeUlncFJybXZieDlESHRjYjNWWDNSTWZFWURvRXpmT0NaMXZoTmo4U1BSVjlkU2Q2QUdnMGZJX0FFdkRxT3VhWDdDZEhLMU0?oc=5",
+          "tarih": "2026-10-29T15:52:46+00:00"
+        },
+        {
+          "baslik": "Trabzonspor A.Ş. - Gaziantep FK A.Ş.",
+          "kaynak": "Passo",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTHJGNUJtTy04eWxMZV95ZERMbmpELWhyUnd6bktyYndyczR4TE81SVpqNmd4M2ZkaFBIdWJzeXRTazlQM2RQa0gyOV9aVmxpcjBtQUlRV1BSLTMydXlwV0p6VjV1RDJ2Ym95eFB6OUxKS1RXZjNWdThJeU9seWpUN2NIYUJFTktlUEowWg?oc=5",
+          "tarih": "2026-10-29T15:52:46+00:00"
+        },
+        {
+          "baslik": "Trabzonspor, Gaziantep FK karşısında! Rekabette dikkat çeken istatistikler",
+          "kaynak": "Haber61",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPN3E5ZHBQclh0OGVSLUVkcjhGdDRHaVN4dUpRM05LbmtZMUppSEd2VHhHU3d2b2JWQ09fNDJXYUlBeWY4WG51OWdJMzU2WkRvNmFueVpWdE14eFpERi05d1h2azJLY0ktU0xZMWpob3RfNTlyVkphT2ZreGpzcG5nM212SHBVcUlaQmFGdEV3Sm9RNkl6Z1FHT1JhYTZuRDVHaFN4NWpTOGlNVDVILW43S0huOXRnUQ?oc=5",
+          "tarih": "2026-10-29T15:52:46+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Trabzonspor’da, Gaziantep FK maçı hazırlıkları devam ediyor",
+          "kaynak": "Gümüşkoza Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcVlwX0UzYkhwd296LW9Gd2NjWk9Hdmc5b0psT1pSbmp4Z2p4SDVjV1ZUZkZHZmtvazEwRVk4dndIbGRLck1uTVBDaUZOUjN1aklFSTY3SUtZVlVVVmRvNDhHUnpWbks0c3NKMFFvU0sweUluYkdvVmdyZjJ1bHNZZ0VPOXFmR2VwTFplTXUzdTg1MU5QbTJsU1dEQ3l6QzBRdGFV0gGoAUFVX3lxTFBHWWlrZE5YUm9Bcy0wUVhBcUJpS3NiLUZaUEtORmw5dGFseGxHNExYeE5pSTJUN0NzazRSbjJYbWQybWJ3OG5UdXhhZGdlYXpQWkFnaHpzRzVnb2FHZ2VsbWsxYUVMUDNFUDJhdVZhR1d1d0JkUmxfOVBRWlBIVFJPbG9iUzVhMDhqMVRJWl8xeTd5MEZIVXBPM2NGQ3NPa1VsMUFzakdpXw?oc=5",
+          "tarih": "2025-02-22T08:00:00+00:00"
+        },
+        {
+          "baslik": "Gençlerbirliği, Gaziantep FK maçının hazırlıklarına başladı",
+          "kaynak": "Haber 1",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWVMwcTNqZEdIUmFKbmN0R2JieFVQbGkyTzl2elFORkc2TjllZXdsc05uV0RYcERFWFo5aUFTN2JzX1hWQjJDZUFPelVrNG00SjVZSUQxd001MTVEUTVCek5tSVZDUUZnWWtmMFVBTDQ5NFg0SXNLaHdBUUFXdHdRbUNlY3VwSzBpVi1TWFpUc2k?oc=5",
+          "tarih": "2026-01-27T08:00:00+00:00"
+        },
+        {
+          "baslik": "Trabzonspor, yeni sezon hazırlıklarına devam etti",
+          "kaynak": "Adapostası Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSWF4VHRsZG9wM3FXZndmMGtzanVxSU11WDB0OUt1bUdRTEZvOVN2TWVRZjlNWlNxc2JINC1aTFNQVElLLXRyUXpnLXhxcHNDLWpaaTZOZVJaY1ZJOXNUSnhJNVBWTHpDVzFVMXJxRWp2ZWFRS0phcnRLWFM3bjBkRjF3Z0loaXZ0MXNfaFdkWVJ4aFNW0gGaAUFVX3lxTFBKbmNMb0xtY2tZTW5wWDdrMF84Q3NWb1I0QmVfS3BYVVNlX3paYkJ2VnktZkJuaWY5RHVESVcxdTh5QmhnaTdVZmpuRVJCRDBpSm5JQzB1aXhLOHVEVWxLM2Z6Rm02Zzk3RWREai1fRVBaYV94X29scDU4SEw0emtmb0ZvbDhLejlYeW5JengzWlZCN0t2MGlDSFE?oc=5",
+          "tarih": "2026-07-12T07:00:00+00:00"
+        },
+        {
+          "baslik": "Trabzonspor, Başakşehir maçı hazırlıklarına başladı",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOd2h5cnZNUEYwT2JjSWtnV2ZUQkI3UmZoaTB1R2FjazdycGdiNm9oclRTUVB4ZXJJYVZCZjlDaktMTEpNR2F1Q0ZweFByempsajVtQ3BmNzVXanVPNFd0RGRxbTNVTWMyWTJnYWJnLTRDZzFnZ1JiazJqQ3M0Y28xVHVMOFpyZ0lyekUwby1oMV81QdIBlwFBVV95cUxOR0pQOV84Sm1XUnA1OGJ2T1QxenZPaWRDbjdWYWZwU29xWXJxUEEzY1E5bkhCRlJfQzVlcW1uQ1l6Rno3TURIbG9STk56N29oYlYtQ2dOZDFTUm5yV2M2c2h1UU9UYThfVHRRYlRmUnpoXzFvY0l6SVZWUFNDR0N4OC1NMEJXRk5aSV90MGoyY0J1YU5nNVBJ?oc=5",
+          "tarih": "2026-08-21T07:00:00+00:00"
+        },
+        {
+          "baslik": "Gaziantep FK, Çorum FK maçı hazırlıklarına başladı",
+          "kaynak": "Telgraf Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWU5oMGd0WVN4Z09UVzloUHlMZUdsNlJNeElBLUhNcWxmazl4TXJ3RTlLZjNQNFFTMF9BSTRLMGF0SFdkbmNkYlkwOVpUbllLaHUzNU5HU0dDbE00bXhIMGVHU0tqLUV2NjBnSjI1OWNGdmU3ZElmczd2RlBWbUJYOEZncUM2MGV5Q2k3cg?oc=5",
+          "tarih": "2026-09-25T07:00:00+00:00"
+        },
+        {
+          "baslik": "Trabzonspor, Hearts maçı hazırlıklarına ara vermeden başladı",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVXpBM0w3dk02YXZIVnlfaXZudVl0djdZWWwtTXc3enlyNkNoQnBXZ0VyYk5wV2R6bUJiV1VWeEZUOXlZU1FQMWRudEhMdFl1R1VtRkN1dzBKd1lIbDNSelg1VC1DR2d3VHJ6cXV4UlY1TTFvM0tIUkFnd0t6ME9TWGs1ZHgxcDJXSmZUNDctZU5iaDJtY1RaekVtOE9mZ9IBowFBVV95cUxOTzRTOTZuSDF1Szh2NVIxMmJfX294Nnd1V0Z0WlQ1ZTc3UFBNOHlsdEhkR0Z6NTJVeWVVV01UbjlOXzhRSzZjMFRfbms4VVJHa056WUVpSEZhLUVydXRiRHNPckVrTkhac2dkdFU3UHFGRmNTbFZVeVV1eC03QnpUTTlkcC0yQ215U29Vb2RRQ1R0VzJmeGo3ckozaG51OXBSSlRz?oc=5",
+          "tarih": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "baslik": "Trabzonspor, Çaykur Rizespor maçı hazırlıklarına başladı",
+          "kaynak": "Karadeniz Haber Ajansı",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNjl2djF6YTBRSl9LS2wyNGlxZUhYSUFXeXlpLTEzOERzZERfMTZ2MGJ4STEzbUNhcEl3dll1LXZyMWNwLUFpSU1Sc3lIeE9TSi1LQV9oeFdEUGNSWkFnVlB0QlZPcU43OHJZSGYwMDNKQkdJanVIRU80dG1CUUg4Sm1lb3NpNVc3aWZpaGctdF92Rm8tQ3AxeFR3?oc=5",
+          "tarih": "2026-10-23T14:11:00+00:00"
+        },
+        {
+          "baslik": "Gaziantep FK, Trabzonspor mesaisine başladı",
+          "kaynak": "Gaziantep Doğuş",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE42V0ZDMnJaODA1cF80NEFYWEhLb19PMl94dHFXZWVDMDNsRy1WRXVlWTR1anppTnpFZVByVnVOUUJRaHBHRGZNWW9OYldEVzZwak16S0hxV3lldTdVYWphbUFrSnNYYUFFNUh4Z2piajFWOHB5YmhSS0h0bnQyUQ?oc=5",
+          "tarih": "2026-10-28T13:35:00+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Trabzonspor, iki günlük iznin ardından Gaziantep…” sence bizi nasıl etkiler?"
+    },
+    {
+      "id": "2c3bae6ecf9a",
+      "baslik": "Süper Lig'de 10. hafta hakemleri açıklandı",
+      "tur": "haberler",
+      "kategori": "spor",
+      "tarih": "2026-10-29T09:04:18+00:00",
+      "ozet": "Trendyol Süper Lig'in 10. haftasında oynanacak maçlarda görev alacak hakemler açıklandı. Devamı için tıklayınız",
+      "ozet_kaynagi": "A Spor",
+      "haberler": [
+        {
+          "baslik": "Süper Lig'de 10. hafta hakemleri açıklandı",
+          "kaynak": "Hürriyet",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVGdjZ1h6MmtIZWc5ZlplRzNSRk50RWZEelJUX04tcF9XU3czMnJZREVVb19UbGJWM29qMXVBRV9NY3g2Z2VGMUVoRnI3UlFwNnUyck9PRV9vWE1rd0ZWSzBoWGNXR1R4MUtJaDE4c0o3V1RJd1o1bmJCZDJzQmxtODRteXBzTU82Y1o3X2xjZWg?oc=5",
+          "tarih": "2026-10-29T09:04:18+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Trendyol Süper Lig'de 4. Hafta Maçlarının Hakemleri Açıklandı",
+          "kaynak": "TFF",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9iX1kyc0FtSWJTNnMxSjZpRGdHRkVGWFk2NFlCRGNSRk5ndGgxcTNULWkzd0txcUhOcTVvSmt0YmlkNDlFallJQ0lTcHB6OGxfMXhaTGNwNFc5N21JLVVvTWE5d2U4Mms?oc=5",
+          "tarih": "2024-09-24T17:51:23+00:00"
+        },
+        {
+          "baslik": "Trendyol Süper Lig'de 24. Hafta Müsabaka Görevlileri Açıklandı",
+          "kaynak": "TFF",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBENnRNWE14eW5IVFc3eU1ZOG5xQ203Wmx2MFpkNDVOWnFkdUtUZ2kyUDBHNEMwb2xWTG1YQ0N4X00zVllZUWFsQjdGcVFPT3M4QkNKWlJHZUJwa1BvaTFEVXluZWdCaFk?oc=5",
+          "tarih": "2026-02-26T08:00:00+00:00"
+        },
+        {
+          "baslik": "Trendyol Süper Lig'de 1. haftanın hakemleri açıklandı",
+          "kaynak": "beinsports.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSzRsMlRWMVROX1VkeHpURE5lYVJNT091anRCMkhUaFZzN2VpME4zX21GRGl0OVFBSEZPb2UtbDBhNEduVEJKT3AwdmtnMG9RSVo0allzUDFrd19YeWk0QzVESno4SlZORWxacWRLNnhLanI4N20wVGh6Y280Y0NiRHdxcTBFT3UyVjNF?oc=5",
+          "tarih": "2026-08-13T07:00:00+00:00"
+        },
+        {
+          "baslik": "Süper Lig hakemi Yasin Kol için tutuklanma talebi!",
+          "kaynak": "Fotomaç",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQN01fRnE5ZENzbjctX21lOXR6aS11Qm91TG5wNll4dXFmamFKWUt5QmQyQlJtWXhHSXZXUlZvWDA1U3l4dm9UbEdDNVl6MkZFbHNkNzc5aTcwTVBodzlSdEtROGNyWV9ralVBblhEZGR1WVhIRmtkMHh0ME54cWVzb0YyMkswdWc5am5IZTNKS1BWYnR4REllLVRnc2vSAaIBQVVfeXFMTjhvNzFlV2M5Y0RPNWEtVGZNbVNDalFkVllNZDdxVHIxbTYzaXdhZUV5MHcxRDhNMF9uYnFwUWVUSEFhQUN4bjNnNG5qV3FUWVZRLWt0OWNSd2pkYVZvVllSUVVuNmJzSEE1QmlkOEpuSTlaWG1sZnVaNkVlN2F3TkZSZDJaMGpzaFlTRXpPSG9mZFdCRGR0VjRBSF9DR0M5SlhB?oc=5",
+          "tarih": "2026-10-05T07:00:00+00:00"
+        },
+        {
+          "baslik": "Trendyol Süper Lig'de 7. haftanın hakemleri açıklandı",
+          "kaynak": "beinsports.com.tr",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeGc0c2Y1YWwwbE9lbnRHd2hSckU1Z0l4ZVJtV3dlUEQwT0VFQzJEOVNqOTRhVDVpdDU3eTBSc1RwVU5qWEhmc19PNlh0MWx5WTg2djkwWnpsR1l6MXNzc3pmQUZITkU3WWc4aUg0aUI4OGIzaTBaN0hkZzNBSlMtZzVPZktuQVRYdEpB?oc=5",
+          "tarih": "2026-10-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Anthony Taylor belirledi: Süper Lig’de 7. haftanın hakemleri belli oldu!",
+          "kaynak": "Ülke TV",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZlVtY2JIMUZNYmFmWDBKTlVrcDV1SkhqQXM1RFJseU1pMU1HbnQ2M2VuRE9tRFFCZU90UzFXU1JPOVJpWng2WWJWbFNzVlVFNFVUXzJ1UmF6QXF6QjloVmk4U2VVTElTZUVscVlOdENwU083QnNSaEVpWThKWFVNU1g0M3pQc2d5aVJLSVFDWXpKbHJCMGfSAZsBQVVfeXFMUGM3WlRwaDd4TGtYa1RZNmFkV2RPWWR4TFhBbXNCT0J5T2pJcU5FOXpYbnVPd1p0S09vdjYxSWgxakhMeUJOaEhFc1l0TzRCbzM5RmpBSk02YzhJRmk1enFDMVVVaVFiem0tekR1dVloaG9fNUF2U0RGbGJscUYyc2d5VDA0Q2RkY3dkWjI4R28zQzh0dDVwZ1dkcnM?oc=5",
+          "tarih": "2026-10-08T07:00:00+00:00"
+        },
+        {
+          "baslik": "Anthony Taylor'ın atadığı Süper Lig hakemleri açıklandı haberi",
+          "kaynak": "Borsanın Gündemi",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNT2FYY2tBWTlIY2U1c3dSQWxzYk52aXd0WFczVElKMXIwLWZRSElGUlBnSDFKMnByNndUMWd2NURjdFNRWXEyQnlEbUpVdVB2Z3NQRjZ2M01jQmFfZHd4ZXdEYVYwRkxGOWNPZndFZW9WMnBodlc0VnRrOV9sdjlnb0RIUFJJT1l1NnFwUEhhRFIwVDI4ZF9EbTViYlJyWjA2cVE?oc=5",
+          "tarih": "2026-10-08T12:18:42+00:00"
+        },
+        {
+          "baslik": "Süper Lig'de bugünkü maçların VAR hakemleri açıklandı",
+          "kaynak": "Haber 7",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWGw4Q1lKeE1JLWlnT3ZkTm80amRUTmVHUnJjRDZNNDJIanJEbEcwcW9EZk9QYVpCRmYzbjZCZDV2bVc3WU8zbk94cXJhWTFQOUs5QzlCazBZa3NYMExVUUtCeXNLaUZBdHRzNzNfTllYSjRnR3E4QzFrLWQxMlljRHh6RUN5TDZ2dWlfYWtyZHdqczJlY1BKR1pZXzZTSVRUMVHSAagBQVVfeXFMTzBjWkNua3dYVUpQX05kRHZwNW45UWZ3cGpyN0RaWkVPRndfRk9XMnNTNVMyMFpKWWVkcmNOcXJmaXZfZEtXYkhSQTBjUTBoUDZSTldubXlucXdzUjNGRnZrazJMbXJHS19WdW1MQzJ2WDNfLVF4ZTNOZ1lLeWtLRVpNWllVbWg2SUNweC1sZWstWjhUb09mTFZEM3lwaXNXcS0tLU1nM2pf?oc=5",
+          "tarih": "2026-10-26T11:03:00+00:00"
+        }
+      ],
+      "kisiler": [],
+      "soru": "“Süper Lig'de 10. hafta hakemleri açıklandı” hakkında ne düşünüyorsun?"
+    },
+    {
+      "id": "5a9a17fc0997",
+      "baslik": "Sergen Yalçın'ın geçmişteki yorumları karşısına mı çıkıyor? - Milli takımda dikkat çeken iddialar",
+      "tur": "haberler",
+      "kategori": "spor",
+      "tarih": "2026-10-29T12:31:31+00:00",
+      "ozet": "A Milli Takım'ın yeni teknik direktörü Sergen Yalçın, geçmiş açıklamalarının futbolcularla arasında sorun oluşturduğu yönündeki iddialara yanıt verdi. Milli Takım",
+      "ozet_kaynagi": "Sporx",
+      "haberler": [
+        {
+          "baslik": "Sergen Yalçın'ın geçmişteki yorumları karşısına mı çıkıyor? - Milli takımda dikkat çeken iddialar",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVFg2RjAxYnJFSEpiZnlSUGd6LS1naEFWSW1SYWoxdkFWZ1pMNEs4b0JTUGZhYWJMT2hsR2U0QXYxdHRNNGEwV01KTVVYeGtqODE1Y3R6R3F2a1dKUl9mMWc0Mk5RRjEtOUFzTzhpWkxKYjJxRmlKUFdEakZhUjNhV2VmLTU5YnhuUjdZS2ZPbHlhQTNLYUFWVkpLOUFDcksyVV9Fc0JjRGlIejh5U2tTT1loblF4Q0xvREdmdndLbDFqR0ZFMjBseGhodm1tM0NYaWFKVS1CZFVHWjQ?oc=5",
+          "tarih": "2026-10-29T12:31:31+00:00"
+        },
+        {
+          "baslik": "Futbolcular telefonlarını açmıyor deniyordu! TFF'den Sergen Yalçın açıklaması",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaTBRcFBoR3hZNTRNZDRnaEZqSWtFb25iRmY1ZXpnbEI3cVFDYTVTSzZtTWpoU1dGRVhPY1JQVVl3elcxSU1BZVFFNjNPaUVjeDkySG9aVElyenV0SXpqVmkwN0JnYUxLRkhEZWpsdFNkYUgxZGFQWUFsUWhxVmFGd2hn?oc=5",
+          "tarih": "2026-10-29T12:31:31+00:00"
+        },
+        {
+          "baslik": "TFF'den zehir zemberek Sergen Yalçın açıklaması! - Milli Takım",
+          "kaynak": "Mynet",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbjlLOHF0ZnhDZ0lPc0liVHRkMlFoWWxYeGpwUWNGLXU0Y0xfOU5PenVlTUh1cE85eHdUeGhST1gwRF9tOHBJTXRxMkJBNVEtdkh4am9nU1pDUE03RHBKU2lXUUZYX21FTk9rUF9uYkNfZW83cDhxU25vc3E5aDhvYklTVjNINGZGWXRr0gGOAUFVX3lxTFBWYzJPdGZ4c2I2M2czcFFNcmF1VWJVcHF0cm1EYnIxNm5meW0yaEVFelA5dlpXMjJPVmhiR3gwc0ZXSjNWQU1vYllCYU5xWlQxMTM3dzlXZ1JZWEQzNl9YeFpjLWE1c28tYVVvTW5MMi1lSFZNRXV0TXN4UGkyNUtVd0s2dTVFSXZKdW85NkE?oc=5",
+          "tarih": "2026-10-29T12:31:31+00:00"
+        },
+        {
+          "baslik": "Sergen Yalçın'dan iddialara yanıt: 'Milli takımın önemli maçları öncesinde...'",
+          "kaynak": "Cumhuriyet",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYVJhenpIemZlUkZ1Smw1eWkweGlRMnlxUW1GNk01NmhOUktmbzR6ZmZlbDctQXJ1YlRqb0dRNlNkR09QdVA4SDdFVUU0bkI2YVFtX2wyRFdCTXZzTzB1WlR3cm8xRXJvbUZ3Y2FkV2EtS2sxTENtTmtQbG9lb2EzNVE4cldBcWNVWXR3alVDTEoxR0pPdHRZYUMtNC1RX2tnQWNoU1VrTlFqM214ZnRvaFdRWUVQUQ?oc=5",
+          "tarih": "2026-10-29T12:31:31+00:00"
+        },
+        {
+          "baslik": "Sergen Yalçın: 'Bu hikayeleri nereden yazıyorlar!'",
+          "kaynak": "Sporx.com",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVkdtY3lWdjNTUDdXNTBPblJCQkMtQTl2SUwwNUlYaVVhaWt6a09mRnVpcnFQZkdEZEhmU2dEUHRialB3NlBKRUxfLWh2d3UzelpyZmQtNFJvRE5yQnhRU0RBQm42R21iUHVFSjFsMnhfYmVrM0s1WklLdTVnTkRPRXBZcXJ4N2FURzhsdtIBjwFBVV95cUxPMjNQcWRtcXp1MDNEX2xNcmpub2Rjc3ZNSXRPM3JzWkVEVmZXZXROTTVJWGJ3LTNhVU9jRUFaa00yMUZfdUZKbUxqN05sN2RZUTFuY0RyOWxiY0x0elhPMjh2N2pmaGt2NGdla29XWXVUbDJpSEFHeTVkcXB4MWFWcWhqLUt5b3JPbDh0Uk4xRQ?oc=5",
+          "tarih": "2026-10-29T12:31:31+00:00"
+        }
+      ],
+      "gecmis": [
+        {
+          "baslik": "Sergen Yalçın Milli Takım'ın başına mı geçiyor? - TFF'den teklif yapıldığı iddiası",
+          "kaynak": "Transfermarkt",
+          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeU1JT244dGdXNGx5YnJNa0FhVHkydUxKaElyQy16aU02N2R5MUpENHkwNHZRNUxfMGtOS3pNSUJhdWVENklVX1RKVmVJR3hQTi1fRTFZbE5qTWl5SkJ5S1FaYjVkV2xyR3dHTGhMaW9oaTNHT3E5OE44NE5icHc2aVVKM2h5Vl9LLXlKWWl0UHdxLVpiMnEyZkhlNjlPZTlfdkQ2TzcwbGlPdGk3M1REcEYwNzFqQjY5R0FXYmJ2MFVqd002UXc?oc=5",
+          "tarih": "2026-10-19T07:00:00+00:00"
+        },
+        {
+          "baslik": "Sergen Yalçın A Milli Takım’ın başına geçiyor: İşte sözleşmesi",
+          "kaynak": "CNN Türk",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVkhOZTJVX1hXakNIaXhGQ0RKVWl2YkJVb1NyRUh5NGtENUxacUJHS0FaNnQ0SzcyZGctQXF5NXhNcWVENkRyM2VGRmJfbXgxTnRDVG9qS1ZGWXFzUllIQjlUa3Z5R3k5SUJWMEVuVDJoSV9DUUZ6Z0Y5UjJWTU4yb2xYZE5qQmNGWDF1d3VhdllLOU9UNVR6SC1YU2tZODc5WFV5emxjakdhb0RMczE1Tw?oc=5",
+          "tarih": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "baslik": "Anlaşma tamam! A Milli Takım'da Sergen Yalçın dönemi",
+          "kaynak": "Haber 7",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbFlyaWc5Y2J2bF9QOVg1U0ZMNnYweEk2NHRmMDhVNDBKamsyS1BZNkdURkg0SDd5c1pjd2xGdU5KRGpXVUxiRXFReVZVU3lKLW1OZDVYM29kVlRVRFdPUGh0ZU9SakhhaXBjajl2MFdDWS1OeG9na1dkUjV5eXJISFJTdGNiVzZkblNzTmNPUmtVd0Q0Sl9LbTBUN0syTzF4WFJCa3NobnbSAagBQVVfeXFMT2xZcmlnOWNidmxfUDlYNVNGTDZ2MHhJNjR0ZjA4VTQwSmprMktQWTZHVEZINEg3eXNaY3dsRnVOSkRqV1VMYkVxUXlWVVN5Si1tTmQ1WDNvZFZUVURXT1BodGVPUmpIYWlwY2o5djBXQ1ktTnhvZ2tXZFI1eXlySEhSU3RjYlc2ZG5Tc05jT1JrVXdENEpfS20wVDdLMk8xeFhSQmtzaG52?oc=5",
+          "tarih": "2026-10-20T07:00:00+00:00"
+        },
+        {
+          "baslik": "Sergen Yalçın \"Milli takıma gelmek için can atıyor\" diyerek imza töreninde açıkladı",
+          "kaynak": "NTVSpor",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWGZqYklxLWdwal9OSldSS3Ftd3pTeUczRWdQQm02VzNhR2MzblJfaHhOeVZ4TDJpQUtlS2pCTDVtXzU4QTdCVzdsN3QtR2ZsR2V3YUUta05NSU9oV1dIYmlidnJ3ZVZ0V1FCVlREaERXR0tSdTRaYVJMTEd6V0lPd3NydGkybE5SeXdzTUd3ZVVhLW44VkpkcG1NWjhyc0pYWWlwOUxUQ2FRT1FLU0tTSUVoSGZ3elRvODgtQXlOUWd1RV9m?oc=5",
+          "tarih": "2026-10-22T10:58:42+00:00"
+        },
+        {
+          "baslik": "Sergen Yalçın imza töreninde resmen açıkladı: 'Milli takıma gelmek için can atıyor'",
+          "kaynak": "Sözcü Gazetesi",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNM1IzRVZOTDRqcnlxQTg4YTEySHFTQy11aEdUNFJXYVViNGtwS210U2k5b29uOTFZRGFxM0UwY0EtUmpvUi1tRGt4Zm1jaU1IVnVBTlpRQVFmRkMtb2xXTmhZdktHZ3dBekE3QjBwT3NDN2s3UDFIV0ppWnlleW95VVU5OWI2WWZkOUhzSGxaQTc1Q0ZyZjd6X0JfY2pxYjBRVzJZZk9RTmVsRUpES0R5NzhINNIBuAFBVV95cUxPVkNVeDNxV2hIM1VLOV9CRkhpMG0yaEktNDE0OVBrT0VwSEV2cl8zWURXZGczQWJjQWw4N3JFdGxNZl9SWXZyeE5SOEMzWno5bWxiVURPR0hhUmVzUlJKcU91T3lOaFRwREJ5NENyNktlQzY3SUNuV1hZU0YtRUJzX0xsRmV4Sk5VQ3BBWGZQUkNPSXRELVJwSWZBblJjMUlvMWZxeWQwVmJBaHBkUnFYWnpPcmFtdnc5?oc=5",
+          "tarih": "2026-10-22T12:10:00+00:00"
+        },
+        {
+          "baslik": "A Milli Takım'da yeni dönem: Sergen Yalçın'ın teknik ekibi belli oldu",
+          "kaynak": "Cumhuriyet",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWHZlZE5UajVPam9XZU90ekFzZUp0b0hLd1NBY0p5ODBweXNwQU9EbWZMMUkyd0RBbnBNdWlEZmcwbUpXeXpWYVF0NVNER2NtUDl1bnNBcDdBdGNTdFVyS0d2SXBEcTNJY3lrb2dxYWtJdnJGVGZ0MC1fUnhudkk1ZklZMER4cllyMXJDTVhOazJTNlhSZTFWUGpsMmpBM1Rhd3YwemtOY0Y1VmJQOENSSA?oc=5",
+          "tarih": "2026-10-22T13:41:00+00:00"
+        },
+        {
+          "baslik": "Şenol Güneş Sergen Yalçın'ın Milli Takım Kararı İçin Konuştu: \"Benimle Görüşmediler\"",
+          "kaynak": "Onedio",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeVI1RWctZmd4Wlk3ekYtU1UtUy1XY3pJMDlGVi1INFRxYWQwSDBobEZzMHFHNkxXTVlBRWNUQXFEYmVMUy0xRElHYVl5RnAxaU81LWFuaGRsNnVhSThCNkdfZGZ3cDF4U25palZmVWxOQVpLbjZWcEFwUHJHQ2M0aS0wVkNXOEVsRXhmdENxd2h2WVRqYmkzU0lwckI0NXFRX2Q5UDdOQUE?oc=5",
+          "tarih": "2026-10-23T14:33:40+00:00"
+        },
+        {
+          "baslik": "Beşiktaş’ta Sergen Yalçın ile birlikte çalışmışlardı: Milli Takım’a katıldı!",
+          "kaynak": "Yeni Şafak",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVXlWSlhiSDJMcDRreWp2UXV4UHEwaWN6N2NMODlvMy04TjQ5TjZEWUhCSTg0M3U1cUpRNXlOUlpFR2E1QXhmM0ladTR5ZEkyNWNEM2E2OU1SN2ZhTDVyWUNqRjB5WnktM3E5MTB1dndLbVNkeVo4Ri01NmsxNVhDMkVzQW41NXlnSE5JUTh5bE9QSDQ0cXNGZy10SFdOakhaRDZGQlBsTHdkM0VTWVpaNw?oc=5",
+          "tarih": "2026-10-28T12:15:22+00:00"
+        }
+      ],
+      "kisiler": [
+        {
+          "ad": "Sergen Yalçın",
+          "aciklama": "Türk futbolcu ve teknik direktör",
+          "ozet": "Ali Rıza Sergen Yalçın (d. 5 Kasım 1972, İstanbul), Türk teknik direktör, spor yorumcusu ve eski millî futbolcudur. Futbolculuk kariyerinde ofansif orta saha pozisyonunda oynayan Yalçın, Türk futbolunun en yetenekli futbolcularından biri olarak kabul edilmektedir.",
+          "link": "https://tr.wikipedia.org/wiki/Sergen_Yal%C3%A7%C4%B1n",
+          "resim": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sergen_Yal%C3%A7%C4%B1n_2019_%282%29.jpg/250px-Sergen_Yal%C3%A7%C4%B1n_2019_%282%29.jpg?utm_source=tr.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+        }
+      ],
+      "soru": "Sergen Yalçın yerinde olsan ne yapardın?"
+    }
+  ]
+}
