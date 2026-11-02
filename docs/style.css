@@ -259,3 +259,4 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 .yardim ol { padding-left: 20px; margin: 8px 0; }
 .yardim li { margin-bottom: 6px; }
 .yardim code { font-size: 13px; background: var(--zemin); padding: 1px 5px; border-radius: 4px; }
+.anahtar-durumu .tarih { font-weight: 400; color: var(--soluk); }

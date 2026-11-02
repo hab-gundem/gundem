@@ -2,7 +2,7 @@
 // yazılır, ağ yoksa son kaydedilen kullanılır (böylece güncellemeler hemen görünür).
 // Kişi fotoğrafları görüldükçe önbelleğe alınır.
 
-const SURUM = 'gundem-v3';
+const SURUM = 'gundem-v4';
 const KABUK = ['./', 'index.html', 'app.js', 'ayarlar.js', 'style.css', 'manifest.webmanifest',
   'ikon.svg', 'ikon-192.png', 'ikon-512.png'];
 const RESIM_ONBELLEGI = 'gundem-resimler';

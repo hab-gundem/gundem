@@ -9,6 +9,7 @@ const GH_DOSYA = 'tarayici/ayarlar.json';
 const GH_GOREV = 'gundem.yml';
 const GH_KIMLIK = { name: 'hab-gundem', email: 'hab-gundem@users.noreply.github.com' };
 const ANAHTAR_DEPOSU = 'gundem.anahtar';
+const ANAHTAR_BILGISI = 'gundem.anahtar.bilgi'; // {ad, tarih}: ekranda gösterilir, anahtarın kendisi gösterilmez
 const SINIRLAR = {
   gundem_konu_sayisi: [1, 20, 10],
   genel_spor_konu_sayisi: [0, 15, 6],
@@ -24,10 +25,25 @@ function anahtarOku() {
   try { return localStorage.getItem(ANAHTAR_DEPOSU) || ''; } catch (e) { return ''; }
 }
 
-function anahtarYaz(deger) {
+function anahtarBilgisi() {
+  try { return JSON.parse(localStorage.getItem(ANAHTAR_BILGISI)) || {}; } catch (e) { return {}; }
+}
+
+// deger boşsa anahtar ve bilgisi silinir; deger null ise anahtar korunur, sadece adı değişir
+function anahtarYaz(deger, ad = '') {
   try {
-    if (deger) localStorage.setItem(ANAHTAR_DEPOSU, deger);
-    else localStorage.removeItem(ANAHTAR_DEPOSU);
+    if (deger === '') {
+      localStorage.removeItem(ANAHTAR_DEPOSU);
+      localStorage.removeItem(ANAHTAR_BILGISI);
+      return true;
+    }
+    const bilgi = anahtarBilgisi();
+    if (deger !== null) {
+      localStorage.setItem(ANAHTAR_DEPOSU, deger);
+      bilgi.tarih = new Date().toISOString();
+    }
+    bilgi.ad = ad;
+    localStorage.setItem(ANAHTAR_BILGISI, JSON.stringify(bilgi));
     return true;
   } catch (e) { return false; }
 }
@@ -243,12 +259,17 @@ function secimKarti(s, i, toplam) {
 
 function anahtarBolumu() {
   const kayitli = !!anahtarOku();
+  const bilgi = anahtarBilgisi();
+  const durum = kayitli
+    ? `✓ Kayıtlı anahtar: <b>${esc(bilgi.ad || 'adsız')}</b>${bilgi.tarih ? ` <span class="tarih">(kaydedildi: ${esc(tarihYaz(bilgi.tarih))})</span>` : ''}`
+    : 'Kaydetmek için bir kez anahtar oluşturup buraya yapıştırman gerekiyor.';
   return `<section class="bolum"><h3>GitHub anahtarı</h3>
     <div class="ayar-karti">
-      <p class="anahtar-durumu ${kayitli ? 'iyi' : ''}">${kayitli
-        ? '✓ Bu telefonda kayıtlı bir anahtar var.'
-        : 'Kaydetmek için bir kez anahtar oluşturup buraya yapıştırman gerekiyor.'}</p>
-      <label class="alan"><span>${kayitli ? 'Yeni anahtar (değiştirmek için)' : 'Anahtar'}</span>
+      <p class="anahtar-durumu ${kayitli ? 'iyi' : ''}">${durum}</p>
+      <label class="alan"><span>Anahtarın adı</span>
+        <input type="text" id="anahtar-adi" value="${esc(bilgi.ad || '')}" placeholder="ör. gundem-ayarlar" autocomplete="off" spellcheck="false">
+        <small>Kendin hatırlaman için; GitHub'da verdiğin adı yazabilirsin.</small></label>
+      <label class="alan"><span>${kayitli ? 'Yeni anahtar (sadece değiştireceksen)' : 'Anahtar'}</span>
         <input type="password" id="anahtar-girisi" placeholder="github_pat_…" autocomplete="off" spellcheck="false"></label>
       <div class="dugmeler">
         <button type="button" class="dugme ana" data-ayar="anahtar-kaydet">Anahtarı kaydet</button>
@@ -343,9 +364,10 @@ document.addEventListener('click', e => {
   if (eylem === 'yeniden-yukle') { ayarlariYukle(); return; }
   if (eylem === 'anahtar-kaydet') {
     const deger = document.getElementById('anahtar-girisi').value.trim();
-    if (!deger) return;
-    ayar.mesaj = anahtarYaz(deger)
-      ? { tur: 'iyi', metin: 'Anahtar kaydedildi.' }
+    const ad = document.getElementById('anahtar-adi').value.trim();
+    if (!deger && !anahtarOku()) return;
+    ayar.mesaj = anahtarYaz(deger || null, ad)
+      ? { tur: 'iyi', metin: deger ? 'Anahtar kaydedildi.' : 'Anahtarın adı kaydedildi.' }
       : { tur: 'kotu', metin: 'Anahtar bu tarayıcıda saklanamadı (gizli pencere olabilir).' };
   } else if (eylem === 'anahtar-sil') {
     if (!confirm('Anahtar bu telefondan silinsin mi?')) return;
