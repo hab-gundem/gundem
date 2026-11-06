@@ -167,6 +167,11 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 .haberler .kaynak { font-size: 12px; color: var(--soluk); }
 .haberler time { display: block; font-size: 12px; color: var(--soluk); }
 .haber-kaynagi { font-size: 13px; color: var(--soluk); margin: 2px 0 6px; }
+.yorum { padding: 10px 0; border-bottom: 1px solid var(--cizgi); }
+.yorum:last-child { border-bottom: 0; }
+.yorum-ust { font-size: 12px; color: var(--soluk); }
+.yorum-baslik { display: block; font-weight: 600; color: inherit; margin: 2px 0 4px; }
+.yorum p { margin: 0; line-height: 1.5; }
 
 /* ---------- tekrar ---------- */
 

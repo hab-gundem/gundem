@@ -328,7 +328,8 @@ def ayarlari_oku() -> tuple[list[dict], int, int, list[dict], int]:
     for k in veri.get("tercih_kaynaklar", []):
         if isinstance(k, dict) and str(k.get("site", "")).strip():
             site = re.sub(r"^https?://|^www\.|/.*$", "", k["site"].strip().lower())
-            kaynaklar.append({"ad": str(k.get("ad", "")).strip() or site, "site": site})
+            kose = re.sub(r"^https?://|^www\.|/+$", "", str(k.get("kose", "")).strip().lower())
+            kaynaklar.append({"ad": str(k.get("ad", "")).strip() or site, "site": site, "kose": kose})
     gundem_sayisi = _sayi(veri.get("gundem_konu_sayisi"), KONU_SAYISI, 1, 20)
     return (secimler, gundem_sayisi,
             _sayi(veri.get("genel_spor_konu_sayisi"), SPOR_SAYISI, 0, 15),
@@ -1003,10 +1004,18 @@ def haber_sayfasi(link: str) -> dict:
             m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', parca)
             if m and (yayin := tarih_coz(m.group(1))):
                 break
+    yazar = ayirici.meta.get("author") or ayirici.meta.get("article:author") or ""
+    if not yazar or yazar.startswith("http"):
+        yazar = ""
+        for parca in ayirici.ld:
+            m = re.search(r'"author"\s*:\s*\[?\s*\{[^{}]*?"name"\s*:\s*"([^"]+)"', parca)
+            if m:
+                yazar = m.group(1)
+                break
     gorsel = ayirici.meta.get("og:image") or ayirici.meta.get("twitter:image") or ""
     gorsel = urllib.parse.urljoin(adres, html.unescape(gorsel)) if gorsel else ""
     return {"paragraflar": sonuc, "gorsel": gorsel if gorsel.startswith(("http://", "https://")) else "",
-            "link": adres, "yayin": yayin}
+            "link": adres, "yayin": yayin, "yazar": html.unescape(yazar).strip()}
 
 
 def konu_metni(konu: dict) -> dict:
@@ -1053,6 +1062,72 @@ def konu_metni(konu: dict) -> dict:
         if tr_kucuk(konu["baslik"]) in atilan:  # başlık eski haberden geliyordu
             konu["baslik"] = max(kalan, key=lambda h: h["tarih"] or "")["baslik"]
     return sonuc
+
+
+# ---------- köşe yazıları ----------
+# Tercih edilen kaynakların köşe yazısı bölümlerinde (ör. t24.com.tr/yazarlar) konu aranır.
+# Google tam metinde aradığı için ilgisiz yazılar da gelir; yazı açılıp konuyla örtüşmesine bakılır.
+
+KOSE_GUN = 3          # kaç günlük yazılara bakılır
+KOSE_DENEME = 4       # konu başına en fazla bu kadar yazı açılır
+KOSE_EN_FAZLA = 2     # konu başına gösterilen yazı
+KOSE_OZET = 700       # yazının gösterilen ilk kısmı (karakter)
+
+
+def _kose_basligi(baslik: str) -> tuple[str, str]:
+    """Google başlığından (yazar, yazı başlığı): "X yazdı : Y", "X | Y", "Y - X" kalıpları."""
+    if m := re.match(r"(.+?) yazdı\s*:\s*(.+)", baslik):
+        return m.group(1).strip(), m.group(2).strip()
+    if m := re.match(r"([^|]{3,40}) \| (.+)", baslik):
+        return m.group(1).strip(), m.group(2).strip()
+    return "", baslik
+
+
+def kose_yazilari(konu: dict, kaynaklar: list[dict]) -> list[dict]:
+    yollar = [k["kose"] for k in kaynaklar if k.get("kose")]
+    sorgu = arama_sorgusu(konu)
+    if not yollar or not sorgu:
+        return []
+    q = f"{sorgu} ({' OR '.join(f'site:{y}' for y in yollar)}) when:{KOSE_GUN}d"
+    try:
+        ogeler = rss_ogeleri(getir(GOOGLE_ARAMA.format(q=urllib.parse.quote(q))))
+    except Exception as e:
+        uyari(f"Köşe yazısı araması başarısız ({sorgu}): {e}")
+        return []
+    sorgu_kokleri = kok_kumesi(sorgu)
+    gerekli = min(2, len(sorgu_kokleri))
+    konu_k = konu_kokleri(konu)
+    yazilar, yazarlar = [], set()
+    for oge in ogeler[:KOSE_DENEME]:
+        baslik, kaynak = baslik_kaynak_ayir(oge["baslik"])
+        yazar, baslik = _kose_basligi(baslik)
+        try:
+            s = haber_sayfasi(oge["link"])
+        except Exception as e:
+            uyari(f"Köşe yazısı okunamadı ({kaynak}): {e}")
+            continue
+        metin = " ".join(s["paragraflar"])
+        kokler = kok_kumesi(metin)
+        if len(metin) < 400 or len(kokler & sorgu_kokleri) < gerekli or len(kokler & konu_k) < 4:
+            continue  # konuyla ilgisiz
+        yazar = yazar or s["yazar"]
+        if _sade(yazar) in yazarlar:
+            continue
+        yazarlar.add(_sade(yazar))
+        ozet = ""
+        for p in s["paragraflar"]:
+            if len(ozet) >= KOSE_OZET:
+                break
+            ozet += (" " if ozet else "") + p
+        if len(ozet) > KOSE_OZET + 200:  # cümle sonunda kes, olmazsa kelime sonunda
+            kes = ozet[:KOSE_OZET + 200]
+            nokta = max(kes.rfind(". "), kes.rfind("? "), kes.rfind("! "))
+            ozet = kes[:nokta + 1] if nokta > KOSE_OZET // 2 else kes.rsplit(" ", 1)[0] + "…"
+        yazilar.append({"yazar": yazar, "baslik": baslik, "kaynak": kaynak, "tarih": s["yayin"] or oge["tarih"],
+                        "ozet": ozet, "link": s["link"]})
+        if len(yazilar) == KOSE_EN_FAZLA:
+            break
+    return yazilar
 
 
 # ---------- günün hafıza kartları ----------
@@ -1236,6 +1311,7 @@ def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], ki
         "gecmis": gecmis,
         "kisiler": konu["kisiler"],
         "soru": soru_uret(konu),
+        **({"yorumlar": konu["yorumlar"]} if konu.get("yorumlar") else {}),
     }
     print(f"  ✓ {sonuc['baslik'][:60]}  (geçmiş {len(sonuc['gecmis'])}, kişi {len(sonuc['kisiler'])}, "
           f"metin {len(sonuc.get('metin', []))} paragraf{', görsel' if sonuc.get('gorsel') else ''})")
@@ -1321,6 +1397,12 @@ def main() -> None:
     n_secim = sum(k["tur"] == "secim" for k in secilen)
     print(f"{n_gundem} gündem + {n_secim} seçim + {len(secilen) - n_gundem - n_secim} spor konusu işleniyor...")
     ozetler = [ozet_bul(k, rss) for k in secilen]
+    kose_konulari = [k for k in secilen if k["kategori"] == "gundem"]
+    if any(k.get("kose") for k in kaynaklar):
+        print("Köşe yazıları aranıyor...")
+        with ThreadPoolExecutor(4) as is_havuzu:
+            for k, y in zip(kose_konulari, is_havuzu.map(lambda k: kose_yazilari(k, kaynaklar), kose_konulari)):
+                k["yorumlar"] = y
     print("Geçmiş haberler aranıyor...")
     with ThreadPoolExecutor(4) as is_havuzu:
         gecmisler = list(is_havuzu.map(gecmis_haberler, secilen))

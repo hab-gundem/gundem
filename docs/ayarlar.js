@@ -163,6 +163,8 @@ function temizHal(v) {
   kopya.tercih_kaynaklar = kopya.tercih_kaynaklar.map(k => ({
     ad: (k.ad || '').trim(),
     site: k.site.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/.*$/, ''),
+    ...((k.kose || '').trim()
+      ? { kose: k.kose.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/+$/, '') } : {}),
   }));
   kopya.spor_secimleri = kopya.spor_secimleri.map(s => {
     const t = { ...s, ad: s.ad.trim(), dal: (s.dal || '').trim() };
@@ -296,6 +298,7 @@ function kaynakKarti(k, i) {
     ${acik ? `<div class="duzen-alani">
     ${metinAlani('Ad', 'ad', k.ad, 'Yayının adı.', i, 'ör. BirGün', 'tercih_kaynaklar')}
     ${metinAlani('Site', 'site', k.site, 'Sitenin adresi. Haberler bu sitede aranır.', i, 'ör. birgun.net', 'tercih_kaynaklar')}
+    ${metinAlani('Köşe yazıları adresi', 'kose', k.kose, 'İsteğe bağlı. Konu bu adreste aranır, ilgili köşe yazıları konuda görünür.', i, 'ör. t24.com.tr/yazarlar', 'tercih_kaynaklar')}
     <div class="dugmeler">
       <button type="button" class="dugme kotu" data-ayar="kaynak-sil" data-i="${i}">Sil</button>
       <button type="button" class="dugme" data-ayar="kaynak-duzenle" data-i="${i}">Kapat</button>

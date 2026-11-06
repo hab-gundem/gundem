@@ -269,6 +269,43 @@ function haberSatiri(h) {
     ${h.kaynak ? `<span class="kaynak"> · ${esc(h.kaynak)}</span>` : ''}`;
 }
 
+// ---------- YZ'ye sor ----------
+// Haberi, sol bakışla yorum isteğiyle telefondaki bir yapay zekâ uygulamasına paylaşır.
+// Paylaşım yoksa (ör. bilgisayar) metin panoya kopyalanır.
+const YZ_METIN_SINIRI = 3500;
+
+function yzIstegi(konu) {
+  let metin = (konu.metin?.length ? konu.metin.join('\n\n') : konu.ozet) || '';
+  if (metin.length > YZ_METIN_SINIRI) metin = metin.slice(0, YZ_METIN_SINIRI).replace(/\s+\S*$/, '') + '…';
+  const kaynak = konu.metin?.length ? konu.metin_kaynagi : '';
+  const tarih = konu.metin_tarih || konu.tarih;
+  return [
+    'Aşağıdaki haberi sol görüşlü, eleştirel bir yorumcu gibi değerlendir.',
+    'Kısa bir yorum yaz (en fazla iki paragraf), sonra bir sohbette kullanabileceğim 3 kısa cümle öner.',
+    'Haberde olmayan bilgileri uydurma; emin olmadığın yerde bunu belirt.',
+    '',
+    `Başlık: ${konu.baslik}`,
+    [kaynak && `Kaynak: ${kaynak}`, tarih && `Tarih: ${tarihYaz(tarih)}`].filter(Boolean).join(' · '),
+    '',
+    metin,
+    konu.metin_link ? `\nBağlantı: ${konu.metin_link}` : '',
+  ].filter((s, i) => s !== '' || i === 3 || i === 6).join('\n');
+}
+
+async function yzSor(konu) {
+  const text = yzIstegi(konu);
+  if (navigator.share) {
+    try { await navigator.share({ text }); return; }
+    catch (e) { if (e.name === 'AbortError') return; }
+  }
+  try {
+    await navigator.clipboard.writeText(text);
+    alert('İstek panoya kopyalandı. Yapay zekâ uygulamasını açıp yapıştır.');
+  } catch (e) {
+    alert('Paylaşılamadı ve panoya kopyalanamadı.');
+  }
+}
+
 // Haberin metni: uzun basınca kısalır ("Devamını oku" çıkar), yeniden uzun basınca açılır
 function haberMetni(konu) {
   if (!konu.metin?.length) {
@@ -281,6 +318,16 @@ function haberMetni(konu) {
     <div class="kaynak-notu">
       ${konu.metin_link ? `<a href="${guvenliAdres(konu.metin_link)}" target="_blank" rel="noopener">Haberi sayfada aç</a> · ` : ''}
       <span class="ipucu-yazi">Kısaltmak için metne basılı tut</span></div>`;
+}
+
+// Tercih edilen kaynakların konuyla ilgili köşe yazısı: yazar, başlık, ilk kısmı ve bağlantısı
+function yorumBlogu(y) {
+  const ust = [y.yazar, y.kaynak].filter(Boolean).map(esc).join(' · ');
+  return `<div class="yorum">
+    <div class="yorum-ust">${ust}${y.tarih ? ` · <time datetime="${esc(y.tarih)}">${tarihYaz(y.tarih)}</time>` : ''}</div>
+    <a class="yorum-baslik" href="${guvenliAdres(y.link)}" target="_blank" rel="noopener">${esc(y.baslik)}</a>
+    ${y.ozet ? `<p>${esc(y.ozet)}</p>` : ''}
+  </div>`;
 }
 
 // Başlığın hemen altında: haberin nereden alındığı ve tarihi
@@ -323,7 +370,12 @@ function detayCiz(id, tekrardan = false) {
       ${konu.tarih ? `<span>${tarihYaz(konu.tarih)}</span>` : ''}${takipNotu}</div>
     ${haberMetni(konu)}
 
-    <section class="bolum"><h3>Sohbette sor</h3><div class="soru">${esc(konu.soru)}</div></section>
+    ${konu.yorumlar?.length ? `<section class="bolum"><h3>Köşe yazıları</h3>${konu.yorumlar.map(yorumBlogu).join('')}</section>` : ''}
+
+    <section class="bolum"><h3>Yapay zekâya sor</h3>
+      <button type="button" class="dugme ana" data-eylem="yz-sor" data-id="${esc(konu.id)}">YZ'ye sor</button>
+      <div class="kaynak-notu">Haber, paylaş menüsünden seçtiğin uygulamaya (ChatGPT, Gemini, Claude…) sol bakışla yorum isteğiyle gider.</div>
+    </section>
 
     ${konu.kisiler?.length ? `<section class="bolum"><h3>Kişiler</h3>${konu.kisiler.map(kisiBlogu).join('')}</section>` : ''}
 
@@ -433,7 +485,8 @@ function tekrarCiz(kat) {
             `<li><strong>${esc(p.ad)}</strong>${p.aciklama ? ` — ${esc(p.aciklama)}` : ''}</li>`).join('')}</ul></section>` : ''}
           ${sonGecmis.length ? `<section class="bolum"><h3>Öncesinde</h3><ul>${sonGecmis.map(h =>
             `<li>${tarihYaz(h.tarih)}: ${esc(h.baslik)}</li>`).join('')}</ul></section>` : ''}
-          <section class="bolum"><h3>Sohbette sor</h3><div class="soru">${esc(konu.soru)}</div></section>
+          ${konu.yorumlar?.length ? `<section class="bolum"><h3>Köşe yazıları</h3><ul>${konu.yorumlar.map(y =>
+            `<li><strong>${esc(y.yazar || y.kaynak)}</strong>: ${esc(y.baslik)}</li>`).join('')}</ul></section>` : ''}
           <p class="kaynak-notu"><a href="#/konu/${encodeURIComponent(id)}/tekrar">Konunun tamamını aç</a></p>
         </div>
         <div class="dugmeler">
@@ -505,6 +558,9 @@ document.addEventListener('click', e => {
     if (confirm('Bu konu tekrardan çıkarılsın mı? (Yıldızı da kalkar.)')) tekrarSonucu(null);
   } else if (eylem === 'devami') {
     document.querySelector('.haber-metni')?.classList.remove('kisa');
+  } else if (eylem === 'yz-sor') {
+    const konu = konuBul(e.target.closest('[data-id]').dataset.id);
+    if (konu) yzSor(konu);
   }
 });
 

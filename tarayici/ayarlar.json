@@ -10,7 +10,7 @@
     "  gun: kaç günlük haberlere bakılsın (yazılmazsa 3). adet: en fazla kaç konu (yazılmazsa 4).",
     "tercih_konu_sayisi: Gündemde, tercih edilen kaynakların kendi manşetlerinden gelen konu sayısı (0-10).",
     "tercih_kaynaklar: Öne çıkacak yayınlar. Her konu bu sitelerde de aranır; bulunan haberler listenin başına geçer, metin önce onlardan alınır.",
-    "  ad: yayının adı. site: alan adı (ör. birgun.net)."
+    "  ad: yayının adı. site: alan adı (ör. birgun.net). kose: köşe yazılarının adresi (ör. t24.com.tr/yazarlar); konu bu adreste aranır, ilgili yazılar konuda gösterilir."
   ],
   "gundem_konu_sayisi": 10,
   "genel_spor_konu_sayisi": 6,
@@ -47,19 +47,23 @@
   "tercih_kaynaklar": [
     {
       "ad": "BirGün",
-      "site": "birgun.net"
+      "site": "birgun.net",
+      "kose": "birgun.net/makale"
     },
     {
       "ad": "Evrensel",
-      "site": "evrensel.net"
+      "site": "evrensel.net",
+      "kose": "evrensel.net/yazi"
     },
     {
       "ad": "Cumhuriyet",
-      "site": "cumhuriyet.com.tr"
+      "site": "cumhuriyet.com.tr",
+      "kose": "cumhuriyet.com.tr/yazarlar"
     },
     {
       "ad": "soL Haber",
-      "site": "haber.sol.org.tr"
+      "site": "haber.sol.org.tr",
+      "kose": "haber.sol.org.tr/yazarlar"
     },
     {
       "ad": "Sözcü",
@@ -71,7 +75,8 @@
     },
     {
       "ad": "T24",
-      "site": "t24.com.tr"
+      "site": "t24.com.tr",
+      "kose": "t24.com.tr/yazarlar"
     },
     {
       "ad": "Medyascope",
