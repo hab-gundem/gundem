@@ -272,19 +272,25 @@ function haberSatiri(h) {
 // Haberin metni: uzun basınca kısalır ("Devamını oku" çıkar), yeniden uzun basınca açılır
 function haberMetni(konu) {
   if (!konu.metin?.length) {
-    const ozetKaynagi = konu.ozet_kaynagi === 'başlıklar'
-      ? 'Haber başlıklarından derlendi'
-      : `Kaynak: ${esc(konu.ozet_kaynagi)}`;
-    return `<p class="ozet">${esc(konu.ozet)}</p><div class="kaynak-notu">${ozetKaynagi}</div>`;
+    return `<p class="ozet">${esc(konu.ozet)}</p>`;
   }
-  return `${konu.metin_tarih ? `<time class="haber-tarihi" datetime="${esc(konu.metin_tarih)}">${tarihYaz(konu.metin_tarih)}</time>` : ''}
-    <div class="haber-metni" data-uzun-bas>
+  return `<div class="haber-metni" data-uzun-bas>
       ${konu.metin.map(p => `<p>${esc(p)}</p>`).join('')}
     </div>
     <button type="button" class="devami-dugme" data-eylem="devami">Devamını oku ▾</button>
-    <div class="kaynak-notu">Kaynak: ${esc(konu.metin_kaynagi)}
-      ${konu.metin_link ? ` · <a href="${guvenliAdres(konu.metin_link)}" target="_blank" rel="noopener">sayfada aç</a>` : ''}
-      · <span class="ipucu-yazi">Kısaltmak için metne basılı tut</span></div>`;
+    <div class="kaynak-notu">
+      ${konu.metin_link ? `<a href="${guvenliAdres(konu.metin_link)}" target="_blank" rel="noopener">Haberi sayfada aç</a> · ` : ''}
+      <span class="ipucu-yazi">Kısaltmak için metne basılı tut</span></div>`;
+}
+
+// Başlığın hemen altında: haberin nereden alındığı ve tarihi
+function haberKaynagi(konu) {
+  const kaynak = konu.metin?.length ? konu.metin_kaynagi
+    : konu.ozet_kaynagi === 'başlıklar' ? 'Haber başlıklarından derlendi' : konu.ozet_kaynagi;
+  const tarih = konu.metin?.length ? konu.metin_tarih : '';
+  if (!kaynak && !tarih) return '';
+  return `<div class="haber-kaynagi">${kaynak ? esc(kaynak) : ''}${kaynak && tarih ? ' · ' : ''}${
+    tarih ? `<time datetime="${esc(tarih)}">${tarihYaz(tarih)}</time>` : ''}</div>`;
 }
 
 function detayCiz(id, tekrardan = false) {
@@ -311,6 +317,7 @@ function detayCiz(id, tekrardan = false) {
       <h2 class="konu-basligi">${esc(konu.baslik)}</h2>
       ${yildizDugmesi(konu.id)}
     </div>
+    ${haberKaynagi(konu)}
     <div class="meta">${kategori(konu) === 'spor' ? `<span class="etiket">${esc(konu.secim || 'Spor')}</span>` : ''}
       ${konu.tur === 'trends' ? '<span class="etiket">Trends</span>' : ''}
       ${konu.tarih ? `<span>${tarihYaz(konu.tarih)}</span>` : ''}${takipNotu}</div>

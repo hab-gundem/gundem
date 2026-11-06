@@ -165,8 +165,8 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 .haberler li { padding: 8px 0; border-bottom: 1px solid var(--cizgi); }
 .haberler li:last-child { border-bottom: 0; }
 .haberler .kaynak { font-size: 12px; color: var(--soluk); }
-.haberler time, .haber-tarihi { display: block; font-size: 12px; color: var(--soluk); }
-.haber-tarihi { margin-bottom: 6px; }
+.haberler time { display: block; font-size: 12px; color: var(--soluk); }
+.haber-kaynagi { font-size: 13px; color: var(--soluk); margin: 2px 0 6px; }
 
 /* ---------- tekrar ---------- */
 
