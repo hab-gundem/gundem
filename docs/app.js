@@ -277,7 +277,8 @@ function haberMetni(konu) {
       : `Kaynak: ${esc(konu.ozet_kaynagi)}`;
     return `<p class="ozet">${esc(konu.ozet)}</p><div class="kaynak-notu">${ozetKaynagi}</div>`;
   }
-  return `<div class="haber-metni" data-uzun-bas>
+  return `${konu.metin_tarih ? `<time class="haber-tarihi" datetime="${esc(konu.metin_tarih)}">${tarihYaz(konu.metin_tarih)}</time>` : ''}
+    <div class="haber-metni" data-uzun-bas>
       ${konu.metin.map(p => `<p>${esc(p)}</p>`).join('')}
     </div>
     <button type="button" class="devami-dugme" data-eylem="devami">Devamını oku ▾</button>
@@ -324,8 +325,9 @@ function detayCiz(id, tekrardan = false) {
         <time datetime="${esc(h.tarih)}">${tarihYaz(h.tarih)}</time>${haberSatiri(h)}</li>`).join('')}
       </ol></section>` : ''}
 
-    ${konu.haberler?.length ? `<section class="bolum"><h3>Bugünkü haberler</h3>
-      <ul class="haberler">${konu.haberler.map(h => `<li>${haberSatiri(h)}</li>`).join('')}</ul></section>` : ''}
+    ${konu.haberler?.length ? `<section class="bolum"><h3>Haberler</h3>
+      <ul class="haberler">${konu.haberler.map(h => `<li>
+        ${h.tarih ? `<time datetime="${esc(h.tarih)}">${tarihYaz(h.tarih)}</time>` : ''}${haberSatiri(h)}</li>`).join('')}</ul></section>` : ''}
   </article>`;
   window.scrollTo(0, 0);
 }

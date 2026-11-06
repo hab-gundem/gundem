@@ -359,7 +359,7 @@ def secim_konulari(secim: dict) -> list[dict]:
     for kume in kumeler[:secim.get("adet", 4)]:
         haberler = sorted(kume["haberler"], key=lambda h: h["tarih"] or "", reverse=True)[:5]
         konular.append({"baslik": kume["haberler"][0]["baslik"], "tur": "secim", "secim": ad,
-                        "kategori": "spor", "tarih": haberler[0]["tarih"], "haberler": haberler,
+                        "kategori": "spor", "tarih": haberler[0]["tarih"], "haberler": haberler, "gun": secim["gun"],
                         "gerekenler": gerekenler})
     return konular
 
@@ -743,7 +743,9 @@ def soru_uret(konu: dict) -> str:
 UA_HABER = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 METIN_EN_FAZLA = 8000   # karakter; daha uzunsa paragraf sınırında kesilir
-METIN_DENEME = 3        # konu başına en fazla bu kadar haber sayfası denenir
+HABER_GUN = 3           # gündem/spor haberlerinde sayfanın kendi yayın tarihi en fazla bu kadar gün eski olabilir
+YAYIN_ALANLARI = ("article:published_time", "datepublished", "og:published_time", "published_time",
+                  "pubdate", "publishdate", "date")
 METIN_COP = re.compile(r"©|tüm hakları|abone ol|çerez|cookie|whatsapp kanal|google news|"
                        r"bizi takip edin|haberin devamı|ilginizi çekebilir", re.IGNORECASE)
 
@@ -879,32 +881,59 @@ def haber_sayfasi(link: str) -> dict:
             break
         sonuc.append(p)
         toplam += len(p)
+    yayin = None
+    for ad in YAYIN_ALANLARI:  # sayfanın kendi yayın tarihi (Google'ın verdiği tarih yanıltabiliyor)
+        yayin = tarih_coz(ayirici.meta.get(ad))
+        if yayin:
+            break
+    if not yayin:
+        for parca in ayirici.ld:
+            m = re.search(r'"datePublished"\s*:\s*"([^"]+)"', parca)
+            if m and (yayin := tarih_coz(m.group(1))):
+                break
     gorsel = ayirici.meta.get("og:image") or ayirici.meta.get("twitter:image") or ""
     gorsel = urllib.parse.urljoin(adres, html.unescape(gorsel)) if gorsel else ""
     return {"paragraflar": sonuc, "gorsel": gorsel if gorsel.startswith(("http://", "https://")) else "",
-            "link": adres}
+            "link": adres, "yayin": yayin}
 
 
 def konu_metni(konu: dict) -> dict:
-    """Konunun haberlerini sırayla dener; ilk uygun metni ve görseli döner."""
+    """Konunun her haber sayfasını açar: yayın tarihi eski olanları atar, ilk uygun metni ve görseli döner.
+
+    Google Haberler eski bir sayfayı yeni tarihle listeleyebiliyor; bu yüzden sayfanın kendi
+    yayın tarihine bakılır. Sayfa açılamazsa ya da tarih yazmıyorsa haber, Google tarihiyle kalır.
+    Konunun bütün haberleri eskiyse konunun "haberler" listesi boş kalır (konu düşürülür).
+    """
+    esik = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=konu.get("gun", HABER_GUN))).isoformat()
     kokler = kok_kumesi(konu["baslik"])
     gerekli = min(2, len(kokler))
     sonuc: dict = {}
-    for h in konu["haberler"][:METIN_DENEME]:
+    kalan = []
+    for h in konu["haberler"]:
         try:
             s = haber_sayfasi(h["link"])
         except Exception as e:
             uyari(f"Haber sayfası okunamadı ({h.get('kaynak', '')}): {e}")
+            kalan.append(h)
             continue
+        if s["yayin"]:
+            if s["yayin"] < esik:
+                uyari(f"Eski haber atıldı ({s['yayin'][:10]}): {h['baslik'][:60]}")
+                continue
+            h["tarih"] = s["yayin"]
+        kalan.append(h)
         if s["gorsel"] and not sonuc.get("gorsel"):
             sonuc["gorsel"] = s["gorsel"]
         metin = " ".join(s["paragraflar"])
-        if len(metin) >= 300 and len(kokler & kok_kumesi(metin)) >= gerekli:
+        if "metin" not in sonuc and len(metin) >= 300 and len(kokler & kok_kumesi(metin)) >= gerekli:
             sonuc.update({"metin": s["paragraflar"], "metin_kaynagi": h.get("kaynak", ""),
-                          "metin_link": s["link"]})
+                          "metin_link": s["link"], "metin_tarih": h["tarih"]})
             if s["gorsel"]:
                 sonuc["gorsel"] = s["gorsel"]
-            break
+    kalan.sort(key=lambda h: h["tarih"] or "", reverse=True)
+    konu["haberler"] = kalan
+    if kalan:
+        konu["tarih"] = kalan[0]["tarih"]
     return sonuc
 
 
@@ -1151,14 +1180,20 @@ def main() -> None:
         ekle(k, 0)
     secilen = gundem_secilen + secim_secilen + spor_secilen
 
-    print(f"{len(gundem_secilen)} gündem + {len(secim_secilen)} seçim + {len(spor_secilen)} spor konusu işleniyor...")
+    print("Haber metinleri, görseller ve yayın tarihleri alınıyor...")
+    with ThreadPoolExecutor(6) as is_havuzu:
+        metinler = list(is_havuzu.map(konu_metni, secilen))
+    for k in secilen:
+        if not k["haberler"]:
+            uyari(f"Konunun bütün haberleri eski, konu atıldı: {k['baslik'][:60]}")
+    secilen, metinler = [k for k in secilen if k["haberler"]], [m for k, m in zip(secilen, metinler) if k["haberler"]]
+    n_gundem = sum(k["kategori"] == "gundem" for k in secilen)
+    n_secim = sum(k["tur"] == "secim" for k in secilen)
+    print(f"{n_gundem} gündem + {n_secim} seçim + {len(secilen) - n_gundem - n_secim} spor konusu işleniyor...")
     ozetler = [ozet_bul(k, rss) for k in secilen]
     print("Geçmiş haberler aranıyor...")
     with ThreadPoolExecutor(4) as is_havuzu:
         gecmisler = list(is_havuzu.map(gecmis_haberler, secilen))
-    print("Haber metinleri ve görseller alınıyor...")
-    with ThreadPoolExecutor(6) as is_havuzu:
-        metinler = list(is_havuzu.map(konu_metni, secilen))
     print("Kişiler aranıyor (Wikipedia)...")
     kisi_listeleri = kisileri_bul(secilen, [o for o, _ in ozetler], gecmisler)
     konular = [konu_sonucu(k, o, ok, g, kl, m)
