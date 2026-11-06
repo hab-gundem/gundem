@@ -7,10 +7,14 @@
     "  ad: başlıkta görünen ad. dal: adın yanındaki açıklama.",
     "  arama: Google Haberler'de aranacak ifade. Tırnak tam ifade arar, eksi (-kelime) o kelimeyi dışarıda bırakır. Yazılmazsa 'ad' kullanılır.",
     "  baslikta: haber başlığında bunlardan en az biri geçmeli (alakasız haberleri eler). Yazılmazsa 'ad' kullanılır.",
-    "  gun: kaç günlük haberlere bakılsın (yazılmazsa 3). adet: en fazla kaç konu (yazılmazsa 4)."
+    "  gun: kaç günlük haberlere bakılsın (yazılmazsa 3). adet: en fazla kaç konu (yazılmazsa 4).",
+    "tercih_konu_sayisi: Gündemde, tercih edilen kaynakların kendi manşetlerinden gelen konu sayısı (0-10).",
+    "tercih_kaynaklar: Öne çıkacak yayınlar. Her konu bu sitelerde de aranır; bulunan haberler listenin başına geçer, metin önce onlardan alınır.",
+    "  ad: yayının adı. site: alan adı (ör. birgun.net)."
   ],
   "gundem_konu_sayisi": 10,
   "genel_spor_konu_sayisi": 6,
+  "tercih_konu_sayisi": 4,
   "spor_secimleri": [
     {
       "ad": "Fenerbahçe",
@@ -38,6 +42,40 @@
         "A Milli Basketbol"
       ],
       "gun": 7
+    }
+  ],
+  "tercih_kaynaklar": [
+    {
+      "ad": "BirGün",
+      "site": "birgun.net"
+    },
+    {
+      "ad": "Evrensel",
+      "site": "evrensel.net"
+    },
+    {
+      "ad": "Cumhuriyet",
+      "site": "cumhuriyet.com.tr"
+    },
+    {
+      "ad": "soL Haber",
+      "site": "haber.sol.org.tr"
+    },
+    {
+      "ad": "Sözcü",
+      "site": "sozcu.com.tr"
+    },
+    {
+      "ad": "Halk TV",
+      "site": "halktv.com.tr"
+    },
+    {
+      "ad": "T24",
+      "site": "t24.com.tr"
+    },
+    {
+      "ad": "Medyascope",
+      "site": "medyascope.tv"
     }
   ]
 }

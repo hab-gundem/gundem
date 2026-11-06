@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -32,7 +33,11 @@ ZAMAN_ASIMI = 20
 # Konu sayılarının varsayılanları; ayarlar.json'daki değerler bunların yerine geçer
 KONU_SAYISI = 10
 SPOR_SAYISI = 6
-HABER_ORANI = 0.7  # gündemin bu kadarı Google Haberler'den, kalanı Trends'ten doldurulur
+HABER_ORANI = 0.7  # tercih konularından sonra kalan gündemin bu kadarı Google Haberler'den, kalanı Trends'ten
+TERCIH_SAYISI = 4         # gündemde tercih edilen kaynakların manşetlerinden gelen konu sayısı (varsayılan)
+TERCIH_SITE_HABER = 30    # her tercih sitesinden bakılan en yeni haber sayısı
+TERCIH_KONU_HABER = 3     # bir konuya tercih sitelerinden eklenen en fazla haber
+HABER_EN_FAZLA = 8        # bir konuda en fazla haber
 GECMIS_EN_FAZLA = 8
 KISI_EN_FAZLA = 3
 
@@ -298,8 +303,8 @@ def _sayi(deger, varsayilan: int, en_az: int, en_cok: int) -> int:
         return varsayilan
 
 
-def ayarlari_oku() -> tuple[list[dict], int, int]:
-    """(spor seçimleri, gündem konu sayısı, genel spor konu sayısı) döndürür.
+def ayarlari_oku() -> tuple[list[dict], int, int, list[dict], int]:
+    """(spor seçimleri, gündem konu sayısı, genel spor konu sayısı, tercih kaynakları, tercih konu sayısı) döndürür.
 
     Dosya yoksa ya da bozuksa varsayılanlarla devam edilir; adı boş seçimler atlanır.
     """
@@ -319,9 +324,98 @@ def ayarlari_oku() -> tuple[list[dict], int, int]:
             s.pop("baslikta", None)
         s["gun"] = _sayi(s.get("gun"), 3, 1, 30)
         s["adet"] = _sayi(s.get("adet"), 4, 1, 10)
-    return (secimler,
-            _sayi(veri.get("gundem_konu_sayisi"), KONU_SAYISI, 1, 20),
-            _sayi(veri.get("genel_spor_konu_sayisi"), SPOR_SAYISI, 0, 15))
+    kaynaklar = []
+    for k in veri.get("tercih_kaynaklar", []):
+        if isinstance(k, dict) and str(k.get("site", "")).strip():
+            site = re.sub(r"^https?://|^www\.|/.*$", "", k["site"].strip().lower())
+            kaynaklar.append({"ad": str(k.get("ad", "")).strip() or site, "site": site})
+    gundem_sayisi = _sayi(veri.get("gundem_konu_sayisi"), KONU_SAYISI, 1, 20)
+    return (secimler, gundem_sayisi,
+            _sayi(veri.get("genel_spor_konu_sayisi"), SPOR_SAYISI, 0, 15),
+            kaynaklar, min(gundem_sayisi, _sayi(veri.get("tercih_konu_sayisi"), TERCIH_SAYISI, 0, 10)))
+
+
+# ---------- tercih edilen kaynaklar ----------
+# Kullanıcının seçtiği siteler: kendi manşetleri gündeme konu olarak girer, her konu bu
+# sitelerde de aranır, bulunan haberler listenin başına geçer ve metin önce onlardan alınır.
+
+def tercih_mi(kaynak: str, kaynaklar: list[dict]) -> bool:
+    """Google'ın verdiği kaynak adı (ör. "Sözcü Gazetesi", "birgun.net") tercih edilen sitelerden mi?"""
+    s = _sade(kaynak)
+    return bool(s) and any(s.startswith(_sade(k["ad"])) or s == _sade(k["site"]) for k in kaynaklar)
+
+
+def _site_haberleri(site: str) -> list[dict]:
+    try:
+        ogeler = rss_ogeleri(getir(GOOGLE_ARAMA.format(q=urllib.parse.quote(f"site:{site} when:1d"))))
+    except Exception as e:
+        uyari(f"Tercih kaynağı okunamadı ({site}): {e}")
+        return []
+    haberler = []
+    for oge in ogeler[:TERCIH_SITE_HABER]:
+        baslik, kaynak = baslik_kaynak_ayir(oge["baslik"])
+        if not bozuk_baslik(baslik):
+            haberler.append({"baslik": baslik, "kaynak": kaynak, "link": oge["link"], "tarih": oge["tarih"],
+                             "tercih": True})
+    return haberler
+
+
+def tercih_konulari(kaynaklar: list[dict]) -> list[dict]:
+    """Tercih edilen sitelerin son bir günkü haberlerini aynı olaya göre kümeler.
+
+    Konular, kaç farklı tercih kaynağının yazdığına göre sıralanır.
+    """
+    with ThreadPoolExecutor(4) as is_havuzu:
+        listeler = list(is_havuzu.map(_site_haberleri, [k["site"] for k in kaynaklar]))
+    kumeler: list[dict] = []
+    for haberler in listeler:
+        for h in haberler:
+            kokler = kok_kumesi(h["baslik"])
+            for kume in kumeler:
+                ortak = len(kokler & kume["kokler"])
+                if ortak >= 3 or (ortak >= 2 and ortak / len(kokler) >= 0.5):
+                    if all(_sade(x["kaynak"]) != _sade(h["kaynak"]) for x in kume["haberler"]):
+                        kume["haberler"].append(h)
+                        kume["kokler"] |= kokler
+                    break
+            else:
+                kumeler.append({"kokler": set(kokler), "haberler": [h]})
+    kumeler.sort(key=lambda k: (len(k["haberler"]), max(h["tarih"] or "" for h in k["haberler"])), reverse=True)
+    return [{"baslik": k["haberler"][0]["baslik"], "tur": "tercih", "tarih": k["haberler"][0]["tarih"],
+             "haberler": k["haberler"][:5]} for k in kumeler]
+
+
+def tercih_haberleri_ekle(konu: dict, kaynaklar: list[dict]) -> None:
+    """Konuyu tercih edilen sitelerde arar; bulunanları ve zaten listedeki tercih haberlerini başa alır."""
+    for h in konu["haberler"]:
+        h["tercih"] = h.get("tercih") or tercih_mi(h.get("kaynak", ""), kaynaklar)
+    sorgu = arama_sorgusu(konu)
+    if konu["tur"] != "tercih" and sorgu:
+        siteler = " OR ".join(f"site:{k['site']}" for k in kaynaklar)
+        q = f"{sorgu} ({siteler}) when:{konu.get('gun', HABER_GUN)}d"
+        try:
+            ogeler = rss_ogeleri(getir(GOOGLE_ARAMA.format(q=urllib.parse.quote(q))))
+        except Exception as e:
+            uyari(f"Tercih araması başarısız ({sorgu}): {e}")
+            ogeler = []
+        sorgu_kokleri = kok_kumesi(sorgu)
+        gerekli = min(2, len(sorgu_kokleri))
+        var = {tr_kucuk(h["baslik"]) for h in konu["haberler"]}
+        kaynaklari = {_sade(h["kaynak"]) for h in konu["haberler"] if h["tercih"]}
+        eklenen = []
+        for oge in ogeler:
+            baslik, kaynak = baslik_kaynak_ayir(oge["baslik"])
+            if (tr_kucuk(baslik) in var or _sade(kaynak) in kaynaklari
+                    or len(kok_kumesi(baslik) & sorgu_kokleri) < gerekli):
+                continue
+            kaynaklari.add(_sade(kaynak))
+            eklenen.append({"baslik": baslik, "kaynak": kaynak, "link": oge["link"], "tarih": oge["tarih"],
+                            "tercih": True})
+            if len(eklenen) == TERCIH_KONU_HABER:
+                break
+        konu["haberler"] = eklenen + konu["haberler"]
+    konu["haberler"].sort(key=lambda h: not h["tercih"])  # kararlı sıralama: kendi içlerinde sıra korunur
+    konu["haberler"] = konu["haberler"][:HABER_EN_FAZLA]
 
 
 def secim_konulari(secim: dict) -> list[dict]:
@@ -743,6 +837,7 @@ def soru_uret(konu: dict) -> str:
 UA_HABER = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
             "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
 METIN_EN_FAZLA = 8000   # karakter; daha uzunsa paragraf sınırında kesilir
+SAYFA_DENEME = 3        # metin bulunana kadar konu başına en fazla bu kadar haber sayfası açılır
 HABER_GUN = 3           # gündem/spor haberlerinde sayfanın kendi yayın tarihi en fazla bu kadar gün eski olabilir
 YAYIN_ALANLARI = ("article:published_time", "datepublished", "og:published_time", "published_time",
                   "pubdate", "publishdate", "date")
@@ -759,13 +854,30 @@ def sayfa_getir(url: str, veri: bytes | None = None, basliklar: dict | None = No
         return govde.decode(yanit.headers.get_content_charset() or "utf-8", "replace"), yanit.geturl()
 
 
+_GOOGLE_KAPISI = threading.Semaphore(2)  # Google bağlantı çözmeye aynı anda en fazla 2 istek (yoksa 429)
+
+
+def _google_getir(url: str, veri: bytes | None = None, basliklar: dict | None = None) -> str:
+    """news.google.com isteği; 429 gelirse bekleyip yeniden dener."""
+    for deneme in range(4):
+        try:
+            with _GOOGLE_KAPISI:
+                return sayfa_getir(url, veri, basliklar)[0]
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or deneme == 3:
+                raise
+            sure = 10 * 2 ** deneme
+            uyari(f"429, {sure} sn bekleniyor: news.google.com")
+            time.sleep(sure)
+
+
 def google_linki_coz(link: str) -> str:
     """news.google.com/rss/articles/... bağlantısını haberin asıl adresine çevirir."""
     m = re.search(r"news\.google\.com/(?:rss/)?articles/([^?/]+)", link)
     if not m:
         return link
     gid = m.group(1)
-    sayfa, _ = sayfa_getir(f"https://news.google.com/articles/{gid}?hl=tr&gl=TR&ceid=TR:tr")
+    sayfa = _google_getir(f"https://news.google.com/articles/{gid}?hl=tr&gl=TR&ceid=TR:tr")
     imza = re.search(r'data-n-a-sg="([^"]+)"', sayfa)
     zaman = re.search(r'data-n-a-ts="([^"]+)"', sayfa)
     if not (imza and zaman):
@@ -774,8 +886,8 @@ def google_linki_coz(link: str) -> str:
                              None, None, 0, 1], "X", "X", 1, [1, 1, 1], 1, 1, None, 0, 0, None, 0],
              gid, int(zaman.group(1)), imza.group(1)]
     govde = "f.req=" + urllib.parse.quote(json.dumps([[["Fbv4je", json.dumps(istek), None, "generic"]]]))
-    yanit, _ = sayfa_getir("https://news.google.com/_/DotsSplashUi/data/batchexecute", govde.encode(),
-                           {"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
+    yanit = _google_getir("https://news.google.com/_/DotsSplashUi/data/batchexecute", govde.encode(),
+                          {"Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"})
     return json.loads(json.loads(yanit.split("\n\n")[1])[0][2])[1]
 
 
@@ -898,7 +1010,7 @@ def haber_sayfasi(link: str) -> dict:
 
 
 def konu_metni(konu: dict) -> dict:
-    """Konunun her haber sayfasını açar: yayın tarihi eski olanları atar, ilk uygun metni ve görseli döner.
+    """Metin bulunana kadar haber sayfalarını açar: yayın tarihi eski olanları atar, ilk uygun metni ve görseli döner.
 
     Google Haberler eski bir sayfayı yeni tarihle listeleyebiliyor; bu yüzden sayfanın kendi
     yayın tarihine bakılır. Sayfa açılamazsa ya da tarih yazmıyorsa haber, Google tarihiyle kalır.
@@ -908,8 +1020,11 @@ def konu_metni(konu: dict) -> dict:
     kokler = kok_kumesi(konu["baslik"])
     gerekli = min(2, len(kokler))
     sonuc: dict = {}
-    kalan = []
-    for h in konu["haberler"]:
+    kalan, atilan = [], set()
+    for sira, h in enumerate(konu["haberler"]):
+        if sira >= SAYFA_DENEME or "metin" in sonuc:  # Google'ı yormamak için: metin bulununca kalanlar açılmaz
+            kalan.append(h)
+            continue
         try:
             s = haber_sayfasi(h["link"])
         except Exception as e:
@@ -919,6 +1034,7 @@ def konu_metni(konu: dict) -> dict:
         if s["yayin"]:
             if s["yayin"] < esik:
                 uyari(f"Eski haber atıldı ({s['yayin'][:10]}): {h['baslik'][:60]}")
+                atilan.add(tr_kucuk(h["baslik"]))
                 continue
             h["tarih"] = s["yayin"]
         kalan.append(h)
@@ -930,10 +1046,12 @@ def konu_metni(konu: dict) -> dict:
                           "metin_link": s["link"], "metin_tarih": h["tarih"]})
             if s["gorsel"]:
                 sonuc["gorsel"] = s["gorsel"]
-    kalan.sort(key=lambda h: h["tarih"] or "", reverse=True)
+    kalan.sort(key=lambda h: (bool(h.get("tercih")), h["tarih"] or ""), reverse=True)
     konu["haberler"] = kalan
     if kalan:
-        konu["tarih"] = kalan[0]["tarih"]
+        konu["tarih"] = max(h["tarih"] or "" for h in kalan) or None
+        if tr_kucuk(konu["baslik"]) in atilan:  # başlık eski haberden geliyordu
+            konu["baslik"] = max(kalan, key=lambda h: h["tarih"] or "")["baslik"]
     return sonuc
 
 
@@ -1113,7 +1231,8 @@ def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], ki
         "ozet": ozet,
         "ozet_kaynagi": ozet_kaynagi,
         **metin,
-        "haberler": [{k: h[k] for k in ("baslik", "kaynak", "link", "tarih")} for h in konu["haberler"]],
+        "haberler": [{**{k: h[k] for k in ("baslik", "kaynak", "link", "tarih")},
+                      **({"tercih": True} if h.get("tercih") else {})} for h in konu["haberler"]],
         "gecmis": gecmis,
         "kisiler": konu["kisiler"],
         "soru": soru_uret(konu),
@@ -1128,14 +1247,14 @@ def main() -> None:
     sys.stderr.reconfigure(encoding="utf-8")
 
     print("Kaynaklar okunuyor...")
-    secimler, konu_sayisi, spor_sayisi = ayarlari_oku()
-    haber_en_fazla = max(1, round(konu_sayisi * HABER_ORANI))
+    secimler, konu_sayisi, spor_sayisi, kaynaklar, tercih_sayisi = ayarlari_oku()
     with ThreadPoolExecutor(4) as havuz_is:
         f_haber = havuz_is.submit(google_haberler_konulari)
         f_spor = havuz_is.submit(google_haberler_konulari, GOOGLE_SPOR)
         f_trend = havuz_is.submit(trends_konulari)
         f_rss = havuz_is.submit(rss_havuzu)
         f_secimler = [havuz_is.submit(secim_konulari, s) for s in secimler]
+        f_tercih = havuz_is.submit(tercih_konulari, kaynaklar) if kaynaklar else None
     haber_konulari, rss = f_haber.result(), f_rss.result()
     secim_secilen: list[dict] = []
     for f in f_secimler:
@@ -1170,6 +1289,13 @@ def main() -> None:
             k["kategori"] = "gundem"
             gundem_secilen.append(k)
 
+    if f_tercih:  # tercih edilen kaynakların manşetleri gündemin başına
+        for k in f_tercih.result():
+            if len(gundem_secilen) >= tercih_sayisi:
+                break
+            if not spor_mu(k):
+                ekle(k, tercih_sayisi)
+    haber_en_fazla = len(gundem_secilen) + max(1, round((konu_sayisi - len(gundem_secilen)) * HABER_ORANI))
     for k in haber_konulari:
         ekle(k, haber_en_fazla)
     for k in trend_konulari:
@@ -1180,6 +1306,10 @@ def main() -> None:
         ekle(k, 0)
     secilen = gundem_secilen + secim_secilen + spor_secilen
 
+    if kaynaklar:
+        print("Konular tercih edilen kaynaklarda aranıyor...")
+        with ThreadPoolExecutor(4) as is_havuzu:
+            list(is_havuzu.map(lambda k: tercih_haberleri_ekle(k, kaynaklar), secilen))
     print("Haber metinleri, görseller ve yayın tarihleri alınıyor...")
     with ThreadPoolExecutor(6) as is_havuzu:
         metinler = list(is_havuzu.map(konu_metni, secilen))

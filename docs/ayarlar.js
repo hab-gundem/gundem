@@ -13,14 +13,16 @@ const ANAHTAR_BILGISI = 'gundem.anahtar.bilgi'; // {ad, tarih}: ekranda gösteri
 const SINIRLAR = {
   gundem_konu_sayisi: [1, 20, 10],
   genel_spor_konu_sayisi: [0, 15, 6],
+  tercih_konu_sayisi: [0, 10, 4],
   gun: [1, 30, 3],
   adet: [1, 10, 4],
 };
 
 // {veri, sha, yukleniyor, hata, mesaj: {tur, metin}, kaydediliyor, degisti, yenile}
-// duzenlenen: düzenleme alanı açık olan seçimin sırası (yoksa null); anahtarAcik: anahtar düzenleme alanı
+// duzenlenen: düzenleme alanı açık olan seçimin sırası (yoksa null); duzenlenenKaynak: aynısı tercih kaynakları için
+// anahtarAcik: anahtar düzenleme alanı
 const ayar = { veri: null, sha: null, yukleniyor: false, hata: null, mesaj: null,
-  kaydediliyor: false, degisti: false, yenile: true, duzenlenen: null, anahtarAcik: false };
+  kaydediliyor: false, degisti: false, yenile: true, duzenlenen: null, duzenlenenKaynak: null, anahtarAcik: false };
 
 function anahtarOku() {
   try { return localStorage.getItem(ANAHTAR_DEPOSU) || ''; } catch (e) { return ''; }
@@ -102,6 +104,7 @@ async function ayarlariYukle() {
     const dosya = await ghIstek(`contents/${GH_DOSYA}?ref=main`);
     ayar.veri = JSON.parse(base64Coz(dosya.content));
     if (!Array.isArray(ayar.veri.spor_secimleri)) ayar.veri.spor_secimleri = [];
+    if (!Array.isArray(ayar.veri.tercih_kaynaklar)) ayar.veri.tercih_kaynaklar = [];
     ayar.sha = dosya.sha;
     ayar.degisti = false;
   } catch (e) {
@@ -127,6 +130,13 @@ function ayarHatalari(v) {
       hatalar.push(`${alan === 'gundem_konu_sayisi' ? 'Gündem' : 'Genel spor'} konu sayısı ${enAz} ile ${enCok} arasında bir tam sayı olmalı.`);
     }
   }
+  const tercih = v.tercih_konu_sayisi;
+  if (tercih !== undefined && tercih !== '' && sinirla(tercih, SINIRLAR.tercih_konu_sayisi) === null) {
+    hatalar.push(`Tercih kaynaklarından gelen konu sayısı ${SINIRLAR.tercih_konu_sayisi[0]} ile ${SINIRLAR.tercih_konu_sayisi[1]} arasında olmalı.`);
+  }
+  v.tercih_kaynaklar.forEach((k, i) => {
+    if (!(k.site || '').trim()) hatalar.push(`${i + 1}. kaynak: site boş olamaz (ör. birgun.net).`);
+  });
   const adlar = new Set();
   v.spor_secimleri.forEach((s, i) => {
     const ad = (s.ad || '').trim();
@@ -148,6 +158,12 @@ function temizHal(v) {
   const kopya = JSON.parse(JSON.stringify(v));
   kopya.gundem_konu_sayisi = Number(kopya.gundem_konu_sayisi);
   kopya.genel_spor_konu_sayisi = Number(kopya.genel_spor_konu_sayisi);
+  if (kopya.tercih_konu_sayisi === undefined || kopya.tercih_konu_sayisi === '') delete kopya.tercih_konu_sayisi;
+  else kopya.tercih_konu_sayisi = Number(kopya.tercih_konu_sayisi);
+  kopya.tercih_kaynaklar = kopya.tercih_kaynaklar.map(k => ({
+    ad: (k.ad || '').trim(),
+    site: k.site.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/.*$/, ''),
+  }));
   kopya.spor_secimleri = kopya.spor_secimleri.map(s => {
     const t = { ...s, ad: s.ad.trim(), dal: (s.dal || '').trim() };
     if ((t.arama || '').trim()) t.arama = t.arama.trim(); else delete t.arama;
@@ -227,9 +243,10 @@ function sayiAlani(etiket, alan, deger, aciklama, sinir, i) {
     ${aciklama ? `<small>${aciklama}</small>` : ''}</label>`;
 }
 
-function metinAlani(etiket, alan, deger, aciklama, i, yerTutucu = '') {
+function metinAlani(etiket, alan, deger, aciklama, i, yerTutucu = '', liste = '') {
   return `<label class="alan"><span>${etiket}</span>
     <input type="text" value="${esc(deger ?? '')}" data-alan="${alan}" data-i="${i}" placeholder="${esc(yerTutucu)}"
+      ${liste ? `data-liste="${liste}"` : ''}
       autocapitalize="off" autocomplete="off" spellcheck="false">
     ${aciklama ? `<small>${aciklama}</small>` : ''}</label>`;
 }
@@ -261,6 +278,27 @@ function secimKarti(s, i, toplam) {
     <div class="dugmeler">
       <button type="button" class="dugme kotu" data-ayar="sil" data-i="${i}">Sil</button>
       <button type="button" class="dugme" data-ayar="duzenle" data-i="${i}">Kapat</button>
+    </div>
+    </div>` : ''}
+  </li>`;
+}
+
+// Tercih edilen kaynaklar: haberleri öne çıkacak yayınlar (ad + site)
+function kaynakKarti(k, i) {
+  const acik = ayar.duzenlenenKaynak === i;
+  return `<li>
+    <div class="ayar-satiri">
+      <span class="ad"><b>${esc(k.ad || k.site || 'Yeni kaynak')}</b>${k.site ? `<small>${esc(k.site)}</small>` : ''}</span>
+      <span class="secim-dugmeleri">
+        <button type="button" data-ayar="kaynak-duzenle" data-i="${i}" class="kalem-dugme" aria-expanded="${acik}" aria-label="Düzenle">✎</button>
+      </span>
+    </div>
+    ${acik ? `<div class="duzen-alani">
+    ${metinAlani('Ad', 'ad', k.ad, 'Yayının adı.', i, 'ör. BirGün', 'tercih_kaynaklar')}
+    ${metinAlani('Site', 'site', k.site, 'Sitenin adresi. Haberler bu sitede aranır.', i, 'ör. birgun.net', 'tercih_kaynaklar')}
+    <div class="dugmeler">
+      <button type="button" class="dugme kotu" data-ayar="kaynak-sil" data-i="${i}">Sil</button>
+      <button type="button" class="dugme" data-ayar="kaynak-duzenle" data-i="${i}">Kapat</button>
     </div>
     </div>` : ''}
   </li>`;
@@ -332,6 +370,17 @@ function ayarlarCiz() {
         ${sayiAlani('Genel spor', 'genel_spor_konu_sayisi', v.genel_spor_konu_sayisi, `${SINIRLAR.genel_spor_konu_sayisi[0]}-${SINIRLAR.genel_spor_konu_sayisi[1]}`, SINIRLAR.genel_spor_konu_sayisi)}
       </div>
     </section>
+    <section class="bolum"><h3>Tercih ettiğim kaynaklar</h3>
+      <p class="bos-satir">Her konu bu sitelerde de aranır; bulunan haberler listenin başına geçer, metin önce onlardan alınır.
+        Bu sitelerin manşetleri de gündeme konu olarak girer.</p>
+      ${v.tercih_kaynaklar.length
+        ? `<ul class="ayar-liste">${v.tercih_kaynaklar.map(kaynakKarti).join('')}</ul>`
+        : '<p class="bos-satir">Henüz kaynak yok. Gündem Google Haberler\'in öne çıkardıklarından oluşur.</p>'}
+      <button type="button" class="dugme ekle-dugme" data-ayar="kaynak-ekle">+ Kaynak ekle</button>
+      <div class="ayar-karti alan-satiri">
+        ${sayiAlani('Gündemde bu kaynakların manşetlerinden', 'tercih_konu_sayisi', v.tercih_konu_sayisi, `${SINIRLAR.tercih_konu_sayisi[0]}-${SINIRLAR.tercih_konu_sayisi[1]} konu (gündem sayısının içinden)`, SINIRLAR.tercih_konu_sayisi)}
+      </div>
+    </section>
     <section class="bolum"><h3>Spor seçimleri</h3>
       ${v.spor_secimleri.length
         ? `<ul class="ayar-liste">${v.spor_secimleri.map((s, i) => secimKarti(s, i, v.spor_secimleri.length)).join('')}</ul>`
@@ -357,9 +406,13 @@ document.addEventListener('input', e => {
   const g = e.target;
   if (!ayarSayfasindaMi() || !g.dataset.alan || !ayar.veri) return;
   if (g.dataset.alan === 'yenile') { ayar.yenile = g.checked; return; }
-  const hedef = g.dataset.i === undefined ? ayar.veri : ayar.veri.spor_secimleri[Number(g.dataset.i)];
+  const liste = g.dataset.liste || 'spor_secimleri';
+  const hedef = g.dataset.i === undefined ? ayar.veri : ayar.veri[liste][Number(g.dataset.i)];
   hedef[g.dataset.alan] = g.value;
-  if (g.dataset.alan === 'ad') {
+  if (liste === 'tercih_kaynaklar') {
+    const baslik = g.closest('li')?.querySelector('.ayar-satiri .ad b');
+    if (baslik) baslik.textContent = hedef.ad || hedef.site || 'Yeni kaynak';
+  } else if (g.dataset.alan === 'ad') {
     const baslik = g.closest('li')?.querySelector('.ayar-satiri .ad b');
     if (baslik) baslik.textContent = `${Number(g.dataset.i) + 1}. ${g.value || 'Yeni seçim'}`;
   }
@@ -396,11 +449,27 @@ document.addEventListener('click', e => {
     ayar.anahtarAcik = !ayar.anahtarAcik;
   } else if (eylem === 'duzenle') {
     ayar.duzenlenen = ayar.duzenlenen === i ? null : i;
+  } else if (eylem === 'kaynak-duzenle') {
+    ayar.duzenlenenKaynak = ayar.duzenlenenKaynak === i ? null : i;
+  } else if (eylem === 'kaynak-ekle') {
+    ayar.veri.tercih_kaynaklar.push({ ad: '', site: '' });
+    ayar.duzenlenenKaynak = ayar.veri.tercih_kaynaklar.length - 1;
+    ayar.degisti = true;
+    ayarlarCiz();
+    document.querySelector('.duzen-alani input')?.focus();
+    return;
+  } else if (eylem === 'kaynak-sil') {
+    const k = ayar.veri.tercih_kaynaklar[i];
+    if (!confirm(`"${k.ad || k.site || 'Yeni kaynak'}" silinsin mi?`)) return;
+    ayar.veri.tercih_kaynaklar.splice(i, 1);
+    ayar.duzenlenenKaynak = null;
+    ayar.degisti = true;
   } else if (eylem === 'vazgec') {
     if (ayar.degisti && !confirm('Kaydedilmemiş değişiklikler geri alınsın mı?')) return;
     ayar.veri = null;
     ayar.mesaj = null;
     ayar.duzenlenen = null;
+    ayar.duzenlenenKaynak = null;
     ayarlariYukle();
     return;
   } else if (eylem === 'ekle') {
