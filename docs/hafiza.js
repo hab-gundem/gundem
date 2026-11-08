@@ -15,6 +15,7 @@ const HAFIZA_BOLUMLERI = {
     soru: 'Fıkrayı baştan sona anlat.' },
   siir: { ad: 'Şiirler', yazar: 'Şair', ek: 'Hikâyesi', soru: 'Şiiri ezberden söyle. Hikâyesi ne?' },
   yetiskin: { ad: 'Yetişkin içerik', yazar: 'Şair', ek: 'Notum', soru: 'Beyitleri hatırla. Ne anlatıyor?' },
+  hiciv: { ad: 'Hicivler', yazar: 'Şair', ek: 'Kimi, neyi hicvediyor (bağlam)', soru: 'Hicvi söyle. Kimi, neden hicvediyor?' },
   sarki: { ad: 'Şarkı ve türküler', altlar: ['Şarkı', 'Türkü'], yazar: 'Söz / müzik / yöre', ek: 'Hikâyesi',
     soru: 'Sözlerini söyle. Hikâyesi ne?' },
   karikatur: { ad: 'Karikatürler', yazar: 'Çizer', ek: 'Esprisi / notum', soru: 'Karikatürü ve esprisini anlat.' },

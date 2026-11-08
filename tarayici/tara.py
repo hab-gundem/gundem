@@ -1193,6 +1193,7 @@ HAFIZA_KATEGORILERI = {
     "soz": ("tr.wikiquote.org", ["Türk yazarlar", "Yazarlar"]),
     "siir": ("", []),  # Ömer Hayyam rubaileri (Vikikaynak'ta yok, aşağıdaki siteden)
     "yetiskin": ("", []),  # müstehcen divan şiiri; metinler tarayici/yetiskin/ altında
+    "hiciv": ("", []),  # Neyzen Tevfik, Şair Eşref; metinler tarayici/hiciv/hiciv.json
 }
 HAYYAM_SAYFA = "https://www.xn--edebiyatgretmeni-twb.net/rubailer{}.htm"  # 1. sayfa ekisiz, sonra 2…15
 HAYYAM_SAYFA_SAYISI = 15
@@ -1365,6 +1366,23 @@ def _gunun_yetiskin_parcasi(gun: str) -> dict | None:
             "link": eser["link"], "gorsel": "", "kaynak": eser["kaynak"]}
 
 
+def _gunun_hicvi(gun: str) -> dict | None:
+    """tarayici/hiciv/hiciv.json'dan tarihe bağlı bir hiciv."""
+    dosya = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hiciv", "hiciv.json")
+    with open(dosya, encoding="utf-8") as f:
+        siirler = json.load(f)["siirler"]
+    if not siirler:
+        return None
+    s = _gunun_sirasi([str(i) for i in range(len(siirler))], "hiciv", gun)[0]
+    s = siirler[int(s)]
+    anlam = s.get("anlam") or []
+    return {"bolum": "hiciv", "baslik": s["baslik"], "yazar": s["sair"], "metin": s["metin"],
+            **({"anlam": anlam, "anlam_notu": "Bugünkü Türkçe karşılıklar Claude tarafından yazıldı; akademik çeviri değildir."}
+               if any(anlam) else {}),
+            "bilgi": s.get("baglam", ""), "bilgi_baslik": "Kimi, neyi hicvediyor",
+            "link": s.get("link", ""), "gorsel": "", "kaynak": s.get("kaynak", "")}
+
+
 def bugun_tr() -> str:
     return (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=3)).date().isoformat()
 
@@ -1383,6 +1401,8 @@ def hafiza_kartlari() -> list[dict]:
                 kart = _gunun_rubaisi(gun)
             elif tur == "yetiskin":
                 kart = _gunun_yetiskin_parcasi(gun)
+            elif tur == "hiciv":
+                kart = _gunun_hicvi(gun)
             else:
                 for baslik in adaylar[:5]:
                     yazi = _wiki_yazisi(baslik)
