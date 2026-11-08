@@ -2,7 +2,7 @@
 // yazılır, ağ yoksa son kaydedilen kullanılır (böylece güncellemeler hemen görünür).
 // Kişi fotoğrafları görüldükçe önbelleğe alınır.
 
-const SURUM = 'gundem-v15';
+const SURUM = 'gundem-v16';
 const KABUK = ['./', 'index.html', 'app.js', 'ayarlar.js', 'hafiza.js', 'style.css', 'manifest.webmanifest',
   'ikon.svg', 'ikon-192.png', 'ikon-512.png'];
 const RESIM_ONBELLEGI = 'gundem-resimler';
@@ -26,7 +26,8 @@ self.addEventListener('fetch', e => {
 
   if (adres.origin === location.origin) {
     e.respondWith(
-      fetch(istek)
+      // no-cache: tarayıcının HTTP önbelleğini (GitHub Pages 10 dk tutar) atla, sunucuya sor
+      fetch(istek, { cache: 'no-cache' })
         .then(yanit => {
           if (yanit.ok) {
             const kopya = yanit.clone();
