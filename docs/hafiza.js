@@ -142,10 +142,15 @@ function hafizaKartCiz(id, tekrardan) {
   window.scrollTo(0, 0);
 }
 
+// Her paragraf; bugünkü Türkçe karşılığı (anlam) varsa hemen altında
+const metinParagraflari = kart => kart.metin.map((p, i) => `<p>${esc(p)}</p>`
+  + (kart.anlam?.[i] ? `<p class="anlam">${esc(kart.anlam[i])}</p>` : '')).join('');
+
 // Kart metni: haber metni gibi uzun basınca kısalır ("Devamını oku")
 function hafizaMetni(kart) {
   if (!kart.metin?.length) return '';
-  return `<div class="haber-metni satirli" data-uzun-bas>${kart.metin.map(p => `<p>${esc(p)}</p>`).join('')}</div>
+  return `<div class="haber-metni satirli" data-uzun-bas>${metinParagraflari(kart)}</div>
+    ${kart.anlam_notu ? `<div class="kaynak-notu">${esc(kart.anlam_notu)}</div>` : ''}
     <button type="button" class="devami-dugme" data-eylem="devami">Devamını oku ▾</button>
     <div class="kaynak-notu"><span class="ipucu-yazi">Kısaltmak için metne basılı tut</span></div>`;
 }
@@ -158,7 +163,7 @@ function hafizaTekrarIcerigi(kart, acik) {
   return `${ust}<div class="cevap">
     ${kart.gorsel ? `<img class="haber-gorseli" src="${kart.gorsel.startsWith('data:image/') ? kart.gorsel : guvenliAdres(kart.gorsel)}"
       alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}
-    ${kart.metin?.length ? `<div class="satirli">${kart.metin.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : ''}
+    ${kart.metin?.length ? `<div class="satirli">${metinParagraflari(kart)}</div>` : ''}
     ${kart.ek ? `<section class="bolum"><h3>${esc(b.ek)}</h3><p class="satirli">${esc(kart.ek)}</p></section>` : ''}
     ${kart.bilgi ? `<section class="bolum"><h3>${esc(kart.bilgi_baslik || 'Bilgi')}</h3><p class="satirli">${esc(kart.bilgi)}</p></section>` : ''}
     <p class="kaynak-notu"><a href="#/hafiza/k/${encodeURIComponent(kart.id)}/tekrar">Kartın tamamını aç</a></p>

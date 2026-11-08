@@ -1340,7 +1340,7 @@ def _gunun_rubaisi(gun: str) -> dict | None:
     return None
 
 
-YETISKIN_DOSYALARI = ["sevk-engiz.json"]  # tarayici/yetiskin/ altında; {eser, yazar, kaynak, link, beyitler}
+YETISKIN_DOSYALARI = ["sevk-engiz.json", "zenanname.json"]  # tarayici/yetiskin/ altında; {eser, yazar, kaynak, link, beyitler}
 YETISKIN_BEYIT = 12                       # günün parçası kaç beyit
 
 
@@ -1359,6 +1359,8 @@ def _gunun_yetiskin_parcasi(gun: str) -> dict | None:
     bolumler = list(dict.fromkeys(b["bolum"] for b in parca if b.get("bolum")))
     return {"bolum": "yetiskin", "baslik": f"{eser['eser']} ({bas + 1}-{bas + adet}. beyitler)",
             "yazar": eser["yazar"], "metin": [b["b"] for b in parca],
+            **({"anlam": [b.get("a", "") for b in parca], "anlam_notu": eser.get("anlam_notu", "")}
+               if any(b.get("a") for b in parca) else {}),
             "bilgi": "\n".join(bolumler), "bilgi_baslik": "Eserin bölümü",
             "link": eser["link"], "gorsel": "", "kaynak": eser["kaynak"]}
 

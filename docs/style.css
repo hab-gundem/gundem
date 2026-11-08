@@ -352,3 +352,6 @@ a.ekle-dugme { display: block; text-align: center; text-decoration: none; color:
 .onceki-konular { margin-top: 24px; }
 .onceki-konular > summary { cursor: pointer; font-weight: 600; color: var(--soluk); padding: 10px 0; }
 .onceki-konular[open] > summary { margin-bottom: 8px; }
+
+/* Eski metinlerin bugünkü Türkçe karşılığı */
+.satirli p.anlam { color: var(--soluk); font-style: italic; margin-top: -6px; }
