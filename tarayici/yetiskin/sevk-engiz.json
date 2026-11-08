@@ -1,0 +1,3116 @@
+{
+ "eser": "Şevk-engîz",
+ "yazar": "Sünbülzâde Vehbî",
+ "kaynak": "Bahadır Sürelli, XVIII. Yüzyıl Osmanlı Şiirinde Değişim ve Sünbülzâde Vehbî'nin Şevk-engîz'i (Bilkent Üniv. yüksek lisans tezi, 2007), Ek",
+ "link": "https://repository.bilkent.edu.tr/server/api/core/bitstreams/3e4b4fd7-5a7d-4143-a639-b15f8ff6adc2/content",
+ "beyitler": [
+  {
+   "b": "nakl eder bir sühan-ârâ-yı cihân\npîr-i şûrîde-dil-i tâze-beyân",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "der ki var idi iki ehl-i fücûr\nşehr-i İstanbul içinde meşhûr",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "birisi sırmalı zen-pâre idi\nbiri gök gözlü gulâm-pâre idi",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "ikisi biri birinden rüsvâ\niki şeytân idiler recme sezâ",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "her biri mâhir idi kârında\nsan'at-ı mefsedet-âsârında",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "kullanıp kârların gündeliğe\nişemezdi ikisi bir deliğe",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "iki mısrâ' idi gûyâ gidiler\nmatla'-ı şi'r-i Hevâyî idiler",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "geçmedi yerlere ol iki gidi\nsanki bir çifte çatal kazık idi",
+   "bolum": "lî-merhûm Vehbî Efendi"
+  },
+  {
+   "b": "hele zen-pâre-i bed-fercâmın\no leked-horde-i hâs u 'âmın",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "mâcerâsı çoğidi dünyâda\nana derlerdi Suyolcızâde",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Bolu’dan gelmiş idi mâder ü eb\nsonra çıkdı bu da vâsi'-mezheb",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "kavrıyacağın edip endîşe\nbabası kârın edindi pîşe",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "şadrevâniyye suyun bulmuş idi\nhavzı fıskiyye ile tolmuş idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Akdeniz sularına olsa revân\nküs-i deryâya kalırdı hayrân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "bu suda olmuş idi yek-mâye\nâferînler dediren sakkâya",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "gözünü yıldıza dikse nâgâh\nZühre’den gayrıya etmezdi nigâh",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sabra miftâh[ü’l]-ferec dense hemân\nderdi sâkin oku orayı amân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "görse bir duhter-i gâret-ger-i dîn\nşaşırıp kıblesin ol bed-âyîn",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "belki mânende-i Şeyh-i San'ân\nreme-i hûke olurdı çobân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "râh-ı hizlânda ol bî-vâye\npeyrev olmuş idi bir sıysâye",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "cây-gâh etmiş idi Kıztaşı’n\nkızların taş yarardı başın",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Çatladukapı’da gündüz der-bân\ngece de Sulusaray’da mihmân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "içmese gâhî Çatalçeşme’den âb\nmeşrebince olamazdı sîr-âb",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "bir ziyâfetde bulunsaydı gidi\nyediği cümle kadınbûtı idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "kollar atmışdı o şahs-ı bî-pâk\nkonşı dîvârına mânende-i tâk",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "tahta perde yarığından pinhân\nharem-i câra olurdı nigerân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "kârhâne gezerek ol mekkâr\noldu bir hâne-be-dûş-ı bî-kâr",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "gerçi olmışdı zükûret zen-pâre\n'avret içün yine pâre pâre",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "ki zarûretle çekip derd-i 'acûz\noldu efsürde-dil-i berd-i 'acûz",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "nakd-i vakt idi giyse dîvânı\nakçesiz eyler idi seyrânı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "nev-be-nev câme giyerdi viresi\naldatırdı nice müflis teresi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "zîb ü zîverle olup telli bebek\ngösterip hançeri çalkardı göbek",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sanki allarla gelincik çiçeği\nzenne kolbaşısının kız köçeği",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "çekme servî çıkarıp destâre\nkırılıp başlar idi reftâre",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "olsa başında dahı taş yarığı\nçatal eylerdi o telli sarığı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "salınıp kaşını gözün süzerek\nsöylese kız gibi ağzın büzerek",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "uzatıp boynını gerdân kırarak\nköşe başında bıyıklar burarak",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "yağlanıp da sürünürdü yâre\nçıkarırdı kokusun bî-çâre",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "gözünün sürmesi pek taşkın idi\nsürmeli gözler için şaşkın idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "şâhid-i zûrî idi burnu meğer\nsanki Burnâz Beg idi zûr-âver",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sîm-i sâ'idlere karşı gûyâ\nkoluna na'l ile urmuş tamğâ",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "kanda gîsûsını sarkıtsa zenân\nbu da sarkıntılık eylerdi hemân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "söz atıp yanlarına varır idi\nrahmı vardır diyü yalvarır idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "cürmüne 'özr ederek subh u mesâ\nsanki olmuşdu ebû 'özr-i nesâ",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "yalana kurmuş idî başka zemîn\nser-i sermâyesi bin dürlü yemîn",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "gâhi pâdır kül-i bâb-ı hammâm\ngül satardı sanasın ol nâ-kâm",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sûk-ı zer-gerde görüb nisvânı\npûtelerde erimişdi cânı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "derdi altın takınan dildâre\naltına batıracak cân-pâre",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Zennecilerkapısı’nda gûyâ\nyerleşip dikmiş idi özge 'asâ",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "nakşın alırdı bakıp örneğine\nsemt-i Yağlıkcı’da zen-dernekte",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "dili sarkıp salınan uckûra\nsulanıp ağzı olurdı şûra",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sûk-i haffâfdan etdikce güzer\nkınalı bir topuğa etse nazar",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "açılıp ağzı misâl-i pâpûş\nterliği şevkine eylerdi hurûş",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "cem' edip köhne ref îkin bir alay\ntolanıp eyler idi devr-i alay",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "geçse bir semte gürûh-ı nisvân\no gün alırdı hemân pûye-künân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "seyr-i mevlûde çekerdi hasret\nsanasınkim toğururdu nekbet",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "dolu dizgin gezip Atmeydânı’n\ndolaşırdı koşarak her yanın",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Koçılar semtin ederdi devrân\nsan tekerlek idi ol ser-gerdân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Cum'a’da ermek için matlûba\nsabrı kalmazdı varıp Eyyûb’a",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "türbe etrâfını devrân ederek\ncânı cânâneye kurbân ederek",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "teni kaymak gibiler şevkinden\nSütçüler yanın ederdi mesken",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "erişip mevsim-i Kâğıdhâne\nnâzenînler çıkıcak seyrâne",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "der idi meyl-i teferrücle hemân\nsad temennâ ederek ez-dil ü cân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "ya çekip çifte kayık fesle kürek\nbir hanım iğnesi zevrakçede tek",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "ya olurdı Karagümrük koçaşı\ndeselerdi bizi gel seyre taşı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sıkma ferâceli bir 'işve-zeni\ngörse sık sık bakıp ol göz dikeni",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "yakasına dikilip tenhâda\nsıkmağa olur idi âmâde",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "seyr edip başdaki kız yaşmağını\nbûs ider[d]i eğilip peşmağını",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "zenneye çıksa oyunda çengî\nyüreği oynar uçardı rengi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "düğüne derneğe saldırmışıdı\nbaşını çok yere taldırmışıdı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "pek eşip yortar idi yortu günü\nbâ-husûs olsa Nasârâ düğünü",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "Ermenî kızlarına çatmış idi\ntuyulunca kapağı atmış idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "ayrılıp oldığıçün andan dûr\nbir tasam var diyü etmezdi huzûr",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "etdi çok böyle hatâyı ammâ\ndemedi tövbe hatâya aslâ",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "edip enbân-ı fesâdı der-pîş\nçıkarırdı iş içinden niçe iş",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "dûşına pây-ı visâl almış idi\nboynuna nîce vebâl almış idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "ya'ni ol hâne-harâb-ı devrân\netdi çok beyt-i bekâret vîrân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "neler etmişdi o dûşîzelere\nsaplamışdı çiğerin nîzelere",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "nice kanlar döküb ol bî-nâmûs\nyatdı kanlı kapıda çok mahbûs",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "kopsa Kız kulesi peşinde döğüş\nSukapusı’ndan ederdi yürüyüş",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "darb ile feth-i bürûc etmiş idi\nkanlı mızrakla hurûc etmiş idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "çalışıp almağa Kızderbendi’n\nkayd u bende düşürürdü kendin",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "gâhice aştı Çatalca belini\ntolaşırdı gehi Hâtunili’ni",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "çok yere ferce bulub girmiş idi\nsorma kîr baskını da vermiş idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "kısdırırdı çatala gâhi yılân\nsokmada 'akrebe benzerdi hemân",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "aldırıp oynaşarak oynaşın\nhasretiyle taşa ursa başın",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "batırıp hokka-i la'le hâme\nkanlı yaşıyla yazardı nâme",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "döşeyip sofra-i 'ayş u tarabı\nçekse İncirli’de bintü’l-'inebi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "olsa da çatlıyacak mestâne\nmezesin eyler idi kestâne",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "duhter-i rezle edip def'-i humâr\nsevdiği mîve idi rûy-ı nigâr",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "yüz yigirmi söz şekli tamâm\nçıkarıp fi'le buca itmâm",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "nice retkâları fıtk etmiş idi\n'illet-i fıtka dahi yetmiş idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sâhib-i renc-i firişmos idi ol\nkîri derdi ile me'yûs idi ol",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "bulsa bir kocca-i râ'ûnâyı\nsikdir eylerdi zen-i dünyâyı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "hikkatü’l-ferci olan nisvânı\ncânının eyler idi cânânı",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "derdi 'indimde gazanın makbûl\ntınbırîz olsa da şâyân-ı kabûl",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "cümleden gerçi rabûh a'lâdır\nâh ammâ bulunur pek nâdir",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "göz atardı kafese pencereye\nşeh-nişînlerde olan manzaraya",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "sonra 'ınnîn gibi kalmış âmâ\nçıkacak gözleri eylerdi zinâ",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "bir puluc çehreli kanbûr oldu\nbâliğ-i şevk-i sakankur oldu",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "murğ-ı hayret başına üşmüş idi\nmeyl-i kuşkaldırana düşmüş idi",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "analık etdi ona çok câdû\nâhiret oğlı idi onlara bû",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "niçe kara peçeli mekkâre\nehl-i perde geçinen sehhâre",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "okumuş nâmına çok hâce kadın\nokuyup hizb-i fesâd-ı avradın",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "düşürüp kayda nice âzâde\nona olmuşlar idi kayyâde",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "hâl-i zen-dost-ı fezâhat-âsâr\nbu idi işte mücerred her-bâr",
+   "bolum": "vasf-ı zen-pâre-i âvâre"
+  },
+  {
+   "b": "şahs-ı muğlim dahı rüsvâ-yı cihan\no da bundan geri kalmazdı hemân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "nev-civânlar için âvâre idi\nya'ni bir koca gulâm-pâre idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "lîk her yerde geçerdi sühanı\nşöhret-i zâtı Kazıkcı Yeğeni",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "götçü beg tekyesi dervîşi idi\nhalkaya girme büyük işi idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "belki dervîş değil sâhib-i post\nser-tarîk olmuş ulu mahbûb-dost",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "derdi kim deste-zenî-i hâven\nzen için zıll-i hevândan ehven",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gece bakmazdı benât-ı na'şe\ncünbüş-i Zühre’ye derdi ra'şe",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "şemse te'nîs için etmezdi nazar\npertevinden dahı eylerdi hazer",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "mâderinden de edip istikrâh\nkara kuru diyü etmezdi nigâh",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "görse bir tâze fidan-veş hûb-rû\nderdi virmez mi 'aceb şeftâlû",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "Şâhidîyye gehî etseydi nazar\nardavun lafzın okurdu ezber",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "sarfı tahsîle tekellüfler edip\nsarf-ı 'ömrile tasarruflar edip",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bir zamân nahve de oldu meşğûl\nbilecek mertebe fâ'il mef'ûl",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bir zamân olmuşıdı şehsüvâr\nnîzesin halkadan etdirdi güzâr",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çok kavî zuhru edip püşt ü penâh\narkalanmışdı bu fak (?) dil-hâh",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "nice yerlerde kazık kakmışıdı\nya'ni çok dünbelere çakmışıdı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "sonra idbâr ile bî-mâl ü menâl\noldu pesmânde-i râh-ı ikbâl",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "hâsılı görmedi bolluk varlık\nteng-dest idi çekerdi tarlık",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gerçi hâlinde rutûbet yoğ idi\ntükrüğü balğamı ammâ çoğ idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kîri kalmış çıkıp elden para\nkimyâcı gibi yüzü kara",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "içi boş kesesinin ağzı büzük\nbağlamışdı yine kaytanlı büzük",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "baht-ı sahtı idi mânende-i seng\nböyle olmuşdu cihân bâşına teng",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "munkabız çehre ile bed-eşkâl\nsanki bir kur'ası şaşkın remmâl",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "san müneccim idi menhûs-likâ\nyıldızı düşkün idi sû'-i hevâ",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "sac sakal karma karış şekl-i 'acîb\nbakışı söyleyişi tarz-ı garîb",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kalmayıp zîb-i gınâ esbâbı\neski püskü idi her esvâbı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "tartağan sarmış idi destârı\ngiydiği eski kavuk da sarı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "beneşkde yakası yağlı idi\nkuşağı göğsüne dek bağlı idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "balğamî saplı bıçak da be-meyân\nkını sağrıdan eder idi hemân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kirli paslı gören ol nâ-kâme\nderdi kirbâsi yahud 'allâme",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kahvelerde çürüyüp kokmuş idi\nbaşını her deliğe sokmuş idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gâh edip Topkapı’sın menzilgâh\nsarı kârizde kirâcı idi gâh",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çok oyuncak var idi yanında\nhacıyatmaz dahı cüzdanında",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "sokulup mel'abe-i sıbyâna\noyun etmişdi niçe oğlâna",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "babayâne görünüp çatmış idi\nçok oğullukların ağlatmış idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kanda cem' olsa güruh-ı etfâl\nbu tufeyli idi anda derhâl",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çocuk aldatmağidi pîşesi hep\nböyle bâzîcede endîşesi hep",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kınalı bir kuzu edip peydâ\nniçe mâ'sûmı ederdi iğvâ",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "koyuna gel kuzucuğum der idi\nsöğüşünden toya toya yer idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "geh kebûter uçurup dâm ederek\ntaklabazlıklar ile râm ederek",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "yavrucağım diyerek sıbyâne\nkuşuna yapmışıdı çok lâne",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "düğün eylerdi görüb sûr-ı hıtân\nsünnet oğlanları ardınca hemân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bir debistândaki tıfl-ı mekteb\ndese sütüyle okurken fâr gıbb",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "şevk ü rağbetle olup pûye-künân\nbâb-ı mektebde ederdi cevelân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "mâ'il-i muğbeçe-i Rûm idi hem\nyana yana fennâre-i mûm idi hem",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "tutuşub âh Yanâkî diyerek\no da bu nâre yana ki diyerek",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kilise kapısına turmuşıdı\nbeyze-i sürh tokuşdurmuşıdı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bir tabîbin adı olsaydı civân\nderdine ondan umardı dermân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gencine kartına bakmazdı gidi\nbelki Dipoğlu’na üftâde idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "esb-i tâzî ile ol köhne süvâr\ntavşan oğlanların eylerdi şikâr",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "taş yatırdan gelip olurdı hamûş\ndüşinürdü niçe hâb-ı hargûş",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bu hevâlarda ederdi pervâz\nsanki tavşancıl idi ol peçe-bâz",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "tâzeler derdine etmezse 'ilâc\nköhne mâ'i buna ederdi ilâc",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "görse bir tâzeyi gayra hem-dem\nara yerde bırakırdı balğam",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gâhiçe Kumkapı’da mest olıcak\nbulaşıp da çamura pest olıcak",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "derdi meyhâne gümüş halkalıdır\ngayrı yerde mey içenler delidir",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çukurundan bulacak muğlim idi\nkülhan-ı sînesi pek muzlim idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "yâd edip onda geçen hengâmı\nhîç unutmazdı Çukurhammâm’ı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "oldu hem Edrine’de germ-ülfet\nedip Oğlanlı’da zevk-i halvet",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "sürünür varıcak ol hammâma\nniçe dellâk-ı sefîd-endâma",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "peştemâlin çoğı fevrân itmiş\nçıkarıp taşraya 'üryân itmiş",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "berber oğlânına etse dileği\nderdi öpsem şu gümüşten bileği",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "hafta geçse gözüne inse tırâş\ntâzesin bulmasa urmaz idi baş",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "görse baştardada bir seydî hûb\nbaş ururdu ona da ol menkûb",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "küreğin çekmek içün rûz u leyâl\nkıç levendi yazılırdı fi’l-hâl",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "soyunup sîm-tenân-ı dilkeş\ngirse deryâya gümüş balığı-veş",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bir balık batdı ya bî-dem diyü âh\ndil-i pür-cûşı olup bahr-i siyâh",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "şevkile kânişine güneşte\nçalışıp celd-i 'amîre işine",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "salyası sankim olurdı seyl-âb\ndeheni hokka-i lebrîz-i lu'âb",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çalkanub râ'şeler etdikçe sürîn\ncânı titrerdi edip âh u enîn",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "her kötekli güzele mâ'il idi\nkötegin yerse dahi kâ'il idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "dönse ardın ederek istiğnâ\nturmayub eyler idi istimnâ",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bir yalın yüzlü göreydi nâgâh\nyanarak eyler idi nâle vü âh",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "serkeşâne geçirirdi sözünü\nçoğunun yerlere sürmüş yüzünü",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bıçağın gösterene çakıverir\nbeline bir yatağan takıverir",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "dürterek nîze ile harbe ile\nser-nigûn etmiş idi darbe ile",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "geh miyân pâçaya dâmen be-miyân\ngâh-i müstağrak-ı gark-ı berrân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çün tayakcı efe etdikte ufûl\nrûh-ı pâki buna etmişdi hulûl",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "görse bir eğri durur tâze fidân\nkaldırıp tîzce tayaklardı hemân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "bel viren niçe çürük dîvâra\ntayak urmağla bulurdu çâre",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gece bir hânede olsa mihmân\nyatağında yatamazdı hûbân",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "birisi savsa başından farazâ\ngayrının ardına olurdı belâ",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "gâhice komşu kapısı diyerek\ngizlice ard kapıdan işleyerek",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "dolaşıp ya'ni pes-i dîvârı\netdi çâr cânibe âzârı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "görse bir künbed-i nev-bünyâdı\ndünbe yâdıyla edip feryâdı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "çok gümüş kubbelere çıkmış idi\nbildiği gibi yapıp yıkmış idi",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "olıcak sâid-i kûh u peşte\nyorulup kalsa binerdi püşte",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "İncebel’den tolaşub bî-pervâ\nkûh-ı billûra çıkardı gûyâ",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "her dem olurdu meşâmm-ı cânı\nbûy-ı rîh-i cebel-i Nu'mânı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "tâzenin öpmeden evvel yedini\nbûs ederdi odada mak'adını",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "etse kuyruk satılan sûka güzâr\nhâzır eyler idi sırma kantâr",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kâh alt üst olup oğlân ile\nzevk-i tahtânî vü fevkânî ile",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "kûh-ı dellâl idi ser-bâzârı\ngeh dikiş geh tokuş idi kârı",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "muhtasar-hâl-i cenâb-ı livât\nbu idi sanma ki yazdık ifrât",
+   "bolum": "vasf-ı gulâm-pâre-i bîçâre"
+  },
+  {
+   "b": "işte bu iki fazâhât-pîşe\nbed-siriştân-ı fesâd-endîşe",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "her biri başka tarîka pûyân\nbiri 'âma birisi hâsa revân",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "böyle zıdd-dîn idiler meşrebde\nya'ni kim her biri bir mezhebde",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "gâhi ammâ o [i]ki zıdd-ı 'anîd\ncem' olup eyler idi güft ü şenîd",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "yine bir gün buluşup bir yerde\naçdılar rûy-ı hayâdan perde",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "pîş ü püştden edip âgâz-ı sühan\noldular pişrev ü ehl-i fiten",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "fikr-i tevzîh ile matlablarını\nkayd-ı tercîh ile mezheblerini",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "çekdiler niçe delîl-i bî-'aklı\ntayy edip şerm ü edeble nakli",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "hurde-dânlar gibi ol hurdân\nhüsn ü kubh eyledi 'aklınca beyân",
+   "bolum": "mülâkât-ı her-dü ve âğâz-kerden-i kerden muhâvere"
+  },
+  {
+   "b": "bahsi gitdikçe çatallandırarak\ntatlı ta'bîr ile ballandırarak",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "terzebânlıkla olup âmâde\nağzını açdı Suyolcızâde",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "'âdet-i câriyesî üzre hemân\nolarak sûy-ı mübâhâte revân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "etdi çok su getürüb her dereden\nvâdi'-i midhata icrâ-yı sühan",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "dediğim her gece olmaz mı 'arûs\nzevk-i ebkâra olanlar me'nûs",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "hüsn ü ân ile urebât-ı hicâl\nzîb-i hûlüvvünki âgûş-ı visâl",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "burka'-i nâzını açdıkta sezâ\nyüz görümlüğü verilse dünya",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "öyle cânânı eden mûnis-i cân\ndâr-ı dünyâda bulur hûr-ı cinân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "onlar âhû-yı haram-perverdir\nsayd-ı bîgâneye müşkil-terdir",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "sakınır kendüyi nâ-mahremden\nsan perîdir ki kaçar âdemden",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "hânede genc-i nihândır onlar\ncevher-i 'ismete kândır onlar",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "hûr-ı 'în oldığıçün 'ayn-ı hemîn\nkurretü’l-'ayn gibi perde nişîn",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "kafes ardında o tû[t]î kuşlar\nsöyledirsen ne şekerler çiyner",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "hep o tûtîlerin âyînesi var\nya'ni billûr gibi sînesi var",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "camdan taşra edince nazarı\ngörünür şîşede mânend-i perî",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "meyl eder duhtere tab'-ı mevzûn\nhoş gelir meşrebe bikr-i mazmûn",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "hem küheylânda dahı zî-kıymet\nmâdeyân nev'idir eyle dikkat",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "madde makbûl olıcak hayvânda\nkıymet olmaz mı zen-i insanda",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "şems iken eşref-i necm-i gerdûn\noldu mu rütbesi te'nîs ile dûn",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "küpeli bir kıza benzer Cevzâ\nfeleği halka-be-gûş etse sezâ",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "zühredir duhter-i pür-nâz-ı felek\nbezm-i 'ulyâda nevâsâz-ı felek",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "niçe inkâr olunur hüsn-i zenân\ntev'em-i mihr iken ol 'işve-zenân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ne safâdır ki ola bir âdem\nkimsenin görmediğine mahrem",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "şîve-kârân-ı cevârî-i hisân\nsöyleyip her birisi başka lisân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "sâhibin kendüye efgende eder\nbend edip turrasına bende eder",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "her birî başka diyârın gülüdür\nher birî bir çemenin bülbülüdür",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "her birisinde letâfet başka\ncünbiş-i nâz-ı melâhet başka",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "germî-i cilve-i nâzende-i Rûm\nyumşadır âdemi mânende-i mûm",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "o Sakız kızlarının fistânı\nportakâl gibi sıkar pistânı",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bilirim cümlesinin lezzetini\nçekerim cümlesinin hasretini",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "severim cümle zen-i meh-veşi\nbelki germiyyet ile her habeşi",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "olsa şâyeste gulâm-ı der-bân\nbir kızoğlana hezârân oğlan",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "vakt-i vuslatda cefâ etmezler\nseni mahrûm-ı safâ etmezler",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "iki başdan o muhabbet o safâ\nsarasın sîneye kat kat ne safâ",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "nedir ol gül gibi ruhsâre-i al\nverd-i ra'nâ ise de 'âlü’l-'âl",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "zerd-rû oldu görüp altını\n'âşık-âsâ o rûh-ı gülgûnı",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "pertev-endâz olıcak ruhsârı\nparıldar elbise-i zer-kârî",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "kaşları kantara-i misk-i hoten\ngamzeye toğrı güzergâh-ı fiten",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ki odur câmi'-i hüsne mihrâb\nkıble-i dil-şüdegân-ı bî-tâb",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "o siyeh gözleri kim sürmelidir\n[b]ûs edip göz göre yüz sürmelidir",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bir bakışla ne nezâketler eder\nkâle gelmez ne işâretler eder",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "görse Mecnûn ne bakışlardır bu\nçeşm-i âhûya demez mî yâ hû",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "edip ol çeşm-i siyehkâre nigâh\ngöresin n’idigini nûr-ı siyâh",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "mûje-i tîr ile o çeşmi süzen\ncânı delmez mi misâl-i sûzen",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "sanki top iğneler ol müjgândır\nsaplanıp cân evine peykândır",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "hâli ben anladığım 'anberdir\nsûziş-i sîne ana micmerdir",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "câ-be-câ gerden-i billûr üzre\nsanki fülfül kona kâfur üzre",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "eylemiş murğ-ı dil-i nâlâna\nturrelerle anı dâm ü dâne",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "seyr iden âh o mu'anber hâli\nderd-i sevdâdan olur mu hâlî",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "zîr-i gîsûda bünâgûşı hemân\nsubh-veş perde-i şebde pinhân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "cebhesinde o siyeh kâküller\nsanki takmış başına sünbüller",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "dökülür gerdene top top gîsû\nyâsemenlikde misâl-i şebbû",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "boyanıp 'anber ü misk vü 'ûde\n'ıtr-ı şâhîler ile âlûde",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "eylese ahter-i elmâsını bend\nzülfi tâ yıldıza atmaz mı kemend",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "târ-ı gîsû-yı behem peyveste\nrişte-i mûy-ı miyâna beste",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "zîb-i mengûşı olan dürdâne\ndelinir reşk ile ol rindâne",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "küpeler şa'şa'alı cevherdir\nküpe gündüz görünür ahterdir",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "leb-i la'linden edip şerm ü edeb\nhâtem-i la'li kızarsa ne 'aceb",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "reşk-i gülnâr idi ol rengîn leb\nmiyve-i cândır o sîb-i gabğab",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bikri gonce dehenidir gûyâ\npek açılmaz ederek şürm ü hayâ",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ya o düz hokka-i Yâkûb meğer\nbûse-i la'l-i lebi gül-be-şeker",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bend-i gerdândaki elmâsı hemân\ngerden-i sâfı eder pür leme'ân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "taş mıdır bağrı o cevher-i Gümrek\nnice sıkmış belin ol işve gerek",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "beli nâzik yakışır beldârî\nkemer-âsâ sarılaydım bâri",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "kol sarub ya'ni kocub ince belin\ngel amân gel desem ey tâze gelin",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "dest-hûş eyleyerek pistânın\nohşasaydım sıkarak her yânın",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "sâ'id-i sîmde destîne-i zer\nki iki başı serâser cevher",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "tutup ol sâ'idi der-dest etsem\ndestini destime alsam gitsem",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "el uzatsâ o Zelihâ-yı zamân\nçâk olur dâmen-i sabr u sâmân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "âh o 'unnâb gibi parmaklar\ndil-i hûnın ciğeri tırnaklar",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "küsmelerle nedir ol küsmemeler\nelini çek a bu cânım dimeler",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "iki pistânce ile sîne-i sâf\nbenzemez mi ona hak el-insâf",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ki kona iki turunc-ı tâze\nsîmden bir tabak mümtâze",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ya o fincân göbeği kim vâveylâ\ngörün âdem diye eyvâ eyvâ",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ehl-i derdin yüreğin oynatmış\nheb göbek burusuna uğratmış",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "çâk-i pîrâhen-i peyveste-i nâf\naçmam aşağısıdır gizli şikâf",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "lezzetin şerh ü beyân eyleyemem\ntudağım çatlar onu söyleyemem",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bir yere gelse dü-berg-i gül-i ter\n'aynı ol şekl-i dilârâya döner",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "zîr-i dâmende o vird-i terdir\nsaklar şâh-ı gül-i ahmerdir",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "öyle şâhâ kulunı kim salmaz\nboynunâ kim o günâhı almaz",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "görücek Altunoluk şalvârı\nolur âb-ı dehen elbet cârî",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "çüzmede olsa küşâyiş der-kâr\naçılır bend-i tılsım-ı esrâr",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "yürüse nâz ile ol nûr-ı basar\npâyını çeşm-i dil ü câna basar",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "salınırken göresin şîveleri\nöyle reftâr edemez kebg-i derî",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "nâz u reftâr ile o sîm-endâm\nolıcak âzim-i sû-yı hammâm",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "'âşık-ı germ-i derûn-ı pür-tâb\nönine geçmeğe etmez mi şitâb",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ki sebuk-rûh edip üftâdesini\nyükledir boğça vü seccâdesini",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "vârıp ol işve-ger-i nâz u harâm\nolsa tâb-efken-i sahn-ı hammâm",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "göricek makdem-i ferhunde-demin\nsîm-i na'lîn öpüp ol kademin",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "cûş edip zevk ü safâ ile hemân\nsû döke âyağına şâdırvân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "soyununca göresin nûr gibi\nparlıyâ sînesi billûr gibi",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ola gül-pûş o perîşan kâkül\nzîr-i zülfünde kalub ol rûh-ı gül",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "görüne ya'ni o zülf-i gül-pûş\ndil-i sevdâ-zede-veş hâne-be-dûş",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ola germâbe dahı hayrânı\nede sad dîde ile seyrânı",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "mûmiyâna sarılınca meyzer\nnereye setre olur belki sezer",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "göbeğin açsa göbek tâşında\n'aklı kalmaz görenin bâşında",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "o perî halvete girse 'üryân\nyayılır üstüne görse insân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bûs edip destini tâs-ı sîmîn\nder bu kurnâda benim ehl-i yemîn",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "çeşm-i 'âşık gibi cûşişle hemân\nlûleler cümle olur germ-i revân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "sıcağı geçmişe benzer gûyâ\nsürinür kîse nezâketle ona",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ezilip şevkle hadden efzûn\neride cânını miskî sâbun",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "görünür sîm-veş o cism-i latîf\npenc ü nâbe düşe hayretle lîf",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "'anber ü misk gibi her mûyı\n'ıtır-nâk ede gül-i hoş-bûyı",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "şemme-i turresi ile hınnâ\nola bir gâliye-i 'anber-sâ",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bakub ol zülf-i 'abîr-efşâne\nçâk çâk olsa 'aceb mi şâne",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "gül-i rûyı 'arak-efşân olarak\ncâ-be-câ jâlesi rîzân olarak",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "câmekânı edicek sonra mekân\nbûs-ı la'le bula şerbet imkân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "'ârızın seyr edip öyle pür-tâb\ndöküle sâçıla şevkiyle gülâb",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "giyinip câme-i zer-kârîsin\nAltıbarmak şalı beldârîsin",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "olup âyîne-i sîme nigerân\nhüsnine kendü de ola hayrân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "âb u tâb ile edince da'vet\nsînede şu'lelenüb germiyyet",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ya'ni işler kızışır germ olıcak\npenbeler gîbi teni nerm olıcak",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "sen ona yalvarıp etdikçe niyâz\no sana eyliye sad şîve-i nâz",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "diye bin dürlü kirişme ederek\nnâ-be-câ işe girişme giderek",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ola her cünbişi böyle şîve\nduhter olmazsa da olsun bîve",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "böyle cünbişlere âğâz iderek\ngülerek oyna[ya]rak nâz iderek",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "otura gâh çıkub zânûye\nçekesin gâh yıkub pehlûye",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "nâfeden çâk ola gül-pîreheni\ngöresin n’idügin ol sîm-i teni",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bir simînî misâl-i billûr\naçılıp parlaya mânende-i nûr",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "eyleyip 'aksini anda seyrân\nkalasın âyine-âsâ hayrân",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "ya'ni kim bilmiyesin sîne-si mi\nyohsa sâf î gümüş âyînesi mi",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "câme-hâb[a] girip öyle mehtâb\nsubha dek dîdelere girmeye hâb",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "gele âğûşına ol sîmin-ber\nsîne-ber-sîne olup zîr ü zeber",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "el-amân kesdin amânım diyerek\ngehi hânım gehi cânım diyerek",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "olasın yek-ten-i yek pîrâhen\nbir olâ iki gönül iki beden",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "bundan a'lâ ola mı zevk ü safâ\nhayf ey muğlim-i bîçâre sana",
+   "bolum": "der vasf-ı zenân-ı 'işve-zenân"
+  },
+  {
+   "b": "böyle cûşişle Suyolcuzâde\neyleyip vasf-ı safâ-yı madde",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bu sularda edip îrâd-ı kelâm\nkıldı icrâ-yı mezâkın ifhâm",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gerçi gûş eyledi hâh u nâ-hâh\ntab'ı ammâ ki edip istikrâh",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sözünü dikdi Kazıkçı Yeğeni\nçakdı yerli yerine her mıhını",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "dedi ey hâne-i harâb-ı kebb-zen\nreh-i seyl-âbda yapma mesken",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "merd olan eyleye merde rağbet\nşahs-ı nâ-merde sezâdır 'avret",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bunu ne gayrıya ne benden sor\ntâzenin zevkini sen zenden sor",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bir delikanlı güzel mahbûbe\n'aklın aldırsa olur meczûbe",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "açılıp ummadığın mestûre\nkeşf-i avretle olur meşhûre",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bikri medh etse dahî bir bânû\nder ki pâkize kız-oğlândır bû",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "nev-civândır bilesin cân-ı cihân\n'âşık-ı pîrin eder tâze civân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "nev-nihâl-i çemenistân-ı cemâl\ngonce-i tâze-res-i bâğ-ı visâl",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "dil veren öyle gül-i mümtâza\ngülşen-i 'ömrünü eyler tâze",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ney-süvâr iken olur meydânî\nrahş-ı pür-cünbüş-i hüsn ü ânı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tıfl iken nâz ile mektebde eder\nsebk-i mihr-i vefâyı ezber",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "peder ü mâderinin bir gülüdür\nlânesinde peçe-i bülbülüdür",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bed nazardan sakınurlar ânı\nhıfz edip sanki bedende cânı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ya'ni her kim arayıp genc bulur\ndil-i virânını pür-genc bulur",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "duhter olur mu basarla yeksân\nyok mudur onda 'ayûb u noksân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tâze meşşâtaya muhtâc mıdır\nrevnak-ı hüsnü karâ sâçı mıdır",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "müşk otu perçemi sanma hâşâ\nturre-i zen gibi püsküllü belâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "hüsni ârâyişi zîverle değil\n'âriyet cevher ile zorla değil",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "zâtıdır cevher-i kân-ı hûbı\npâk-i gevher bilesin mahbûbı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gûşı âzâde-i kayd-ı mengûş\neder üftâdelerin halka be-gûş",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "istemez gâze ve hınnâ ve hizâb\nruhların gül gül eder reng-i hicâb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "dîdeler sırma-i kudretle siyâh\ngamze-i şûhı siyeh-mest-i nigâh",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bâzi-i nîze dökemez kân\nne yamândır ciğere oynar amân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "vesmeden tîre değildir ebrû\nkalem-i sun'-ı aleyhîdir o",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "zîb-i meşşâta mıdır nokta-i hâl\nbeni söyletme bilirsin bu ne hal",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "zen gibî yapma mıdır hüsn-i sıfât\nanadan toğma güzeldir bi’z-zât",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "çekegör sîneye her mahbûbı\nkim komaz koynına zer mahbûbı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tıfl iken kâşı gibi ola hilâl\nbedr olur vârıcak on dördüne sâl",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bir civan kâşı sarık bâşında\nböyle on dörde gire bâşı da",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ola bir işve-nümâya şâlı\ncâme-i nâzı serâ-pâ şâlî",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "dense semmûr-i siyeh-mûdur bu\ncünbişe [b]aşlıya tarf-ı ebrû",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sînesin açsa ger ol sîmîn-ber\nsalla kuyruklarını kâkumlar",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "anı celb eyleyesin ber-takrîb\neyleyip hâtırını gül gibi tîb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gezesin her cemini dest-be-dest\nşîve-i kaddi ile serv-i şikest",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sarılıp âh efendim diyesin\na benim serv-i bülendim diyesin",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "o cekildikce sana şevk gele\nbûse vermezse dahî zevk gele",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gül-şeker leblerinin düşnâmı\nede şîrîn-i dehen nâ-kâmı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "böyle bir şûhıla zor kaça süvâr\ngâhice eyleyesin seyr-i kenâr",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "olarak gerdeninin hayrânı\nedesin ya'ni Boğaz seyrânı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "çıkasın zevrak-ı 'ayşın kaçına\nçekesin Göksu’da körfez içine",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "otura yânına o mâh-likâ\nseyr-i mehtâb idesin bî-pervâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bağ u bostâna da çekesin anı\nbozmaya keyfini ser-bostânı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "câm-ı 'işret ola hem âmâde\nveresin hırmen-i haznı bâda",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bezme revnak vire câm-ı gül-renk\nbir tarafdan ede mutrib âhenk",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "reng-i meyden yanağı gül gül ola\ngonca-âsâ açıla bülbül ola",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sîm-sâ'idle kadeh-kâr ola hem\nmezeler la'l-i şeker-bâr ola hem",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "mûsıkî-dân ola hem hûb-sadâ\nbûselikde ede âgâz-ı nevâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "heb usûlüyle ola sûret-kâr\ndil-i 'uşşâkda kalır mı karrâr",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "başlasa beste-i zençîre eğer\nzülfine ola sabâ der çenber",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "o açık baş güzeli gibi civân\ntâb-ı ser-germi-i sâ'irle hemân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tâğıtıp perçemin olsa tâlfes\nsanasın kim tağılur mülket-i Fes",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "keyfile raks edicek ol meh-veş\nçengi-i Zühreyi eyler def-keş",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tabla perçem süricek bezme kadeh\nbaşdan aşmaz mı o dem mevc-i ferah",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "içesin âteş-i 'aşkile şarâb\nsîneler sîh-i muhabbette kebâb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "korlanıp hem 'arak-ı pür-tâba\ndilden âteş veresin ol âba",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "şöyle cûş eyleye kim âlem âb\nolasın lücce-i zevke gark-âb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "öyle tûfân ede kim bûs-ı kenâr\nmevce-i şevk olamaz bahr-i tebâr",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "mest olup çâk ede pîrâhenini\nöpesin sînesini gerdenini",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sîne âyîne-i billûr gibi\ngerden-i sîmi ise nûr gibi",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "âlem-i nûr değil mi bu safâ\nçekilir gâhice de etse cefâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "böyle nevreste-nümâ tâze fidân\nolur elbette 'asâ-yı pîrân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tıfl iken etse gehî cevr ü sitem\nbilmeyüb şîve-i âyîn-i kerem",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "olıcak bâliğ-i hengâm-i vefâ\nbâliğâ mâ-baliğ olmaz mı safâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "görünüp şah-ı levendâne-edâ\nola 'uşşâkı o dem şâha gedâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tâş dike sîne-i 'âşıkda eğer\nnâz ile çekse mücevher hançer",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "varak-ı rûyı olıcak nev-hatt\nhâl-i miskîni eder tarh-ı nukat",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "nur-ı deryâsı olup mevc-âver\nçıkarır sûy-ı kenâra 'anber",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "n’idügin bilse o hatt-ı müşkîn\ndüşürürdü göbeğin âhu-yı Çin",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gerd-i peymâne-i la'linde hemân\nhatt-ı yâkût olur sanki 'ayân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ter ü tâze gözüne çâr ebrû\nçâr-bâğ içre misâl-i şebbû",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "böyle nev-hatta olan 'âşık-ı zâr\nmisk-i âhûsını etmez mi şikâr",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ele girdikte hemân öyle civân\nfırsat-ı vuslatı fevt itme amân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "taş yatarken bulıcak tavşanı\nbas yatâğında kaçırma ânı",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "fehm eden derd-i dil-i uşşâkın\npek helâk eylemeyip müştâkın",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "size yatmam diyü eylerse de nâz\ngeçirirsin yine tenhâca niyâz",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bir yalın yüzlü ocaklı mahbûb\nyaksa da cânı kun'üm-el-matlûb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "şem ü pervâne-i der-hâtır edip\nşevkle râh-ı fedâ'iyye gidip",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "yanarak âteşini söyleyesin\ndüşdüm âyâğına rahm et diyesin",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "hoş gelir 'âşıka bu sûz u güdâz\nsîne-i rûşen eder böyle niyâz",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ya o kalyoncı kesim fermeneli\nsırma perçemli o seydî güzeli",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sîm-i penyâlini etse be-miyân\ngören elbetde urulmaz mı amân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tâzenin cümlesidir cân-ı cihân\nher birine ola cânım kurbân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "her biri kakma ilikdir gûyâ\ntopuğından yukarû ser-tâ-pâ",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "mestdir olduğu şekl-i ahsen\nbilinür hendeseden fehm et sen",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bir kıl ile çeker ol mûy-ı miyân\nyan yana iki gümüş kûh-ı girân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gösterir eyleyerek gunc u delâl\nn’idigin san'at-ı cerr-i eskâl",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ne safâgâhdır ol kubbe-i sîm\nkarlı dağlar gibi berrâk u cesîm",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ona her püşte olur mu mânend\nTomalic tâğıdır ol kûh-ı bülend",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "onda çün kim azametdir der-kâr\nolsa şâyeste eğer kâr-ı kibâr",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "nedir ol îki piyâz-ı lâle\ngoncesi elde olur pür-jâle",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "tâze memdûh-ı cihândır bilesin\nmatlab-ı pîr ü civândır bilesin",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "hızr erbâbına hâzır-ı hazeri\nehl-i esfâra ref îk-i seferi",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "şu'arâ-yı 'Acem-âsâ rindân\nhoş-dil-i hoş-sühen-i ferzendân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "her biri mülk-i sühende server\nser-be-ser eylediler medh-i püser",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "'âr edip eylemeye duhter yâd\nbikri mazmûnda ederler îrâd",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "mülket-i Rûmda hem şâ'irler\nehl-i dil pîrleri mâhirler",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "eyleyip vasf-ı civân-ı tâze\nverdiler 'âleme cân-ı tâze",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "şûh-ı nev-hatt gibidir her dîvân\noldu şîrâzesi hatt-ı hûbân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "hayf ancak iki rüsvâ-yı kadîm\nbiri bû nazmı yazan bir de Nedîm",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "şi'rini zen gibi etdi medhûl\noldu güftârları nâ-makbûl",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "bedevîdir şu'arâ-yı 'Arâb\nonlara yok bu mahalde i'râb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "diyerek Leyli ve Selmî ve Sa'îd\nederek çölde kara kızları yâd",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "gûş edip nağme-i nâ-sâz-ı kavâl\nsöylemişlerse dahî ba'z-ı mevâl",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "onda merdâne edâdır nâdir\nkimi hünsî kimisi hünsâdır",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ne bilir çölde gezen kâra 'Arab\nsîm-tenlerle nedir 'ayş u tarâb",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "âmore nâmına hem ba'z-ı Frenk\netdi kâlâ-yı kelâmın bed-renk",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "sen de dûş olma dönüp efrence\no firengî gibi kâf îr rence",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "ol ki üftâde-i câh-ı zen olur\nâb-keşler gibi ter-dâmen olur",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "olma çifte koşulup tohm-efşân\ngâv-ı ser-keşte-i hırs-ı nisvân",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "hem-ser-i şûh-ı civândır serbest\nmütte'hiddir basılır zenne-perest",
+   "bolum": "der vasf-ı mahbûbân-ı dilistân"
+  },
+  {
+   "b": "böyle mahbûbları vasf ederek\nreh-i nâ-refteye toğrı giderek",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kıldı zen-pâre-i ma'hûda hitâb\nserzeniş-gûne edip böyle 'itâb",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "bâşına kakdı Kazıkçı Yeğeni\nkahbelikdir diyerek meyl-i zeni",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "bahs-i câriyyesini hasbü’l-'âde\ngûş edip coşdı Suyolcızâde",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "bulanıp gönlü gözü hîrelenip\nsanki taşkın akarak tîrelenip",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "dedi ağzı köpürüp çağlayarak\nher söz bendini hoş bağlayarak",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "biliriz biz de çocuklar huyunu\noynatır 'âşıka 'âşık oyunu",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "onları müşkil olur yola komak\nya çelik oynamak ister ya çomak",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "pek iyi cilveleri söğmekdir\ndahı a'lâ keremi döğmekdir",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "şımarırsa ura çok sille şamar\ngayrı çekdiklerini eyle şumâr",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "râm olup yatsa da gâhî sözüne\ntükürür sonra döner de yüzüne",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "açsa da dâmen-i vaslın mektûm\nhalk içinde nedir ol zarb u şütûm",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "tek hemân binme ki sen öyle ata\nensesinden varana çifte ata",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "çoğu da esced-i min hüdhüd olur\nbaşını koymağiçün yerde bulur",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "s îm-ten olsa da ekser mahbûb\naltına alı veren zer mahbûb",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "teni fısdık gibi gözü olsa bâdâm\nyine fındıkçı olur nîce gulâm",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "pek inanma dese de ismim Em în\nki sana hâ'in olur gayra kar în",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "ba'z-ı nâ-pâkin adı Tâhir olur\nsonra mürdarlığı hem zâhir olur",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "tutalım bir de edindik mahsûs\nhıfz olınmaz neylesin kim bu husûs",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sen görüp işi gidince hareme\nsığanur hıdmete turmaz hademe",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kaplasan çakşura semmûr-ı siyâh\naçılır gayra o karsak künkâh",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "perdesi sırık olan bî-pervâ\nher kucakda yata tanbûr-âsâ",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "ya'ni kuyruk salar ol emred-şâbb\ntoğrudur kuyruğunu nîce kilâb",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "mâr-ı mâhî yemedim derse yalân\nakdı sûrâhına çok kâra yılân",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "gâhice rast gelip âlet-i saht\nyerleri tırmalaya ol bî-baht",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "içine kan uyuşup ola revân\ndem-i bâsur-veş ol demde hemân",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kırılıp zarbı ile kaytânı\nbüzüğü âçıla fehm et ânı",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sonra bed-çehre muhannes görüne\nibne renciyle mülevves görüne",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "mâ'il-i şâhid-i bâzâr olma\nsatılık gûne harîdâr olma",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sanki zenbîlidir ol asma serin\ntağıdır halka anınla ta'yîn",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "ensesinde sürünür çok tâlib\nçıkar üste kim olursa gâlib",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "bilesin ard-ı ân ki pâkdir az\nkılma nâ-pâkler ardında namâz",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "gerçi kim uçkuru işlenmiş olur\nçakşurun içi çereşlenmiş olur",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "rû-be-rû olmağa çün kim yüzü yok\ndöner ardın ki geride gözü yok",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "şekl-i mahrûti diyü etme senâ\nhokka-i balğamı eğdirme bekâ",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "olsa da yüklü semer-veş gerisi\nher katır puşta deme genc irisi",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "tıfl iken oynayacak emred olur\nsakalı batsa oyunu bed olur",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "haftada olmaz ise iki tırâş\nkılları fırçalanır başına tâş",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "tutdurur çehresine usturayı\nyolunur bulmasa cinbistireyi",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "hüsnü bu vech ile bulsa pâyân\nhüsn ta'bîri ile muğlim yârân",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "o bıyıklansa hatt-âver derler\nne hatâ müşke de benzer derler",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "öyle burma bıyığa denmen hatt\nhatt-ı butlândan ola belki galat",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "o yoluk kaşlar olunca pür-mû\nyakışır mı ki dine çâr ebrû",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "halkasında dahı mûy olsa 'ıyân\nkıl biter çeşm-i gulâmîde hemân",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "görücek torba sakallı nâ-gâh\n'aceb onlar da edip istikrâh",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "nefsine eyleyerek levm ü 'itâb\nyüzüne bakmağa etmez mi hicâb",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "ba'zısı yapma yiğitlik de satar\nardına tokunana piştov atar",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kabatayı gibi merdâne bakar\n'ümmiler ol kaba künkâha çıkar",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "etse de kabzaya dek tâze bıçâk\neli hançerde yine sanki koçâk",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sağrısın eyler iken tîğa niyâm\nsell-i seyf etmeğe eyler ikdâm",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "biliriz yosma kısım nice atâk\nyatağan çıkdı düşündükde yatâk",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "çok levendâne edâ kâşı kemân\neyledi pefteresin tîre nişân",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sokulup girmeğe geh öyle hîze\nhalkasından geçe dâ'im nîze",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "hîzdir elden ele geçmişe nâm\nasl-ı ma'nâ[s]ı da tâs-ı hammâm",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "çoğunun şevki mey-i tâba düşer\n'âlem-i âbda girdâba düşer",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sızacak mertebede mest olıcak\nyıkılıp orta yere pest olıcak",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "döşenip keyfile meydânda kalır\nüsteler mak'adının nakşın alır",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "gâhice 'âşık-ı kuş-bâzından\nyuvasın yapıcı hem-râzından",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kendi de çift olacak kuş ister\nkuşuna bir dişi baykuş ister",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kuşu kuş ile ederler diyü sayd\n'âr-ı kayyâdı çeker ol lâ-kayd",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "ba'zı kerre dedi çok bî-nâmus\nbu gece oldu kaziyye ma'kûs",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "dev metâ'ın olup alış verişi\nurup endâzeye etdik dikişi",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "bulaşıp böyle nice hîze habîs\npâk-dâmenleri etdi telvîs",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "hayf ol muğlim-i bî-ârâma\nki döküp yüz suyunu hammâma",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "sıcağım geçdi diyü dellâke\nsoyunur külhani-i nâ-pâke",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "berber oğlânına hem koşmağa baş\npeykesinde oturur tâ-be-tırâş",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "kurıyup ağzı ederken ibrâm\ntükrüğü kalmaz eğer etse de râm",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "yutkunup göğsü hemen gürleyerek\nbalgamî olsa mizâcım diyerek",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "bulmayıp ayva lu'âbın derhâl\nderd-i zîk ile çeker renc-i su'âl",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "böyle müdbîr olarak âhir-kâr\nsavsacılıkda verir kâra karâr",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "gözleri parlayarak mûm gibi\nuyanık tâ-be-seher bûm gibi",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "tolaşır gece yatakdan yatağa\nbatarak ya'ni batakdan batağa",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "ya tayakçılık ederken gidiler\ntoya toya ne tayaklar yediler",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "mâ-hasal toğrı yolu terk etme\nsapadır bu diyü tağdan gitme",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "var ise ondaki icrâ-yı mezâk\nkoyu balgamla lezz ü cetli bezâk",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "âlet-i tenkıyeden mâsûra\nne revâdır tokuna bâsura",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "olamaz elbetde sezâ-yı tahsîn\nhey'et-i düm be-hevâ ser be-zemîn",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "hunfusâ-tıynet-i nâ-pâk olma\nsürünüp öyle yere hâk olma",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "câh-ı huşkun dibine pek talma\nkurutup ağzını susuz kalma",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "rîh-i bed-râyiha-i zarta-keşân\neder ifsâd-ı dimâğ-ı sâmân",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "nedir ol hûşe-i kabz-ı lînet\nöyle mürdâr-ı safâya la'net",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "el-hazer işleme öyle 'abesi\nçıkar elbetde sonunda hadayi",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "katı ters işdir ona etme heves\nters-nâk işde gezendir nâkes",
+   "bolum": "der ta'n-ı mahbûbân ve mahbûb-dostân"
+  },
+  {
+   "b": "çün hurûş etdi Suyolcızâde\nakıtıp ta'neyi bu mecrâda",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ya'ni hıfz etmedi âb-ı rûyu\nsaman altında yürütdü suyu",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bu savuk sözleri kıldı itnâb\nsuyu serd olduğun etdi işrâb",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "başını saldı Kazıkçı Yeğeni\nsanki tokmak idi her bir süheni",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "yellenip burnu gazûbâne-edâ\ndedi ey bed-nefes ü zenne-sadâ",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "zen-perestin yalımı alçakdır\nhuzele zümresine mülhakdır",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sığanub etme bu yolda tek [ü] pû\nyakışır baldırı çıplaklara bu",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "olur elbetde civân-merd gayûr\narkası yerlere gelmişden dûr",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "zenne meyl eyledi mi İskender\netdi mi erliğini mahv ü heder",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "zen-tabi'at süfehâdır merdûd\nmeyl eder hüsn-i Ayâza Mahmûd",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "aldatıp el ile çok insânı\nkuru âğâca sürerler kanı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "hazer eyle saçı Leylâlardan\nolma Mecnûn geç o sevdâlardan",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ol ki Şîrin lebe Ferhâd oldu\ntaş döğen bir koca ırğâd oldu",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "o açık orta kapuyı kakma\nçatlamış tahtaya ekser çakma",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "olma kim öyle kapuda der-bân\nanda baş göstere nice 'urbân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "hâhiş-i kîr iledir reftârı\naltına dâ'ir olur güftârı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sözlerin eyleme tûtî diyü gûş\nbaşka kuşdur dilini bildiği kuş",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bir içim su ise de aldanma\nmâ-i müsta'meli tâhir sanma",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ger tenûmend ise de etme pesend\nmâriye lahmıdır elbetde gezend",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "göbeği olsa da farzâ fincân\ngörünür çatlağı altında 'ayân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "tutalım ba'zısı yanyancıkdır\nneyleyim adı yine kancıkdır",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ayın on dördüne benzerse de ger\ngece baskınla tutılmak ne keder",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ben beğenmem hele zen-pâreliği\nböyle hep işleri yüz karalığı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "gece hırsızlığıdır kârları\nçalışır aşmağa dîvârları",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sürmeli çeşme eder sanki nigâh\nsürme-dân gibi olur baht-ı siyâh",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ekserî vüs'at-i hâle hasret\ngörür ancak o mahalde vüs'at",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sözlerim cümle değil mi vârid\nhele ben anladığım pek bârid",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "mâ'il olma ona kim ey 'âmî\nÂmine kona küçükden nâmı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ekserî râziye der her sühene\nsöze yatmakda uyar her düzene",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "vericek basma kalıp bir yemenî\nder hemân pîş-i menî pîş-i menî",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "açsa da 'ukdesini şalvârın\nkanı içine akar mürdârın",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "nedir ol şıkk-ı kerîh-i tebrî\nonda it balta sapın dûr ü berî",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bulunur nîce 'amel-mânde-i tât\ncâ-yı ma'hûdi olunmuş ifzât",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bâşı açıklara olma hayrân\ntuyulur ya'ni kapatma pinhân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "olma üftâde [vü] lağz şekke-i âb\nnâm-ı kaypakcı ne lafz-ı çirk-âb",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "uçurup 'aklını olma medhûş\nbil ki ol lâneye konmuş nice kuş",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "lüccesinde ne balıklar yatmış\nnice kalkanlara karşı çatmış",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "germi-i âb-ı neşâta hayrân\ntutuşur sanki kireçhâne hemân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "kîr-i har görse de îç î bulanır\ndilini sarkıdır ağzı sulanır",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bulmasa hâhişi üzre yarağı\ndüşürür ol gece tâsı tarağı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "nısb-ı nefs eylemiş ol ehl-i sabık\n'azl eder anlara îrâs-ı kılık",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "şadrevâniyyede sey-lâba verir\nboşanıp havzasını âba verir",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "o eder zevki tokuz kat efzûn\n'öşrü ile sen olurken mağbûn",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bana turmaz çeker ol Çekmeceli\nmüflis eyler seni çekmezsen eli",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "çok siyeh-bahtı kara yüzlü eder\ngözleri sürmelice gözlü eder",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "nice hammâl gibi nâ-kâma\ntaşıtır boğçasını hammâma",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "desti hınnâ-zedelerden el çek\ngiydirirler sana kanlı gömlek",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "eyleme pây-ı muhannây-ı be-dûş\nboynuna kan mı alur sâhib-i hûş",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ne belâdır çekesin 'iddetini\nayda bir hayzı için müddetini",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "erba'inler çıkaran şahsa kıyâs\nolasın cülle-keş ü kat'-i nifâs",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "kirlenip gitse dahî hammâma\npâk soy denmez o bed-fercâma",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "menba'-ı mâde iken nemdânı\nyine sorup kurudur hamdânı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sâkın ol câhda buldurma suyu\nolmasın ya'ni yerin kanlı kuyu",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "eyleme cân u dilin cânânı\nseyyidin âlude ter-i dâmânı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "parlayan anda zer ü cevherdir\nsanma rûyındaki nûr u ferdir",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ekserî kâra kuru câdûdur\nağzı ma'hûdu gibi bed-bûdur",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "kutusı yağlıdır engüşt sokar\nkalbe müşkîye tefârik kokar",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "düzgün ile yanağın al eyler\nAllah 'âşıkın abdâl eyler",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "gece ilen kızlı çıksa eğer\nbakamazsın yüzüne vakt-i seher",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sürmese aklığı çok mekkâre\ner yanında ola yüzü kara",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "çatılırsa dahı iki kaşı\nbil ki rastık karasıdır kaşı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "çok gelincik de çiçek bozğunudır\nyüz yazısı dediği düzgünüdür",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "girdiği yerde yüzü kara çıkar\no gece ipliği bâzâra çıkar",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bozma düzme kulağı gibi delik\nçala kolnemçe yırtık gecelik",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "duhterin zevki dahî yekşebedir\nsonra karnın şişirir der gebedir",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "döner âğâçkavununa memeler\nlağv olur tâzetercim demeler",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bikr ise şimdi o rütbe nâdir\nbelki mazmun da bulamaz şâ'ir",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "çoğu sa[hh]âka der olma gâfil\nöyle sürtükleri sevmez 'âkil",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ya'ni kızkanlığıla meşhûre\nsıcağı geçmiş olur nâtûre",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sürter ol mihre zenân-ı ünsâ\nzîr ü bâlâda misâl-i hünsâ",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bil ki var nîce tabak-zen nisvân\nkîr-i har gibi zıbıkda be-meyân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bırağur olsa da elde dikişi\nyırtığın dikdirir ister sikişi",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "fırsat-ı kânişi fevt etmezler\ntoğruluk yollarına gitmezler",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "çıksa sokağa olur pür-ziynet\nki odur bâdi-i şevk ü şehvet",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "sağ ayakkabı mıdır ey bî-hûş\nçeviren mahkemelerde pâpuş",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bilirim sanma sakın mekr-i zeni\no bulur bilmediğin bir düzeni",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "kuvvet-i câmi'an etmezse vefâ\narama zümre-i nisvânda vefâ",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "serv-kâmet dediğin işve-zenân\ngayra bûy göstere bî-rayb ü gümân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "gizlice görmek için oynâşın\nçıkarır taşra haremden bâşın",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ecnebîden bürünüp sanki kaçâr\ndâmen-i vaslını tenhâda açar",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "geçse âyineci dükkânından\nsûretin aldıra her yânından",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "kırılur kim gele kîre hareket\nanlamış ol hareketden bereket",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "ne açık göz o pür-efsûnlardır\nne başı örtülü mel'unlardır",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "nice okur yazar azdırmışlar\ngöbeği hâceye yazdırmışlar",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "koca câdûları var diz bükücü\nrîşte-i sihre düğümler dökücü",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "pa[t]lasun başlarına çömlekler\ngiydirirler eşeğe gömlekler",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "yedi çok öyle bir keşte-pulâk\nmağz-ı har tu'mesi beyne’l-nisvân",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "şâh-der-şâh edip nice seri\nkerkedân eylediler şîr-i neri",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "koç yiğitler takınıp boynuzu\nbaş tokuşturdı bulup Tinbûzı",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "oldular sanki gubûr-ı Bağdâd\nkapısında bulunur tabl-ı fesâd",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "budur işte bilesin nev'-i cünûn\n'akl-ı nâkıslara olmak meftûn",
+   "bolum": "der ta'n-ı zenân ve zen-dostân"
+  },
+  {
+   "b": "bu iki şahs-ı melâmî-mezheb\nya'ni zen-dost vü gulâmî-meşreb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "açdılar bahs-i fesâdın bâbın\nsedd edip şerm ü hayâ ebvâbın",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bilmedi her biri ne söylediğin\naramazdı sözünün ardın önün",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "biri söyler birisi dinler idi\ndinleyen pek tarılub inler idi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "sanki matlabları izhâr-ı savâb\nbî-edeblikleri gûyâ âdâb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bî-netîce ne esâs vü ne mesâm\nmağlata safsata bî-hadd ü kıyâs",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "selemîdir diyerek bürhânı\nnerdübân eyleyerek butlânı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "evc-i da'vâya su'ûd eylediler\nzîr ü bâlâda neler söylediler",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ol kadar döndüğü bâtıl gidiler\nsanasın devr ü teselsül idiler",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "men'-i külliyyet ile kübrâdan\nselb ü îcâb ederek suğrâdan",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ed'â ile münâkız olarak\nya'ni her sözde mu'ârız olarak",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "geh tekâzâ ederek icmâli\ngeh tafs îl ederek ebtâli",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "her birî nefsini nısb eyler idi\nâherin hakkını gasb eyler idi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "eyleyip geh senedâtı tenvîr\ngeh ederlerdi murâdı tahrîr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "gâh derlerdi edille bedelî\netmem isbât-ı bedîhî-i celî",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "pek mükâbir idi ol ehl-i fesâd\nhakkı teslîmde eylerdi 'inâd",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bî-vaz îfe he[z]eyân ile hemân\nmüntakız cümle delîl ü bürhân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "böyle ol iki mu'ânid bahhâs\nederek 'arbedelerle ebhâs",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "tarafeyn olmadı ilzâm vü ifhâm\nmütemâdî cedeliyyât vü hısâm",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "mes'ele böyle çatallanmış idi\nşâh-ı âhû gibi dallanmış idi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "etmeyip cem'-i kelâm iki nakız\ngiderek bahs-i 'amîk oldu 'arız",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "müselsel sürünüp du'âlar\nböyle zencîr olarak gavğâlar",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'âkı[b]et bunlara da geldi kelâl\nbildiler birbirin ilzâm-ı muhâl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dediler kim yetişir bu ıtnâb\nba'd-ez-în gayrı budur re'y-i sevâb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bir 'azîzi edelim bâri hakem\nne ise hükmü tutulsun muhkem",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bi’t-terâzî edecek bast-ı makâl\nbelki ol eyleye hall-i işgâl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "lîk ammâ ki o muhtâr-ı 'azîz\nola yüz 'iffet ü sâhib-perhîz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "vahdetinde otura halvetde\ngözü ne tâzede ne 'avretde",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ola âyîne gibi sînesi sâf\nrû-nümûn anda cemâl-i insâf",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "mahv edip cümle hevâ vü hevesi\nâteşe yakmış ola hâr u hası",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "iltizâm eylemeye bir tarafı\ntâ mu'ayyen ola bu emr hakkı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ne ise hak o zamân zâhir olur\nya'ni mübtel kim ise bâhir olur",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "o iki perde-derîde yed-kâr\nverdiler böyle usûlüyle karâr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "o zaman var idi bir pîr-i 'azîz\ncümle dünyâ nazarında nâçiz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "müncelî nûr gibi işrâki\nmürşid-i hankeh-i 'uşşâkî",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "evvel-i seyr ü sülûkunda hemân\neyleyip cisr-i mecâzı güzerân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'ârif-i sırr-ı tarîkat olmuş\nmâlik-i mülk-i hakîkat olmuş",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "sînesi maşrık-ı mihr-i 'irfân\npertev-i feyz-i celîü’l-leme'ân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "hem erenler yoluna rehber idi\nmenzil-i 'aşka erişmiş er idi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ya'ni mânend-i cenâb-ı Moravî\nevliyâ zümresinin pişrevi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dil-i sâfîsi muhît-i ekber\nzâhir ü bâtını 'anber ve güher",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bulup ol mertebe-i temkîni\nkalmamışdı eser-i telvîni",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "hârik-i 'âde idi etvârı\nsan kerâmet idi her güftârı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "tarfetü’l-ayn içinde basarı\nlevh-i mahfûza ederdi nazarı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bî-nevâ zümresinin dâ[d]-resi\nney gibi sîne delerdi nefesi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "zurefâdan idi ehl-i dil idi\nkâmil insan diyecek kâmil idi",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "gi[t]di bunlar o cenâb-ı şeyhe\nrûy-mâl eyledi bâb-ı şeyhe",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "etdiler destin öpüp 'aşk-ı niyâz\nsanki el aldı o iki nâ-sâz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "eyleyip bast-ı bisât-ı sıklet\noldular vahdet-i pîr-i kesret",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "edicek halle bî-külfet-kâl\nsebeb-i makdem-i bî-vakti su'âl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dediler 'aşk ola ey mürşid-i hakk\nbulmadık derdimize senden âhakk",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "belî küstahlık ammâ sözümüz\nyok huzûrunda egerçi yüzümüz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "biliriz çünkü hakîkatde velî\nkim erenlerde olur 'afv-ı celî",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bizi kıldı o ümîd-i mebrûr\nhâzır-ı savma'a-i 'izz-i huzûr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "iki gümrâhız eyâ ehl-i reşâd\nbizi kıl savb-ı savâba irşâd",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "keşf edip müşkilimiz şâd eyle\nhızr-veş gel yeti[ş] imdâd eyle",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "himmetin olur ise yâr u refîk\nher mukallid olur ehl-i tahk îk",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "böyle bir tavr-ı edîbâne ile\ntarz u üslûb-ı hakîmâne ile",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "isteyip ruhsat-ı takrîr-i makâl\noldular tâlib-i hall-i işgâl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "gerçi keşf etmiş idi hâllerin\nkâle gelmeksizin ahvâllerin",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "lîk vâdi-i tecâhülde hemân\netmeyip keşf-i zamîri i'lân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dedi ruhsatla o zât-ı âgâh\n'arz edin müşkülünüz eyvallâh",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "görecek ruhsat-ı pîrânesini\ner gibi himmet-i merdânesini",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bî-muhâbâ o edebsiz gidiler\nkavl-i bâtıllarını söylediler",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "başlayıp gâhi Suyolcı-zâde\nöbürü olur idi âmâde",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "sonra başlardı Kazıkçı Yeğeni\ndiyerek pîrim iyi dinle beni",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "cümle bâlâda geçen akvâli\ndahı fâhiş nice kîl ü kâli",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "etdiler bî-edebâne takrîr\nçâre ne dinler idi hazret-i pîr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "lîk ta'l îl vü mu'allel bürhân\netdi tahrîk-i 'urûk-ı buhrân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "hâlet-i vecde gelip hû diyerek\nhây şaşkın bu nedir bu diyerek",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "cûş edip cezbe ile eşk-i teri\ntâs-ı pür-hûna dönüp dîdeleri",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dedi ey yolsuz olan ehl-i fücûr\nbaşa çıkmaz bu reh-i dûr-â-dûr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "râh-ı 'aşka bu mudur doğru sebîl\nki sebîlini eder söz tehbîl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aybdır şehvete meyl ü niyyet\nki odur haslet-i hayvâniyyet",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "böyle dünyâda edenler tuğyân\nolamaz vâsıl-ı hûr u gılmân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bir pul etmez sözünüz hep kâsid\nikiniz birbirinizden fâsid",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "fikriniz vesvese-i şeytânî\nzikriniz dağdağa-i nefsânî",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "nefs-i emmâreye uymak ne hatâ\nheb onundur bu emârât-ı hevâ",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "böyle pîrâne nasîhât ederek\nsemt-i irşâda bu yoldan giderek",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "döndü zen-pâreye bakdı pek pek\ndedi ey eski kavak telli bebek",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "kâr edip mel'anet-i vesvâsı\nkeşf edersin 'averât-ı nâsı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ba'zı zen kaçmasa da âdemden\nsen kaçır nefsini nâ-mahremden",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'akl-ı nâkısları iğfâl itme\nöyle şeytân gibi izlâl itme",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ehl-i 'ırzı çıkaranlar başdan\nbaşların kurtaramazlar taşdan",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "haddini bilse cezâsı ne cezâ\nolur iblîs gibi recme sezâ",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "etme bu yolda fedâ mâ-meleği\nhâsıl eyle melekât-ı meleği",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "kimyâ-yı 'ilmi de bilse farazâ\nmümkün olmaz yine zânîde gınâ",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "derd-i nisvân ile olma gam-gîn\nâhir-i kâr olursun miskîn",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "harem-i gayra nazar 'ayn-ı haram\nbak helâl[e] zen ise asl-ı merâm",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "etdi zen-pâreye çün böyle 'itâb\ndöndü hem muğlime de kıldı hitâb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dedi ey mel'abe-ârâ-yı fesâd\nne oyunsun bilirim hey berbâd",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "yeter aldatma yeter etfâli\nhâcı yatmazla edip iğfâli",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "nice bir pîr ü rû-yı nefs-i habîs\npâk-i ma'sûmı edersin telvîs",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "tıfl-ı mahcûbun açarsın gözünü\ngetirirsin yere hayfâ yüzünü",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ne revâdır düşünüp nice hayâl\nkâr-ı nâ-pâkin ola sû’-i 'amel",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "mel'anetler edesin oğlana\nsonra uydum diyesin şeytâna",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'amelin öyle olunca herze\n'arş-ı rahmâna verirsin lerze",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ben ne hâcet edeyim şerh ü beyân\nkubh-ı aslîsi iken 'ayn-ı 'ıyân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "zîr ü bâlâsını eyler îmân\nma'ni-i 'aleyhâ sâ felehâ",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "makbulân kârı değildir ol kâr\nonda der-kârdır elbet idbâr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ol nazar-bâz-ı cemâl-i mahbûb\nçâr-mîh etme sakın ey menkûb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "evvelâ gerçi mu'âteb kıldı\nsonra rıfk ile muhâtab kıldı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "darılıp etmiş iken levm ü 'itâb\nyine müşkillerine verdi cevâb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "dediğim fehm edesüz ey yârân\nedeyim müşkülünüz bâri beyân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "hüsn-i hûbâna ger olsun müştâk\npâk-sîretde gerekdir 'uşşâk",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aşkdır mâ'ide-i rûhânî\nki anın lezzetidir vicdânî",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aşkdır nûr-ı tecellî-iclâl\nrûy-ı hûbânda eder 'arz-ı cemâl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "sen de ol nûrun olup hayrânı\nnazar-ı pâk ile kıl seyrânı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "mazhar ol 'aşk-ı safâ ayına\nrûh-ı cânândır ona âyine",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "âdemin anla nedir sûretini\nsâni'in fehm edesin kudretini",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "eyle dikkatle ana im'ânı\nseyr edip andaki hüsn ü ânı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "o kalem gibi keşîde kâşı\nnice çekmiş göresin nakkâşı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aşkdır defter-i hüsnün varakı\nhatt-ı hûbândır anın her sebakı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "haller ol varaka dökdü nukat\nyokdur onda bilesin harf-i galat",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "sen hemân toğrı oku etme hatâ\nhoş yazılmış varak-ı mihr ü vefâ",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "zülf-i cânâneye kim olmaz esîr\no eder şâhları der-zencîr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "zendedir tâbâbed-i 'âşık olan\ncan fedâ eylemede sâdık olan",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aşkdır nâm veren 'uşşâka\nçıkarır şehr-i teni âfâka",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "nice âsarda Kays u Ferhâd\nolunur şimdiye dek hayrıla yâd",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "belki şöhret vere hayvâna dahı\nanılur bülbül ü pervâne dahı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bî-'alâka olamaz 'aşk-ı mecâz\nbağlanur silk-i hakîkatle o râz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aşk-ı hâlis gibi iksîr olmaz\nmâyesi kâbil-i tağyîr olmaz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "kalpazanlıkla eder çok bî-hûş\nkalp akçe gibi kalbin mağşûş",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "toğrı râhı şaşıran dîvâne\neremez vasla düşer yâbâne",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "mâ-hasal olmayacak nâ-pâki\n'âşık-ı pâkin olur mu bâki",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "zende mümkün belî tahsîl-i helâl\ntâzenin zevki kuru seyr-i cemâl",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "lîk mahbûb vü gerek mahbûbe\nsâliki vâsıl eder matlûba",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "'aşk-ı pâkîze olur her yerde\nya'ni hem tâzede hem duhterde",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "arada olmaz ise fi'l-i şenî'\n'âşıkın kubhu olur hüsn-i sanî'",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "böyledir 'aşk-ı mecâzî deresi\nki iki güzeli olur kantarası",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bir gözü duhter-i nâzikterdir\nbiri de tâze-i şevk-âverdir",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ikisinde dahı yok bîm ü hater\nkûy-ı 'aşka ikidir râh-ı güzer",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ikisinden de geçer gayret eden\ntoğrıca râh-ı hakîkîye giden",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ikisi de eser-i sun'-ı hekîm\nher biri mazhar-ı hüsn-i takvîm",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "seyle gitme çıkagör ol dereden\nuğurup geç o ikî kantaradan",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ya'ni girdâb-ı günâha talma\nka'r-ı deryâ-yı belâda kalma",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "fıskın envâ'ı mülevves çirk-âb\nRahim-Allâh li-men tâb u tâb",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "nutk edip böyle o pîr-i âgâh\neyledi anları pür-nâle vü âh",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "her biri vallahi hayrân oldu\netdiği kâra peşîmân oldu",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "nefesi böyle edince te'sîr\nbunlara tövbe verip hazret-i pîr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "eyleyip rehberî-i râh-ı reşâd\nkıldı tasvîb-i sevâba irşâd",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "tarik fâsidi kıldı âgâh\nbildiler n’idigini gittikleri râh",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "bu iki müfsidi etdi ıslâh\neyleyip her birini ehl-i salâh",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "sâlik-i râh-ı hakîkat kıldı\nsanasın hızr idi himmet kıldı",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "içirip nutkı ile âb-ı hayât\nedicek def'-i zalâm-ı zulmât",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "edip anlar dahı şeyhe bi'at\ntayb u tâhir çıkıp etdi 'avdet",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ağlayıp eyleyerek sîneyi çâk\noldular hâsılı pâk-ender-pâk",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "ne kadar var ise de cürm ü kusûr\n'afv eder tayyibi ol rabb-i gafûr",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "diyelim biz de hatâya tevbe\nlağv-ı bîhûde edâya tevbe",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "kıssadan hisse me'âlinde hemân\nedip eğlenme gibi bast ü beyân",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "yazdı Vehbî bunu Mağnîsâ’da\nlafz-ı bî-râbıta ma'nâsı da",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "yine ammâ okudukca zürefâ\ngülerek eyleyerek kesb-i safâ",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "belki derler ne güzel nazm-ı latîf\nyazmış ol pîr-i civân-tab'-ı zarîf",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  },
+  {
+   "b": "lafz u ma'nâsı 'aceb zevk-âmîz\nnâmı olsa yakışur Şevk-engîz",
+   "bolum": "reften-i her dü be-hankâh-ı şeyh 'uşşâkî"
+  }
+ ]
+}

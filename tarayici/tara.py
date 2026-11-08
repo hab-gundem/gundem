@@ -167,6 +167,51 @@ def tarih_coz(s: str | None) -> str | None:
         return None
 
 
+TR_HARF = set("çğışöüÇĞİŞÖÜ")
+TR_SIK = ETKISIZ | set("bin milyon yüzde ilk iki üç hakkında konusunda sonrası öncesi değil".split())
+# Türkçede de kelime olanlar (on, el, her, et, dans…) bilerek yok
+YABANCI_SIK = set("""
+the and of to in is are was were for with from by after his their its will has have
+this that who which against over into about win wins how why what when says said
+der die und das ist mit für von des les est pour une los las que por con
+""".split()) - TR_SIK
+TR_KESME = re.compile(r"[’'`](?!(?:s|t|d|m|re|ll|ve)$)[a-zçğıöşü]+$")  # İngilizce 's, 't… değil
+TR_EK = re.compile(r"(lar|ler|dan|den|tan|ten|nda|nde|yor|acak|ecek|mış|miş|muş|müş|ını|ini|nın|nin|ndi|dı|di|ti|cı|ci|lı|li|lu|lü|sı|si|spor)$")
+
+
+def latin_disi_mi(metin: str) -> bool:
+    """Arapça, Rusça, Yunanca… yazıyla mı yazılmış?"""
+    harfler = [c for c in metin if c.isalpha()]
+    disi = sum(not ("a" <= c.lower()[:1] <= "z" or c in TR_HARF or c in "âîûÂÎÛ") for c in harfler)
+    return disi > 0.2 * len(harfler) if harfler else False
+
+
+def turkce_mi(metin: str) -> bool:
+    """Kaba dil denetimi: Türkçe harf/kelime yoksa ya da yabancı sık kelimeler ağır basıyorsa Türkçe değildir."""
+    if latin_disi_mi(metin):
+        return False
+    harfler = [c for c in metin if c.isalpha()]
+    ham = [k for k in KELIME.findall(metin) if not k.isdigit()]
+    kelimeler = [tr_kucuk(KISA_EKLER.sub("", k)) for k in ham]  # "Osimhen'in" -> "osimhen"
+    tr = sum(k in TR_SIK for k in kelimeler)
+    yab = sum(k in YABANCI_SIK for k in kelimeler)
+    tr_harf = sum(c in TR_HARF for c in harfler)
+    if len(kelimeler) >= 30:  # uzun metin: oranlara bak
+        return yab <= tr and tr_harf >= 0.01 * len(harfler)
+    # kısa metin (başlık): Türkçe belirtileri yabancı sık kelimelerle tartılır
+    belirti = (tr + 2 * (tr_harf > 0) + sum(bool(TR_KESME.search(k)) for k in ham)
+               + sum(bool(TR_EK.search(k)) for k in kelimeler if len(k) >= 5))
+    if yab > belirti:
+        return False
+    # 4+ kelimede hiç Türkçe belirti yoksa yabancıdır ("NBA Highlights: Spurs 125, Trail Blazers 103")
+    return not (len(kelimeler) >= 4 and not belirti)
+
+
+def turkce_haber(h: dict) -> bool:
+    return (turkce_mi(h.get("baslik", "")) and not latin_disi_mi(h.get("kaynak", ""))
+            and turkce_mi(h.get("ozet", "")))
+
+
 def baslik_kaynak_ayir(baslik: str) -> tuple[str, str]:
     """Google Haberler başlıkları 'Başlık - Kaynak' biçimindedir."""
     if " - " in baslik:
@@ -220,6 +265,9 @@ def google_haberler_konulari(adres: str = GOOGLE_HABERLER) -> list[dict]:
                              "link": html.unescape(link), "tarih": oge["tarih"]})
         if not haberler:
             haberler = [{"baslik": baslik, "kaynak": kaynak, "link": oge["link"], "tarih": oge["tarih"]}]
+        haberler = [h for h in haberler if turkce_haber(h)]
+        if not haberler:
+            continue
         konular.append({"baslik": baslik, "tur": "haberler", "tarih": oge["tarih"], "haberler": haberler})
     return konular
 
@@ -267,6 +315,7 @@ def trends_konulari() -> list[dict]:
                 "tarih": tarih_coz(oge.findtext("pubDate")),
                 "ozet": html_temizle(h.findtext("ht:news_item_snippet", "", ns)),
             })
+        haberler = [h for h in haberler if turkce_haber(h)]  # Trends yabancı dilde haber de veriyor
         if not trend_anlamli(terim, haberler):
             continue
         konular.append({
@@ -355,7 +404,7 @@ def _site_haberleri(site: str) -> list[dict]:
     haberler = []
     for oge in ogeler[:TERCIH_SITE_HABER]:
         baslik, kaynak = baslik_kaynak_ayir(oge["baslik"])
-        if not bozuk_baslik(baslik):
+        if not bozuk_baslik(baslik) and turkce_mi(baslik):
             haberler.append({"baslik": baslik, "kaynak": kaynak, "link": oge["link"], "tarih": oge["tarih"],
                              "tercih": True})
     return haberler
@@ -437,7 +486,7 @@ def secim_konulari(secim: dict) -> list[dict]:
     for oge in ogeler:
         baslik, kaynak = baslik_kaynak_ayir(oge["baslik"])
         kokler = kok_kumesi(baslik)
-        if bozuk_baslik(baslik) or not any(g and g <= kokler for g in gerekenler):
+        if bozuk_baslik(baslik) or not turkce_mi(baslik) or not any(g and g <= kokler for g in gerekenler):
             continue
         haber = {"baslik": baslik, "kaynak": kaynak, "link": oge["link"], "tarih": oge["tarih"]}
         ayirt = kokler - ortak_kokler
@@ -526,7 +575,7 @@ def ozet_bul(konu: dict, havuz: list[dict]) -> tuple[str, str]:
     if en_iyi and en_iyi_skor >= 3:
         return cumle_kirp(en_iyi["aciklama"], 3), en_iyi["kaynak"]
     for h in konu["haberler"]:
-        if h.get("ozet") and len(h["ozet"]) >= 40:
+        if h.get("ozet") and len(h["ozet"]) >= 40 and turkce_mi(h["ozet"]):
             return cumle_kirp(h["ozet"], 3), h["kaynak"]
     basliklar = []
     for h in konu["haberler"]:
@@ -578,7 +627,7 @@ def gecmis_haberler(konu: dict) -> list[dict]:
         anahtar = tr_kucuk(baslik)
         if not oge["tarih"] or oge["tarih"] >= esik or anahtar in gorulen or anahtar in guncel_basliklar:
             continue
-        if len(kok_kumesi(baslik) & sorgu_kokleri) < gerekli:
+        if len(kok_kumesi(baslik) & sorgu_kokleri) < gerekli or not turkce_mi(baslik):
             continue
         gorulen.add(anahtar)
         gecmis.append({"baslik": baslik, "kaynak": kaynak, "link": oge["link"], "tarih": oge["tarih"]})
@@ -1050,7 +1099,8 @@ def konu_metni(konu: dict) -> dict:
         if s["gorsel"] and not sonuc.get("gorsel"):
             sonuc["gorsel"] = s["gorsel"]
         metin = " ".join(s["paragraflar"])
-        if "metin" not in sonuc and len(metin) >= 300 and len(kokler & kok_kumesi(metin)) >= gerekli:
+        if ("metin" not in sonuc and len(metin) >= 300 and len(kokler & kok_kumesi(metin)) >= gerekli
+                and turkce_mi(metin)):
             sonuc.update({"metin": s["paragraflar"], "metin_kaynagi": h.get("kaynak", ""),
                           "metin_link": s["link"], "metin_tarih": h["tarih"]})
             if s["gorsel"]:
@@ -1108,7 +1158,8 @@ def kose_yazilari(konu: dict, kaynaklar: list[dict]) -> list[dict]:
             continue
         metin = " ".join(s["paragraflar"])
         kokler = kok_kumesi(metin)
-        if len(metin) < 400 or len(kokler & sorgu_kokleri) < gerekli or len(kokler & konu_k) < 4:
+        if (len(metin) < 400 or len(kokler & sorgu_kokleri) < gerekli or len(kokler & konu_k) < 4
+                or not turkce_mi(metin)):
             continue  # konuyla ilgisiz
         yazar = yazar or s["yazar"]
         if _sade(yazar) in yazarlar:
@@ -1140,8 +1191,11 @@ HAFIZA_KATEGORILERI = {
     "din": ("tr.wikipedia.org", ["Peygamberler", "İslam peygamberleri", "Kur'an'daki kişiler",
                                  "Tevrat'taki kişiler", "Eski Ahit'teki kişiler"]),
     "soz": ("tr.wikiquote.org", ["Türk yazarlar", "Yazarlar"]),
-    "siir": ("tr.wikisource.org", ["Yunus Emre", "Şiirler", "Karacaoğlan"]),
+    "siir": ("", []),  # Ömer Hayyam rubaileri (Vikikaynak'ta yok, aşağıdaki siteden)
+    "yetiskin": ("", []),  # müstehcen divan şiiri; metinler tarayici/yetiskin/ altında
 }
+HAYYAM_SAYFA = "https://www.xn--edebiyatgretmeni-twb.net/rubailer{}.htm"  # 1. sayfa ekisiz, sonra 2…15
+HAYYAM_SAYFA_SAYISI = 15
 HIKAYE_EN_FAZLA = 6000  # karakter
 
 
@@ -1255,6 +1309,60 @@ def _gunun_siiri(adaylar: list[str]) -> dict | None:
     return None
 
 
+def _gunun_rubaisi(gun: str) -> dict | None:
+    """Günün sayfasını açar, içinden günün rubaisini seçer."""
+    sayfalar = _gunun_sirasi([str(i) for i in range(1, HAYYAM_SAYFA_SAYISI + 1)], "siir", gun)
+    for sayfa in sayfalar[:3]:
+        adres = HAYYAM_SAYFA.format("" if sayfa == "1" else sayfa)
+        try:
+            ham = getir(adres).decode("utf-8", "replace")
+        except Exception as e:
+            uyari(f"Rubai sayfası okunamadı ({sayfa}): {e}")
+            continue
+        govde = ham.split('class="entry-content"', 1)[-1].split("</article>", 1)[0]
+        rubailer: dict[str, list[str]] = {}
+        no = None
+        for p in re.findall(r"<p[^>]*>(.*?)</p>", govde, re.S):
+            satir = html_temizle(p)
+            if re.fullmatch(r"\d+\.", satir):
+                no = satir[:-1]
+                rubailer[no] = []
+            elif no and satir:
+                rubailer[no].append(satir)
+        rubailer = {n: s for n, s in rubailer.items() if len(s) >= 2}
+        if not rubailer:
+            continue
+        no = _gunun_sirasi(list(rubailer), "rubai", gun)[0]
+        satirlar = rubailer[no]
+        return {"bolum": "siir", "baslik": satirlar[0].rstrip(";:,."), "yazar": "Ömer Hayyam",
+                "metin": ["\n".join(satirlar)], "bilgi": "", "bilgi_baslik": "",
+                "link": adres, "gorsel": "", "kaynak": "edebiyatöğretmeni.net"}
+    return None
+
+
+YETISKIN_DOSYALARI = ["sevk-engiz.json"]  # tarayici/yetiskin/ altında; {eser, yazar, kaynak, link, beyitler}
+YETISKIN_BEYIT = 12                       # günün parçası kaç beyit
+
+
+def _gunun_yetiskin_parcasi(gun: str) -> dict | None:
+    """Eserlerden birinin tarihe bağlı rastgele bir yerinden YETISKIN_BEYIT beyitlik parça."""
+    dizin = os.path.join(os.path.dirname(os.path.abspath(__file__)), "yetiskin")
+    dosya = _gunun_sirasi(YETISKIN_DOSYALARI, "yetiskin", gun)[0]
+    with open(os.path.join(dizin, dosya), encoding="utf-8") as f:
+        eser = json.load(f)
+    beyitler = eser["beyitler"]
+    if not beyitler:
+        return None
+    adet = min(YETISKIN_BEYIT, len(beyitler))
+    bas = int(hashlib.sha1(f"{gun}|yetiskin|{dosya}".encode()).hexdigest(), 16) % (len(beyitler) - adet + 1)
+    parca = beyitler[bas:bas + adet]
+    bolumler = list(dict.fromkeys(b["bolum"] for b in parca if b.get("bolum")))
+    return {"bolum": "yetiskin", "baslik": f"{eser['eser']} ({bas + 1}-{bas + adet}. beyitler)",
+            "yazar": eser["yazar"], "metin": [b["b"] for b in parca],
+            "bilgi": "\n".join(bolumler), "bilgi_baslik": "Eserin bölümü",
+            "link": eser["link"], "gorsel": "", "kaynak": eser["kaynak"]}
+
+
 def bugun_tr() -> str:
     return (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=3)).date().isoformat()
 
@@ -1264,13 +1372,15 @@ def hafiza_kartlari() -> list[dict]:
     gun = bugun_tr()
     kartlar = []
     for tur, (site, kategoriler) in HAFIZA_KATEGORILERI.items():
-        adaylar = _gunun_sirasi(_kategori_uyeleri(site, kategoriler), tur, gun)
+        adaylar = _gunun_sirasi(_kategori_uyeleri(site, kategoriler), tur, gun) if site else []
         kart = None
         try:
             if tur == "soz":
                 kart = _gunun_sozu(adaylar)
             elif tur == "siir":
-                kart = _gunun_siiri(adaylar)
+                kart = _gunun_rubaisi(gun)
+            elif tur == "yetiskin":
+                kart = _gunun_yetiskin_parcasi(gun)
             else:
                 for baslik in adaylar[:5]:
                     yazi = _wiki_yazisi(baslik)

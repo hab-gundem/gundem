@@ -97,7 +97,12 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 }
 .konu-karti a { flex: 1; padding: 14px 0 14px 14px; color: inherit; text-decoration: none; min-width: 0; }
 .konu-karti h2 { font-size: 17px; line-height: 1.35; margin: 0 0 6px; }
-.konu-karti.okundu h2 { color: var(--soluk); }
+/* okunmamış: solda renkli şerit, kalın başlık; okunmuş: kartsız, soluk, ince başlık */
+.konu-karti:not(.okundu) { border-left: 4px solid var(--vurgu); }
+.konu-karti:not(.okundu) h2 { font-weight: 700; }
+.konu-karti.okundu { background: transparent; box-shadow: none; opacity: .55; }
+.konu-karti.okundu h2 { color: var(--soluk); font-weight: 400; }
+.konu-karti.okundu .meta span:last-child { color: var(--iyi); font-weight: 600; }
 .konu-karti p {
   margin: 0; color: var(--soluk); font-size: 14px;
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
@@ -270,8 +275,10 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 
 /* ---------- haber metni, görsel, yenile ---------- */
 
-.yenile-dugme { background: none; border: 0; font-size: 22px; }
-.yenile-dugme.donuyor { animation: don 1.2s linear infinite; color: var(--vurgu); }
+.yenile-dugme { background: none; border: 0; display: inline-flex; align-items: center; justify-content: center; }
+.yenile-dugme svg { display: block; transform-origin: 50% 50%; }
+.yenile-dugme.donuyor { color: var(--vurgu); }
+.yenile-dugme.donuyor svg { animation: don 1.2s linear infinite; }
 @keyframes don { to { transform: rotate(360deg); } }
 .durum {
   position: sticky; top: 53px; z-index: 2;
