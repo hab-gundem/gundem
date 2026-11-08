@@ -12,7 +12,7 @@
     "tercih_kaynaklar: Öne çıkacak yayınlar. Her konu bu sitelerde de aranır; bulunan haberler listenin başına geçer, metin önce onlardan alınır.",
     "  ad: yayının adı. site: alan adı (ör. birgun.net). kose: köşe yazılarının adresi (ör. t24.com.tr/yazarlar); konu bu adreste aranır, ilgili yazılar konuda gösterilir."
   ],
-  "gundem_konu_sayisi": 10,
+  "gundem_konu_sayisi": 20,
   "genel_spor_konu_sayisi": 6,
   "tercih_konu_sayisi": 4,
   "spor_secimleri": [
