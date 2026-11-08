@@ -3,22 +3,37 @@
   "Hafıza > Hicivler bölümünün günün kartı buradan seçilir (her gün tarihe bağlı bir parça).",
   "metin: kıtalar/bentler (satırlar \\n ile). anlam: her kıtanın bugünkü Türkçe karşılığı (gerekmiyorsa boş).",
   "Bugünkü Türkçe karşılıklar ve bağlam notları Claude tarafından yazıldı; akademik çeviri değildir.",
-  "Metinler açık kaynaklardan; sitelere göre küçük farklar olabilir, sansürlü yerler kaynaktaki gibi bırakıldı."
+  "Metinler açık kaynaklardan; sitelere göre küçük farklar olabilir, sansürlü yerler kaynaktaki gibi bırakıldı.",
+  "anahtar: gündem konusunda bu kelimelerden biri geçerse hiciv o konunun altına konur (önce hiciv, yoksa Vikisöz'den söz). Kelime başı eşleşir; '=' ile başlayan tam kelime, boşluklu olan metin içinde aranır."
  ],
  "siirler": [
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Kime Sordumsa Seni",
-   "metin": ["Kime sordumsa seni doğru cevap vermediler;\nKimi alçak, kimi hırsız, kimi deyyus! dediler...\nKünyeni almak için, partiye ettim telefon:\nBizdeki kayda göre, şimdi o mebus dediler!"],
+   "metin": [
+    "Kime sordumsa seni doğru cevap vermediler;\nKimi alçak, kimi hırsız, kimi deyyus! dediler...\nKünyeni almak için, partiye ettim telefon:\nBizdeki kayda göre, şimdi o mebus dediler!"
+   ],
    "baglam": "Tek parti döneminin milletvekillerini hicveder: halkın gözünde alçak, hırsız olan adam partinin kaydında 'mebus' (milletvekili).",
    "kaynak": "Vikikaynak",
-   "link": "https://tr.wikisource.org/wiki/Kime_Sordumsa_Seni"
+   "link": "https://tr.wikisource.org/wiki/Kime_Sordumsa_Seni",
+   "anahtar": [
+    "milletvekili",
+    "mebus",
+    "=vekil",
+    "vekilleri"
+   ]
   },
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Ben Sana",
-   "metin": ["Ben sana bok demem,\nBoklar duyar ar eder.\nBir zerren düşse boka,\nOnu da mundar eder.", "Tanrı senin hamurunu\nNecasetle yoğurmuş,\nAnan seni s.ç.r iken\nYanlışlıkla doğurmuş."],
-   "anlam": ["", "Necaset: pislik, dışkı."],
+   "metin": [
+    "Ben sana bok demem,\nBoklar duyar ar eder.\nBir zerren düşse boka,\nOnu da mundar eder.",
+    "Tanrı senin hamurunu\nNecasetle yoğurmuş,\nAnan seni s.ç.r iken\nYanlışlıkla doğurmuş."
+   ],
+   "anlam": [
+    "",
+    "Necaset: pislik, dışkı."
+   ],
    "baglam": "Kime yazıldığı bilinmiyor; Neyzen'in kaba sövgü türündeki hicivlerinin tipik örneği.",
    "kaynak": "Vikikaynak",
    "link": "https://tr.wikisource.org/wiki/Ben_Sana"
@@ -26,15 +41,23 @@
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Para",
-   "metin": ["Göbekler perçin olmuş\nHava geçmez aradan\nBozulmayacak kız mı var\nSen haber ver paradan"],
+   "metin": [
+    "Göbekler perçin olmuş\nHava geçmez aradan\nBozulmayacak kız mı var\nSen haber ver paradan"
+   ],
    "baglam": "Paranın her kapıyı, her namusu açtığını alaya alır.",
    "kaynak": "Vikikaynak",
-   "link": "https://tr.wikisource.org/wiki/Para_(Neyzen_Tevfik)"
+   "link": "https://tr.wikisource.org/wiki/Para_(Neyzen_Tevfik)",
+   "anahtar": [
+    "rüşvet",
+    "para"
+   ]
   },
   {
    "sair": "Neyzen Tevfik",
    "baslik": "İhtiyarlık ile Gençlik",
-   "metin": ["İhtiyarlık ile gençlik diyerek,\nŞu hayatı ikiye böldürme!\nEy büyüken de büyük Allah'ım,\nBenden evvel sikimi öldürme!"],
+   "metin": [
+    "İhtiyarlık ile gençlik diyerek,\nŞu hayatı ikiye böldürme!\nEy büyüken de büyük Allah'ım,\nBenden evvel sikimi öldürme!"
+   ],
    "baglam": "Yaşlılığa, iktidarsızlık korkusuna kendi kendine takılan bir dua-hiciv.",
    "kaynak": "Vikikaynak",
    "link": "https://tr.wikisource.org/wiki/%C4%B0htiyarl%C4%B1k_ile_Gen%C3%A7lik"
@@ -42,17 +65,41 @@
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Şahid-i Şevk u Safa",
-   "metin": ["Şahid-i şevk u safa etmez teveccüh bizlere,\nYaver-i bahtı ezelde gırtlağından boğmuşuz.\nSafha-i mazi mülevves, hal bok, ati kenef\nMader-i hürriyetin guya g...nden doğmuşuz."],
-   "anlam": ["Neşe ve zevk güzeli yüzümüze bakmaz; talihimizin yardımcısını ta başta gırtlağından boğmuşuz. Geçmişimizin sayfası kirli, bugün bok, gelecek helâ; sanki hürriyet anasının g...nden doğmuşuz."],
+   "metin": [
+    "Şahid-i şevk u safa etmez teveccüh bizlere,\nYaver-i bahtı ezelde gırtlağından boğmuşuz.\nSafha-i mazi mülevves, hal bok, ati kenef\nMader-i hürriyetin guya g...nden doğmuşuz."
+   ],
+   "anlam": [
+    "Neşe ve zevk güzeli yüzümüze bakmaz; talihimizin yardımcısını ta başta gırtlağından boğmuşuz. Geçmişimizin sayfası kirli, bugün bok, gelecek helâ; sanki hürriyet anasının g...nden doğmuşuz."
+   ],
    "baglam": "Memleketin geçmişini, bugününü ve geleceğini birden hicveder; 'hürriyet' sözünün boşa çıkmasıyla alay eder.",
    "kaynak": "Vikikaynak",
-   "link": "https://tr.wikisource.org/wiki/%C5%9Eahid-i_%C5%9Eevk_u_Safa"
+   "link": "https://tr.wikisource.org/wiki/%C5%9Eahid-i_%C5%9Eevk_u_Safa",
+   "anahtar": [
+    "hürriyet",
+    "özgürlük"
+   ]
   },
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Sahne-i Ömrümden Nefs-i Emmareye Hitabım",
-   "metin": ["Âlemin bağ-zârını...eyim\nSünbül ü verd ü nârını...eyim\nAndelib-i nizârını...eyim\nHâsılı nev-baharını...eyim!", "Bana yoktur lüzumu gülşeninin,\nŞeb-i tarîk ü rûz-ı rûşeninin\nNe gulâmının ne de zenninin\nHepsinin tâ mezarını...eyim!", "Ağlamam ben, ben erkeğim erkek,\nHayli güçtür bana cefâ etmek,\nMinnet etmem bu ömre de felek,\nAtını al, tımarını...eyim!", "Güççedir bu fakiri aldatmak,\nYüzdürüp sonra kündeden atmak,\nGözünü aç da sen bana bir bak,\nBen senin i'tibarını...eyim!", "Saki-i mâh-rûyına...ayım,\nGülünün reng ü bûyuna...ayım,\nMutrîbin hâyâ-hûyuna...ayım,\nSâgar-ı neşvedârını...eyim!", "Yok sâfâsı hezâr-ı dem-gerinin,\nGül-sitanda şükûfe-i terinin,\nBezm-i sahbâ-yı rûh-perverinin\nNeşvesiyle hümârını...eyim!", "Feleğin uğradımsa vartasına,\nS..ayım ağzının ta ortasına,\nBunu yazsın cihan da hartasına,\nKıta'at ü bihârını...eyim"],
-   "anlam": ["Dünyanın bağını bahçesini ...eyim; sümbülünü, gülünü, narını ...eyim; zayıf bülbülünü ...eyim; kısacası baharını ...eyim!", "Bana onun gül bahçesi, karanlık gecesi, aydınlık gündüzü lazım değil; ne oğlanı ne kadını; hepsinin ta mezarını ...eyim!", "Ben ağlamam, erkeğim; bana eziyet etmek kolay değil. Bu ömre de minnet etmem, felek; atını al, tımarını ...eyim!", "Bu fakiri kandırmak, yüzdürüp sonra çelme takmak zordur; gözünü aç da bana bak, ben senin itibarını ...eyim!", "Ay yüzlü sakisine, gülünün rengine kokusuna, çalgıcının hay huyuna ...ayım; neşe veren kadehini ...eyim!", "Bin nağmeli bülbülün, gül bahçesindeki taze çiçeğin, ruh besleyen şarap meclisinin zevki yok; neşesiyle mahmurluğunu ...eyim!", "Feleğin tuzağına düştümse ağzının tam ortasına s..ayım; bunu dünya haritasına yazsın, karalarını denizlerini ...eyim!"],
+   "metin": [
+    "Âlemin bağ-zârını...eyim\nSünbül ü verd ü nârını...eyim\nAndelib-i nizârını...eyim\nHâsılı nev-baharını...eyim!",
+    "Bana yoktur lüzumu gülşeninin,\nŞeb-i tarîk ü rûz-ı rûşeninin\nNe gulâmının ne de zenninin\nHepsinin tâ mezarını...eyim!",
+    "Ağlamam ben, ben erkeğim erkek,\nHayli güçtür bana cefâ etmek,\nMinnet etmem bu ömre de felek,\nAtını al, tımarını...eyim!",
+    "Güççedir bu fakiri aldatmak,\nYüzdürüp sonra kündeden atmak,\nGözünü aç da sen bana bir bak,\nBen senin i'tibarını...eyim!",
+    "Saki-i mâh-rûyına...ayım,\nGülünün reng ü bûyuna...ayım,\nMutrîbin hâyâ-hûyuna...ayım,\nSâgar-ı neşvedârını...eyim!",
+    "Yok sâfâsı hezâr-ı dem-gerinin,\nGül-sitanda şükûfe-i terinin,\nBezm-i sahbâ-yı rûh-perverinin\nNeşvesiyle hümârını...eyim!",
+    "Feleğin uğradımsa vartasına,\nS..ayım ağzının ta ortasına,\nBunu yazsın cihan da hartasına,\nKıta'at ü bihârını...eyim"
+   ],
+   "anlam": [
+    "Dünyanın bağını bahçesini ...eyim; sümbülünü, gülünü, narını ...eyim; zayıf bülbülünü ...eyim; kısacası baharını ...eyim!",
+    "Bana onun gül bahçesi, karanlık gecesi, aydınlık gündüzü lazım değil; ne oğlanı ne kadını; hepsinin ta mezarını ...eyim!",
+    "Ben ağlamam, erkeğim; bana eziyet etmek kolay değil. Bu ömre de minnet etmem, felek; atını al, tımarını ...eyim!",
+    "Bu fakiri kandırmak, yüzdürüp sonra çelme takmak zordur; gözünü aç da bana bak, ben senin itibarını ...eyim!",
+    "Ay yüzlü sakisine, gülünün rengine kokusuna, çalgıcının hay huyuna ...ayım; neşe veren kadehini ...eyim!",
+    "Bin nağmeli bülbülün, gül bahçesindeki taze çiçeğin, ruh besleyen şarap meclisinin zevki yok; neşesiyle mahmurluğunu ...eyim!",
+    "Feleğin tuzağına düştümse ağzının tam ortasına s..ayım; bunu dünya haritasına yazsın, karalarını denizlerini ...eyim!"
+   ],
    "baglam": "Kendi nefsine ve feleğe (dünyaya, kadere) sövgüyle meydan okur; divan şiirinin süslü bahar tasvirlerini sövgüyle tersine çevirir. Sansürlü kelimeler kaynaktaki gibi.",
    "kaynak": "Vikikaynak",
    "link": "https://tr.wikisource.org/wiki/Sahne-i_%C3%96mr%C3%BCmden_Nefs-i_Emmareye_Hitab%C4%B1m"
@@ -60,24 +107,45 @@
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Vatanın Tarihi",
-   "metin": ["Göründü memleketin iç yüzü, çöktüyse temel.\nŞimdilik harice karşı yüzümüz olsa dahi\nYüzümüz yok bakacak kabrine ecdadımızın.\nTükürür zannederim çehremize, vatanın tarihi."],
+   "metin": [
+    "Göründü memleketin iç yüzü, çöktüyse temel.\nŞimdilik harice karşı yüzümüz olsa dahi\nYüzümüz yok bakacak kabrine ecdadımızın.\nTükürür zannederim çehremize, vatanın tarihi."
+   ],
    "baglam": "1943, İkinci Dünya Savaşı yılları: memleketin iç yüzünü, yozlaşmayı hicveder; dışarıya karşı yüzümüz olsa da atalarımıza bakacak yüzümüz yok der.",
    "kaynak": "Vikikaynak",
-   "link": "https://tr.wikisource.org/wiki/Vatan%C4%B1n_Tarihi"
+   "link": "https://tr.wikisource.org/wiki/Vatan%C4%B1n_Tarihi",
+   "anahtar": [
+    "yolsuzluk",
+    "vatan",
+    "soygun"
+   ]
   },
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Binamaz",
-   "metin": ["Bî-namaz deyip beni Hak'dan uzak gören,\nSığmaz senin hayâline mihrâb ü mübrem.\nSen sade beş vakitte ararsın Allahını,\nBen her zaman onunla emîn ol beraberim"],
-   "anlam": ["Beni namazsız deyip Allah'tan uzak sanan, senin hayaline mihrap da kesin hüküm de sığmaz. Sen Allah'ını yalnızca beş vakitte ararsın; emin ol, ben her zaman onunla beraberim."],
+   "metin": [
+    "Bî-namaz deyip beni Hak'dan uzak gören,\nSığmaz senin hayâline mihrâb ü mübrem.\nSen sade beş vakitte ararsın Allahını,\nBen her zaman onunla emîn ol beraberim"
+   ],
+   "anlam": [
+    "Beni namazsız deyip Allah'tan uzak sanan, senin hayaline mihrap da kesin hüküm de sığmaz. Sen Allah'ını yalnızca beş vakitte ararsın; emin ol, ben her zaman onunla beraberim."
+   ],
    "baglam": "Kendisini dinsizlikle suçlayan sofuları, şekilci dindarlığı hicveder.",
    "kaynak": "Vikikaynak",
-   "link": "https://tr.wikisource.org/wiki/Binamaz"
+   "link": "https://tr.wikisource.org/wiki/Binamaz",
+   "anahtar": [
+    "diyanet",
+    "namaz",
+    "vaaz"
+   ]
   },
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Felek",
-   "metin": ["Yamansın her zaman aldattın beni,\nKâh düşürdün kâhi kaldırdın felek!\nMecnun'sun diyerek Leylâ peşinden,\nIssız vâdilere saldırdın felek!", "Rehbersin dedin ben ise kördüm,\nElimle başıma çok çorap ördüm.\nKendimi bıraktım âlemi gördüm,\nHesapsız günahlar aldırdın felek!", "Şifadır dedin zehir tatdırdın,\nGençliğin okunu boşa attırdın,\nKörlerin yurdunda ayna sattırdın,\nÇıkmaz sokaklara daldırdın felek!", "Barışmadı gönlüm merd ile zenle,\nNe bir iş bilenle, ne boş gezenle\nHicran köşesinde bozuk düzenle,\nNEYZEN'e her telden çaldırdın felek!"],
+   "metin": [
+    "Yamansın her zaman aldattın beni,\nKâh düşürdün kâhi kaldırdın felek!\nMecnun'sun diyerek Leylâ peşinden,\nIssız vâdilere saldırdın felek!",
+    "Rehbersin dedin ben ise kördüm,\nElimle başıma çok çorap ördüm.\nKendimi bıraktım âlemi gördüm,\nHesapsız günahlar aldırdın felek!",
+    "Şifadır dedin zehir tatdırdın,\nGençliğin okunu boşa attırdın,\nKörlerin yurdunda ayna sattırdın,\nÇıkmaz sokaklara daldırdın felek!",
+    "Barışmadı gönlüm merd ile zenle,\nNe bir iş bilenle, ne boş gezenle\nHicran köşesinde bozuk düzenle,\nNEYZEN'e her telden çaldırdın felek!"
+   ],
    "baglam": "1913, Sahra-i Cedid. Kaderini, kendisini her yere savuran 'feleği' (dünyayı, talihi) hicveder.",
    "kaynak": "Vikikaynak",
    "link": "https://tr.wikisource.org/wiki/Felek"
@@ -85,8 +153,20 @@
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Geçer",
-   "metin": ["Izdırabın sonu yok sanma, bu alem de geçer,\nÖmr-i fani gibidir, gün de geçer, dem de geçer,\nGam karar eyliyemez hande-i hurrem de geçer,\nDevr-i şadi de geçer, gussa-i matem de geçer,\nGece gündüz yok olur, an-ı dem adem de geçer,", "Bu tecelli-i hayat aşk ile büktü belimi,\nÇağlıyan göz yaşı mı, yoksa ki hicran seli mi?\nİnleyen saz-ı kazanın acaba bam teli mi?\nÇevrilir dest-i kaderle bu şu'unun fili mi,\nNey susar, mey dökülür, gulgule-i Cem de geçer,", "İbret aldın, okudunsa şu yaman dünyadan,\nNefsini kurtara gör masyad-ı mafihadan.\nNiyyet-i hilkatı bul aşk-ı cihan aradan,\nÖnü yoktan, sonu boktan, bu kuru da'vadan\nUtanır gayret-i gufranla cehennem de geçer.", "Ne şeriat, ne tarikat, ne hakikat, ne türe,\nSüremez hükmünü bunlar yaşadıkça bu küre\nCahilin korku kokan defterini Tanrı düre!\nMa'rifet mahkemesinde verilen hükme göre,\nCennet iflas eder, efsane-i Adem de geçer.", "Serseri Neyzen'in aşkınla kulak ver sözüne,\nGirmemiştir bu avalim, bu bedyi' gözüne.\nCehlinin kudreti baktırmadı kendi özüne.\nPir olur sakiy-i gül çehre bakılmaz yüzüne,\nHak olur pir-i mugan, sohbet-i hemdem de geçer."],
-   "anlam": ["Acının sonu yok sanma, bu dünya da geçer; ölümlü ömür gibi gün de geçer, an da geçer. Keder kalıcı değildir, mutlu gülüş de geçer; sevinç devri de geçer, yas kederi de; gece gündüz yok olur, an ve yokluk da geçer.", "Hayatın bu görünüşü aşkla belimi büktü. Çağlayan gözyaşı mı, ayrılık seli mi? İnleyen kader sazının bam teli mi? Kaderin eliyle dönen işlerin çarkı mı? Ney susar, şarap dökülür, Cem'in şenliği de geçer.", "Bu yaman dünyadan ibret aldıysan, nefsini içindekilerin tuzağından kurtar. Yaratılışın amacını dünya aşkında bul; önü yoktan, sonu boktan bu kuru davadan, bağışlanma gayretiyle cehennem bile utanır, geçer.", "Ne şeriat, ne tarikat, ne hakikat, ne töre; bu dünya döndükçe bunlar hükmünü süremez. Tanrı, cahilin korku kokan defterini dürsün! Bilgi mahkemesinin hükmüne göre cennet iflas eder, Âdem efsanesi de geçer.", "Serseri Neyzen'in sözüne aşkla kulak ver: bu âlemler, bu güzellikler cahilin gözüne girmemiştir; cehaletinin gücü kendi özüne baktırmadı. Gül yüzlü saki yaşlanır, yüzüne bakılmaz; meyhaneci pir toprak olur, dost sohbeti de geçer."],
+   "metin": [
+    "Izdırabın sonu yok sanma, bu alem de geçer,\nÖmr-i fani gibidir, gün de geçer, dem de geçer,\nGam karar eyliyemez hande-i hurrem de geçer,\nDevr-i şadi de geçer, gussa-i matem de geçer,\nGece gündüz yok olur, an-ı dem adem de geçer,",
+    "Bu tecelli-i hayat aşk ile büktü belimi,\nÇağlıyan göz yaşı mı, yoksa ki hicran seli mi?\nİnleyen saz-ı kazanın acaba bam teli mi?\nÇevrilir dest-i kaderle bu şu'unun fili mi,\nNey susar, mey dökülür, gulgule-i Cem de geçer,",
+    "İbret aldın, okudunsa şu yaman dünyadan,\nNefsini kurtara gör masyad-ı mafihadan.\nNiyyet-i hilkatı bul aşk-ı cihan aradan,\nÖnü yoktan, sonu boktan, bu kuru da'vadan\nUtanır gayret-i gufranla cehennem de geçer.",
+    "Ne şeriat, ne tarikat, ne hakikat, ne türe,\nSüremez hükmünü bunlar yaşadıkça bu küre\nCahilin korku kokan defterini Tanrı düre!\nMa'rifet mahkemesinde verilen hükme göre,\nCennet iflas eder, efsane-i Adem de geçer.",
+    "Serseri Neyzen'in aşkınla kulak ver sözüne,\nGirmemiştir bu avalim, bu bedyi' gözüne.\nCehlinin kudreti baktırmadı kendi özüne.\nPir olur sakiy-i gül çehre bakılmaz yüzüne,\nHak olur pir-i mugan, sohbet-i hemdem de geçer."
+   ],
+   "anlam": [
+    "Acının sonu yok sanma, bu dünya da geçer; ölümlü ömür gibi gün de geçer, an da geçer. Keder kalıcı değildir, mutlu gülüş de geçer; sevinç devri de geçer, yas kederi de; gece gündüz yok olur, an ve yokluk da geçer.",
+    "Hayatın bu görünüşü aşkla belimi büktü. Çağlayan gözyaşı mı, ayrılık seli mi? İnleyen kader sazının bam teli mi? Kaderin eliyle dönen işlerin çarkı mı? Ney susar, şarap dökülür, Cem'in şenliği de geçer.",
+    "Bu yaman dünyadan ibret aldıysan, nefsini içindekilerin tuzağından kurtar. Yaratılışın amacını dünya aşkında bul; önü yoktan, sonu boktan bu kuru davadan, bağışlanma gayretiyle cehennem bile utanır, geçer.",
+    "Ne şeriat, ne tarikat, ne hakikat, ne töre; bu dünya döndükçe bunlar hükmünü süremez. Tanrı, cahilin korku kokan defterini dürsün! Bilgi mahkemesinin hükmüne göre cennet iflas eder, Âdem efsanesi de geçer.",
+    "Serseri Neyzen'in sözüne aşkla kulak ver: bu âlemler, bu güzellikler cahilin gözüne girmemiştir; cehaletinin gücü kendi özüne baktırmadı. Gül yüzlü saki yaşlanır, yüzüne bakılmaz; meyhaneci pir toprak olur, dost sohbeti de geçer."
+   ],
    "baglam": "Bakırköy'deki yıllarında yazıldığı söylenir. Hem hayatın geçiciliğini anlatır hem de korkuya dayalı din anlayışını ve şeyhleri hicveder.",
    "kaynak": "Vikikaynak",
    "link": "https://tr.wikisource.org/wiki/Ge%C3%A7er"
@@ -94,7 +174,10 @@
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Çok Şükür (ilk bent)",
-   "metin": ["Deli gönül, neyi özler durursun?\nAcınacak dostun, cananın mı var?\nDünya yansa yorganın yok içinde,\nHarap olmuş evin, dükkânın mı var?", "Hatır, gönül bulamazsın birinde,\nDama dedi dişisinde, erinde,\nVatan dedikleri yangın yerinde,\nİnsanlığa hâlâ imanın mı var?"],
+   "metin": [
+    "Deli gönül, neyi özler durursun?\nAcınacak dostun, cananın mı var?\nDünya yansa yorganın yok içinde,\nHarap olmuş evin, dükkânın mı var?",
+    "Hatır, gönül bulamazsın birinde,\nDama dedi dişisinde, erinde,\nVatan dedikleri yangın yerinde,\nİnsanlığa hâlâ imanın mı var?"
+   ],
    "baglam": "Şair Eşref'in etkisiyle yazıldığı söylenir. Vatanı yangın yerine çevirenleri ve insanlıktan umudu kesmeyi hicveder. (Kaynakta yalnız bu kısım var.)",
    "kaynak": "turkedebiyati.org – Türk Edebiyatında Yergi (Hiciv)",
    "link": "https://www.turkedebiyati.org/?p=3284"
@@ -102,42 +185,86 @@
   {
    "sair": "Neyzen Tevfik",
    "baslik": "Ne Ceket Kaldı",
-   "metin": ["Ne ceket kaldı, ne metelik cebinde ceketin.\nKurtaracağız diye geldiler içine sıçtılar memleketin."],
+   "metin": [
+    "Ne ceket kaldı, ne metelik cebinde ceketin.\nKurtaracağız diye geldiler içine sıçtılar memleketin."
+   ],
    "baglam": "Memleketi 'kurtarmak' iddiasıyla gelip yoksullaştıran yöneticileri hicveder.",
    "kaynak": "Vikisöz",
-   "link": "https://tr.wikiquote.org/wiki/Neyzen_Tevfik"
+   "link": "https://tr.wikiquote.org/wiki/Neyzen_Tevfik",
+   "anahtar": [
+    "=zam",
+    "zamlar",
+    "zammı",
+    "enflasyon",
+    "pahalılık",
+    "yoksul",
+    "geçim",
+    "kriz"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Padişahım Öyle Alçaksın ki",
-   "metin": ["Besmele gûş eyleyen şeytan gibi\nKorkuyorsun höt dese bir ecnebi\nPadişahım öyle alçaksın ki\nİzzet-i nefsin Arap İzzet gibi."],
-   "anlam": ["Besmele duyan şeytan gibi, bir yabancı 'höt' dese korkuyorsun. Padişahım, öyle alçaksın ki onurun (izzet-i nefsin) Arap İzzet kadar."],
+   "metin": [
+    "Besmele gûş eyleyen şeytan gibi\nKorkuyorsun höt dese bir ecnebi\nPadişahım öyle alçaksın ki\nİzzet-i nefsin Arap İzzet gibi."
+   ],
+   "anlam": [
+    "Besmele duyan şeytan gibi, bir yabancı 'höt' dese korkuyorsun. Padişahım, öyle alçaksın ki onurun (izzet-i nefsin) Arap İzzet kadar."
+   ],
    "baglam": "II. Abdülhamit'i ve sarayın güçlü mabeyincisi Arap İzzet Paşa'yı birlikte hicveder; padişahın yabancı devletler karşısındaki korkaklığıyla alay eder.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
-   "link": "https://www.turkedebiyati.org/?p=29136"
+   "link": "https://www.turkedebiyati.org/?p=29136",
+   "anahtar": [
+    "abd",
+    "nato",
+    "washington",
+    "trump"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Millete Eşek Demiş",
-   "metin": ["Millete erbâbı mansıptan biri eşek demiş,\nReddedilmez böyle bir söz, amma ki pek can sıkar...\nOlsa da millet eşek, eşek diyen bilmez mi ki:\nSadrazamlarla vâliler de milletten çıkar..."],
-   "anlam": ["Makam sahiplerinden biri millete eşek demiş; bu söz reddedilmez ama pek can sıkar. Millet eşek olsa da, eşek diyen bilmez mi ki sadrazamlarla valiler de milletin içinden çıkar."],
+   "metin": [
+    "Millete erbâbı mansıptan biri eşek demiş,\nReddedilmez böyle bir söz, amma ki pek can sıkar...\nOlsa da millet eşek, eşek diyen bilmez mi ki:\nSadrazamlarla vâliler de milletten çıkar..."
+   ],
+   "anlam": [
+    "Makam sahiplerinden biri millete eşek demiş; bu söz reddedilmez ama pek can sıkar. Millet eşek olsa da, eşek diyen bilmez mi ki sadrazamlarla valiler de milletin içinden çıkar."
+   ],
    "baglam": "Halkı küçümseyen bir devlet adamına cevap: millet eşekse, siz de o milletten çıktınız.",
    "kaynak": "Vikisöz",
-   "link": "https://tr.wikiquote.org/wiki/%C5%9Eair_E%C5%9Fref"
+   "link": "https://tr.wikiquote.org/wiki/%C5%9Eair_E%C5%9Fref",
+   "anahtar": [
+    "vali",
+    "sadrazam",
+    "halka hakaret"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Hükümet Bunu Musiki Sanıyor",
-   "metin": ["Her biri kendince zulüm etmekte:\nİnsan bir memur görünce eşkıya sanıyor.\nEy zavallı, boş yere yakınma, bağırıp çağırma;\nÇünkü ezilenlerin ahını işiten hükümet bunu musîki sanıyor!"],
+   "metin": [
+    "Her biri kendince zulüm etmekte:\nİnsan bir memur görünce eşkıya sanıyor.\nEy zavallı, boş yere yakınma, bağırıp çağırma;\nÇünkü ezilenlerin ahını işiten hükümet bunu musîki sanıyor!"
+   ],
    "baglam": "Abdülhamit dönemi memurlarının zulmünü hicveder. Not: Bu, kıtanın bugünkü Türkçeye aktarılmış hâlidir; aslı kaynaklarda verilmemiş.",
    "kaynak": "Vikisöz",
-   "link": "https://tr.wikiquote.org/wiki/%C5%9Eair_E%C5%9Fref"
+   "link": "https://tr.wikiquote.org/wiki/%C5%9Eair_E%C5%9Fref",
+   "anahtar": [
+    "polis",
+    "memur",
+    "gözaltı",
+    "zulüm",
+    "işkence"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Mirimiran Bağdan Geliyor",
-   "metin": ["Bârekallah tabankeş olarak\nMirimiran yine bağdan geliyor.\nSeyredenler sanır ol manzarayı\nSürüsüyle ayı dağdan iniyor."],
-   "anlam": ["Maşallah, yayan yürüyerek mirimiran (paşa) yine bağdan geliyor. O manzarayı seyredenler sürüsüyle ayı dağdan iniyor sanır."],
+   "metin": [
+    "Bârekallah tabankeş olarak\nMirimiran yine bağdan geliyor.\nSeyredenler sanır ol manzarayı\nSürüsüyle ayı dağdan iniyor."
+   ],
+   "anlam": [
+    "Maşallah, yayan yürüyerek mirimiran (paşa) yine bağdan geliyor. O manzarayı seyredenler sürüsüyle ayı dağdan iniyor sanır."
+   ],
    "baglam": "Akhisar'da konuk oldukları evde Şerif Paşa bağ görmeye gider, peşine takılan kalabalıkla dönünce Eşref bu kıtayı söyler.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
    "link": "https://www.turkedebiyati.org/?p=29136"
@@ -145,8 +272,12 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Eşeklere Selam",
-   "metin": ["Gâvur İzmir'de sokaklar dardır\nBir selâm tavrı ile can koruruz\nŞöyle dursun atlarla araba\nYolda eşeklere biz hasdururuz."],
-   "anlam": ["Gâvur İzmir'de sokaklar dardır; bir selam vererek canımızı koruruz. Atlar, arabalar şöyle dursun, yolda eşeklere bile hazır ol dururuz."],
+   "metin": [
+    "Gâvur İzmir'de sokaklar dardır\nBir selâm tavrı ile can koruruz\nŞöyle dursun atlarla araba\nYolda eşeklere biz hasdururuz."
+   ],
+   "anlam": [
+    "Gâvur İzmir'de sokaklar dardır; bir selam vererek canımızı koruruz. Atlar, arabalar şöyle dursun, yolda eşeklere bile hazır ol dururuz."
+   ],
    "baglam": "Hiç sevmediği amirine istemeye istemeye selam verdikten sonra kahvede dostlarına okuduğu kıta.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
    "link": "https://www.turkedebiyati.org/?p=29136"
@@ -154,8 +285,14 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Eşref'ten Neyzen'e",
-   "metin": ["Kimseler Hafız'a alnı yere gelmiş diyemez,\nDoğduğundan beri kıç dönmedi Şeytan'a bile!\nÇok cevâmide, mescidde dolaştı amma,\nKoymadı alnını hiç secde-i Rahmâna bile!", "Hacıyatmaz gibidir sanki köpek oğlu köpek\nAyaküstünde kalır düşse de mîzâna bile!"],
-   "anlam": ["Kimse Hafız'ın (Neyzen'in) alnı yere değdi diyemez; doğduğundan beri şeytana bile kıç dönmedi. Çok camide, mescitte dolaştı ama alnını Allah'a secdeye bile koymadı.", "Köpek oğlu köpek sanki hacıyatmaz; kıyamet terazisine düşse bile ayakta kalır."],
+   "metin": [
+    "Kimseler Hafız'a alnı yere gelmiş diyemez,\nDoğduğundan beri kıç dönmedi Şeytan'a bile!\nÇok cevâmide, mescidde dolaştı amma,\nKoymadı alnını hiç secde-i Rahmâna bile!",
+    "Hacıyatmaz gibidir sanki köpek oğlu köpek\nAyaküstünde kalır düşse de mîzâna bile!"
+   ],
+   "anlam": [
+    "Kimse Hafız'ın (Neyzen'in) alnı yere değdi diyemez; doğduğundan beri şeytana bile kıç dönmedi. Çok camide, mescitte dolaştı ama alnını Allah'a secdeye bile koymadı.",
+    "Köpek oğlu köpek sanki hacıyatmaz; kıyamet terazisine düşse bile ayakta kalır."
+   ],
    "baglam": "Eşref'in öğrencisi ve dostu genç Neyzen Tevfik'e (Hafız) takıldığı şakacı hiciv.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
    "link": "https://www.turkedebiyati.org/?p=29136"
@@ -163,17 +300,32 @@
   {
    "sair": "Şair Eşref",
    "baslik": "İstimlak",
-   "metin": ["İstimlak denilen kanun\nÖyle gitmekte ki artık dikine\nBiri memişhanede görülse, derhal\nVaziyed eyleyecekler s. . . . . ine."],
-   "anlam": ["İstimlak (kamulaştırma) denen kanun öyle dikine gidiyor ki, biri helâda görülse hemen onun s.....ine el koyacaklar."],
+   "metin": [
+    "İstimlak denilen kanun\nÖyle gitmekte ki artık dikine\nBiri memişhanede görülse, derhal\nVaziyed eyleyecekler s. . . . . ine."
+   ],
+   "anlam": [
+    "İstimlak (kamulaştırma) denen kanun öyle dikine gidiyor ki, biri helâda görülse hemen onun s.....ine el koyacaklar."
+   ],
    "baglam": "Hükümete taşınır mallara el koyma yetkisi verilince yapılan aşırılıkları ve haksızlıkları hicveder.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
-   "link": "https://www.turkedebiyati.org/?p=29136"
+   "link": "https://www.turkedebiyati.org/?p=29136",
+   "anahtar": [
+    "kamulaştırma",
+    "istimlak",
+    "el koyma",
+    "kayyum",
+    "el konuldu"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Sivrihisar'a Atanınca",
-   "metin": ["Beni Sivrihisar'a merhamet eyle oturtturma,\nKerem kıl Akhisar'ı dersen İzmir'den ırak olsun.\nMücerret bir hisara gönderilmekse eğer maksut,\nEfendim başı sivri olmasın da bari ak olsun."],
-   "anlam": ["Merhamet et, beni Sivrihisar'a oturtma; Akhisar'ı İzmir'den uzak dersen lütfet (orada kalayım). Amaç beni sadece bir hisara göndermekse, efendim, başı sivri olmasın da bari ak olsun."],
+   "metin": [
+    "Beni Sivrihisar'a merhamet eyle oturtturma,\nKerem kıl Akhisar'ı dersen İzmir'den ırak olsun.\nMücerret bir hisara gönderilmekse eğer maksut,\nEfendim başı sivri olmasın da bari ak olsun."
+   ],
+   "anlam": [
+    "Merhamet et, beni Sivrihisar'a oturtma; Akhisar'ı İzmir'den uzak dersen lütfet (orada kalayım). Amaç beni sadece bir hisara göndermekse, efendim, başı sivri olmasın da bari ak olsun."
+   ],
    "baglam": "Sevdiği Akhisar'dan Sivrihisar'a atanınca yazdığı, şehir adlarıyla oynayan kıta.",
    "kaynak": "turkedebiyati.org – Türk Edebiyatında Yergi (Hiciv)",
    "link": "https://www.turkedebiyati.org/?p=3284"
@@ -181,17 +333,32 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Tekkeler ve Medreseler",
-   "metin": ["Bizde pek çok tekkeler tembel yatağıdır bütün\nMedrese sâkinleri asker kaçağıdır bütün"],
-   "anlam": ["Bizde tekkelerin çoğu baştan başa tembel yatağıdır; medresede oturanların hepsi asker kaçağıdır."],
+   "metin": [
+    "Bizde pek çok tekkeler tembel yatağıdır bütün\nMedrese sâkinleri asker kaçağıdır bütün"
+   ],
+   "anlam": [
+    "Bizde tekkelerin çoğu baştan başa tembel yatağıdır; medresede oturanların hepsi asker kaçağıdır."
+   ],
    "baglam": "Devrin tekke ve medreselerini, din kisvesi altında askerlikten ve çalışmaktan kaçanları hicveder.",
    "kaynak": "Tolga Bayındır, Mehmed (Şair) Eşref'in Şiirlerinde Melâmilik, Akademik Dil ve Edebiyat Dergisi 3/1 (2019); Huyugüzel–Çağın, Eşref Bütün Eserleri, s. 454",
-   "link": "https://dergipark.org.tr/en/download/article-file/705488"
+   "link": "https://dergipark.org.tr/en/download/article-file/705488",
+   "anahtar": [
+    "tarikat",
+    "cemaat",
+    "vakıf",
+    "medrese",
+    "tekke"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Kalemim",
-   "metin": ["Kahr için hasmımı bir ra'd-ü kazadır kalemim.\nLekeler zalimi püsküllü beladır kalemim.\nKarşısında nice erbab-ı denâet titrer\nHâkim-i mahkeme-i hükm-ü cezadır kalemim."],
-   "anlam": ["Kalemim düşmanımı kahretmek için bir yıldırım, bir kaza belasıdır; zalimi lekeleyen püsküllü beladır. Karşısında nice alçak titrer; kalemim, ceza mahkemesinin yargıcıdır."],
+   "metin": [
+    "Kahr için hasmımı bir ra'd-ü kazadır kalemim.\nLekeler zalimi püsküllü beladır kalemim.\nKarşısında nice erbab-ı denâet titrer\nHâkim-i mahkeme-i hükm-ü cezadır kalemim."
+   ],
+   "anlam": [
+    "Kalemim düşmanımı kahretmek için bir yıldırım, bir kaza belasıdır; zalimi lekeleyen püsküllü beladır. Karşısında nice alçak titrer; kalemim, ceza mahkemesinin yargıcıdır."
+   ],
    "baglam": "Eşref'in hicvi bir silah, bir mahkeme olarak gördüğünü anlatan kıtası.",
    "kaynak": "turkedebiyati.org – Türk Edebiyatında Yergi (Hiciv)",
    "link": "https://www.turkedebiyati.org/?p=3284"
@@ -199,8 +366,12 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Kendimi Hicveylemezsem",
-   "metin": ["Eylemem ölsem de kizbi ihtiyar,\nDoğruyu söyler gezer bir şairim;\nBir güzel mazmun bulunca,\nEşrefa! Kendimi hicveylemezsem kâfirim."],
-   "anlam": ["Ölsem de yalanı seçmem; doğruyu söyleyip gezen bir şairim. Güzel bir nükte bulunca, ey Eşref, kendimi bile hicvetmezsem kâfirim."],
+   "metin": [
+    "Eylemem ölsem de kizbi ihtiyar,\nDoğruyu söyler gezer bir şairim;\nBir güzel mazmun bulunca,\nEşrefa! Kendimi hicveylemezsem kâfirim."
+   ],
+   "anlam": [
+    "Ölsem de yalanı seçmem; doğruyu söyleyip gezen bir şairim. Güzel bir nükte bulunca, ey Eşref, kendimi bile hicvetmezsem kâfirim."
+   ],
    "baglam": "Hicivde kimseyi, kendisini bile ayırmadığını söyler.",
    "kaynak": "turkedebiyati.org – Türk Edebiyatında Yergi (Hiciv)",
    "link": "https://www.turkedebiyati.org/?p=3284"
@@ -208,8 +379,12 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Numarasız Gözlük",
-   "metin": ["Eksen hicvimde ta'yîn-i esâmi eylemem,\nFikr-i mahsûsumca bu halin şudur ki mucibi:\nİsterim her bir denîye kaabil-i tatbik olup\nKullanılsın her biri bir numrasız gözlük gibi."],
-   "anlam": ["Hicivlerimde çoğu zaman isim vermem; kendi düşünceme göre bunun sebebi şu: isterim ki her alçağa uysun, her biri numarasız bir gözlük gibi herkesçe kullanılsın."],
+   "metin": [
+    "Eksen hicvimde ta'yîn-i esâmi eylemem,\nFikr-i mahsûsumca bu halin şudur ki mucibi:\nİsterim her bir denîye kaabil-i tatbik olup\nKullanılsın her biri bir numrasız gözlük gibi."
+   ],
+   "anlam": [
+    "Hicivlerimde çoğu zaman isim vermem; kendi düşünceme göre bunun sebebi şu: isterim ki her alçağa uysun, her biri numarasız bir gözlük gibi herkesçe kullanılsın."
+   ],
    "baglam": "Hicivlerinde neden isim vermediğini açıklar: her alçak kendine uygun olanı taksın.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
    "link": "https://www.turkedebiyati.org/?p=29136"
@@ -217,26 +392,48 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Hasbihal (Namık Kemal'e nazire)",
-   "metin": ["Otuz yıldan beri biz kestik ümidi selâmetten,\nRezaletle çekilmek üzereyiz artık hükümetten.\nGelir elbet nakise şanına millet hakir oldu,\nSilik beşlik gibi düştükçe düştü kadr-ü kıymetten."],
-   "anlam": ["Otuz yıldır kurtuluştan umudu kestik; artık rezaletle devletten çekilmek üzereyiz. Millet hor görüldü, şanına elbette leke gelir; silik beşlik (değersiz para) gibi değeri düştükçe düştü."],
+   "metin": [
+    "Otuz yıldan beri biz kestik ümidi selâmetten,\nRezaletle çekilmek üzereyiz artık hükümetten.\nGelir elbet nakise şanına millet hakir oldu,\nSilik beşlik gibi düştükçe düştü kadr-ü kıymetten."
+   ],
+   "anlam": [
+    "Otuz yıldır kurtuluştan umudu kestik; artık rezaletle devletten çekilmek üzereyiz. Millet hor görüldü, şanına elbette leke gelir; silik beşlik (değersiz para) gibi değeri düştükçe düştü."
+   ],
    "baglam": "Namık Kemal'in Hürriyet Kasidesi'ni tersine çevirerek (hezl) Abdülhamit'in otuz yıllık istibdat dönemini hicveder.",
    "kaynak": "turkedebiyati.org – Türk Edebiyatında Yergi (Hiciv)",
-   "link": "https://www.turkedebiyati.org/?p=3284"
+   "link": "https://www.turkedebiyati.org/?p=3284",
+   "anahtar": [
+    "hükümet",
+    "istibdat",
+    "baskı"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Şikâyetname'den",
-   "metin": ["Kırkağaç nâibi olsun meşhud\nGörmeyen varsa sarıklı haydûd\nHırsızın bir koca tırnaklısıdır\nEşkiyânın eli bayraklısıdır"],
-   "anlam": ["Sarıklı haydut görmeyen varsa Kırkağaç kadısını görsün; hırsızların koca tırnaklısı, eşkıyaların bayrak tutanıdır."],
+   "metin": [
+    "Kırkağaç nâibi olsun meşhud\nGörmeyen varsa sarıklı haydûd\nHırsızın bir koca tırnaklısıdır\nEşkiyânın eli bayraklısıdır"
+   ],
+   "anlam": [
+    "Sarıklı haydut görmeyen varsa Kırkağaç kadısını görsün; hırsızların koca tırnaklısı, eşkıyaların bayrak tutanıdır."
+   ],
    "baglam": "Memleketi Kırkağaç'ın kadısını (naibini) hicveder.",
    "kaynak": "Tolga Bayındır, Akademik Dil ve Edebiyat Dergisi 3/1 (2019); Huyugüzel–Çağın, Eşref Bütün Eserleri, s. 536",
-   "link": "https://dergipark.org.tr/en/download/article-file/705488"
+   "link": "https://dergipark.org.tr/en/download/article-file/705488",
+   "anahtar": [
+    "naip",
+    "yargıç",
+    "=kadı"
+   ]
   },
   {
    "sair": "Şair Eşref",
    "baslik": "Mezar Taşı",
-   "metin": ["Kabrimi kimse ziyaret etmesin Allah için,\nGelmesin reddeylerim billâh öz kardaşımı;\nGözlerim ebna-yı âdemden o rütbe yıldı kim,\nİstemem ben Fatiha, tek çalmasınlar taşımı."],
-   "anlam": ["Allah için kimse mezarımı ziyaret etmesin; öz kardeşim bile gelmesin, vallahi geri çeviririm. Gözlerim insanoğlundan o kadar yıldı ki Fatiha istemem, yeter ki taşımı çalmasınlar."],
+   "metin": [
+    "Kabrimi kimse ziyaret etmesin Allah için,\nGelmesin reddeylerim billâh öz kardaşımı;\nGözlerim ebna-yı âdemden o rütbe yıldı kim,\nİstemem ben Fatiha, tek çalmasınlar taşımı."
+   ],
+   "anlam": [
+    "Allah için kimse mezarımı ziyaret etmesin; öz kardeşim bile gelmesin, vallahi geri çeviririm. Gözlerim insanoğlundan o kadar yıldı ki Fatiha istemem, yeter ki taşımı çalmasınlar."
+   ],
    "baglam": "Ölmeden önce mezar taşına yazılmak üzere hazırladığı dörtlük. Söylendiğine göre mezar taşı gerçekten çalınmıştır.",
    "kaynak": "turkedebiyati.org – Şair Eşref",
    "link": "https://www.turkedebiyati.org/?p=29136"
@@ -244,8 +441,16 @@
   {
    "sair": "Şair Eşref",
    "baslik": "Tasvir-i Ahval'den",
-   "metin": ["Ağarmış saçların bir dağ başında kara dönmüştür\nO zalim de benim başımda enhare dönmüştür\nTenimde cevher-i can çekilmez bir bare dönmüştür\nBütün muy-i siyahım bembeyaz ezhare dönmüştür", "Felek gayet dönek bir cellat müthiştir\nİçinden çıkması müşkilatlı bir iştir\nDünya sanki bir değirmen çark-ı eyyamı bir diştir\nİçinde âdemoğlu ufak bir çavdara dönmüştür", "Duyan yok söyleme başında bin türlü bela olsa\nEmin olma ki her şahsa hatta evliya olsa\nSokar akrep gibi fırsat bulunca akraban olsa\nBütün ebnay-ı âdem zehirli mare dönmüştür"],
-   "anlam": ["Ağarmış saçlarım dağ başındaki kara dönmüş; o zalim (dert) başımda ırmaklara dönmüş. Tenimdeki can cevheri çekilmez bir yüke dönmüş; bütün kara saçlarım bembeyaz çiçeklere dönmüş.", "Felek çok dönek, müthiş bir cellattır; içinden çıkmak zor bir iştir. Dünya sanki bir değirmen, günlerin çarkı bir diş; içinde insanoğlu ufak bir çavdar tanesine dönmüş.", "Başında bin türlü bela olsa da söyleme, duyan yok. Evliya bile olsa kimseye güvenme; akraban bile olsa fırsat bulunca akrep gibi sokar. Bütün insanoğlu zehirli yılana dönmüş."],
+   "metin": [
+    "Ağarmış saçların bir dağ başında kara dönmüştür\nO zalim de benim başımda enhare dönmüştür\nTenimde cevher-i can çekilmez bir bare dönmüştür\nBütün muy-i siyahım bembeyaz ezhare dönmüştür",
+    "Felek gayet dönek bir cellat müthiştir\nİçinden çıkması müşkilatlı bir iştir\nDünya sanki bir değirmen çark-ı eyyamı bir diştir\nİçinde âdemoğlu ufak bir çavdara dönmüştür",
+    "Duyan yok söyleme başında bin türlü bela olsa\nEmin olma ki her şahsa hatta evliya olsa\nSokar akrep gibi fırsat bulunca akraban olsa\nBütün ebnay-ı âdem zehirli mare dönmüştür"
+   ],
+   "anlam": [
+    "Ağarmış saçlarım dağ başındaki kara dönmüş; o zalim (dert) başımda ırmaklara dönmüş. Tenimdeki can cevheri çekilmez bir yüke dönmüş; bütün kara saçlarım bembeyaz çiçeklere dönmüş.",
+    "Felek çok dönek, müthiş bir cellattır; içinden çıkmak zor bir iştir. Dünya sanki bir değirmen, günlerin çarkı bir diş; içinde insanoğlu ufak bir çavdar tanesine dönmüş.",
+    "Başında bin türlü bela olsa da söyleme, duyan yok. Evliya bile olsa kimseye güvenme; akraban bile olsa fırsat bulunca akrep gibi sokar. Bütün insanoğlu zehirli yılana dönmüş."
+   ],
    "baglam": "Devrin insanlarını ve ahlakını hicveder; Urfa'da türkü olarak da söylenir.",
    "kaynak": "Vikikaynak (Ağarmış Saçların)",
    "link": "https://tr.wikisource.org/wiki/A%C4%9Farm%C4%B1%C5%9F_Sa%C3%A7lar%C4%B1n"

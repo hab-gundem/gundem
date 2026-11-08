@@ -387,6 +387,8 @@ function detayCiz(id, tekrardan = false) {
       <div class="kaynak-notu">Haber, paylaş menüsünden seçtiğin uygulamaya (ChatGPT, Gemini, Claude…) sol bakışla yorum isteğiyle gider.</div>
     </section>
 
+    ${konuSozuBlogu(konu.konu_sozu)}
+
     ${konu.kisiler?.length ? `<section class="bolum"><h3>Kişiler</h3>${konu.kisiler.map(kisiBlogu).join('')}</section>` : ''}
 
     ${konu.gecmis?.length ? `<section class="bolum"><h3>Geçmişte ne oldu</h3>
@@ -399,6 +401,16 @@ function detayCiz(id, tekrardan = false) {
         ${h.tarih ? `<time datetime="${esc(h.tarih)}">${tarihYaz(h.tarih)}</time>` : ''}${haberSatiri(h)}</li>`).join('')}</ul></section>` : ''}
   </article>`;
   window.scrollTo(0, 0);
+}
+
+// Konunun altındaki söz / hiciv (tarayıcı eşleştirir: hiciv.json ya da Vikisöz konu sayfası)
+function konuSozuBlogu(s) {
+  if (!s?.metin) return '';
+  const kim = [s.yazar, s.baslik].filter(Boolean).map(esc).join(' · ');
+  return `<section class="bolum"><h3>Konuya dair bir ${s.tur === 'hiciv' ? 'hiciv' : 'söz'}</h3>
+    <div class="satirli konu-sozu"><p>${esc(s.metin)}</p>${s.anlam ? `<p class="anlam">${esc(s.anlam)}</p>` : ''}</div>
+    <div class="kaynak-notu">${kim}${s.link ? ` · <a href="${guvenliAdres(s.link)}" target="_blank" rel="noopener">${esc(s.kaynak || 'Kaynak')}</a>` : ''}</div>
+  </section>`;
 }
 
 // Detaydaki listeler: en yeni üstte (veri eskiden yeniye kalır; tekrar kartı son 3'ü alır)

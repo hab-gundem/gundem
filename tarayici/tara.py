@@ -1420,6 +1420,131 @@ def hafiza_kartlari() -> list[dict]:
     return kartlar
 
 
+# ---------- konuya dair söz ----------
+# Gündem konusunun kelimeleri bu anahtarlarla eşleşirse konunun altına bir söz konur.
+# Önce elimizdeki hicivlere (hiciv.json'daki "anahtar"), yoksa Vikisöz'ün konu sayfalarına bakılır.
+KONU_SOZ_SAYFALARI = {
+    "Yolsuzluk": ["yolsuzluk", "rüşvet", "usulsüzlük", "zimmet", "ihale", "kara para", "fon"],
+    "Adalet": ["adalet", "adli", "yargı", "hakim", "savcı", "dava", "tutuklama", "tutuklu", "iddianame"],
+    "Hukuk": ["hukuk", "anayasa", "kanun", "yasa", "mahkeme"],
+    "Hapishane": ["cezaevi", "hapis", "mahkum", "tutuklu"],
+    "Savaş": ["savaş", "saldırı", "bombardıman", "füze", "cephe", "işgal", "çatışma"],
+    "Barış": ["barış", "ateşkes", "müzakere"],
+    "Ekonomi": ["ekonomi", "enflasyon", "faiz", "merkez bankası", "büyüme", "borsa", "ihracat"],
+    "Vergi": ["vergi", "kdv", "ötv", "harç"],
+    "Para": ["para", "dolar", "euro", "maaş", "ücret"],
+    "Yoksulluk": ["yoksul", "yoksulluk", "asgari", "geçim"],
+    "Açlık": ["açlık", "kıtlık"],
+    "Demokrasi": ["demokrasi", "seçim", "sandık", "referandum"],
+    "Siyaset": ["parti", "milletvekili", "meclis", "muhalefet", "bakan", "kabine"],
+    "İktidar": ["iktidar", "cumhurbaşkanı"],
+    "Özgürlük": ["özgürlük", "sansür", "yasak", "gözaltı"],
+    "Medya": ["gazeteci", "basın", "medya", "televizyon", "rtük"],
+    "İnternet": ["internet", "sosyal medya", "erişim"],
+    "Eğitim": ["eğitim", "öğrenci", "öğretmen", "üniversite", "yök", "sınav", "okul"],
+    "Sağlık": ["sağlık", "hastane", "doktor", "ilaç", "salgın"],
+    "Deprem": ["deprem", "sarsıntı"],
+    "Çevre": ["çevre", "orman", "kirlilik", "iklim", "=sel", "selde", "sel felaketi"],
+    "Kadın": ["kadın", "kadına"],
+    "Çocuk": ["çocuk", "çocuğa"],
+    "Şiddet": ["şiddet", "cinayet", "öldürdü", "katil"],
+    "Emek": ["işçi", "grev", "sendika", "emekçi"],
+    "Asker": ["asker", "şehit"],
+    "Teknoloji": ["yapay zeka", "teknoloji"],
+}
+VIKISOZ_YAZAR_DEGIL = {"Kaynakça", "Kaynaklar", "Ayrıca bakınız", "Alıntılar", "Sözler", "Notlar", "Dış bağlantılar"}
+VIKISOZ_ATLA = {"Adolf Hitler"}  # haber altında yersiz kaçan yazarlar
+_vikisoz_onbellek: dict[str, list[dict]] = {}
+
+
+def _eslesen(anahtarlar: list[str], metin: str, kelimeler: set[str]) -> int:
+    """Kaç anahtar geçiyor: "=x" tam kelime, boşluklu anahtar metin içinde, diğerleri kelime başı."""
+    sayi = 0
+    for a in (tr_kucuk(x) for x in anahtarlar):
+        if a.startswith("="):
+            sayi += a[1:] in kelimeler
+        elif " " in a:
+            sayi += a in metin
+        else:
+            sayi += any(k.startswith(a) for k in kelimeler)
+    return sayi
+
+
+def _vikisoz_sozleri(sayfa: str) -> list[dict]:
+    """Vikisöz konu sayfasındaki sözler: [{metin, yazar}] (yazarı belli olanlar)."""
+    if sayfa in _vikisoz_onbellek:
+        return _vikisoz_onbellek[sayfa]
+    try:
+        wt = _site_sorgu("tr.wikiquote.org", action="parse", page=sayfa, prop="wikitext")["parse"]["wikitext"]
+    except Exception as e:
+        uyari(f"Vikisöz konu sayfası ({sayfa}): {e}")
+        wt = ""
+    sozler, baslik_yazar, son = [], "", None
+    for satir in wt.splitlines():
+        m = re.match(r"^==\s*\[\[([^\]|]+)(?:\|[^\]]*)?\]\]\s*==\s*$", satir) or re.match(r"^==\s*([^=]+?)\s*==\s*$", satir)
+        if m:
+            baslik_yazar = "" if m.group(1).strip() in VIKISOZ_YAZAR_DEGIL else m.group(1).strip()
+            son = None
+            continue
+        if satir.startswith("**") and son is not None and not son["yazar"]:
+            y = re.match(r"^\*\*\s*\[\[([^\]|]+)", satir)
+            if y:
+                son["yazar"] = y.group(1).strip()
+            continue
+        if re.match(r"^\*(?!\*)", satir):
+            ham = satir[1:].replace("<br>", "\n").replace("<br />", "\n").replace("<br/>", "\n")
+            yazar = ""
+            y = re.search(r"\s[—–-]\s*\[\[([^\]|]+)(?:\|[^\]]*)?\]\]\s*$", ham) or re.search(r"\s[—–-]\s*([A-ZÇĞİÖŞÜ][^\n<]{2,40})$", ham)
+            if y:
+                yazar, ham = y.group(1).strip(), ham[:y.start()]
+            metin = "\n".join(_viki_temizle(x) for x in ham.split("\n")).strip()
+            son = {"metin": metin, "yazar": yazar or baslik_yazar}
+            if 20 <= len(metin) <= 400:
+                sozler.append(son)
+    sozler = [x for x in sozler if x["yazar"] and x["yazar"] not in VIKISOZ_YAZAR_DEGIL | VIKISOZ_ATLA]
+    _vikisoz_onbellek[sayfa] = sozler
+    return sozler
+
+
+def konu_sozlerini_ekle(konular: list[dict]) -> None:
+    """Gündem konularına, kelimeleri eşleşirse bir hiciv ya da söz ekler (konu["konu_sozu"])."""
+    try:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "hiciv", "hiciv.json"), encoding="utf-8") as f:
+            hicivler = [h for h in json.load(f)["siirler"] if h.get("anahtar")]
+    except Exception as e:
+        uyari(f"Hicivler okunamadı: {e}")
+        hicivler = []
+    kullanilan: set[str] = set()
+    for konu in konular:
+        if konu.get("kategori") != "gundem":
+            continue
+        metin = tr_kucuk(konu["baslik"] + " " + " ".join(h["baslik"] for h in konu["haberler"][:6]))
+        kelimeler = set(re.findall(r"\w+", metin))
+        tohum = lambda x: hashlib.sha1(f"{konu['id']}|{x}".encode()).hexdigest()  # noqa: E731
+        adaylar = [(_eslesen(h["anahtar"], metin, kelimeler), h) for h in hicivler]
+        adaylar = sorted((a for a in adaylar if a[0] and a[1]["baslik"] not in kullanilan),
+                         key=lambda a: (-a[0], tohum(a[1]["baslik"])))
+        if adaylar:
+            h = adaylar[0][1]
+            kullanilan.add(h["baslik"])
+            konu["konu_sozu"] = {"tur": "hiciv", "baslik": h["baslik"], "metin": "\n\n".join(h["metin"]),
+                                 "yazar": h["sair"], "anlam": "\n\n".join(a for a in (h.get("anlam") or []) if a),
+                                 "kaynak": h.get("kaynak", ""), "link": h.get("link", "")}
+            continue
+        sayfalar = sorted(((_eslesen(a, metin, kelimeler), s) for s, a in KONU_SOZ_SAYFALARI.items()),
+                          key=lambda a: -a[0])
+        sayfalar = [x for x in sayfalar if x[0]]
+        for _, sayfa in sayfalar[:2]:
+            sozler = [x for x in _vikisoz_sozleri(sayfa) if x["metin"] not in kullanilan]
+            if sozler:
+                soz = min(sozler, key=lambda x: tohum(x["metin"]))
+                kullanilan.add(soz["metin"])
+                konu["konu_sozu"] = {"tur": "soz", "metin": soz["metin"], "yazar": soz["yazar"],
+                                     "kaynak": f"Vikisöz – {sayfa}",
+                                     "link": "https://tr.wikiquote.org/wiki/" + urllib.parse.quote(sayfa.replace(" ", "_"))}
+                break
+
+
 # ---------- ana akış ----------
 
 def konu_sonucu(konu: dict, ozet: str, ozet_kaynagi: str, gecmis: list[dict], kisi_listesi: list[dict],
@@ -1552,6 +1677,8 @@ def main() -> None:
     kisi_listeleri = kisileri_bul(secilen, [o for o, _ in ozetler], gecmisler)
     konular = [konu_sonucu(k, o, ok, g, kl, m)
                for k, (o, ok), g, kl, m in zip(secilen, ozetler, gecmisler, kisi_listeleri, metinler)]
+    print("Konulara söz/hiciv aranıyor...")
+    konu_sozlerini_ekle(konular)
 
     print("Günün hafıza kartları...")
     try:
