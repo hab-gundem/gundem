@@ -1460,12 +1460,22 @@ def main() -> None:
     for k in spor_konulari:
         k["kaynak_bolum"] = "spor"
 
+    # Bir önceki çalıştırmanın gündem konuları: üstte tekrar gösterilmez, "Önceki konular" olarak en alta iner
+    try:
+        onceki_veri = json.loads(CIKTI.read_text(encoding="utf-8"))
+        onceki = [{**k, "onceki": True} for k in onceki_veri.get("konular", [])
+                  if k.get("kategori") == "gundem" and not k.get("onceki")]
+    except Exception:
+        onceki = []
+
     gundem_secilen: list[dict] = []
     spor_secilen: list[dict] = []
 
     def ekle(k: dict, gundem_siniri: int) -> None:
         """Konuyu spor ya da gündem listesine koyar; aynı konu iki kez girmez."""
         if any(ayni_konu_mu(k, s) for s in gundem_secilen + spor_secilen + secim_secilen):
+            return
+        if not spor_mu(k) and any(ayni_konu_mu(k, o) for o in onceki):
             return
         if spor_mu(k):
             if len(spor_secilen) < spor_sayisi:
@@ -1531,7 +1541,7 @@ def main() -> None:
     CIKTI.parent.mkdir(parents=True, exist_ok=True)
     veri = {"olusturulma": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
             "spor_secimleri": [{"ad": s["ad"], "dal": s.get("dal", "")} for s in secimler],
-            "konular": konular,
+            "konular": konular + onceki,
             "hafiza": hafiza}
     CIKTI.write_text(json.dumps(veri, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"Yazıldı: {CIKTI}")

@@ -347,3 +347,8 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 a.ekle-dugme { display: block; text-align: center; text-decoration: none; color: inherit; }
 .detay .dugmeler .dugme { text-decoration: none; text-align: center; color: inherit; }
 .alt a { font-size: 15px; }
+
+/* Gündem: bir önceki yenilemede gösterilen konular, en altta kapalı bölüm */
+.onceki-konular { margin-top: 24px; }
+.onceki-konular > summary { cursor: pointer; font-weight: 600; color: var(--soluk); padding: 10px 0; }
+.onceki-konular[open] > summary { margin-bottom: 8px; }

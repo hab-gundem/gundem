@@ -215,10 +215,20 @@ function listeCiz(tur) {
     $icerik.innerHTML = sporGruplari(konular);
     return;
   }
-  $icerik.innerHTML = ust + (konular.length
-    ? `<ul class="liste">${konular.map(k => konuKarti(k)).join('')}</ul>`
-    : `<div class="bos">Bugün ${tur === 'spor' ? 'spor' : 'gündem'} konusu yok.</div>`);
+  const yeniler = konular.filter(k => !k.onceki);
+  const oncekiler = konular.filter(k => k.onceki);
+  $icerik.innerHTML = ust + (yeniler.length
+    ? `<ul class="liste">${yeniler.map(k => konuKarti(k)).join('')}</ul>`
+    : `<div class="bos">Bugün ${tur === 'spor' ? 'spor' : 'gündem'} konusu yok.</div>`)
+    + (oncekiler.length
+      ? `<details class="onceki-konular"${oncekiAcik ? ' open' : ''}>
+          <summary>Önceki konular (${oncekiler.length})</summary>
+          <ul class="liste">${oncekiler.map(k => konuKarti(k)).join('')}</ul>
+        </details>`
+      : '');
+  $icerik.querySelector('.onceki-konular')?.addEventListener('toggle', e => { oncekiAcik = e.target.open; });
 }
+let oncekiAcik = false; // konuya girip geri dönünce bölüm açık kalsın
 
 // Spor sekmesi: her seçim (tarayici/ayarlar.json) ayrı başlık, en altta genel spor gündemi
 function sporGruplari(konular) {
