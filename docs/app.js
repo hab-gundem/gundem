@@ -390,16 +390,20 @@ function detayCiz(id, tekrardan = false) {
     ${konu.kisiler?.length ? `<section class="bolum"><h3>Kişiler</h3>${konu.kisiler.map(kisiBlogu).join('')}</section>` : ''}
 
     ${konu.gecmis?.length ? `<section class="bolum"><h3>Geçmişte ne oldu</h3>
-      <ol class="zaman-cizgisi">${konu.gecmis.map(h => `<li>
+      <ol class="zaman-cizgisi">${yenidenEskiye(konu.gecmis).map(h => `<li>
         <time datetime="${esc(h.tarih)}">${tarihYaz(h.tarih)}</time>${haberSatiri(h)}</li>`).join('')}
       </ol></section>` : ''}
 
     ${konu.haberler?.length ? `<section class="bolum"><h3>Haberler</h3>
-      <ul class="haberler">${konu.haberler.map(h => `<li>
+      <ul class="haberler">${yenidenEskiye(konu.haberler).map(h => `<li>
         ${h.tarih ? `<time datetime="${esc(h.tarih)}">${tarihYaz(h.tarih)}</time>` : ''}${haberSatiri(h)}</li>`).join('')}</ul></section>` : ''}
   </article>`;
   window.scrollTo(0, 0);
 }
+
+// Detaydaki listeler: en yeni üstte (veri eskiden yeniye kalır; tekrar kartı son 3'ü alır)
+const zamanDegeri = t => (t ? Date.parse(t) || 0 : 0);
+const yenidenEskiye = liste => [...liste].sort((a, b) => zamanDegeri(b.tarih) - zamanDegeri(a.tarih));
 
 // ---------- tekrar ----------
 
