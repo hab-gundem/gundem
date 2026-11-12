@@ -224,8 +224,11 @@ function donustur(animasyon) {
 function sinirla() {
   const img = ortaResim();
   if (!img) return;
-  const fx = Math.max(0, (img.offsetWidth * gorunum.olcek - innerWidth) / 2);
-  const fy = Math.max(0, (img.offsetHeight * gorunum.olcek - innerHeight) / 2);
+  // resim kutusu tüm ekranı kaplar (object-fit: contain); görünen resmin boyutunu doğal orandan hesapla
+  const oran = Math.min(innerWidth / (img.naturalWidth || 1), innerHeight / (img.naturalHeight || 1));
+  const gw = (img.naturalWidth || innerWidth) * oran, gy = (img.naturalHeight || innerHeight) * oran;
+  const fx = Math.max(0, (gw * gorunum.olcek - innerWidth) / 2);
+  const fy = Math.max(0, (gy * gorunum.olcek - innerHeight) / 2);
   gorunum.x = Math.min(fx, Math.max(-fx, gorunum.x));
   gorunum.y = Math.min(fy, Math.max(-fy, gorunum.y));
 }
