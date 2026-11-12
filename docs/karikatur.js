@@ -112,7 +112,7 @@ function karikaturAdresleriBirak() {
 }
 
 function karikaturCizGerekirse() {
-  if (location.hash.startsWith('#/ayarlar') || location.hash === '#/hafiza/b/karikatur') ciz();
+  if (/^#\/(ayarlar|hafiza$|hafiza\/b\/karikatur)/.test(location.hash)) ciz();
 }
 
 // Uygulama açılınca: parola var, resim yoksa (ilk kez) indir
@@ -169,20 +169,132 @@ async function karikaturGaleriDoldur() {
       : karikaturParola() ? 'Henüz karikatür yok. Ayarlar → Karikatürleri yenile.' : 'Ayarlar → Karikatürler bölümüne parolayı yazıp yenile.'}</p>`;
 }
 
+// Tam ekran: X ya da telefonun geri tuşuyla kapanır; sağa/sola kaydırınca resim geçer;
+// iki parmakla ya da çift dokunuşla yakınlaşır, yakınken tek parmakla kaydırılır.
+const gorunum = { olcek: 1, x: 0, y: 0, kaydir: 0 };
+
 function karikaturBuyukCiz() {
-  document.querySelector('.karikatur-buyuk')?.remove();
+  let kutu = document.querySelector('.karikatur-buyuk');
   const i = karikatur.acik;
-  if (i < 0 || !karikatur.adresler[i]) return;
-  const n = karikatur.adresler.length;
-  document.body.insertAdjacentHTML('beforeend', `<div class="karikatur-buyuk" data-karikatur="kapat">
-    <img src="${karikatur.adresler[i].url}" alt="">
-    <div class="karikatur-gezinme">
-      <button type="button" class="dugme" data-karikatur="onceki" ${i ? '' : 'disabled'}>‹ Önceki</button>
-      <span>${i + 1} / ${n}</span>
-      <button type="button" class="dugme" data-karikatur="sonraki" ${i < n - 1 ? '' : 'disabled'}>Sonraki ›</button>
-    </div>
-  </div>`);
+  if (i < 0 || !karikatur.adresler[i]) { kutu?.remove(); return; }
+  if (!kutu) {
+    document.body.insertAdjacentHTML('beforeend', `<div class="karikatur-buyuk">
+      <button type="button" class="karikatur-kapat" data-karikatur="kapat" aria-label="Kapat">✕</button>
+      <div class="karikatur-sahne"><img alt="" draggable="false"></div>
+      <div class="karikatur-sayac"></div>
+    </div>`);
+    kutu = document.querySelector('.karikatur-buyuk');
+    sahneBagla(kutu.querySelector('.karikatur-sahne'));
+  }
+  Object.assign(gorunum, { olcek: 1, x: 0, y: 0, kaydir: 0 });
+  kutu.querySelector('img').src = karikatur.adresler[i].url;
+  kutu.querySelector('.karikatur-sayac').textContent = `${i + 1} / ${karikatur.adresler.length}`;
+  donustur(false);
 }
+
+function donustur(animasyon) {
+  const img = document.querySelector('.karikatur-buyuk img');
+  if (!img) return;
+  img.style.transition = animasyon ? 'transform .2s ease-out' : 'none';
+  img.style.transform = `translate(${gorunum.x + gorunum.kaydir}px, ${gorunum.y}px) scale(${gorunum.olcek})`;
+}
+
+// Yakınken resmin ekran dışına kaçmasını engelle
+function sinirla() {
+  const img = document.querySelector('.karikatur-buyuk img');
+  if (!img) return;
+  const fx = Math.max(0, (img.offsetWidth * gorunum.olcek - innerWidth) / 2);
+  const fy = Math.max(0, (img.offsetHeight * gorunum.olcek - innerHeight) / 2);
+  gorunum.x = Math.min(fx, Math.max(-fx, gorunum.x));
+  gorunum.y = Math.min(fy, Math.max(-fy, gorunum.y));
+}
+
+// Ekrandaki (cx, cy) noktası yerinde kalacak şekilde ölçeği değiştir
+function olcekle(yeni, cx, cy) {
+  yeni = Math.min(5, Math.max(1, yeni));
+  const ox = cx - innerWidth / 2, oy = cy - innerHeight / 2;
+  gorunum.x = ox - (ox - gorunum.x) * (yeni / gorunum.olcek);
+  gorunum.y = oy - (oy - gorunum.y) * (yeni / gorunum.olcek);
+  gorunum.olcek = yeni;
+  if (yeni === 1) { gorunum.x = 0; gorunum.y = 0; }
+}
+
+function karikaturGec(adim) {
+  const yeni = karikatur.acik + adim;
+  if (yeni < 0 || yeni >= karikatur.adresler.length) return false;
+  karikatur.acik = yeni;
+  karikaturBuyukCiz();
+  return true;
+}
+
+function sahneBagla(sahne) {
+  const parmak = new Map();
+  let bas = null, ikili = null, sonDokunus = 0;
+  sahne.addEventListener('pointerdown', e => {
+    sahne.setPointerCapture(e.pointerId);
+    parmak.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (parmak.size === 1) {
+      bas = { x: e.clientX, y: e.clientY, gx: gorunum.x, gy: gorunum.y, zaman: Date.now(), hareket: false };
+    } else if (parmak.size === 2) {
+      const [a, b] = [...parmak.values()];
+      ikili = { mesafe: Math.hypot(a.x - b.x, a.y - b.y) || 1, olcek: gorunum.olcek };
+      gorunum.kaydir = 0; bas = null;
+    }
+  });
+  sahne.addEventListener('pointermove', e => {
+    if (!parmak.has(e.pointerId)) return;
+    parmak.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (parmak.size === 2 && ikili) {
+      const [a, b] = [...parmak.values()];
+      olcekle(ikili.olcek * Math.hypot(a.x - b.x, a.y - b.y) / ikili.mesafe, (a.x + b.x) / 2, (a.y + b.y) / 2);
+      sinirla(); donustur(false);
+    } else if (parmak.size === 1 && bas) {
+      const dx = e.clientX - bas.x, dy = e.clientY - bas.y;
+      if (Math.abs(dx) > 8 || Math.abs(dy) > 8) bas.hareket = true;
+      if (gorunum.olcek > 1) { gorunum.x = bas.gx + dx; gorunum.y = bas.gy + dy; sinirla(); }
+      else gorunum.kaydir = dx;
+      donustur(false);
+    }
+  });
+  const birak = e => {
+    if (!parmak.has(e.pointerId)) return;
+    parmak.delete(e.pointerId);
+    if (parmak.size === 1) {   // iki parmaktan biri kalktı: kalanla kaydırmaya devam
+      const [k] = [...parmak.values()];
+      bas = { x: k.x, y: k.y, gx: gorunum.x, gy: gorunum.y, zaman: 0, hareket: true };
+      ikili = null;
+      return;
+    }
+    if (parmak.size || !bas) { ikili = null; return; }
+    const dx = e.clientX - bas.x;
+    if (gorunum.olcek === 1 && Math.abs(dx) > 60 && karikaturGec(dx < 0 ? 1 : -1)) { bas = null; return; }
+    gorunum.kaydir = 0;
+    if (!bas.hareket && Date.now() - bas.zaman < 300) {   // çift dokunuş: yakınlaştır / geri al
+      if (Date.now() - sonDokunus < 300) {
+        olcekle(gorunum.olcek > 1 ? 1 : 2.5, e.clientX, e.clientY); sinirla(); sonDokunus = 0;
+      } else sonDokunus = Date.now();
+    }
+    donustur(true);
+    bas = null;
+  };
+  sahne.addEventListener('pointerup', birak);
+  sahne.addEventListener('pointercancel', birak);
+}
+
+function karikaturAc(i) {
+  karikatur.acik = i;
+  history.pushState({ karikatur: true }, '');   // geri tuşu önce bu görünümü kapatsın
+  karikaturBuyukCiz();
+}
+
+function karikaturKapat() {
+  if (history.state?.karikatur) history.back();   // popstate kapatır
+  else { karikatur.acik = -1; karikaturBuyukCiz(); }
+}
+
+window.addEventListener('popstate', () => {
+  if (karikatur.acik >= 0 && !history.state?.karikatur) { karikatur.acik = -1; karikaturBuyukCiz(); }
+});
 
 document.addEventListener('click', e => {
   const d = e.target.closest('[data-karikatur]');
@@ -194,12 +306,9 @@ document.addEventListener('click', e => {
     try { localStorage.setItem(KARIKATUR_PAROLA, parola); } catch {}
     karikaturYenile();
   } else if (eylem === 'ac') {
-    karikatur.acik = Number(d.dataset.i); karikaturBuyukCiz();
-  } else if (eylem === 'onceki' || eylem === 'sonraki') {
-    e.stopPropagation();
-    karikatur.acik += eylem === 'onceki' ? -1 : 1; karikaturBuyukCiz();
-  } else if (eylem === 'kapat' && e.target.tagName !== 'BUTTON') {
-    karikatur.acik = -1; karikaturBuyukCiz();
+    karikaturAc(Number(d.dataset.i));
+  } else if (eylem === 'kapat') {
+    karikaturKapat();
   }
 });
 

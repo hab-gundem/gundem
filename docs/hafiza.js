@@ -86,7 +86,7 @@ function hafizaAnaCiz() {
       <ul class="ayar-liste">${Object.entries(HAFIZA_BOLUMLERI).map(([id, b]) => `<li>
         <a class="ayar-satiri bolum-satiri" href="#/hafiza/b/${id}">
           <span class="ad"><b>${esc(b.ad)}</b></span>
-          <span class="sayi">${kayitliKartlar(id).length}</span><span aria-hidden="true">›</span>
+          <span class="sayi">${kayitliKartlar(id).length + (id === 'karikatur' ? karikatur.sayi || 0 : 0)}</span><span aria-hidden="true">›</span>
         </a></li>`).join('')}
       </ul>
     </section>
