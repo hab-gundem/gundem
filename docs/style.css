@@ -194,6 +194,22 @@ main { max-width: 720px; margin: 0 auto; padding: 16px; }
 .cevap { border-top: 1px solid var(--cizgi); margin-top: 16px; padding-top: 4px; }
 .cevap .bolum { margin-top: 16px; }
 .cevap ul { margin: 0; padding-left: 20px; }
+.karikatur-izgara { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.karikatur-izgara button { padding: 0; border: 0; background: var(--kart); border-radius: 8px; overflow: hidden; aspect-ratio: 1; }
+.karikatur-izgara img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.karikatur-izgara .bos-satir { grid-column: 1 / -1; }
+.karikatur-buyuk { position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.92);
+  display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 16px; gap: 12px; }
+.karikatur-buyuk img { max-width: 100%; max-height: calc(100% - 70px); object-fit: contain; }
+.karikatur-gezinme { display: flex; gap: 10px; align-items: center; width: 100%; max-width: 480px; color: #fff; }
+.karikatur-gezinme .dugme { color: #fff; border-color: rgba(255,255,255,.4); background: transparent; }
+.karikatur-gezinme .dugme:disabled { opacity: .3; }
+.karikatur-gezinme span { flex: none; font-size: 14px; }
+.tekrar-gezinme { display: flex; gap: 10px; margin-top: 12px; }
+.tekrar-gezinme .dugme:disabled { opacity: .4; }
+.verilen-sonuc { margin-top: 20px; padding: 10px 14px; border-radius: 10px; border: 1px solid; text-align: center; }
+.verilen-sonuc.iyi { border-color: var(--iyi); color: var(--iyi); }
+.verilen-sonuc.kotu { border-color: var(--kotu); color: var(--kotu); }
 
 .dugmeler { display: flex; gap: 10px; margin-top: 20px; }
 .dugme {

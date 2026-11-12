@@ -37,6 +37,28 @@
       }
     },
     {
+      "ad": "A Milli Futbol",
+      "dal": "Erkek futbol milli takımı",
+      "arama": "\"A Milli Futbol Takımı\" OR \"A Milli Takım\" OR \"Ay-Yıldızlılar\" -kadın -voleybol -basketbol -U21",
+      "baslikta": [
+        "A Milli",
+        "Milli Takım",
+        "Ay-Yıldızlı"
+      ],
+      "gun": 4,
+      "yayin": {
+        "kelime": [
+          "Türkiye"
+        ],
+        "spor": "Futbol",
+        "haric": [
+          "Kadın",
+          "U1",
+          "U2"
+        ]
+      }
+    },
+    {
       "ad": "Filenin Sultanları",
       "dal": "Kadın voleybol milli takımı",
       "arama": "\"Filenin Sultanları\" OR \"A Milli Kadın Voleybol\"",

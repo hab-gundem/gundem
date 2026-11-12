@@ -2,8 +2,8 @@
 // yazılır, ağ yoksa son kaydedilen kullanılır (böylece güncellemeler hemen görünür).
 // Kişi fotoğrafları görüldükçe önbelleğe alınır.
 
-const SURUM = 'gundem-v17';
-const KABUK = ['./', 'index.html', 'app.js', 'ayarlar.js', 'hafiza.js', 'style.css', 'manifest.webmanifest',
+const SURUM = 'gundem-v19';
+const KABUK = ['./', 'index.html', 'app.js', 'ayarlar.js', 'hafiza.js', 'karikatur.js', 'style.css', 'manifest.webmanifest',
   'ikon.svg', 'ikon-192.png', 'ikon-512.png'];
 const RESIM_ONBELLEGI = 'gundem-resimler';
 
@@ -23,6 +23,9 @@ self.addEventListener('fetch', e => {
   const istek = e.request;
   if (istek.method !== 'GET') return;
   const adres = new URL(istek.url);
+
+  // karikatür paketi büyük; önbelleğe yazılmaz (resimler zaten IndexedDB'de)
+  if (adres.origin === location.origin && adres.pathname.endsWith('/karikatur.bin')) return;
 
   if (adres.origin === location.origin) {
     e.respondWith(

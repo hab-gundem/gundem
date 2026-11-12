@@ -521,6 +521,19 @@ function tekrarCiz(kat) {
   const yuzde = Math.round((o.sira / o.kuyruk.length) * 100);
   const sonGecmis = (konu.gecmis || []).slice(-3);
   const neden = tekrarNedeni(id);
+  // Önceki ile geri dönülen, bu oturumda cevaplanmış kart: cevap açık, sonuç yazılı, yeniden cevaplanmaz
+  const verilen = o.sonuclar[id];
+  if (verilen !== undefined) o.acik = true;
+  const cevapDugmeleri = verilen !== undefined
+    ? `<div class="verilen-sonuc ${verilen ? 'iyi' : 'kotu'}">${verilen ? 'Hatırladım' : 'Hatırlayamadım'} dedin</div>`
+    : `<div class="dugmeler">
+          <button class="dugme kotu" data-eylem="unuttum">Hatırlayamadım</button>
+          <button class="dugme iyi" data-eylem="hatirladim">Hatırladım</button>
+        </div>`;
+  const gezinme = `<div class="tekrar-gezinme">
+      <button type="button" class="dugme" data-eylem="onceki"${o.sira ? '' : ' disabled'}>‹ Önceki</button>
+      <button type="button" class="dugme" data-eylem="sonraki"${o.sira < o.kuyruk.length - 1 ? '' : ' disabled'}>Sonraki ›</button>
+    </div>`;
 
   $icerik.innerHTML = `
     <div class="ilerleme">${o.sira + 1}. kart / ${o.kuyruk.length}</div>
@@ -529,10 +542,8 @@ function tekrarCiz(kat) {
       ${neden ? `<div class="neden">${esc(neden)}</div>` : ''}
       <h2>${esc(konu.baslik)}</h2>
       ${kategori(konu) === 'hafiza' ? `${hafizaTekrarIcerigi(konu, o.acik)}
-        <div class="dugmeler">${o.acik
-          ? `<button class="dugme kotu" data-eylem="unuttum">Hatırlayamadım</button>
-             <button class="dugme iyi" data-eylem="hatirladim">Hatırladım</button>`
-          : '<button class="dugme ana" data-eylem="goster">Cevabı göster</button>'}</div>`
+        ${o.acik ? cevapDugmeleri
+          : '<div class="dugmeler"><button class="dugme ana" data-eylem="goster">Cevabı göster</button></div>'}`
       : o.acik ? `<div class="cevap">
           <section class="bolum"><h3>Ne oldu</h3><p>${esc(konu.ozet)}</p></section>
           ${konu.kisiler?.length ? `<section class="bolum"><h3>Kimler</h3><ul>${konu.kisiler.map(p =>
@@ -543,15 +554,25 @@ function tekrarCiz(kat) {
             `<li><strong>${esc(y.yazar || y.kaynak)}</strong>: ${esc(y.baslik)}</li>`).join('')}</ul></section>` : ''}
           <p class="kaynak-notu"><a href="#/konu/${encodeURIComponent(id)}/tekrar">Konunun tamamını aç</a></p>
         </div>
-        <div class="dugmeler">
-          <button class="dugme kotu" data-eylem="unuttum">Hatırlayamadım</button>
-          <button class="dugme iyi" data-eylem="hatirladim">Hatırladım</button>
-        </div>`
+        ${cevapDugmeleri}`
       : `<div class="ipucu">Önce aklından anlatmaya çalış:
           <ul><li>Ne oldu?</li><li>Kimler var?</li><li>Öncesinde ne olmuştu?</li></ul></div>
         <div class="dugmeler"><button class="dugme ana" data-eylem="goster">Cevabı göster</button></div>`}
       <button type="button" class="metin-dugme" data-eylem="tekrardan-cikar">Bu konuyu tekrardan çıkar</button>
-    </div>`;
+    </div>
+    ${gezinme}`;
+}
+
+// Önceki / Sonraki: cevap vermeden kartlar arasında gezinir; atlanan kart bugün yine tekrarda kalır
+function tekrarGez(adim) {
+  const o = tekrarOturumu;
+  if (!o) return;
+  const yeni = o.sira + adim;
+  if (yeni < 0 || yeni >= o.kuyruk.length) return;
+  o.sira = yeni;
+  o.acik = false;
+  ciz();
+  window.scrollTo(0, 0);
 }
 
 // hatirladi: true / false; null = konu tekrardan çıkarıldı
@@ -608,6 +629,8 @@ document.addEventListener('click', e => {
   if (eylem === 'goster') { tekrarOturumu.acik = true; ciz(); }
   else if (eylem === 'hatirladim') tekrarSonucu(true);
   else if (eylem === 'unuttum') tekrarSonucu(false);
+  else if (eylem === 'onceki') tekrarGez(-1);
+  else if (eylem === 'sonraki') tekrarGez(1);
   else if (eylem === 'tekrardan-cikar') {
     if (confirm('Bu konu tekrardan çıkarılsın mı? (Yıldızı da kalkar.)')) tekrarSonucu(null);
   } else if (eylem === 'devami') {
@@ -726,3 +749,4 @@ if ('serviceWorker' in navigator) {
 
 ciz();
 gundemYukle();
+karikaturBaslat();

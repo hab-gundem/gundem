@@ -108,7 +108,9 @@ function hafizaBolumCiz(bolum) {
     ${kartlar.length
       ? `<ul class="liste">${kartlar.map(hafizaListeKarti).join('')}</ul>`
       : `<p class="bos-satir">${secili ? 'Bu seçimde kart yok.' : 'Henüz kart yok.'}</p>`}
-    <a class="dugme ekle-dugme" href="#/hafiza/d/${bolum}/yeni">+ Kart ekle</a>`;
+    <a class="dugme ekle-dugme" href="#/hafiza/d/${bolum}/yeni">+ Kart ekle</a>
+    ${bolum === 'karikatur' ? karikaturGaleri() : ''}`;
+  if (bolum === 'karikatur') karikaturGaleriDoldur();
 }
 
 function hafizaKartCiz(id, tekrardan) {

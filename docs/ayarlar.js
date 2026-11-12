@@ -400,6 +400,7 @@ function ayarlarCiz() {
         <button type="button" class="dugme" data-ayar="vazgec" ${ayar.kaydediliyor ? 'disabled' : ''}>Değişiklikleri geri al</button>
       </div>
     </section>
+    ${karikaturAyarBolumu()}
     ${anahtarBolumu()}`;
 }
 
