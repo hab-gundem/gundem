@@ -3,7 +3,7 @@
     "Hafıza > Replikler bölümünün günün kartı buradan seçilir (her gün tarihe bağlı bir replik).",
     "tur: Yerli ya da Yabancı. replik: repliğin kendisi. asil: yabancı filmlerde repliğin özgün dili (Türkçesi Claude'un çevirisidir, dublajla farklı olabilir).",
     "soyleyen: repliği söyleyen karakter (oyuncu). hikaye: replik neden, hangi sahnede söyleniyor (Claude yazdı).",
-    "Yerli replikler Hürriyet, Aydınlık, Habertürk, Hakimiyet, Listeland derlemelerinden ve Vikisöz'den (Cem Yılmaz ve Yılmaz Erdoğan filmleri); sahnesi bilinmeyenler alınmadı.",
+    "Yerli replikler Hürriyet, Aydınlık, Habertürk, Hakimiyet, Listeland derlemelerinden, Vikisöz'den ve Vikipedi'den; sahnesi bilinmeyenler alınmadı. Diziler de Yerli altındadır; 'film' alanında dizinin adı yazar.",
     "Yeni replik eklemek için listeye aynı biçimde bir öğe ekle."
   ],
   "replikler": [
@@ -11,9 +11,9 @@
       "tur": "Yerli",
       "film": "Selvi Boylum Al Yazmalım",
       "yil": 1977,
-      "soyleyen": "Asya (Türkan Şoray)",
+      "soyleyen": "Filmin sonunda (Asya'nın seçimi)",
       "replik": "Sevgi neydi? Sevgi iyilikti, dostluktu… Sevgi emekti.",
-      "hikaye": "Asya'yı ve oğullarını bırakıp giden kamyoncu İlyas yıllar sonra geri döner ve onları yanına almak ister. Asya, kendisiyle evlenip oğlunu kendi çocuğu gibi büyüten sessiz Cemşit'i düşünür. Sevginin büyük sözler değil emek olduğunu anlar ve Cemşit'le kalmayı seçer. Cengiz Aytmatov'un 'Selvi Boylum Al Yazmalım' (Kızıl Eşarp) adlı uzun öyküsünden uyarlanmıştır."
+      "hikaye": "Asya'yı ve oğullarını bırakıp giden kamyoncu İlyas yıllar sonra geri döner ve onları yanına almak ister. Asya, kendisiyle evlenip oğlunu kendi çocuğu gibi büyüten sessiz Cemşit'i düşünür. Sevginin büyük sözler değil emek olduğunu anlar ve Cemşit'le kalmayı seçer. Cengiz Aytmatov'un 'Selvi Boylum Al Yazmalım' (Kızıl Eşarp) adlı uzun öyküsünden uyarlanmıştır. Vikipedi'ye göre bu cümle Aytmatov'un romanında yoktur; senarist Ali Özgentürk, küçük kızına bakarken yazıp senaryoya eklemiştir."
     },
     {
       "tur": "Yerli",
@@ -403,6 +403,214 @@
       "soyleyen": "Altan (Cem Yılmaz)",
       "replik": "Kızım, tabure barın bel kemiğidir ya!",
       "hikaye": "Altan'ın tek hayali gece hayatından vazgeçmeden bir bar açıp zengin olmaktır. Kız arkadaşı Ayla 'İki tabureyle mi kuracaksın barı?' diye alay edince, elinde hiçbir şey yokken bile büyük konuşan Altan böyle cevap verir."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Hababam Sınıfı",
+      "yil": 1975,
+      "soyleyen": "Mahmut Hoca (Münir Özkul)",
+      "replik": "Ben tüccar değilim! Eğitimciyim!",
+      "hikaye": "Yıl sonu gösterisinin ortasında okulun sahibi müdür, elinde bir bebekle salona dalar ve Mahmut Hoca'yla tartışmaya başlar. Okulu bir dükkân gibi gören müdüre karşı Mahmut Hoca öğretmenliğin ticaret olmadığını haykırır ve fenalaşıp meslektaşlarının kollarına yığılır. Haylaz öğrencilerin hocalarına bağlandığı duygusal finalin başlangıcıdır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Hababam Sınıfı",
+      "yil": 1975,
+      "soyleyen": "Damat Ferit (Tarık Akan)",
+      "replik": "Çocuk benim!",
+      "hikaye": "Müdür, gösteri sırasında okulda bulunan bebeğin kimin olduğunu sorup herkesi suçlarken, sınıfın yakışıklısı Damat Ferit ayağa kalkıp sorumluluğu üstlenir. Hababam Sınıfı'nın kendi aralarındaki dayanışmasını gösteren bir andır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Hababam Sınıfı",
+      "yil": 1975,
+      "soyleyen": "Güdük Necmi (Halit Akçatepe)",
+      "replik": "– Roma'yı kim yaktı?\n– Anamız.",
+      "hikaye": "Okula gelen müfettiş öğrencileri sorguya çeker. Ders çalışmayan Güdük Necmi, bilmediği her soruya saçma sapan cevaplar verir; 'anamızı yaktı' der gibi verdiği bu cevap, sınıfın içinde bulunduğu hâli de özetler."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Kibar Feyzo",
+      "yil": 1978,
+      "soyleyen": "Maho Ağa (Şener Şen)",
+      "replik": "Ula şurda 141-142 başsınız, hepinizi ben besliyim!",
+      "hikaye": "Köylülerin kendisine kafa tutmaya başladığını gören Maho Ağa öfkelenir. '141-142' bir baş sayısı değil, o dönemin Türk Ceza Kanunu'nda komünizmi yasaklayan maddelerdir (1991'de kaldırıldı). Ağa, hakkını arayan köylüleri bir yandan 'komünist' diye damgalarken bir yandan da onları kendisinin beslediğini söyler."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Kibar Feyzo",
+      "yil": 1978,
+      "soyleyen": "Feyzo (Kemal Sunal) ve Bilo (İlyas Salman)",
+      "replik": "– Bakıyom onbaşı olmuşsin kıroo.\n– Köyün itibarını yüskeltem dedim.",
+      "hikaye": "Feyzo, askerden onbaşı rütbesiyle dönen köylüsü Bilo'yla karşılaşır. Bilo, rütbesini köyün şanı için aldığını söyleyerek böbürlenir; iki saf köylünün bu konuşması filmin sevilen sahnelerindendir."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Çiçek Abbas",
+      "yil": 1982,
+      "soyleyen": "Abbas (İlyas Salman)",
+      "replik": "Bundan sonra Alibeyköy hattında Çiçek Abbas'ın da minibüsü çalışacak!",
+      "hikaye": "Yıllarca Şakir'in minibüsünde muavinlik yapan Abbas, borç harçla eski püskü bir minibüs alır. Şoförlerin toplandığı kahveye girip artık kendisinin de patron olduğunu herkese duyurur. Senaryo Yavuz Turgul'undur."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Çiçek Abbas",
+      "yil": 1982,
+      "soyleyen": "Şakir (Şener Şen)",
+      "replik": "Şakir Abi, dayı, ağa diyeceksin!",
+      "hikaye": "Aynı kahve sahnesinde Abbas, eski patronuna adıyla 'Şakir' diye seslenir. Muavininin kendisiyle eşit konuşmasına katlanamayan Şakir saygı ister. İkisi hem minibüs hattında hem de Nazlı'nın gönlünde rakiptir."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Çiçek Abbas",
+      "yil": 1982,
+      "soyleyen": "Şakir (Şener Şen) ve Abbas (İlyas Salman)",
+      "replik": "– Âşıksan vur saza, şoförsen bas gaza!\n– Sevene can feda, sevmeyene elveda!",
+      "hikaye": "Kahvede Şakir ile Abbas arasında âşık atışmasına benzer kafiyeli bir laf düellosu başlar. İki rakip birbirine bu sözlerle meydan okur."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Tosun Paşa",
+      "yil": 1976,
+      "soyleyen": "Şaban (Kemal Sunal)",
+      "replik": "Çok iyi konuştum ama.",
+      "hikaye": "Tellioğulları, Yeşil Vadi'yi ve Daver Bey'in kızı Leyla'yı kazanmak için uşakları Şaban'ı Kahire'den gelmiş 'Tosun Paşa' diye tanıtır. Kadeh kaldırırken Lütfü'nün (Şener Şen) ezberlettiği konuşmayı karıştırıp konuklara hakaret eden Şaban, sonunda kendinden memnun bu sözü söyler. Senaryo Yavuz Turgul'undur."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Tosun Paşa",
+      "yil": 1976,
+      "soyleyen": "Şaban (Kemal Sunal)",
+      "replik": "Eğer benim eşeğe uymuşlarsa, kaçmış olabilirler.",
+      "hikaye": "Lütfü kaybolan develeri sorar. Sahte paşalığın içinde bile köylü uşak saflığını kaybetmeyen Şaban, develeri kendi eşeğine benzeterek bu cevabı verir."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Tosun Paşa",
+      "yil": 1976,
+      "soyleyen": "Şaban (Kemal Sunal)",
+      "replik": "Bırak numarayı İbo!",
+      "hikaye": "Filmin sonunda gerçek Tosun Paşa çıkagelir. Şaban onu da kendisi gibi kılık değiştirmiş bir sahtekâr sanıp tanıdık birine seslenir gibi böyle karşılar."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Neşeli Günler",
+      "yil": 1978,
+      "soyleyen": "Saadet Hanım (Adile Naşit)",
+      "replik": "Sirkeyle olur!",
+      "hikaye": "Turşucu Kazım Efendi (Münir Özkul) ile karısı Saadet Hanım, turşunun limonla mı sirkeyle mi kurulacağı yüzünden kavga eder ve bu yüzden boşanırlar; çocukları da ikiye bölünür. Yıllar sonra tesadüfen tanışan kardeşler anne babalarını barıştırmaya çalışır. Saadet Hanım'ın inatla tekrarladığı bu söz, küçük bir inadın bir aileyi nasıl dağıttığını anlatır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Neşeli Günler",
+      "yil": 1978,
+      "soyleyen": "Ziya (Şener Şen)",
+      "replik": "Alman aslanı, Alman!",
+      "hikaye": "Kendini dünya görmüş biri gibi anlatan Ziya, çocuklara Almanya'da aslan avladığını anlatır. Kazım Efendi 'Almanya'da aslan mı olur?' diye itiraz edince bu cevabı verir; ardından aslanı çakıyla öldürdüğünü de ekler."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Gülen Gözler",
+      "yil": 1977,
+      "soyleyen": "Vecihi (Şener Şen) ve Yaşar Usta (Münir Özkul)",
+      "replik": "– Veriyor musunuz?\n– Vermiyorum.\n– Kara vicdanlı adam.",
+      "hikaye": "Oğlan çocuğu hasretiyle beş kızına da erkek adı koymuş marangoz Yaşar Usta'nın kızı Fikret'e âşık olan Vecihi, her fırsatta kızı ister. Ütülü çamaşır getirmekten evin üstünde uçakla uçmaya kadar her yolu dener ama Yaşar Usta hep aynı cevabı verir. Sonunda Yaşar Usta razı olur."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Selvi Boylum Al Yazmalım",
+      "yil": 1977,
+      "soyleyen": "İlyas (Kadir İnanır)",
+      "replik": "Benim adım İlyas. Kamyonumun adı Aldırma Gönül. Senin adın ne, al yazmalım?",
+      "hikaye": "Baraj inşaatında çalışan İstanbullu kamyoncu İlyas, köy kızı Asya'yı görünce ona böyle kendini tanıtır. Birbirlerine âşık olur, kaçıp evlenirler ve Samet adında bir oğulları olur."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Selvi Boylum Al Yazmalım",
+      "yil": 1977,
+      "soyleyen": "Cemşit (Ahmet Mekin)",
+      "replik": "Bırakıp gider mi beni? Asya benim karım.",
+      "hikaye": "İlyas yıllar sonra dönüp 'Asyam, al yazmalım' diye seslenir. Asya ile oğlunu kimsesiz kaldıklarında yanına alan, sonra Asya'yla evlenen sessiz Cemşit, Asya'nın kendisini bırakıp gitmeyeceğine inanır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Bir Demet Tiyatro (dizi)",
+      "yil": "1995-2007",
+      "soyleyen": "Feriştah (Demet Akbağ)",
+      "replik": "Mükremin, kimsesiz gecelerimin tespihli prensi.",
+      "hikaye": "Yılmaz Erdoğan'ın yazdığı, her hafta seyirci önünde tiyatro gibi çekilen dizi, İstanbul'da Çıtır ailesini ve çevresini anlatır. Demet Akbağ'ın oynadığı Feriştah, Mükremin'e (Yılmaz Erdoğan) takıntılı biçimde âşıktır ve onunla ilgili hayaller kurar; bu hayaller sonradan 'Feriştah'ın Fentezileri' adıyla kitap olmuştur."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Bir Demet Tiyatro (dizi)",
+      "yil": "1995-2007",
+      "soyleyen": "Mükremin (Yılmaz Erdoğan)",
+      "replik": "Dolar elbet bir gün düşer. Ama bizim sevdamız yerçekiminden etkilenmez.",
+      "hikaye": "Dizinin ana karakteri Mükremin Çıtır, sivri dilli kardeşi Lütfiye'yle sürekli atışan, kendini büyük bir âşık ve şair sanan bir adamdır. Doların durmadan yükseldiği yıllarda ekonomiyle aşkı birbirine karıştıran bu sözü, onun abartılı romantizmini gösterir."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Avrupa Yakası (dizi)",
+      "yil": "2004-2009",
+      "soyleyen": "Şahika (Binnur Kaya)",
+      "replik": "Babam Türkiye'nin 14. zengini. Bu dergiyi bana meşkale olsun diye aldı.",
+      "hikaye": "Gülse Birsel'in yazdığı dizi, Nişantaşı'nda yaşayan Sütçüoğlu ailesini ve 'Avrupa Yakası' dergisinin çalışanlarını anlatır. Dergi, zengin bir babanın şımarık kızı Şahika'ya oyalansın diye alınmıştır; 'meşgale' yerine 'meşkale' demesi de onun cahil zenginliğini gösterir."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Avrupa Yakası (dizi)",
+      "yil": "2004-2009",
+      "soyleyen": "Makbule (Hasibe Eren)",
+      "replik": "Kırkından sonra azanı teneşir paklarmış, yiiiaaange!",
+      "hikaye": "Varoştan gelip Nişantaşı'na uyum sağlamaya çalışan Makbule, her duruma bir atasözü yapıştırır. Bu söz, kırk yaşından sonra yoldan çıkanın ancak ölünce (teneşirde yıkanınca) düzeleceği anlamına gelir; 'yenge' diye uzatarak söylemesi onun alametifarikasıdır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Leyla ile Mecnun (dizi)",
+      "yil": "2011-2013",
+      "soyleyen": "Mecnun (Ali Atay)",
+      "replik": "Ya beni bu rüyadan uyandırın, ya da beni buraya gömün baba!",
+      "hikaye": "Aynı gün aynı hastanede doğup Leyla ile Mecnun adı verilen iki bebekten Mecnun, yıllar sonra Leyla'ya âşık olur. Leyla'nın bindiği uçağın düştüğünü öğrendiğinde bu sözlerle yıkılır. Gerçeküstü mizahıyla bilinen dizi Burak Aksak'ın kaleminden çıkmıştır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Leyla ile Mecnun (dizi)",
+      "yil": "2011-2013",
+      "soyleyen": "İsmail Abi (Serkan Keskin)",
+      "replik": "Her şeyi salla, çayı demle hacı!",
+      "hikaye": "Mecnun'un mahalledeki ağabeyi İsmail Abi, her derde aynı çareyi önerir: dertleri boş verip çay demlemek. Bu söz dizinin hayranları arasında bir yaşam felsefesine dönüşmüştür."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Leyla ile Mecnun (dizi)",
+      "yil": "2011-2013",
+      "soyleyen": "Erdal Bakkal (Cengiz Bozkurt)",
+      "replik": "Çay Erdal Bakkal'da içilir.",
+      "hikaye": "Mahallenin bakkalı Erdal, dükkânını mahallelinin buluşma yeri sayar ve çayın başka yerde içilmesini kabul etmez. Dizideki mahalle hayatının sembolüdür."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Behzat Ç. Bir Ankara Polisiyesi (dizi)",
+      "yil": "2010-2013",
+      "soyleyen": "Behzat Ç. (Erdal Beşikçioğlu)",
+      "replik": "Ben iyi bir adam olamadım, ama kimsenin de adamı olmadım.",
+      "hikaye": "Emrah Serbes'in romanlarından uyarlanan dizide Behzat Ç., Ankara Cinayet Büro'da kuralları çiğneyen, sert ve dağınık ama kimseye boyun eğmeyen bir komiserdir. 30. bölümdeki bu söz, onun kusurlarını kabul edip dürüstlüğünü savunduğu bir itiraftır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Behzat Ç. Bir Ankara Polisiyesi (dizi)",
+      "yil": "2010-2013",
+      "soyleyen": "Hayalet (İnanç Konukçu)",
+      "replik": "Kimse beni görmediği için oğlum!",
+      "hikaye": "Behzat Ç.'nin ekibindeki Hayalet'e neden bu lakabın takıldığı sorulur. Kimsenin onu fark etmediğini, bu yüzden de herkesi kendisinin gördüğünü anlatır."
+    },
+    {
+      "tur": "Yerli",
+      "film": "Behzat Ç. Bir Ankara Polisiyesi (dizi)",
+      "yil": "2010-2013",
+      "soyleyen": "Behzat Ç. (Erdal Beşikçioğlu)",
+      "replik": "Yanlış yolda yürümek, doğru yolda beklemekten iyidir.",
+      "hikaye": "11. bölümde söylenen bu söz, harekete geçmeyi her şeyden üstün tutan Behzat Ç.'nin hayat görüşünü özetler."
     }
   ]
 }
