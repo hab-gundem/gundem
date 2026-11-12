@@ -22,6 +22,8 @@ const HAFIZA_BOLUMLERI = {
   sporcu: { ad: 'Sporcular ve takımlar', ek: 'Notum', soru: 'Hatırladıklarını say.' },
   yer: { ad: 'Şehirler ve gezdiğim yerler', ek: 'Anılarım', soru: 'Neler gördün, neler yaşadın?' },
   soz: { ad: 'Sözler', yazar: 'Kimin sözü', ek: 'Neden söyledi (bağlam)', soru: 'Sözü ve neden söylendiğini hatırla.' },
+  replik: { ad: 'Replikler', altlar: ['Yerli', 'Yabancı'], yazar: 'Kim söylüyor', ek: 'Neden söyleniyor (kısa hikâyesi)',
+    soru: 'Repliği söyle. Hangi filmde, kim, neden söylüyor?' },
 };
 const HAFIZA_KIME = ['Kadınlara', 'Erkeklere', 'Çocuklara'];
 const GORSEL_EN_BUYUK = 1000; // piksel; yüklenen fotoğraf bu boyuta küçültülür (telefonda yer kaplamasın)

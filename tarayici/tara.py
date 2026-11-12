@@ -1252,6 +1252,7 @@ HAFIZA_KATEGORILERI = {
     "siir": ("", []),  # Ömer Hayyam rubaileri (Vikikaynak'ta yok, aşağıdaki siteden)
     "yetiskin": ("", []),  # müstehcen divan şiiri; metinler tarayici/yetiskin/ altında
     "hiciv": ("", []),  # Neyzen Tevfik, Şair Eşref; metinler tarayici/hiciv/hiciv.json
+    "replik": ("", []),  # yerli ve yabancı film replikleri; tarayici/replik/replik.json
 }
 # Günün sözü yalnızca bu düşünürlerden (kullanıcı seçimi); Vikisöz sayfa adları
 SOZ_YAZARLARI = ["Baruch Spinoza", "Epiktetos", "Seneca", "Marcus Aurelius", "Epikuros",
@@ -1448,6 +1449,20 @@ def _gunun_hicvi(gun: str) -> dict | None:
             "link": s.get("link", ""), "gorsel": "", "kaynak": s.get("kaynak", "")}
 
 
+def _gunun_repligi(gun: str) -> dict | None:
+    """tarayici/replik/replik.json'dan tarihe bağlı bir film repliği."""
+    dosya = os.path.join(os.path.dirname(os.path.abspath(__file__)), "replik", "replik.json")
+    with open(dosya, encoding="utf-8") as f:
+        replikler = json.load(f)["replikler"]
+    if not replikler:
+        return None
+    r = replikler[int(_gunun_sirasi([str(i) for i in range(len(replikler))], "replik", gun)[0])]
+    film = f"{r['film']} ({r['yil']})" if r.get("yil") else r["film"]
+    metin = [r["replik"]] + ([f"Aslı: “{r['asil']}”"] if r.get("asil") and r["asil"] != r["replik"] else [])
+    return {"bolum": "replik", "alt": r["tur"], "baslik": film, "yazar": r.get("soyleyen", ""), "metin": metin,
+            "bilgi": r.get("hikaye", ""), "bilgi_baslik": "Neden söyleniyor", "link": "", "gorsel": "", "kaynak": ""}
+
+
 def bugun_tr() -> str:
     return (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=3)).date().isoformat()
 
@@ -1468,6 +1483,8 @@ def hafiza_kartlari() -> list[dict]:
                 kart = _gunun_yetiskin_parcasi(gun)
             elif tur == "hiciv":
                 kart = _gunun_hicvi(gun)
+            elif tur == "replik":
+                kart = _gunun_repligi(gun)
             else:
                 for baslik in adaylar[:5]:
                     yazi = _wiki_yazisi(baslik)
