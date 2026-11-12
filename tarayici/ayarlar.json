@@ -8,6 +8,7 @@
     "  arama: Google Haberler'de aranacak ifade. Tırnak tam ifade arar, eksi (-kelime) o kelimeyi dışarıda bırakır. Yazılmazsa 'ad' kullanılır.",
     "  baslikta: haber başlığında bunlardan en az biri geçmeli (alakasız haberleri eler). Yazılmazsa 'ad' kullanılır.",
     "  gun: kaç günlük haberlere bakılsın (yazılmazsa 3). adet: en fazla kaç konu (yazılmazsa 4).",
+    "  yayin: Spor sekmesinin üstündeki yayın akışı için süzgeç (yazılmazsa 'baslikta' ya da 'ad' aranır). kelime: karşılaşma adında ya da ligde geçmeli; spor: Futbol, Voleybol, Basketbol…; lig: ligde biri geçmeli; haric: geçerse atlanır.",
     "tercih_konu_sayisi: Gündemde, tercih edilen kaynakların kendi manşetlerinden gelen konu sayısı (0-10).",
     "tercih_kaynaklar: Öne çıkacak yayınlar. Her konu bu sitelerde de aranır; bulunan haberler listenin başına geçer, metin önce onlardan alınır.",
     "  ad: yayının adı. site: alan adı (ör. birgun.net). kose: köşe yazılarının adresi (ör. t24.com.tr/yazarlar); konu bu adreste aranır, ilgili yazılar konuda gösterilir."
@@ -20,7 +21,20 @@
       "ad": "Fenerbahçe",
       "dal": "Futbol",
       "arama": "Fenerbahçe -basketbol -voleybol -Beko -kadın",
-      "gun": 2
+      "gun": 2,
+      "yayin": {
+        "kelime": [
+          "Fenerbahçe"
+        ],
+        "spor": "Futbol",
+        "haric": [
+          "Kadın",
+          "U1",
+          "U2",
+          "Gençlik",
+          "ArsaVev"
+        ]
+      }
     },
     {
       "ad": "Filenin Sultanları",
@@ -30,7 +44,20 @@
         "Filenin Sultanları",
         "Milli Kadın Voleybol"
       ],
-      "gun": 7
+      "gun": 7,
+      "yayin": {
+        "kelime": [
+          "Türkiye"
+        ],
+        "spor": "Voleybol",
+        "lig": [
+          "Kadın"
+        ],
+        "haric": [
+          "U1",
+          "U2"
+        ]
+      }
     },
     {
       "ad": "12 Dev Adam",
@@ -41,7 +68,47 @@
         "Milli Erkek Basketbol",
         "A Milli Basketbol"
       ],
-      "gun": 7
+      "gun": 7,
+      "yayin": {
+        "kelime": [
+          "Türkiye"
+        ],
+        "spor": "Basketbol",
+        "haric": [
+          "Kadın",
+          "U1",
+          "U2"
+        ]
+      }
+    },
+    {
+      "ad": "Formula 1",
+      "dal": "Motor sporları",
+      "arama": "\"Formula 1\" OR F1 -\"Formula E\"",
+      "baslikta": [
+        "Formula 1",
+        "F1"
+      ],
+      "gun": 4,
+      "yayin": {
+        "kelime": [
+          "Formula 1"
+        ]
+      }
+    },
+    {
+      "ad": "MotoGP",
+      "dal": "Motosiklet yarışı",
+      "arama": "MotoGP",
+      "baslikta": [
+        "MotoGP"
+      ],
+      "gun": 4,
+      "yayin": {
+        "kelime": [
+          "MotoGP"
+        ]
+      }
     }
   ],
   "tercih_kaynaklar": [

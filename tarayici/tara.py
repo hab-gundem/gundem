@@ -508,6 +508,64 @@ def secim_konulari(secim: dict) -> list[dict]:
     return konular
 
 
+# ---------- spor yayın akışı ----------
+# Spor Ekranı'nın gün sayfalarından (saat, karşılaşma, lig, kanal) yalnızca spor seçimlerine uyanlar.
+# Seçimdeki "yayin" alanı: kelime (adda ya da ligde tam kelime), spor (Futbol, Voleybol…),
+# lig (ligde biri geçmeli), haric (adda ya da ligde geçerse atlanır). Yoksa seçimin adı aranır.
+YAYIN_GUN = "https://www.sporekrani.com/home/day/{}"
+YAYIN_GUN_SAYISI = 7  # bugün dahil
+_KATLA = str.maketrans("çğıöşüâîû", "cgiosuaiu")
+
+
+def _katla(s: str) -> str:
+    return tr_kucuk(s).translate(_KATLA)
+
+
+def _yayin_uyar(secim: dict, ad: str, lig: str, spor: str) -> bool:
+    y = secim.get("yayin") or {}
+    metin = _katla(f"{ad} {lig}")
+    kelimeler = y.get("kelime") or secim.get("baslikta") or [secim["ad"]]
+    if not any(re.search(rf"(?<!\w){re.escape(_katla(k))}(?!\w)", metin) for k in kelimeler):
+        return False
+    if y.get("spor") and _katla(y["spor"]) != _katla(spor):
+        return False
+    if y.get("lig") and not any(_katla(x) in _katla(lig) for x in y["lig"]):
+        return False
+    return not any(_katla(x) in metin for x in y.get("haric", []))
+
+
+def yayin_akisi(secimler: list[dict]) -> list[dict]:
+    """Önümüzdeki günlerde seçimlerin hangi gün, saat ve kanalda yayınlanacağı."""
+    if not secimler:
+        return []
+    bugun = dt.date.fromisoformat(bugun_tr())
+    sonuc = []
+    for i in range(YAYIN_GUN_SAYISI):
+        gun = (bugun + dt.timedelta(days=i)).isoformat()
+        try:
+            sayfa = getir(YAYIN_GUN.format(gun)).decode("utf-8", "replace")
+        except Exception as e:
+            uyari(f"Yayın akışı okunamadı ({gun}): {e}")
+            continue
+        for blok in sayfa.split('<a href="/home/match/')[1:]:
+            blok = blok.split("</a>")[0]
+            bul = lambda sinif: html.unescape((re.search(rf'class="{sinif}[ "][^>]*>([^<]*)', blok) or [None, ""])[1]).strip()
+            ad, lig, saat = bul("event-list__name"), bul("event-list__league"), bul("event-list__time")
+            spor = html.unescape((re.search(r'alt="([^"]*)"[^>]*event-list__sport-icon', blok) or [None, ""])[1])
+            kanallar = list(dict.fromkeys(html.unescape(k) for k in
+                                          re.findall(r'event-list__channel rounded.*?alt="([^"]*)"', blok, re.S)))
+            secim = next((s for s in secimler if _yayin_uyar(s, ad, lig, spor)), None)
+            if not secim or not re.fullmatch(r"\d\d:\d\d", saat):
+                continue
+            yol = re.match(r'[^"]+', blok)[0]
+            sonuc.append({"tarih": gun, "saat": saat, "ad": ad, "lig": lig, "secim": secim["ad"],
+                          "kanallar": [k for k in kanallar if _katla(k) != "yayin yok"],
+                          "link": "https://www.sporekrani.com/home/match/" + yol})
+        time.sleep(1)
+    print(f"  {len(sonuc)} yayın bulundu")
+    return sonuc
+
+
 # ---------- konu işleme ----------
 
 def konu_kokleri(konu: dict) -> set[str]:
@@ -1190,11 +1248,15 @@ HAFIZA_KATEGORILERI = {
                                       "İskandinav mitolojisi", "Mısır mitolojisi"]),
     "din": ("tr.wikipedia.org", ["Peygamberler", "İslam peygamberleri", "Kur'an'daki kişiler",
                                  "Tevrat'taki kişiler", "Eski Ahit'teki kişiler"]),
-    "soz": ("tr.wikiquote.org", ["Türk yazarlar", "Yazarlar"]),
+    "soz": ("", []),  # yalnızca SOZ_YAZARLARI (Vikisöz)
     "siir": ("", []),  # Ömer Hayyam rubaileri (Vikikaynak'ta yok, aşağıdaki siteden)
     "yetiskin": ("", []),  # müstehcen divan şiiri; metinler tarayici/yetiskin/ altında
     "hiciv": ("", []),  # Neyzen Tevfik, Şair Eşref; metinler tarayici/hiciv/hiciv.json
 }
+# Günün sözü yalnızca bu düşünürlerden (kullanıcı seçimi); Vikisöz sayfa adları
+SOZ_YAZARLARI = ["Baruch Spinoza", "Epiktetos", "Seneca", "Marcus Aurelius", "Epikuros",
+                 "Michel de Montaigne", "Arthur Schopenhauer"]
+SOZ_ATLA = ["Depremleri düşün"]  # Vikisöz'de söz olmayan, sonradan eklenmiş satırlar
 HAYYAM_SAYFA = "https://www.xn--edebiyatgretmeni-twb.net/rubailer{}.htm"  # 1. sayfa ekisiz, sonra 2…15
 HAYYAM_SAYFA_SAYISI = 15
 HIKAYE_EN_FAZLA = 6000  # karakter
@@ -1259,12 +1321,15 @@ def _viki_temizle(s: str) -> str:
 def _gunun_sozu(adaylar: list[str]) -> dict | None:
     for yazar in adaylar[:5]:
         try:
-            wt = _site_sorgu("tr.wikiquote.org", action="parse", page=yazar, prop="wikitext")["parse"]["wikitext"]
+            wt = _site_sorgu("tr.wikiquote.org", action="parse", page=yazar, prop="wikitext",
+                             redirects=1)["parse"]["wikitext"]
         except Exception as e:
             uyari(f"Vikisöz ({yazar}): {e}")
             continue
+        wt = re.split(r"^==+\s*(?:Hakkında|Kaynakça)", wt, flags=re.M)[0]  # başkalarının onun hakkındaki sözleri
         sozler = [_viki_temizle(m) for m in re.findall(r"^\*(?!\*)\s*(.+)$", wt, re.M)]
-        sozler = [s for s in sozler if 30 <= len(s) <= 300]
+        sozler = [s for s in sozler if 20 <= len(s) <= 300 and " — " not in s
+                  and not any(a in s for a in SOZ_ATLA)]
         if not sozler:
             continue
         soz = _gunun_sirasi(sozler, "soz", bugun_tr())[0]
@@ -1396,7 +1461,7 @@ def hafiza_kartlari() -> list[dict]:
         kart = None
         try:
             if tur == "soz":
-                kart = _gunun_sozu(adaylar)
+                kart = _gunun_sozu(_gunun_sirasi(SOZ_YAZARLARI, tur, gun))
             elif tur == "siir":
                 kart = _gunun_rubaisi(gun)
             elif tur == "yetiskin":
@@ -1588,6 +1653,7 @@ def main() -> None:
         f_rss = havuz_is.submit(rss_havuzu)
         f_secimler = [havuz_is.submit(secim_konulari, s) for s in secimler]
         f_tercih = havuz_is.submit(tercih_konulari, kaynaklar) if kaynaklar else None
+        f_yayin = havuz_is.submit(yayin_akisi, secimler)
     haber_konulari, rss = f_haber.result(), f_rss.result()
     secim_secilen: list[dict] = []
     for f in f_secimler:
@@ -1687,9 +1753,16 @@ def main() -> None:
         uyari(f"Hafıza kartları alınamadı: {e}")
         hafiza = []
 
+    try:
+        yayinlar = f_yayin.result()
+    except Exception as e:
+        uyari(f"Yayın akışı alınamadı: {e}")
+        yayinlar = []
+
     CIKTI.parent.mkdir(parents=True, exist_ok=True)
     veri = {"olusturulma": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
             "spor_secimleri": [{"ad": s["ad"], "dal": s.get("dal", "")} for s in secimler],
+            "yayinlar": yayinlar,
             "konular": konular + onceki,
             "hafiza": hafiza}
     CIKTI.write_text(json.dumps(veri, ensure_ascii=False, indent=2), encoding="utf-8")

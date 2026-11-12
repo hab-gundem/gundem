@@ -355,3 +355,14 @@ a.ekle-dugme { display: block; text-align: center; text-decoration: none; color:
 
 /* Eski metinlerin bugünkü Türkçe karşılığı */
 .satirli p.anlam { color: var(--soluk); font-style: italic; margin-top: -6px; }
+
+/* Spor sekmesi: yayın akışı */
+.yayin-gun { margin: 12px 0 4px; font-size: 14px; font-weight: 600; color: var(--soluk); }
+.yayin-liste { list-style: none; margin: 0; padding: 0; }
+.yayin-liste li { display: flex; gap: 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--cizgi); }
+.yayin-saat { font-variant-numeric: tabular-nums; font-weight: 600; min-width: 44px; }
+.yayin-ad { flex: 1; min-width: 0; }
+.yayin-ad a { color: inherit; text-decoration: none; }
+.yayin-ad small { display: block; color: var(--soluk); }
+.yayin-kanal { text-align: right; font-size: 14px; white-space: nowrap; }
+.yayin-kaynak { margin: 6px 0 0; font-size: 12px; color: var(--soluk); }

@@ -239,7 +239,35 @@ function sporGruplari(konular) {
     `${esc(s.ad)}${s.dal ? ` <span class="dal">· ${esc(s.dal)}</span>` : ''}`,
     konular.filter(k => k.secim === s.ad), 'Son günlerde haber yok.'));
   gruplar.push(grup('Genel spor gündemi', konular.filter(k => !k.secim), 'Bugün genel spor konusu yok.'));
-  return gruplar.join('');
+  return yayinAkisi() + gruplar.join('');
+}
+
+// Spor sekmesinin en üstü: seçimlerin önümüzdeki günlerdeki yayınları (gün, saat, kanal; kaynak Spor Ekranı).
+// Başlayalı 2 saatten fazla olanlar gösterilmez.
+const GUN_ADLARI = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+const AY_ADLARI = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+function yayinAkisi() {
+  const simdi = Date.now();
+  const yayinlar = (gundem.yayinlar || [])
+    .filter(y => new Date(`${y.tarih}T${y.saat}:00+03:00`).getTime() + 2 * 3600e3 > simdi);
+  const bugun = new Date(new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' }) + 'T12:00:00+03:00');
+  const gunAdi = tarih => {
+    const t = new Date(`${tarih}T12:00:00+03:00`);
+    const fark = Math.round((t - bugun) / 864e5);
+    const ad = `${GUN_ADLARI[t.getUTCDay()]}, ${t.getUTCDate()} ${AY_ADLARI[t.getUTCMonth()]}`;
+    return fark === 0 ? `Bugün · ${ad}` : fark === 1 ? `Yarın · ${ad}` : ad;
+  };
+  const satir = y => `<li><span class="yayin-saat">${esc(y.saat)}</span>
+      <span class="yayin-ad"><a href="${esc(y.link)}" target="_blank" rel="noopener">${esc(y.ad)}</a>
+        <small>${esc(y.secim)}${y.lig && y.lig !== y.secim ? ` · ${esc(y.lig)}` : ''}</small></span>
+      <span class="yayin-kanal">${y.kanallar.length ? y.kanallar.map(esc).join('<br>') : 'Yayın yok'}</span></li>`;
+  const gunler = [...new Set(yayinlar.map(y => y.tarih))];
+  const govde = gunler.length
+    ? gunler.map(g => `<h4 class="yayin-gun">${gunAdi(g)}</h4>
+        <ul class="yayin-liste">${yayinlar.filter(y => y.tarih === g).map(satir).join('')}</ul>`).join('')
+    : '<p class="bos-satir">Önümüzdeki 7 günde seçimlerinin yayını yok.</p>';
+  return `<section class="bolum spor-grubu yayin-akisi"><h3>Yayın akışı</h3>${govde}
+    <p class="yayin-kaynak">Kaynak: Spor Ekranı</p></section>`;
 }
 
 // ✕ düğmeli konu kartı (listeden çıkarmak için); eylem: data-cikar değeri ("unutulan" / "acilan")
