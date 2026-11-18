@@ -152,11 +152,12 @@ const $geri = document.getElementById('geri');
 function ciz() {
   let [, sayfa = '', id, ek] = location.hash.split('/');
   if (sayfa === 'yildizli') sayfa = 'takip'; // eski adres
-  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar' && !((sayfa === 'tekrar' || sayfa === 'hafiza') && id);
+  $geri.hidden = sayfa !== 'konu' && sayfa !== 'ayarlar' && sayfa !== 'kose' && !((sayfa === 'tekrar' || sayfa === 'hafiza') && id);
   document.querySelectorAll('.alt a').forEach(a => {
-    a.classList.toggle('etkin', a.dataset.sayfa === (sayfa || 'gundem'));
+    a.classList.toggle('etkin', a.dataset.sayfa === (sayfa && sayfa !== 'kose' ? sayfa : 'gundem'));
   });
-  if (sayfa === 'konu') detayCiz(decodeURIComponent(id || ''), ek === 'tekrar');
+  if (sayfa === 'kose') koseCiz();
+  else if (sayfa === 'konu') detayCiz(decodeURIComponent(id || ''), ek === 'tekrar');
   else if (sayfa === 'tekrar') (TEKRAR_KATLARI[id] ? tekrarCiz(id) : tekrarAnaCiz());
   else if (sayfa === 'takip') takipCiz();
   else if (sayfa === 'ayarlar') ayarlarCiz(); // ayarlar.js
@@ -217,7 +218,9 @@ function listeCiz(tur) {
   }
   const yeniler = konular.filter(k => !k.onceki);
   const oncekiler = konular.filter(k => k.onceki);
-  $icerik.innerHTML = ust + (yeniler.length
+  const kose = gundem.kose_yazilari?.length
+    ? `<a class="dugme kose-dugme" href="#/kose">Köşe yazıları (${gundem.kose_yazilari.length}) ›</a>` : '';
+  $icerik.innerHTML = kose + ust + (yeniler.length
     ? `<ul class="liste">${yeniler.map(k => konuKarti(k)).join('')}</ul>`
     : `<div class="bos">Bugün ${tur === 'spor' ? 'spor' : 'gündem'} konusu yok.</div>`)
     + (oncekiler.length
@@ -229,6 +232,25 @@ function listeCiz(tur) {
   $icerik.querySelector('.onceki-konular')?.addEventListener('toggle', e => { oncekiAcik = e.target.open; });
 }
 let oncekiAcik = false; // konuya girip geri dönünce bölüm açık kalsın
+
+// Taranan kaynakların son bir gündeki köşe yazıları, kaynağa göre: yazar (varsa) + başlık
+function koseCiz() {
+  $baslik.textContent = 'Köşe yazıları';
+  const yazilar = gundem?.kose_yazilari || [];
+  if (!yazilar.length) {
+    $icerik.innerHTML = `<div class="bos">${gundem ? 'Köşe yazısı bulunamadı.' : 'Yükleniyor…'}</div>`;
+    return;
+  }
+  const gruplar = new Map();
+  yazilar.forEach(y => gruplar.set(y.kaynak, [...(gruplar.get(y.kaynak) || []), y]));
+  $icerik.innerHTML = [...gruplar].map(([kaynak, liste]) => `<section class="bolum kose-grubu">
+      <h3>${esc(kaynak)}</h3>
+      ${liste.map(y => `<a class="yorum kose-yazi" href="${guvenliAdres(y.link)}" target="_blank" rel="noopener">
+        ${y.yazar ? `<div class="yorum-ust">${esc(y.yazar)}</div>` : ''}
+        <div class="yorum-baslik">${esc(y.baslik)}</div>
+      </a>`).join('')}
+    </section>`).join('');
+}
 
 // Spor sekmesi: her seçim (tarayici/ayarlar.json) ayrı başlık, en altta genel spor gündemi
 function sporGruplari(konular) {

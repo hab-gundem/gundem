@@ -1186,9 +1186,41 @@ def _kose_basligi(baslik: str) -> tuple[str, str]:
     """Google başlığından (yazar, yazı başlığı): "X yazdı : Y", "X | Y", "Y - X" kalıpları."""
     if m := re.match(r"(.+?) yazdı\s*:\s*(.+)", baslik):
         return m.group(1).strip(), m.group(2).strip()
+    # Evrensel ve Cumhuriyet "Olaylar ve Görüşler | Başlık - Ad Soyad": "Yazı başlığı - Ad Soyad"
+    if m := re.match(r"(?:[^|]{3,40} \| )?(.+) - ([A-ZÇĞİÖŞÜ][\w.’']*(?: [A-ZÇĞİÖŞÜ][\w.’']*){1,3})$", baslik):
+        return m.group(2).strip(), m.group(1).strip()
     if m := re.match(r"([^|]{3,40}) \| (.+)", baslik):
         return m.group(1).strip(), m.group(2).strip()
     return "", baslik
+
+
+KOSE_LISTE_SAYISI = 12  # köşe yazıları sayfasında kaynak başına en fazla
+
+
+def kose_listesi(kaynaklar: list[dict]) -> list[dict]:
+    """Köşe adresi olan her kaynağın son bir gündeki yazıları: yazar (varsa), başlık, tarih, bağlantı.
+    Sayfalar açılmaz (Google 429), yalnızca arama sonucunun başlığı kullanılır."""
+    def kaynak_yazilari(k: dict) -> list[dict]:
+        try:
+            ogeler = rss_ogeleri(getir(GOOGLE_ARAMA.format(q=urllib.parse.quote(f"site:{k['kose']} when:1d"))))
+        except Exception as e:
+            uyari(f"Köşe yazıları alınamadı ({k['ad']}): {e}")
+            return []
+        yazilar, gorulen = [], set()
+        for oge in sorted(ogeler, key=lambda o: o.get("tarih") or "", reverse=True):
+            baslik, _ = baslik_kaynak_ayir(oge["baslik"])
+            yazar, baslik = _kose_basligi(baslik)
+            if not baslik or _sade(baslik) in gorulen or not turkce_mi(baslik):
+                continue
+            gorulen.add(_sade(baslik))
+            yazilar.append({"kaynak": k["ad"], "yazar": yazar, "baslik": baslik,
+                            "tarih": oge.get("tarih"), "link": oge["link"]})
+            if len(yazilar) >= KOSE_LISTE_SAYISI:
+                break
+        return yazilar
+    with ThreadPoolExecutor(2) as is_havuzu:
+        return [y for liste in is_havuzu.map(kaynak_yazilari, [k for k in kaynaklar if k.get("kose")])
+                for y in liste]
 
 
 def kose_yazilari(konu: dict, kaynaklar: list[dict]) -> list[dict]:
@@ -1753,6 +1785,8 @@ def main() -> None:
         with ThreadPoolExecutor(4) as is_havuzu:
             for k, y in zip(kose_konulari, is_havuzu.map(lambda k: kose_yazilari(k, kaynaklar), kose_konulari)):
                 k["yorumlar"] = y
+    print("Köşe yazıları listesi alınıyor...")
+    kose_listesi_ = kose_listesi(kaynaklar)
     print("Geçmiş haberler aranıyor...")
     with ThreadPoolExecutor(4) as is_havuzu:
         gecmisler = list(is_havuzu.map(gecmis_haberler, secilen))
@@ -1780,6 +1814,7 @@ def main() -> None:
     veri = {"olusturulma": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
             "spor_secimleri": [{"ad": s["ad"], "dal": s.get("dal", "")} for s in secimler],
             "yayinlar": yayinlar,
+            "kose_yazilari": kose_listesi_,
             "konular": konular + onceki,
             "hafiza": hafiza}
     CIKTI.write_text(json.dumps(veri, ensure_ascii=False, indent=2), encoding="utf-8")
