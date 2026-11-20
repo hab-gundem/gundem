@@ -156,7 +156,7 @@ function ciz() {
   document.querySelectorAll('.alt a').forEach(a => {
     a.classList.toggle('etkin', a.dataset.sayfa === (sayfa && sayfa !== 'kose' ? sayfa : 'gundem'));
   });
-  if (sayfa === 'kose') koseCiz();
+  if (sayfa === 'kose') (id ? koseYaziCiz(+id) : koseCiz());
   else if (sayfa === 'konu') detayCiz(decodeURIComponent(id || ''), ek === 'tekrar');
   else if (sayfa === 'tekrar') (TEKRAR_KATLARI[id] ? tekrarCiz(id) : tekrarAnaCiz());
   else if (sayfa === 'takip') takipCiz();
@@ -242,14 +242,33 @@ function koseCiz() {
     return;
   }
   const gruplar = new Map();
-  yazilar.forEach(y => gruplar.set(y.kaynak, [...(gruplar.get(y.kaynak) || []), y]));
+  yazilar.forEach((y, i) => gruplar.set(y.kaynak, [...(gruplar.get(y.kaynak) || []), { ...y, i }]));
+  // metni alınan yazı uygulamada açılır, alınamayan sayfada
   $icerik.innerHTML = [...gruplar].map(([kaynak, liste]) => `<section class="bolum kose-grubu">
       <h3>${esc(kaynak)}</h3>
-      ${liste.map(y => `<a class="yorum kose-yazi" href="${guvenliAdres(y.link)}" target="_blank" rel="noopener">
+      ${liste.map(y => `<a class="yorum kose-yazi" href="${y.metin?.length ? `#/kose/${y.i}` : `${guvenliAdres(y.link)}" target="_blank" rel="noopener`}">
         ${y.yazar ? `<div class="yorum-ust">${esc(y.yazar)}</div>` : ''}
         <div class="yorum-baslik">${esc(y.baslik)}</div>
       </a>`).join('')}
     </section>`).join('');
+}
+
+// Tek köşe yazısı: yazar · kaynak · tarih, başlık, metin
+function koseYaziCiz(i) {
+  $baslik.textContent = 'Köşe yazısı';
+  const y = gundem?.kose_yazilari?.[i];
+  if (!y?.metin?.length) {
+    $icerik.innerHTML = `<div class="bos">${gundem ? 'Yazı bulunamadı.' : 'Yükleniyor…'}</div>`;
+    return;
+  }
+  const ust = [y.yazar, y.kaynak, y.tarih && saatYaz(y.tarih)].filter(Boolean).map(esc).join(' · ');
+  $icerik.innerHTML = `<article class="kose-oku">
+      <div class="yorum-ust">${ust}</div>
+      <h2>${esc(y.baslik)}</h2>
+      <div class="haber-metni">${y.metin.map(p => `<p>${esc(p)}</p>`).join('')}</div>
+      <div class="kaynak-notu"><a href="${guvenliAdres(y.link)}" target="_blank" rel="noopener">Yazıyı sayfada aç</a></div>
+    </article>`;
+  window.scrollTo(0, 0);
 }
 
 // Spor sekmesi: her seçim (tarayici/ayarlar.json) ayrı başlık, en altta genel spor gündemi

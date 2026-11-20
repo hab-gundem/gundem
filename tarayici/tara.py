@@ -950,7 +950,9 @@ HABER_GUN = 3           # gündem/spor haberlerinde sayfanın kendi yayın tarih
 YAYIN_ALANLARI = ("article:published_time", "datepublished", "og:published_time", "published_time",
                   "pubdate", "publishdate", "date")
 METIN_COP = re.compile(r"©|tüm hakları|abone ol|çerez|cookie|whatsapp kanal|google news|"
-                       r"bizi takip edin|haberin devamı|ilginizi çekebilir", re.IGNORECASE)
+                       r"bizi takip edin|haberin devamı|ilginizi çekebilir|bildirimlerine izin|"
+                       r"algoritmaya müdahale|okurlarından alıyor", re.IGNORECASE)
+METIN_SONU = re.compile(r"aydınlatma metni|kişisel verileriniz", re.IGNORECASE)  # buradan sonrası yazı değil (KVKK metni)
 
 
 def sayfa_getir(url: str, veri: bytes | None = None, basliklar: dict | None = None) -> tuple[str, str]:
@@ -1025,6 +1027,7 @@ class _SayfaAyirici(HTMLParser):
         if etiket in self.ATLA:
             self.atla += 1
         elif etiket == "p" and not self.atla:
+            self._p_bitir()  # kapanmamış <p> (ör. BirGün): önceki paragraf burada biter
             self.p = []
         elif etiket == "br" and self.p is not None:
             self.p.append(" ")
@@ -1035,11 +1038,16 @@ class _SayfaAyirici(HTMLParser):
             return
         if etiket in self.ATLA and self.atla:
             self.atla -= 1
-        elif etiket == "p" and self.p is not None:
-            metin = re.sub(r"\s+", " ", "".join(self.p)).strip()
-            if metin:
-                self.paragraflar.append(metin)
-            self.p = None
+        elif etiket in ("p", "div", "article", "section") and self.p is not None:
+            self._p_bitir()
+
+    def _p_bitir(self):
+        if self.p is None:
+            return
+        metin = re.sub(r"\s+", " ", "".join(self.p)).strip()
+        if metin:
+            self.paragraflar.append(metin)
+        self.p = None
 
     def handle_data(self, veri):
         if self.ld_icinde:
@@ -1066,7 +1074,7 @@ def _sade(s: str) -> str:
     return re.sub(r"\W+", "", tr_kucuk(s))
 
 
-def haber_sayfasi(link: str) -> dict:
+def haber_sayfasi(link: str, en_fazla: int = METIN_EN_FAZLA) -> dict:
     """Haber sayfasından {paragraflar, gorsel, link} çıkarır."""
     adres = google_linki_coz(link)
     sayfa, adres = sayfa_getir(adres)
@@ -1083,6 +1091,8 @@ def haber_sayfasi(link: str) -> dict:
     paragraflar: list[str] = []
     for p in ayirici.paragraflar:
         p = html.unescape(p)
+        if METIN_SONU.search(p) and paragraflar:
+            break
         if len(p) >= 60 and not METIN_COP.search(p) and p not in paragraflar:
             paragraflar.append(p)
     if govde:
@@ -1097,7 +1107,7 @@ def haber_sayfasi(link: str) -> dict:
             paragraflar = [" ".join(cumleler[i:i + 3]) for i in range(0, len(cumleler), 3)]
     sonuc, toplam = [], 0
     for p in paragraflar:
-        if toplam + len(p) > METIN_EN_FAZLA and sonuc:
+        if toplam + len(p) > en_fazla and sonuc:
             break
         sonuc.append(p)
         toplam += len(p)
@@ -1195,11 +1205,12 @@ def _kose_basligi(baslik: str) -> tuple[str, str]:
 
 
 KOSE_LISTE_SAYISI = 12  # köşe yazıları sayfasında kaynak başına en fazla
+KOSE_METIN_EN_FAZLA = 20000  # uygulamada okunan köşe yazısı metni (karakter)
 
 
 def kose_listesi(kaynaklar: list[dict]) -> list[dict]:
     """Köşe adresi olan her kaynağın son bir gündeki yazıları: yazar (varsa), başlık, tarih, bağlantı.
-    Sayfalar açılmaz (Google 429), yalnızca arama sonucunun başlığı kullanılır."""
+    Her yazının sayfası açılıp metni alınır (uygulamada okunur); yazar başlıkta yoksa sayfadan alınır."""
     def kaynak_yazilari(k: dict) -> list[dict]:
         try:
             ogeler = rss_ogeleri(getir(GOOGLE_ARAMA.format(q=urllib.parse.quote(f"site:{k['kose']} when:1d"))))
@@ -1213,8 +1224,18 @@ def kose_listesi(kaynaklar: list[dict]) -> list[dict]:
             if not baslik or _sade(baslik) in gorulen or not turkce_mi(baslik):
                 continue
             gorulen.add(_sade(baslik))
-            yazilar.append({"kaynak": k["ad"], "yazar": yazar, "baslik": baslik,
-                            "tarih": oge.get("tarih"), "link": oge["link"]})
+            yazi = {"kaynak": k["ad"], "yazar": yazar, "baslik": baslik,
+                    "tarih": oge.get("tarih"), "link": oge["link"]}
+            try:  # yazı uygulamada okunsun diye metni alınır; açılamazsa yalnız bağlantı kalır
+                s = haber_sayfasi(oge["link"], KOSE_METIN_EN_FAZLA)
+                metin = " ".join(s["paragraflar"])
+                if len(metin) >= 300 and turkce_mi(metin):
+                    yazi.update({"metin": s["paragraflar"], "link": s["link"]})
+                    if not yazi["yazar"] and s["yazar"] and tr_kucuk(k["ad"]) not in tr_kucuk(s["yazar"]):
+                        yazi["yazar"] = s["yazar"]
+            except Exception as e:
+                uyari(f"Köşe yazısı okunamadı ({k['ad']}): {e}")
+            yazilar.append(yazi)
             if len(yazilar) >= KOSE_LISTE_SAYISI:
                 break
         return yazilar

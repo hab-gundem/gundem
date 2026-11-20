@@ -390,3 +390,4 @@ a.ekle-dugme { display: block; text-align: center; text-decoration: none; color:
 .kose-dugme { display: block; color: inherit; text-align: center; text-decoration: none; margin: 0 0 12px; }
 .kose-yazi { display: block; color: inherit; text-decoration: none; }
 .kose-yazi .yorum-baslik { margin: 2px 0 0; }
+.kose-oku h2 { font-size: 21px; line-height: 1.3; margin: 4px 0 8px; }
